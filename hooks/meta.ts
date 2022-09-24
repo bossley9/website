@@ -5,5 +5,5 @@ export const useDocumentTitle = (subtitle?: string) => {
   const heading = subtitle && subtitle.length ? subtitle + ' - ' : ''
   useEffect(() => {
     document.title = `${heading}${APP_NAME}`
-  }, [subtitle])
+  }, [heading])
 }

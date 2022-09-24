@@ -1,37 +1,49 @@
-import { FC } from 'react'
-import { Layout } from 'components/Layout'
+import React, { FC, Fragment } from 'react'
+import { Head } from 'components/Head'
+import { Icon, IconName, IconPrefix } from 'components/Icon'
+import { Link } from 'components/Link'
+import { Header } from 'components/Header'
+import { APP_NAME, ICON_SIZE, SOCIAL } from 'constants/strings'
+import 'constants/iconLibrary'
 
 const Main: FC = () => {
   return (
-    <Layout>
-      <div className="bg"></div>
-      <h1 className="name">Sam Bossley</h1>
-      <p id="tag"></p>
-      <ul className="links">
-        <li>
-          <a
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/Sam_Bossley.pdf"
-          >
-            Resume
-          </a>
-        </li>
-        <li>
-          <a href="mailto:bossley.samuel@gmail.com">Email</a>
-        </li>
-        <li>
-          <a href="https://github.com/bossley9">Github</a>
-        </li>
-        <li>
-          <a href="https://github.com/bossley9/dotfiles">Dotfiles</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/bossley9/">Linkedin</a>
-        </li>
-      </ul>
-    </Layout>
+    <Fragment>
+      <Head
+        meta={{
+          title: APP_NAME,
+          desc: 'A web developer exploring the world',
+          keywords: ['website', 'sam', 'bossley', 'developer', 'thoughts'],
+        }}
+      />
+      <Header hasTitle={false} />
+      <section className="container my7 tc">
+        <h3 className="mb5">Sam Bossley.</h3>
+        <ul className="df fd-c-s pa0 lstn jc-c mb5">
+          {SOCIAL.map((s, i: number) => (
+            <li key={i} className="mx4 tc my3-s" style={{ height: ICON_SIZE }}>
+              <a
+                // for mastodon linking
+                rel="me"
+                href={s.url}
+                aria-label={s.name}
+                title={s.name}
+                className="c-inh hov-c-text-light"
+              >
+                <Icon
+                  className="h-100 w-a"
+                  prefix={(s.prefix as IconPrefix) || 'fab'}
+                  icon={s.icon as IconName}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <Link href="/thoughts">Arbitrary thoughts</Link>
+        </div>
+      </section>
+    </Fragment>
   )
 }
 
