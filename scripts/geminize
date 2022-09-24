@@ -1,98 +1,36 @@
-#!/usr/bin/env sh
-# convert entire project folders from html to gemini
+#!/bin/sh
 # vim:fdm=marker
+# generates a separate gemini project directory from initial HTML output
+# the goal is to remove static assets and reduce the overall size of the gemini project
 
-# geminject {{{
+STATIC_PATH="/static"
 
-geminject() {
-  local file="$1"
-  local outFile="$2"
-  local src="$3"
+ignorePath="${1}${STATIC_PATH}"
 
-  data="$(cat "$src")"
+# extract baseURL
+baseURL="$(grep "baseURL" "config.yml")"
+baseURL="https${baseURL##*https}"
+baseURL="${baseURL%*"'"}"
 
-  # remove front matter
-  # (assumption: front matter exists)
-  data="${data#*---}"
-  matter="${data%%---*}"
-  data="${data#*---}"
+mkdir -p "$2"
 
-  title="${matter##*title:\ }"
-  title="$(echo "$title" | head -n 1)"
-  title="${title#\"}"
-  title="${title%\"}"
+for file in $(find "$1" -type f -name *.gmi); do
+  # ignore files from static/static dir
+  if [ "${file#"${ignorePath}"}" != "$file" ]; then
+    continue
+  fi
 
-  date="${matter##*date:\ }"
-  date="$(echo "$date" | head -n 1)"
+  relFile="${file#"${1}"/}"
+  relPath="${relFile%/*}"
 
-  header="# ${title}\n\n${date}\n"
-  footer="=> / Copyright Sam Bossley $(date "+%Y")"
+  # path is different than file path
+  # (aka if folders need to be created)
+  if [ "$relPath" != "${relFile}" ]; then
+    mkdir -p "${2}/${relFile%/*}"
+  fi
 
-  echo "${header}${data}\n\n${footer}" > "$outFile"
-}
-
-# }}}
-
-# geminizefile {{{
-
-geminizefile() {
-  local file="$1"
-  local outFile="$2"
-  local src="$3"
-
-  case "$file" in
-    *".html")
-      outMod="${outFile%.*}.gmi"
-      if [ -f "$src" ]; then
-        geminject "$file" "$outMod" "$src"
-        echo "injected '${file}' -> '${outMod}'"
-      else
-        node ./scripts/html2gmi.js "$file" "$outMod"
-        echo "converted '${file}' -> '${outMod}'"
-      fi
-      ;;
-    # passthrough for non-html files
-    *) cp -v "$file" "$outFile" ;;
-  esac
-}
-
-# }}}
-
-# geminizedir {{{
-
-geminizedir() {
-  local dir="$1"
-  local outDir="$2"
-  local src="$3"
-
-  mkdir -p "$outDir"
-
-  for file in $(ls -a "$dir"); do
-    path="${dir}/${file}"
-    outPath="${outDir}/${file}"
-    srcPath="${src}/${file}"
-
-    if ! [ "$file" = "." ] && ! [ "$file" = ".." ]; then
-      if [ -d "$path" ]; then
-        geminizedir "$path" "$outPath" "$srcPath"
-      else
-        gmi="${srcPath%\/*}.gmi"
-        geminizefile "$path" "$outPath" "$gmi"
-      fi
-    fi
-  done
-}
-
-# }}}
-
-# main {{{
-
-src="$(pwd)"
-dir="${src}/_site"
-outDir="${src}/_site_gemini"
-
-geminizedir "$dir" "$outDir" "$src"
-
-echo "done"
-
-# }}}
+  output="${2}/${relFile}"
+  mv "$file" "$output"
+  # replace rel urls with abs urls for static asset refs
+  sed -i -e "s#^=> ${STATIC_PATH}#=> ${baseURL}${STATIC_PATH}#g" "$output"
+done

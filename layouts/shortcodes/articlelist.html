@@ -1,0 +1,29 @@
+<h1>Articles</h1>
+
+{{ $articleDates := slice }}
+{{ range .Site.Data.favorites.articles }}
+	{{ $articleDates = $articleDates | append .date }}
+{{ end }}
+{{ $articleDates = sort (uniq $articleDates) "" "desc" }}
+
+{{ range $articleDates }}
+	{{ $articleDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.articles "date" $articleDate) "current" "!=" true }}
+      <li>
+        <span>
+          <a href="{{ .url }}">
+            {{ .title }} by {{ .author }}
+            ({{ (time .published).Year }})
+          </a>
+        </span>
+        <span>
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

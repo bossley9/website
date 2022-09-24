@@ -1,0 +1,25 @@
+{{ define "content" }}
+
+  <section class="h-section">
+    <h1>{{ .Title }}</h1>
+
+    <p>Writing is one of my favorite pastimes. I mostly write about technical programs or software that interests me but I also write reviews and life reflections.</p>
+
+    {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
+      <h2>{{ .Key }}</h2>
+      <ol>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">
+              <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
+              <span class="title2">{{ .Title }}</span>
+            </a>
+          </li>
+        {{ end }}
+      </ol>
+    {{ end }}
+  </section>
+
+  {{ template "misc/pagination.html" . }}
+
+{{ end }}

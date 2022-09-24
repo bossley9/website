@@ -1,0 +1,9 @@
+# Anime{{ range (first 1 (where .Site.Data.favorites.anime "current" true)) }}
+
+I'm currently watching {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}.{{ end }}
+{{ $animeDates := slice }}{{ range .Site.Data.favorites.anime }}{{ $animeDates = $animeDates | append .date }}{{ end }}{{ $animeDates = sort (uniq $animeDates) "" "desc" }}{{ range $animeDates }}{{ $animeDate := . }}
+## {{ cond (eq (len .) 0) "No Date" . }}
+{{ range where (where $.Site.Data.favorites.anime "date" $animeDate) "current" "!=" true }}
+* {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }} {{ if eq .type "anime/movie" }}({{ .year }}){{ end }}{{ if eq .type "anime" }}({{ (time .run_start).Year }}){{ end }}
+  {{ if gt .rating 0 }}{{ .rating | lang.FormatNumber 1 }}/10. {{ end }}{{ if .note }}{{ .note }}{{ end }}{{ end }}
+{{ end }}

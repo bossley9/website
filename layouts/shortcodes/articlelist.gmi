@@ -1,0 +1,7 @@
+# Articles
+{{ $articleDates := slice }}{{ range .Site.Data.favorites.articles }}{{ $articleDates = $articleDates | append .date }}{{ end }}{{ $articleDates = sort (uniq $articleDates) "" "desc" }}{{ range $articleDates }}{{ $articleDate := . }}
+## {{ cond (eq (len .) 0) "No Date" . }}
+{{ range where (where $.Site.Data.favorites.articles "date" $articleDate) "current" "!=" true }}
+=> {{ .url }} {{ .title }} by {{ .author }} ({{ (time .published).Year }})
+   {{ if .note }}{{ .note }}{{ end }}{{ end }}
+{{ end }}

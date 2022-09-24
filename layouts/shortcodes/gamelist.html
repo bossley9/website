@@ -1,0 +1,33 @@
+<h1>Games</h1>
+
+{{ range (first 1 (where .Site.Data.favorites.games "current" true)) }}
+  <p>I'm currently playing {{ .title }}.</p>
+{{ end }}
+
+{{ $gameDates := slice }}
+{{ range .Site.Data.favorites.games }}
+	{{ $gameDates = $gameDates | append .date }}
+{{ end }}
+{{ $gameDates = sort (uniq $gameDates) "" "desc" }}
+
+{{ range $gameDates }}
+	{{ $gameDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.games "date" $gameDate) "current" "!=" true }}
+      <li>
+        <span>
+          {{ .title }} ({{ .year }})
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

@@ -1,0 +1,9 @@
+# Games {{ range (first 1 (where .Site.Data.favorites.games "current" true)) }}
+
+I'm currently playing {{ .title }}.{{ end }}
+{{ $gameDates := slice }}{{ range .Site.Data.favorites.games }}{{ $gameDates = $gameDates | append .date }}{{ end }}{{ $gameDates = sort (uniq $gameDates) "" "desc" }}{{ range $gameDates }}{{ $gameDate := . }}
+## {{ cond (eq (len .) 0) "No Date" . }}
+{{ range where (where $.Site.Data.favorites.games "date" $gameDate) "current" "!=" true }}
+* {{ .title }} ({{ .year }})
+  {{ if gt .rating 0 }}{{ .rating | lang.FormatNumber 1 }}/10. {{ end }}{{ if .note }}{{ .note }}{{ end }}{{ end }}
+{{ end }}

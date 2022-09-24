@@ -1,0 +1,11 @@
+=> / sam bossley
+{{ block "content" . }}{{ end }}
+=> /meta meta
+=> /thoughts thoughts
+=> https://git.sr.ht/~bossley9 repos
+=> /tabs tabs
+=> /recipes recipes
+=> /recs recs
+=> {{ .Site.BaseURL }}/feed.xml rss
+=> / Copyright Sam Bossley {{ now.Year }}
+=> https://creativecommons.org/licenses/by-nc/4.0/ CC BY-NC 4.0

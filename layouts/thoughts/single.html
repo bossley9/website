@@ -1,0 +1,14 @@
+{{ define "content" }}
+
+  <article>
+    <h1>{{ .Title }}</h1>
+    <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
+    <ul class="taglist">
+    {{ range .Params.tags }}<li><a href="/tags/{{ urlize . }}/">#{{ . }}</a></li>{{ end }}
+    </ul>
+
+    {{ .Content }}
+
+  </article>
+
+{{ end }}

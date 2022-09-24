@@ -1,0 +1,33 @@
+<h1>Shows</h1>
+
+{{ range (first 1 (where .Site.Data.favorites.shows "current" true)) }}
+  <p>I'm currently watching {{ .title }}.</p>
+{{ end }}
+
+{{ $showDates := slice }}
+{{ range .Site.Data.favorites.shows }}
+	{{ $showDates = $showDates | append .date }}
+{{ end }}
+{{ $showDates = sort (uniq $showDates) "" "desc" }}
+
+{{ range $showDates }}
+	{{ $showDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.shows "date" $showDate) "current" "!=" true }}
+      <li>
+        <span>
+          {{ .title }} ({{ (time .run_start).Year }})
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

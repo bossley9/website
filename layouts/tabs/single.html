@@ -1,0 +1,28 @@
+{{ define "content" }}
+
+  <article>
+    <h1>{{ .Title }}</h1>
+    <span>Last updated {{ .Date.Format .Site.Params.dateFormat }}</span>
+    <ul class="taglist">
+      {{ with .Params.bandcamp }}<li><a href="{{ . }}">Bandcamp</a></li>{{ end }}
+      {{ with .Params.soundcloud }}<li><a href="{{ . }}">Soundcloud</a></li>{{ end }}
+      {{ with .Params.spotify }}<li><a href="{{ . }}">Spotify</a></li>{{ end }}
+      {{ with .Params.youtube }}<li><a href="{{ . }}">Youtube</a></li>{{ end }}
+    </ul>
+
+    <figure>
+      <figcaption>tab key</figcaption>
+      <pre><code>| /  slide up
+| \  slide down
+| h  hammer-on
+| p  pull-off
+| ~  vibrato
+| +  harmonic
+| x  Mute note
+| *  ring</code></pre>
+    </figure>
+
+    {{ .Content }}
+  </article>
+
+{{ end }}

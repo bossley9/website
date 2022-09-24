@@ -1,0 +1,152 @@
+---
+title: Framework
+description: A review of the Framework laptop
+date: 2022-09-09 18:33:00 -0700
+tags:
+  - hardware
+  - framework
+  - openbsd
+  - laptop
+image: /static/thoughts/framework-laptop.jpg
+---
+
+=> /static/thoughts/framework-laptop.jpg A standard Framework laptop with its top keyboard cover removed
+
+## Introduction
+
+I finally bought a Framework laptop after months of patience and deliberation and I can confidently say that it lives up to its name.
+
+If you haven't heard of them, Framework is a relatively new series A startup aimed at producing consumer laptop products. What makes this company different from other consumer laptop companies like Dell or HP is that their primary goal is to promote the right to repair in their products and reduce tech landfills.
+
+=> https://frame.work/about Framework mission
+
+Having the "right to repair" in the context of technology means that you as a consumer reserve the right to be able to fix or apply custom modifications to your own devices. It means that I should be able to replace my hard drive, jailbreak my phone, or overclock my cpu without corporate overhead. While a decent amount of comanies publicize their hardware components and make their technical manuals public, they definitely don't make it easy to repair or upgrade a device. The reason for this is simple - it doesn't generate business revenue.
+
+Framework on the other hand not only provides full-fledged tech products but a large marketplace of upgrade materials, replacements, and aesthetic modifications for their devices. If Framework's dedicated marketplace isn't enough customization for you, they even publicize their technical schematics (in the form of CAD files and electrical diagrams) to allow users to create their own components and hack their devices to their own needs.
+
+=> https://github.com/FrameworkComputer/ExpansionCards 
+
+Sustainability has been very important to me as of late. This year as one of my goals I've been trying to analyze my own life to find areas in which I am wasting and where I can be more eco-friendly and contribute more to the world. Naturally, Framework laptops caught my eye as repairable, upgradeable, and modular. I purchased my own Framework laptop around the beginning of March this year and have been using it as a daily driver ever since.
+
+Now that I've owned my laptop for over half of a year, I feel qualified to give a thorough personal review of the hardware and software of the product in addition to what I think about the product and its goals as a whole.
+
+## Hardware
+
+Because I'm much more technical than the average user, I opted to purchase the DIY edition with the following specs:
+
+* CPU: Intel i7-1165G7 (12M Cache, up to 4.70 GHz). I wanted a slightly higher end CPU to aid in CPU-intensive tasks such as compilation. I didn't choose the highest option because I think there's a negligible difference between the 1165G7 and 1185G7 when it comes to raw computation (this was before Framework announced their Intel 12-gen motherboard upgrade).
+* Wifi: Intel Wi-Fi 6E AX210 (no vPro). After purchasing this card I realized that OpenBSD doesn't yet support this card, so I swapped the card out for a spare Intel Dual Band Wireless-AC 8260 WLAN card I salvaged from a friend's old Thinkpad P50.
+* Operating System: none. Imagine paying money for an operating system. I had only planned on installing OpenBSD on this machine and I've held up on that resolution.
+* Storage: 250GB Western Digital SN750 NVMe. I chose the smallest option for storage because most users of laptops (including myself) don't even utilize more than half of their storage space anyways. I also chose the smallest option because I might consider upgrading to a higher quality SSD in the future such as a Samsung EVO. To be honest, Western Digital is not as reliable or stable as Samsung in solid state drives and Framework doesn't currently partner with Samsung.
+* RAM: 2x8 GB DDR4 3200. 2x8 RAM sticks is the best option for most consumer devices because using two DIMM slots is faster than only one and most users will never need more than 16 GB of RAM total. I was pleasantly surprised that Framework allows the option to upgrade all the way to 2x32.
+* Power adapter: default provided adapter. although I have plenty of USB-C charging cables lying around, I decided to buy their own adapter to see how viable it is as an average charging cable.
+* Port expansions: 1 USB-C, 2 USB-A, 1 HDMI. I chose one USB-C for charging, then decided HDMI access would be nice and the rest went to USB-A. I don't see myself using very many USB-As in the future but I wanted to keep ports open in case I needed to plug in a Wifi adapter or extra mouse or keyboard. If I had known Framework would soon provide ethernet expansion cards then I would have waited. Fortunately, this is a great opportunity to try purchasing from their marketplace.
+
+Below is my review of each individual component.
+
+### Case, Chassis and Bezel
+
+Framework has done a phenomenal job with the case. The laptop is startlingly lightweight due to its 3:2 aspect ratio - carrying the laptop feels less like toting a cinderblock and more like carrying a filled manila folder. The case itself is sturdy enough to not feel plastic-y or cheap. Inscribed on the back cover is the Framework logo. The modern chrome inset style is reminiscient of the way Apple inscribes their logo in their devices.
+
+Unscrewing the back of the case allows the inner keyboard cover to detatch from the rest of the chassis. This is a step in a different direction from most laptop computers which open from the bottom and require more effort when replacing frequently expired components - suddenly the keyboard is one of the easiest components to replace.
+
+Even the small details matter. When open the chassis for the first time, I thought the bottom corner screw was threaded because of the way it unscrewed awkwardly and popped open the chassis. After a further delve into documentation I learned that this screw was intentionally placed to make it easier for users to open the chassis without having to pry the plastic frame apart and potentially damage the pieces.
+
+The bezel is an elegantly light frame with a flexible plastic texture that magnetically attaches to the monitor of the computer. I cannot emphasize enough how simple it is to detatch and reattach a new bezel, one of the most irritating steps in replacing a laptop camera. The magnetic strip snaps the new bezel in place as if nothing changed. As an additional security bonus, all bezels feature built-in microphone and camera hardware switches to enable or disable those devices at any time.
+
+=> /static/thoughts/framework-bezel.jpg the Framework bezel with provided camera and microphone kill switches
+
+The bezel is not the only magnetic component. Practically all pieces of the chassis and case have magnetic guides to ensure you properly reassemble each part. Framework even provides a maintenance tool with each device that uses a magnetic screwdriver head. This is extraordinary. The most frustrating part of any hardware disassembling or reassembling hardware is aligning and tightening tiny hardware screws, but the magnetic tool tip makes any hardware replacement a walk in the park. 
+
+=> /static/thoughts/framework-tool.jpg the all-purpose Framework tool
+
+### Keyboard
+
+The Framework keyboards are nothing short of phenomenal. I'm a persistent critic of most modern keyboards due to their inability to maintain functionality over aesthetic. Society has been influenced to think that flat keyboards are the future, forcing manufacturers to produce these anti-tactile thin keypads that feel like typing on a sheet of paper. I'm a advocate of mechanical, spring, and ergonomic keyboards for this reason: it really doesn't matter how cool your keyboard looks if it strains your hands and restricts your typing wpm to under 70.
+
+Framework's keyboards are the perfect compromise of aesthetic to functionality. The keys are raised slightly higher than all my other keyboards by around 1 milimetre and have a more tactile give when pressing each key. The switches sound akin to muted Jelly POM keycaps with Halo Clears which happen to be my favorite types of keyboards. They produce a soft "thok" rather than a sharp mouse "click" or typewriter "clack" such as the keyboard below:
+
+=> /static/thoughts/framework-pom.mp4
+=> https://youtu.be/8Cg6keYdQsg Jelly POM typing sounds, sourced from :3ildcat's video on POM Jelly Keycaps
+
+Their default keyboard has a nice matte finish, preventing wear and discoloration. They also offer different keyboard variants such as localized letters or even clear keycaps. I bought the blank ANSI keyboard because I prefer the minimalist blank look. It's not an issue for me to remember where all the letters and symbols are because I've gotten used to typing them all by heart via Vim.
+
+### Trackpad
+
+The trackpad is my least favorite feature. The surface is not very slick and requires multiple finger drags to perform most tasks. Click presses feel stiff and sound hollow and cheap (imagine "thok" or "clock" noises) compared to other laptops I've used in the past. I also have grown accustomed to explicit trackpad left and right click buttons after using a Dell Latitude E7470, which the Framework laptop does not provide. One benefit to the trackpad is that it is comparatively small and doesn't get in the way as often when typing. Luckily I disable the trackpad for the majority of my workflows but it would be nice to have a better trackpad.
+
+### Screen
+
+The Framework laptop provides a glossy screen with a 2256x1504 resolution. I used to prefer matte screens over glossy screens but have since reconsidered: Macbooks have changed my mind, funnily enough. Although matte screens reduce glare and smudges, they also tend to mute a lot of vibrance in color that I did not notice until I began using a glossy screen every weekday for work. It is a very noticeable difference that gives more life to the content I view.
+
+=> /static/thoughts/framework-screen.jpg a comparison in screen glossiness between my Framework laptop and my Dell Latitude (before it died)
+
+The dpi (dots per inch) resolution 2256x1504 is much higher than in the 1920x1080 with which I am most familiar but it is a pleasant change of pace. The higher resolution provides surplus screen real estate and makes video playback crisper. The only complaint I have with the screen is that its 3:2 aspect ratio results in top and bottom black bars when viewing 16:9 fullscreen videos.
+
+### CPU
+
+Until two months ago, the primary Framework CPU was an Intel-i7 11th Gen processor. Now they additionally offer a 12th Gen i7 upgrade. While I wish they provided support for AMD processors or even ARM (as Apple has demonstrated works with its new M1/2 chips), I do acknowledge Framework's strict form factor and placement they have to work with. As it stands, the processors it provides are very powerful and function perfectly for everyday use.
+
+### IO
+
+Framework laptops specialize in modular IO, providing 4 slots for detatchable expansion cards. These slots can be substituted with extra SSD storage, HDMI ports, USB A/C ports, and others. I've found the slots super convenient in cases where I need extra storage for large files but can't be bothered to bring around a usb or external SSD, or I want the charging port to be on the right side of the laptop instead of the left. The port slots themselves are relatively wide, making large plug-in devices much easier at the cost of reducing the amount of possible port slots.
+
+As much as I love the possibilities that come with customizeable IO, I do a few complaints (rather, wishes). First, the audio jack is permanently in the center of the left side. Although I understand how difficult it is from a hardware perspective to customize the location of an audio jack, it is a shame it cannot be moved.
+
+Another personal preference of mine is to have LED notifier lights on the front edge of a laptop (if any). This device displays power status on the left side of the device which makes it inconvenient to check the device's power status purely from hardware.
+
+My final minor complaint for this device is that no ethernet port expansion card exists, but this is no longer a concern as Framework has already begun work on officially producing ethernet expansion cards. Ethernet is disappearing from a majority of modern laptops due to the growing presence of wifi (and no one probably knows what ethernet is for anymore) but I greatly prefer wired gigabit connections over spotty wifi on my home devices. It's awesome that Framework will soon be able to provide the option to use ethernet.
+
+=> /static/thoughts/framework-ethernet.png a sneak preview of Framework's ethernet expansion card in the works
+
+### Cooling
+
+Arguably the hardest part of perfecting a laptop is providing adequate cooling. It's difficult for manufacturers to be able to squeeze multiple large fans and heatsinks into a laptop case because of their size constraints.
+
+The Framework laptop is average in this aspect. It provides a single central heatsink fan attached to the CPU which vents to the bottom and back edge of the chassis. The laptop can get relatively hot on the bottom when performing some CPU-intense process, but it's nothing out of the ordinary considering other single fan computers such as Macbooks generate the same amount of heat.
+
+The fans can be a bit on the loud end of the spectrum when running intense processes such as compilation but the average user will not encounter this issue. I compiled golang 1.18 and it held up fairly well. In all fairness, if you're using a Framework laptop for heavy compilation or intense video encoding, you should look for a different product entirely.
+
+=> /static/thoughts/framework-compilation.mp4
+
+### Battery
+
+Similar to the machine's cooling, the battery life of this laptop is nothing special. I think I've noticed this laptop's battery life to be longer than other computers I have used in the past but I believe that can be primarily attributed to me taking better care of my laptop life than in previous years. I will say this: as much as I love OpenBSD, it sucks away battery life rapidly and doesn't offer much away time from an outlet; however, this laptop handles its power management very well and can last 3-4 hours on average load.
+
+## Software
+
+I've spoken out on most of the hardware aspects of the computer so my review would not be complete without also looking at software and what I ran on it. First, let's talk about the BIOS.
+
+### BIOS
+
+Every computer you've ever used comes with  a BIOS (Basic Input Output System)* in addition to your operating system which runs when you first boot up the computer. The main purpose of the BIOS is to read what hardware device or modules you have connected and choose what operating system to boot up. On most computers you can bypass boot and open the BIOS manually to change configuration settings and attune the machine to your usage (I highly recommend you do this for security reasons). Sadly, most BIOSes use extremely outdated interfaces and are exceedingly difficult to navigate. You think they'd have a straightforward menu marked with intuitive sections and easy to understand descriptions.
+
+> * I guess I shouldn't say every computer here but for simplicity's sake we'll assume that fact to be true.
+
+The Framework laptop's BIOS is dogfooded. Each setting has human-readable descriptions and are organized into intuitive submenus. Because of Framework's relatively new hardware, they don't provide a ton of antequated settings on floppy disks or cd drives. It was extremely easy for me to password protect my BIOS and remove boot options.
+
+### With OpenBSD
+
+I installed OpenBSD on my Framework laptop as my operating system of choice because of my love for its conciseness and system utilities that make it great.
+
+The installation was very straightforward, but  if you're a BSD or Linux user, I'd imagine most installation processes are relatively mundane. Thanks to work by jcs and a few others, the hardware is fully functional and pairs really well with OpenBSD. I encrypted my SSD on installation and it works perfectly.
+
+=> https://jcs.org/ jcs's website
+
+There are a few caveats, unfortunately. I noticed that occasionally the dwiic driver inhibits a resume after lid s3 suspend. I needed to manually modify the dwiic driver in the kernel to only attach to the touchpad:
+
+```/etc/bsd.re-config
+change 226
+y
+21
+3
+0
+```
+
+It also seems like a common issue.
+
+=> https://marc.info/?l=openbsd-bugs&m=163944843722090&w=2
+
+## Conclusion
+
+Although Framework is very new to the playing field of modular hardware, its focus is very defined and its future is promising. This ends my review of the Framework laptop. If you have questions or disagreements, feel free to reach out! I'd be happy to hear your thoughts as well.

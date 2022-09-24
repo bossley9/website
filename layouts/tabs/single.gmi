@@ -1,0 +1,26 @@
+{{- define "content" }}
+# {{ .Title }}
+
+Last updated {{ .Date.Format .Site.Params.gemFormat }}
+{{ with .Params.bandcamp }}
+=> {{ . }} Bandcamp
+{{- end }}{{ with .Params.soundcloud }}
+=> {{ . }} Soundcloud
+{{- end }}{{ with .Params.spotify }}
+=> {{ . }} Spotify
+{{- end }}{{ with .Params.youtube }}
+=> {{ . }} Youtube
+{{- end }}
+
+```tab key
+| /  slide up
+| \  slide down
+| h  hammer-on
+| p  pull-off
+| ~  vibrato
+| +  harmonic
+| x  mute note
+| *  ring
+```
+{{ .RawContent | replaceRE `\!?\[(.+?)?\]\((.+?)\)` "=> $2 $1" }}
+{{- end }}

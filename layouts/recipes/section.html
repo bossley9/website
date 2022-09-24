@@ -1,0 +1,22 @@
+{{ define "content" }}
+
+  <section class="h-section">
+    <h1>{{ .Title }}</h1>
+
+    <p>Cooking is an art. I enjoy creating and trying new food and I want to share more of my recipes.</p>
+
+    <ol>
+      {{ range (.Paginate (.Pages.ByTitle)).Pages }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
+            <span class="title2">{{ .Title }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  {{ template "misc/pagination.html" . }}
+
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "content" }}
+
+  <section>
+    <h1>{{ .Title }}</h1>
+    <nav class="thoughtslist">
+      <ol>
+      {{ range .Pages.ByTitle }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <span class="title">{{ .Title }}</span>
+          </a>
+        </li>
+      {{ end }}
+      </ol>
+    </nav>
+  </section>
+
+{{ end }}

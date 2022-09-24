@@ -1,0 +1,9 @@
+# Shows {{ range (first 1 (where .Site.Data.favorites.shows "current" true)) }}
+
+I'm currently watching {{ .title }}.{{ end }}
+{{ $showDates := slice }}{{ range .Site.Data.favorites.shows }}{{ $showDates = $showDates | append .date }}{{ end }}{{ $showDates = sort (uniq $showDates) "" "desc" }}{{ range $showDates }}{{ $showDate := . }}
+## {{ cond (eq (len .) 0) "No Date" . }}
+{{ range where (where $.Site.Data.favorites.shows "date" $showDate) "current" "!=" true }}
+* {{ .title }} ({{ (time .run_start).Year }})
+  {{ if gt .rating 0 }}{{ .rating | lang.FormatNumber 1 }}/10.{{ end }}{{ if .note }} {{ .note }}{{ end }}{{ end }}
+{{ end }}

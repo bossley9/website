@@ -1,0 +1,32 @@
+<h1>Stories</h1>
+
+{{ $storyDates := slice }}
+{{ range .Site.Data.favorites.stories }}
+	{{ $storyDates = $storyDates | append .date }}
+{{ end }}
+{{ $storyDates = sort (uniq $storyDates) "" "desc" }}
+
+{{ range $storyDates }}
+	{{ $storyDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.stories "date" $storyDate) "current" "!=" true }}
+      <li>
+        <span>
+          {{ if .url }}<a href="{{ .url }}">{{ end }}
+            {{ .title }} by {{ .author }}
+            {{ if .year }}({{ .year }}){{ end }}
+          {{ if .url }}</a>{{ end }}
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

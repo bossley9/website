@@ -1,0 +1,10 @@
+{{- define "content" }}
+# {{ .Title }}
+
+Cooking is an art. I enjoy creating and trying new food and I want to share more of my recipes.
+
+{{ range (.Paginate (.Pages.ByTitle)).Pages }}=> {{ .Permalink }} {{ .Date.Format .Site.Params.gemFormat }} {{ .Title }}
+{{ end }}
+{{- template "misc/pagination.gmi" . }}
+
+{{- end }}

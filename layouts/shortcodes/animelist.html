@@ -1,0 +1,35 @@
+<h1>Anime</h1>
+
+{{ range (first 1 (where .Site.Data.favorites.anime "current" true)) }}
+  <p>I'm currently watching {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}.</p>
+{{ end }}
+
+{{ $animeDates := slice }}
+{{ range .Site.Data.favorites.anime }}
+	{{ $animeDates = $animeDates | append .date }}
+{{ end }}
+{{ $animeDates = sort (uniq $animeDates) "" "desc" }}
+
+{{ range $animeDates }}
+	{{ $animeDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.anime "date" $animeDate) "current" "!=" true }}
+      <li>
+        <span>
+          {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}
+          {{ if eq .type "anime/movie" }}({{ .year }}){{ end }}
+          {{ if eq .type "anime" }}({{ (time .run_start).Year }}){{ end }}
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

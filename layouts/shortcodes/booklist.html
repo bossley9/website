@@ -1,0 +1,36 @@
+<h1>Books</h1>
+
+{{ range (first 1 (where .Site.Data.favorites.books "current" true)) }}
+  <p>I'm currently reading {{ .title }} by {{ .author }}.</p>
+{{ end }}
+
+{{ $bookDates := slice }}
+{{ range .Site.Data.favorites.books }}
+	{{ $bookDates = $bookDates | append .date }}
+{{ end }}
+{{ $bookDates = sort (uniq $bookDates) "" "desc" }}
+
+{{ range $bookDates }}
+	{{ $bookDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.books "date" $bookDate) "current" "!=" true }}
+      <li>
+        <span>
+          <a href="https://isbnsearch.org/isbn/{{ .isbn }}">
+            {{ .title }} by {{ .author }}
+            ({{ .year }})
+          </a>
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

@@ -35,7 +35,7 @@ validate() {
   checkRule "$file" "of course" "" "not everything is self-evident"
   checkRule "$file" "clearly" "" "not everything is self-evident"
   checkRule "$file" "just" "" "just is an add-on word that adds no semantics"
-  checkRule "$file" "So" "" "transition word with no semantics"
+  checkRule "$file" " so " "" "transition word with no semantics"
   checkRule "$file" "I think" "I believe" "of course you think so because you're writing this"
   checkRule "$file" " easy" "convenient" "if it's easy then why mention it?"
   checkRule "$file" " [o|O]ur" "" "be more specific on who you are addressing"
@@ -59,7 +59,7 @@ checkRule() {
   [ -n "$prefers" ] && prefers=" - try using '${prefers}'"
   [ -n "$note" ] && note="(${note})"
 
-  matches="$(grep -rI --color=yes -e "$actual" "$file")"
+  matches="$(/usr/bin/grep -Ie "$actual" "$file")"
   if [ -z "$matches" ]; then return; fi
 
   for match in "$matches"; do

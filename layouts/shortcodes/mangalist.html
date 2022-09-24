@@ -1,0 +1,34 @@
+<h1>Manga</h1>
+
+{{ range (first 1 (where .Site.Data.favorites.manga "current" true)) }}
+  <p>I'm currently reading {{ .title }} by {{ .author }}.</p>
+{{ end }}
+
+{{ $mangaDates := slice }}
+{{ range .Site.Data.favorites.manga }}
+	{{ $mangaDates = $mangaDates | append .date }}
+{{ end }}
+{{ $mangaDates = sort (uniq $mangaDates) "" "desc" }}
+
+{{ range $mangaDates }}
+	{{ $mangaDate := . }}
+  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+  <ol class="recs">
+    {{ range where (where $.Site.Data.favorites.manga "date" $mangaDate) "current" "!=" true }}
+      <li>
+        <span>
+          {{ .title }} by {{ .author }}
+          ({{ (time .run_start).Year }})
+        </span>
+        <span>
+        {{ if gt .rating 0 }}
+          {{ .rating | lang.FormatNumber 1 }}/10.
+        {{ end }}
+        {{ if .note }}
+          <i>{{ .note }}</i>
+        {{ end }}
+        </span>
+      </li>
+    {{ end }}
+  </ol>
+{{ end }}

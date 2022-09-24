@@ -1,0 +1,9 @@
+# Manga {{ range (first 1 (where .Site.Data.favorites.manga "current" true)) }}
+
+I'm currently reading {{ .title }} by {{ .author }}.{{ end }}
+{{ $mangaDates := slice }}{{ range .Site.Data.favorites.manga }}{{ $mangaDates = $mangaDates | append .date }}{{ end }}{{ $mangaDates = sort (uniq $mangaDates) "" "desc" }}{{ range $mangaDates }}{{ $mangaDate := . }}
+## {{ cond (eq (len .) 0) "No Date" . }}
+{{ range where (where $.Site.Data.favorites.manga "date" $mangaDate) "current" "!=" true }}
+* {{ .title }} by {{ .author }} ({{ (time .run_start).Year }})
+  {{ if gt .rating 0 }}{{ .rating | lang.FormatNumber 1 }}/10.{{ end }}{{ if .note }} {{ .note }}{{ end }}{{ end }}
+{{ end }}

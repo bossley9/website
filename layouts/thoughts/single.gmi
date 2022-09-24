@@ -1,0 +1,9 @@
+{{- define "content" }}
+# {{ .Title }}
+
+{{ .Date.Format .Site.Params.gemFormat }}
+
+{{ range .Params.tags }}=> /tags/{{ urlize . }}/ #{{ . }}
+{{ end }}
+{{- .RawContent | replaceRE `\!?\[(.+?)?\]\((.+?)\)` "=> $2 $1" }}
+{{- end }}

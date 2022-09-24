@@ -1,0 +1,14 @@
+{{- define "content" }}
+# {{ .Title }}
+
+Last updated {{ .Date.Format .Site.Params.gemFormat }}
+
+{{ range .Params.tags }}=> /tags/{{ urlize . }}/ #{{ . }}
+{{ end }}{{ with .Params.prep }}
+Prep time: {{ . }}{{ end }}{{ with .Params.cook }}
+Cook time: {{ . }}{{ end }}{{ with .Params.wait }}
+Wait time: {{ . }}{{ end }}
+
+{{ with .Params.servings }}Serves: {{ . }}{{ end }}
+{{ .RawContent | replaceRE `\!?\[(.+?)?\]\((.+?)\)` "=> $2 $1" }}
+{{- end }}

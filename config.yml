@@ -1,0 +1,76 @@
+baseURL: 'https://sam.bossley.us'
+defaultContentLanguage: 'en'
+languageCode: 'en-us'
+
+buildDrafts: false
+buildFuture: false
+
+paginate: 15
+
+params:
+  siteName: "Sam Bossley"
+  siteDesc: "Sam Bossley's website containing personal commentaries, tech articles, and ways of life."
+  author: "Sam Bossley"
+  email: "bossley.samuel@gmail.com"
+  dateFormat: "Mon Jan 02 2006"
+  feedFormat: "2006-01-02T15:04:05-0700"
+  gemFormat: "2006-01-02"
+
+disableHugoGeneratorInject: true # sorry
+
+permalinks:
+  thoughts: '/thoughts/:06/:01/:title/'
+
+disableKinds:
+  # - section
+# disables taxonomy without removing terms (see ignoreErrors)
+  - taxonomy
+  - sitemap
+ignoreErrors:
+  - 'error-disable-taxonomy'
+
+minify:
+  disableXML: true
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+
+taxonomies:
+  tag: tags
+
+mediaTypes:
+  text/gemini:
+    suffixes:
+      - "gmi"
+  application/rss:
+    suffixes:
+      - "xml"
+
+outputFormats:
+  Gemini:
+    name: GEMINI
+    isPlainText: true
+    isHTML: false
+    mediaType: text/gemini
+    protocol: "gemini://"
+    permalinkable: true
+  Feed:
+    name: FEED
+    mediaType: application/rss
+    baseName: "feed"
+
+outputs:
+  page:
+    - HTML
+    - GEMINI
+  home:
+    - HTML
+    - FEED
+    - GEMINI
+  section:
+    - HTML
+    - GEMINI
+  term:
+    - HTML
+    - GEMINI

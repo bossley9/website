@@ -1,0 +1,4 @@
+{{ define "content" }}# {{ .Title }}
+
+{{ range .Pages.ByTitle }}=> {{ .Permalink }} {{ .Title }}
+{{ end }}{{ end }}
