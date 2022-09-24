@@ -1,0 +1,30 @@
+/*PROPER format*/
+
+body {
+  color:#000000;
+  /*background-color:#E6E6E6; */
+  background-color:#FAFAFA; 
+  font-size: 15;
+  /*font-family: Times New Roman;*/
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+
+}
+
+table {
+  /*background-color: #FBFBFB;*/
+  background-color: #FFFFFF;
+  border: 1px solid #AAA;
+  border-collapse: collapse;
+  border-bottom: 1px solid #888;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #AAA;
+  color: black;
+}
+
+.round {
+  -moz-border-radius: 15px;
+  border-radius: 10px;
+  border: 1px;
+}
+

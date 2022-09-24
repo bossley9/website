@@ -37,12 +37,19 @@
     }
   </script>
   <h2>404 ERROR - NOT FOUND</h2>
-<i>The requested URL /gullible was not found on this server.</i>
+<i>
+  <?php
+    echo "The requested URL "; 
+    //echo getenv ("REQUEST_URI");
+    echo "/gullible";
+    echo " was not found on this server.";
+  ?>
+</i>
   <br>
 <hr></hr>
-  <script type="text/javascript">
-    document.write(Date());
-  </script>
+  <?php
+    echo date("D M j Y g:i:s a T");
+  ?>
 <table class="bad">
 <tr><td></td></tr>
 </table>

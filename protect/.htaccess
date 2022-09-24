@@ -1,0 +1,6 @@
+AuthType Basic
+AuthUserFile /usr/local/apache/passwd/passwords
+AuthName "This is a restriced area for staff only"
+<LIMIT GET POST>
+require valid-user
+</LIMIT>
