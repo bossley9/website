@@ -1,0 +1,124 @@
+
+/*
+** intended for base styles or styles that will be used throughout the site.
+*/
+
+@import 'util';
+
+/*
+** older browser support
+*/
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+/*
+** defaults
+*/
+
+// core
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  color: $color;
+  background-color: $background-color;
+}
+
+// containers
+
+header, section, footer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+// headers
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: 'Bangers', cursive;
+}
+
+/*
+** common styles
+*/
+
+// backdrop elements
+
+@mixin polka-dot($opacity) {
+  background-image:
+    radial-gradient(rgba(0, 0, 0, $opacity) 45%, rgba(0, 0, 0, 0) 44%);
+  background-position: 0 0, 100% 100%;
+  background-size: 6px 6px, 6px 6px, cover;
+}
+
+// formats
+
+@mixin outline($fontColor, $outlineColor) {
+  color: $fontColor;
+  text-shadow:
+    -2.0px -2.0px 0 $outlineColor,
+     2.0px -2.0px 0 $outlineColor,
+    -0.08em  0.08em 0 $outlineColor,
+     2.0px  2.0px 0 $outlineColor;
+}
+
+@mixin textbox($bgColor, $outlineColor) {
+  &::before {
+    @include polka-dot(0.1);
+
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    z-index: -1;
+
+    background-color: $bgColor;
+
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 2em;
+
+  border: 4px solid $outlineColor;
+  -webkit-box-shadow: -6px 6px 0 $outlineColor;
+          box-shadow: -6px 6px 0 $outlineColor;
+
+  overflow: hidden;
+
+  p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: $outlineColor;
+    text-transform: uppercase;
+  }
+}
+
+.textbox { @include textbox($white, $gray-dark) }
+
+// hidden links
+
+a.hidden { color: inherit }
