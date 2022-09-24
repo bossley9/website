@@ -1,0 +1,61 @@
+/* AVERAGE */
+
+body{ color:#FFFFFF;
+      /*background-color:#150000;*/
+      background-color:#450000; /* 1024x600 */ 
+      font-size: 15;
+      font-family: Times New Roman;
+}
+
+a {
+text-decoration:none;
+color:#800080;
+}
+
+table {
+  border: 1px #707070; 
+  border-collapse: collapse;
+}
+
+/*table shadow*/
+.table {
+    box-shadow: 5px 5px 2px #000000;
+}
+
+/* SPECIAL CASE - HOVERING */
+.special{
+    color: #01DF01;
+}
+.special:hover {
+    color: #FF0000;
+}
+
+/*heading */
+.head{
+    color: #6d0000;
+}
+.s-head {
+    color: #6d0000;
+}
+.s-head:hover {
+    color: #FF0000;
+}
+/* RED TEXT */
+.red{
+    color: #FF0000;
+}
+
+
+/*LINES*/
+.line-left {
+  border-left: solid #0000FF;
+  /*height:565px;*/
+  height:120%;
+  float:left;
+}
+.line-right {
+  border-right: solid #0000FF;
+  /*height:565px;*/
+  height:120%;
+  float:right;
+}
