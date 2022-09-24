@@ -1,0 +1,96 @@
+
+/* Created by Sam Bossley. All Rights Reserved. Copyright 2017. */
+
+/*PRESETS*/
+
+body, html {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.center-content {
+  width: 75%;
+}
+
+/*OVERCOME*/
+
+svg#maasu-logo {
+  height: 90vh;
+  width: 90vh;
+}
+
+.red-filter h1 {
+  left: -50%;
+  bottom: 50%;
+
+  -o-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+
+  font-size: 2.1vw;
+  line-height: 2.1vw;
+  text-align: left;
+  margin-left: 1%;
+
+  -o-animation: fadeInLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -ms-animation: fadeInLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -moz-animation: fadeInLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -webkit-animation: fadeInLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  animation: fadeInLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  animation-fill-mode: forwards;
+}
+
+.red-filter h1 span {
+  margin-left: 7%;
+  -o-animation: removeMarginLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -ms-animation: removeMarginLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -moz-animation: removeMarginLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  -webkit-animation: removeMarginLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  animation: removeMarginLeft 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) 2.2s;
+  animation-fill-mode: forwards;
+
+  font-size: 4.4vw;
+}
+
+/*ANIMATIONS*/
+
+
+@-webkit-keyframes fadeInLeft {
+  0% { left: -50% }
+  100% { left: 0 }
+}
+
+@keyframes fadeInLeft {
+  0% { left: -50% }
+  100% { left: 0 }
+}
+
+@-webkit-keyframes removeMarginLeft {
+  0% { margin-left: 7% }
+  100% { margin-left: 0 }
+}
+
+@keyframes removeMarginLeft {
+  0% { margin-left: 7% }
+  100% { margin-left: 0 }
+}
+
+/*IPAD*/
+@media (max-width: 1024px) {  
+  .red-filter h1 { font-size: 1vw; line-height: 1vw }
+  .red-filter h1 span { font-size: 2.2vw }
+}
+
+/*Desktop*/
+@media (max-width: 1224px) {  
+  .red-filter h1 { font-size: 1.4vw; line-height: 1.4vw }
+  .red-filter h1 span { font-size: 3.7vw }
+}
+
+/*Desktop (bigger)*/
+@media (max-width: 1224px) {  
+  .red-filter h1 { font-size: 1.6vw; line-height: 1.6vw }
+  .red-filter h1 span { font-size: 3.9vw }
+}

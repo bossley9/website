@@ -1,0 +1,250 @@
+
+*, *::before, *::after {
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'source';
+    src: url('../fonts/source/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/source/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'source', Arial, Verdana, Georgia;
+    font-size: 12px;
+    color: #fff;
+    background-color: #333;
+    -ms-text-transform: uppercase;
+    -o-text-transform: uppercase;
+    -moz-text-transform: uppercase;
+    -webkit-text-transform: uppercase;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+::-webkit-scrollbar { display: none }
+
+#back-cover {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-color: #333;
+    background-image: url(../1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    z-index: 0;
+}
+
+#top-bar {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+.logo {
+    height: 6vw;
+    width: 8vw;
+    margin: 1vw;
+    background-image: url(../sam_bossley.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.title-text {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 0.7vw;
+    color: #3ccf74;
+    text-align: center;
+}
+
+#time-date {
+    position: absolute;
+    top: 1vw;
+    right: 0;
+    
+    font-size: 3vw;
+    line-height: 90%;
+    font-weight: bold;
+    text-align: right;
+    opacity: 0.8;
+}
+
+#time-date p { margin: 0 }
+
+#weekday { font-size: 120% }
+
+#date { color: #3ccf74 }
+
+#time { color: #00a53d }
+
+section {
+    position: relative;
+    display: block;
+    top: 30%;
+
+    text-align: center;
+}
+
+header {
+    font-size: 6.5vw;
+    line-height: 60%;
+}
+
+em {
+    -ms-text-transform: capitalize;
+    -o-text-transform: capitalize;
+    -moz-text-transform: capitalize;
+    -webkit-text-transform: capitalize;
+    text-transform: capitalize;
+
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.9vw;
+}
+
+em span { color: #3ccf74 }
+
+input {
+    width: 80vw;
+    height: 2.4vw;
+
+    background-color: hsla( 0, 100%, 0%, 0.5);
+    color: #ccc;
+    font-family: 'source';
+    letter-spacing: 0.1vw;
+    border: 0px solid #000;
+
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+
+    outline: none;
+    text-align: center;
+}
+
+input:focus {
+    background-color: hsla( 0, 100%, 0%, 0.7);
+    outline: none;
+}
+
+nav {
+    position: relative;
+    display: block;
+    width: 80vw;
+
+    margin: 5vw auto;
+    z-index: 1;
+}
+
+.child-one {
+    position: relative;
+    display: inline-block;
+    width: 12%;
+}
+
+.child-two { margin-top: 100% }
+
+.main-child {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0.8;
+
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.main-child img {
+    height: 60%;
+    width: 60%;
+}
+
+.child-two a:hover .main-child { opacity: 0.4 }
+
+footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+
+    font-size: 10vw;
+    font-weight: bold;
+    letter-spacing: 1vw;
+    line-height: 7vw;
+    color: #3ccf74;
+    opacity: 0.3;
+
+    z-index: 0;
+}
+
+@media screen and (orientation: portrait) {
+    .logo {
+        height: 18vw;
+        width: 20vw;
+    }
+    
+    .title-text { display: none }
+    
+    #time-date { font-size: 7vw }
+
+    header { font-size: 14vw }
+
+    input { display: none }
+
+    nav { width: 95% }
+    
+    .child-one { width: 19% }
+
+    .main-child img {
+        height: 70%;
+        width: 70%;
+    }
+}

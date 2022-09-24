@@ -1,206 +1,153 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="author" content="Sam Bossley" />
-        <meta name="description" content="Artist. Musician. Freelancer." />
-        <meta name="keywords" content="sam,sam bossley,bossley,artist,musician,freelancer,design" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="I am a freelance designer, musician, and artist." />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-color-32x32.png" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <title>Sam Bossley</title>
-        <link rel="icon" type="image/ico" href="favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="css/Reset061616.css" />
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-        <link rel="stylesheet" type="text/css" href="css/media.css" />
-        <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
-        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="js/pre.js"></script>
-        <!--Project Started 05/19/16-->
-        <!--Project Developmental Version Ended 07/07/16-->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all" />
     </head>
-    <body onload="javascript:IniX()">
-        <div class="filter-profiles"></div>
-        <div id="Reset"></div>
-        <span id="fast-forward">skip...</span>
-        <svg id="LogoParent" height="900" width="1600">
-            <path id="Shadow1" />
-            <path id="Shadow3-5" />
-            <path id="Shadow3" />
-            <path id="Shadow2" />
-            <path id="Shadow4" />
-            <path id="Shadow5" />
-            <path id="Shadow6" />
-            <path id="Shadow7" />
-            <path id="Shadow8" />
-            <path id="Logo" />
-            <text id="Name1" x="0" y="0" fill="#fff" stroke="">Sam</text>
-            <text id="Name2" x="0" y="0" fill="#fff" stroke="">Bossley</text>
-            Sorry, your browser does not support inline SVG.
-        </svg>
-        <img class="logo-backup center" src="assets/mobile/logo-m.svg" alt="Sam Bossley" />
-        <span class="name-backup">Sam Bossley</span>
-        <svg id="SlideParent">
-            <path id="Slide1" />
-            <path id="Slide2" />
-            Sorry, your browser does not support inline SVG.
-        </svg>
-        <svg id="exit-symbol" height="60" width="60">
-            <rect class="exsign xsign1" height="2" width="50" x="5" y="29" />
-            <rect class="exsign xsign2" height="2" width="50" x="5" y="29" />
-            Sorry, your browser does not support inline SVG.
-        </svg>
-        <span class="mobile-device"></span>
-        <nav class="main-nav">
-            <div class="Cover"></div>
-            <a href="About">About</a>
-            <a href="Portfolio">Portfolio</a>
-            <a href="Projects">Projects</a>
-            <a href="Contact">Contact</a>
-        </nav>
+    <!--Project start 12/16/16--> 
+    <!--Project end 1/9/17--> 
+    <body>
+        <div id="loader">
+            <img id="load-image" src="assets/sam_bossley_inner.svg" alt="Sam Bossley" />
+            <span id="progress">0%</span>
+        </div>
 
+        <svg id="modulus" height="76px" width="76px">
+            <circle r="37px" cx="38px" cy="38px" fill="hsla(0 , 0%, 0%, 0)" stroke="#fff" stroke-width="2"></circle>
+            <circle id="modulus-loader" r="0" cx="38px" cy="38px"></circle>
+        </svg>
+
+        <div id="portal" class="main opening">
+            <div id="backdropGateway" class="backdrop"></div>
+            <div class="content">
+                <div id="main-filter" class="logo-container">
+                    <img id="logo" src="assets/sam_bossley.svg" alt="Sam Bossley" />
+                </div>
+
+                <span id="startTag" class="tagline">Scroll Down</span>
+
+
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="main transition-section">
+        </div>
         <!--ABOUT-->
+        <div id="about" class="body-text main">
+            <div class="backdrop"></div>
+            <div class="backdrop backdrop2"></div>
 
-        <section id="About" class="fullscreen-section">
-            <h1>About</h1>
-            <div>
-                <div id="imgviewport" class="imgholder" imglink="assets/sam.png"></div>
+            <div class="content-left">
+                <article>
+                    <h1>Hello.</h1>
+                    <p>My name is Sam Bossley,</p>
+                    <p>I am a freelance designer, musician, and artist.</p>
+                    <p>Interested in viewing my work?</p>
+                    <p>Scroll down and take a look.</p>
+                </article>
             </div>
-            <div class="about-2">
-                <br /><br />
-                I design. You appreciate.
-                <br /><br />
-                The subtle art of originality is powerful. My work is entirely original. I am an artist, musician, website freelancer, and so much more. My work composes of these three elements. In order to succeed, I redesign, develop, and create. I actively strive to be the best in my work. 
-                <br /><br /><br />
-                Originality is, in fact, very powerful.           
-                <br /><br />
-            </div>
-        </section>
+        </div>
 
         <!--PORTFOLIO-->
+        <div id="portfolio" class="body-text main">
 
-        <section id="Portfolio" class="fullscreen-section">
-            <h1>Portfolio</h1>
-            This is the collection of fullscale developments I have completed or consider finished.
-            <ul id="project" class="project-parent">
-                <i class="icon-arrowheaddown"></i>
-                <span class="scrollspan">scroll please</span>
-                <!--
-                <li pname="Sam Bossley" project="" edit="06/26/16">
-                </li>--><li pname="Sam Ui" project="ui" edit="06/26/16">
-                </li><li pname="Dispatch" project="dispatch" edit="03/09/16">
-                </li><li pname="Mercy" project="mercy" edit="12/18/15">
-                </li><li pname="Diagonal" project="diagonal" edit="12/14/15">
-                </li><li pname="SASS Club" project="sass" edit="11/24/15">
-                </li><li pname="BOMA Kentucky" project="boma" edit="06/29/15">
-                </li><li pname="Orange" project="orange" edit="06/10/15">
-                </li><li pname="Enlighten" project="enlighten" edit="05/14/15">
-                </li><li pname="Supernova" project="supernova" edit="03/14/15">
-                </li>
-            </ul>
-        </section>
 
-        <!--PROJECTS-->
 
-        <section id="Projects" class="fullscreen-section">
-            <h1>Projects</h1>
-            These are uncomplete ideas actively undergoing development.
-            <ul id="unproject" class="project-parent">
-                <i class="icon-arrowheaddown"></i>
-                <span class="scrollspan">scroll please</span>
-                <li pname="Design Layout" project="profile" edit="09/01/16">
-                </li><li pname="Choose Your Own Ending" project="cyoe" edit="07/16/16">
-                </li><li pname="Canvas Game" project="game" edit="07/07/16">
-                </li><li pname="Gravity" project="gravity" edit="04/28/16">
-                </li><li pname="Coming of War" project="war" edit="03/26/16">
-                </li><li pname="Vivian" project="vivian" edit="12/23/15">
-                </li>
-            </ul>
-        </section>
+
+            <a href="projects/ui.html">
+                <div class="project">
+                    <div class="sizing"></div>
+                    <div class="child">
+                        <span>Sam Ui</span>
+                        <img class="project-img" src="projects/assets/ui-index.png" alt="Sam Ui" />
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/sass.html">
+                <div class="project">
+                    <div class="sizing"></div>
+                    <div class="child">
+                        <span>Students for the Advancement of Science in Society</span>
+                        <img class="project-img" src="projects/assets/sass-index.png" alt="SASS Club" />
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/logo.html">
+                <div class="project">
+                    <div class="sizing"></div>
+                    <div class="child">
+                        <span>Logo</span>
+                        <img class="project-img" src="projects/assets/logo-index.png" alt="Logo" />
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/dispatch.html">
+                <div class="project">
+                    <div class="sizing"></div>
+                    <div class="child">
+                        <span>Dispatch Parallax Test</span>
+                        <img class="project-img" src="projects/assets/dispatch-index.png" alt="Dispatch" />
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/mercy.html">
+                <div class="project">
+                    <div class="sizing"></div>
+                    <div class="child">
+                        <span>Muse Lyrical Video</span>
+                        <img class="project-img" src="projects/assets/mercy-index.png" alt="Mercy" />
+                    </div>
+                </div>
+            </a>
+            
+
+
+        </div>
 
         <!--CONTACT-->
+        <div id="contact" class="body-text main">
+            <div class="backdrop"></div>
 
-        <section id="Contact" class="fullscreen-section">
-            <h1>Contact</h1>
-            Questions? I appreciate your feedback.
-            <br /><br /><br /><br />
-            <form id="Connection" method="POST" action="SendMail.php" enctype="text/plain">
-                <input id="ConnectName" required class="FormInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="words" maxlength="30" placeholder="First and Last Name"></input>
-                <br /><br />
-                <input id="ConnectEmail" required class="FormInput" type="email" autocomplete="off" autocorrect="off" autocapitalize="words" maxlength="30" placeholder="Email"></input>
-                <br /><br />
-                <textarea id="ConnectMessage" required class="FormInput" autocomplete="off" autocorrect="off" maxlength="300" placeholder="Message"></textarea>
-                <br /><br />
-                <div>
-                    <input id="ConnectSend" class="FormInput" type="submit" value="Send"></input>
+            <div class="filter">
+                <div class="content-contact-left">
+                    <header>Let's Get<br />Connected!</header>
+                    <p>I'd love to stay in touch.</p>
+                    <article>
+                        <h1>Sam Bossley</h1>
+                        <span>
+                            Floyds Knobs, Indiana, USA
+                            <br />
+                            +1 502 410 1792
+                            <br />
+                            <a href="MAILTO:bossley.samuel@gmail.com">bossley.samuel@gmail.com</a>
+                        </span>
+
+                    </article>
+                    <div class="content-contact-right">
+                        <a href="https://www.facebook.com/sam.bossley.9"><i class="icon-facebook"></i></a>
+                        <a href="https://twitter.com/samaraikun"><i class="icon-twitter"></i></a>
+                        <a href="https://www.instagram.com/samaraikun"><i class="icon-instagram"></i></a>
+                    </div>
                 </div>
-            </form>
 
-            <!--
-            <form name="contactform" method="post" action="SentMail.php">
-                <table width="450px">
-                    <tr>
-                        <td valign="top">
-                            <label for="first_name">First Name *</label>
-                        </td>             
-                        <td valign="top">
-                            <input  type="text" name="first_name" maxlength="50" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="last_name">Last Name *</label>
-                        </td>
-                        <td valign="top">
-                            <input  type="text" name="last_name" maxlength="50" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="email">Email Address *</label>
-                        </td>
-                        <td valign="top">
-                            <input  type="text" name="email" maxlength="80" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="telephone">Telephone Number</label>
-                        </td>
-                        <td valign="top">
-                            <input  type="text" name="telephone" maxlength="30" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="comments">Comments *</label>
-                        </td>
-                        <td valign="top">
-                            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align:center">
-                            <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            -->
-            
-            <br /><br />
-            <span class="icons-link">
-                <a href="http://www.facebook.com/sam.bossley.9"><i class="icon-facebook"></i></a>
-                <a href="http://twitter.com/_sam_urai"><i class="icon-twitter"></i></a>
-                <a href="http://plus.google.com/113954724208608175592"><i class="icon-google-plus"></i></a>
-            </span>
-            <br /><br />
-            <br /><br />
-
-            <span class="Copyrights">&copy; <a href="http://sam.bossley.us">Sam Bossley</a> 2016. All Rights Reserved.
-        </section>
+                <a href="Resume.pdf" download="Resume.pdf">
+                    <span class="resume">Resume</span>
+                </a>
+            </div>
+        </div>
 
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/project.js"></script>
-        <script type="text/javascript" src="js/refraction.js"></script>
-        <script type="text/javascript" src="js/logo.js"></script>
     </body>
 </html>
