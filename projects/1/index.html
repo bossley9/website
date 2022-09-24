@@ -1,0 +1,81 @@
+<!-- Created by Sam Bossley. All Rights Reserved. -->
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sam Bossley" />
+
+    <title>Sam Bossley | Project 1</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/base.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/desktop.min.css" media="screen and (orientation: landscape)" />
+  </head>
+  <body>
+
+    <!--MENU-->
+    <nav id="main-menu">
+      <ol>
+        <a href="../../index.html"><li data-text="Home">Home</li></a>
+        <a href="../../about/index.html">
+          <li data-text="About">About</li></a>
+        <a href="">
+          <li data-text="MAASU">MAASU</li></a>
+        <a href="../2/index.html">
+          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
+        <a href="../3/index.html">
+          <li data-text="Hi-V ver. 2">Hi-V ver. 2</li></a>
+        <a href="../4/index.html">
+          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
+        <a href="../../index.html#contact-page">
+          <li data-text="Contact">Contact</li></a>
+      </ol>
+    </nav>
+
+    <!--MENU BUTTON-->
+    <input id="menu-button" type="checkbox" />
+    <label class="menu-white" for="menu-button"><b>X</b></label>
+
+    <!--CONTENT-->
+    <div id="main-container" class="projectpage">
+
+      <div class="page project">
+          <h2 class="title" data-text="MAASU">MAASU</h2>
+      </div>
+
+      <div class="page project">
+        <h4>Concepts/Software/Languages:</h4>
+        <ul class="tags">
+            <li>Django</li>
+            <li>Python</li>
+            <li>Jinja2</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>SVG</li>
+        </ul>
+        <br /><br />
+        <p><q>The Midwest Asian American Student Union (MAASU) is is an organization that began in response to a need for political unity among Asian American students in the Midwest... MAASU works to recognize the needs of the Asian American community by assisting schools with the establishment of Asian American student organizations, promoting leadership among students, addressing educational needs and rights of the Asian American community, and developing a channel of communication among Asian American student organizations in the Midwest.</q> - <a href="http://www.maasu.org">source</a></p>
+        <p>As a member of the 2018 Spring Conference planning committee, I was tasked with creating the conference website. The website had a few primary purposes:</p>
+        <ol>
+          <li>To attract conference members. This would be the main platform for promotion, conference information, and sponsors.</li>
+          <li>Registration. The website would be the only media in which participants would be able to register.</li>
+          <li>Payment. Each participant registration fee would be processed, accepted, and transfered to the MAASU Spring Conference (SC) Finance Director through the website.</li>
+          <li>Information storage. All the participants' conference, workshop and contact information was to be stored in a database from the website.</li>
+          <li>Sponsorship. Each of our wonderful sponsors would be promoted through various social media platforms, as well as on the website.</li>
+        </ol>
+        <p>These were the responsibilities I had as the webmaster of the 2018 MAASU SC. I went straight to work finding platforms best suited for these responibilities.</p>
+        <p>I decided to use <a href="https://www.djangoproject.com">Django</a> for all the backend data storing. Django comes with a built in database <a href="https://www.sqlite.org/index.html">SQLite</a> that is useful for storing relatively low quantities of data. It also can be integrated with online forms and has many undervalued plugins (for this conference, I used <a href="https://sendgrid.com/">SendGrid</a>'s email service and <a href="https://www.braintreepayments.com/">Braintree</a>'s payment system). Django additionally has its own designed admin page which can be modified as needed.</p>
+
+        <p>The branding and logo was designed by <a href="https://linktr.ee/ohiowanese">Craig Bossley</a>. Using this branding, I created an animated landing page logo as well as a fitting themed menu.</p>
+
+        <video autoplay height="400px" width="400px" loop muted>
+          <source src="maasu.mp4" type="video/mp4">
+        </video>
+
+        <p>The conference attracted nearly 900 participants and featured famous Asian-American figures such as violinist <a href="https://www.youtube.com/JuNCurryAhn">Jun Curry Ahn</a> and Buzzfeed's <a href="https://www.youtube.com/watch?v=2GZrPR5Ajrs">Steven Lim</a>.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

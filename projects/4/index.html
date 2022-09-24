@@ -1,0 +1,69 @@
+<!-- Created by Sam Bossley. All Rights Reserved. -->
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sam Bossley" />
+
+    <title>Sam Bossley | Project 4</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/base.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/desktop.min.css" media="screen and (orientation: landscape)" />
+  </head>
+  <body>
+
+    <!--MENU-->
+    <nav id="main-menu">
+      <ol>
+        <a href="../../index.html"><li data-text="Home">Home</li></a>
+        <a href="../../about/index.html">
+          <li data-text="About">About</li></a>
+        <a href="../1/index.html">
+          <li data-text="MAASU">MAASU</li></a>
+        <a href="../2/index.html">
+          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
+        <a href="../3/index.html">
+          <li data-text="Hi-V ver. 2">Hi-V ver. 2</li></a>
+        <a href="">
+          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
+        <a href="../../index.html#contact-page">
+          <li data-text="Contact">Contact</li></a>
+      </ol>
+    </nav>
+
+    <!--MENU BUTTON-->
+    <input id="menu-button" type="checkbox" />
+    <label class="menu-white" for="menu-button"><b>X</b></label>
+
+    <!--CONTENT-->
+    <div id="main-container" class="projectpage">
+
+      <div class="page project">
+          <h2 class="title" data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</h2>
+      </div>
+
+      <div class="page project">
+        <h4>Concepts/Software/Languages:</h4>
+        <ul class="tags">
+            <li>Arduino</li>
+            <li>Energy Efficiency</li>
+        </ul>
+        <br /><br />
+
+        <p><q>Our goal is to design a new method of transportation in Columbus. As a collaboration of branches, we aim to create the most efficient, consistent and smart method of transportation from Linden to Easton and Polaris.</q> - <a href="https://u.osu.edu/dreesedata/">source</a></p>
+        <p>The purpose of this project was to design a new method of transportation in Columbus. Each member of Dreese Data Systems was assigned to smaller team units to conduct individual research and collaborate. The team’s goal in constructing the Advanced Energy Vehicle (AEV) was to create the most efficient, consistent and smart method of transportation from Linden to Easton and Polaris <a href="https://osu.instructure.com/courses/35571">[1]</a>.</p>
+        <p>The research of our team was performed in a period of preliminary research, followed by a period of advanced research and development. The first five weeks of AEV research was designed to develop a better understanding of how to run tests, provide analysis, and brainstorm ideas to improve efficiency and consistency in compliance with the Mission Concept Review (MCR). The last 5 weeks of the research and development were focused on motor configuration and track comparison. These topics were chosen because the team wanted to focus primarily on AEV consistency (track comparison) and energy efficiency (motor configuration).</p>
+        <p>The team tested the AEV’s forward and backward traveling capabilities at different motor angles and number of motors. Data of each run was collected, compared, and analyzed. From this research, the team learned that the vehicle was more efficient with one motor with forward polarity, regardless of angle. Finally, it was learned from other research as well as through testing that the battery voltage will slowly decrease at a constant rate with each run.</p>
+        <p>Based on the data, it was recommended that any AEV use two motors facing opposite directions, each only using forward polarity. This ensures the best efficiency and consistency.</p>
+        <p>The final AEV configuration is pictured below.</p>
+        <img src="design.jpg" alt="Design K" />
+        <p>From there, the team began coding the program, using the Arduino Nano as a powering system for the motors.</p>
+        <p>The team tested many times to try and reduce the power output as much as possible. This can be seen in the graph below of our final performance test.</p>
+        <img src="graph.png" alt="Final Performance Test" />
+        <p>A more thorough description of this project can be seen on our <a href="https://u.osu.edu/dreesedata/">project site</a>.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,179 +1,400 @@
 /* Created by Sam Bossley. All Rights Reserved. */
 
+/*
+ * VARIABLES
+ */
+
 $green: #50958a;
 $white: #fff;
 $gray: #444;
 $lightgray: #999;
-$darkgray: #222;
+$darkgray: #333;
+
+$titleglitchcolor1: aqua;
+$titleglitchcolor2: red;
+
+$glitchcolor1: lightgreen;
+// aqua
+$glitchcolor2: indianred;
+// red
+
+$projectNum: 4;
 
 /*
- * TEXT GLITCH EFFECT
- * adapted from Chris Coyer
+ * MIXINS
  */
 
-/*
-  (TEXT) PARAMS
-  =================
-  1. Namespace
-  2. Intensity
-  3. Text color
-  4. Background color (flat)
-  5. Highlight #1 color
-  6. Highlight #2 color
-  7. Width (px)
-  8. Height (px)
-*/
-/*
-@mixin glitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
+@mixin glitch1() {
 
-  color: $textColor;
-  position: relative;
-  $steps: $intensity;
+  &::after { content: attr(data-text); }
 
-  // Ensure the @keyframes are generated at the root level
-  @at-root {
-    // We need two different ones
-    @for $i from 1 through 2 {
-      @-webkit-keyframes #{$name}
-      @keyframes #{$name}-anim-#{$i} {
-        @for $i from 0 through $steps {
-          #{percentage($i*(1/$steps))} {
-            clip: rect(
-              random($height)+px,
-              $width+px,
-              random($height)+px,
-              0
-            );
-          }
-        }
-      }
-    }
+  &:hover::after {
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: projectTitle 0.3s linear;
+            animation: projectTitle 0.3s linear;
   }
-  &:before,
-  &:after {
+
+}
+
+@mixin menu-glitch($bgcolor, $fontcolor) {
+  position: relative;
+
+  $mTop: 50%;
+  $mBot: 50%;
+  $offset: 10;
+
+  &::before, &::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
-    background: $background;
-    clip: rect(0, 0, 0, 0);
+    z-index: 1;
+    opacity: 0;
+    background: $bgcolor;
+    color: $fontcolor;
   }
-  &:after {
-    left: 2px;
-    text-shadow: -1px 0 $highlightColor1;
-    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  &:hover::before {
+    left: -$offset+px;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% $mTop, 0 $mTop);
+            clip-path: polygon(0 0, 100% 0, 100% $mTop, 0 $mTop);
   }
-  &:before {
-    left: -2px;
-    text-shadow: 2px 0 $highlightColor2;
-    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+  &:hover::after {
+    left: $offset+px;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 $mBot, 100% $mBot, 100% 100%, 0 100%);
+            clip-path: polygon(0 $mBot, 100% $mBot, 100% 100%, 0 100%);
+  }
+}
+
+@mixin title-glitch($fontcolor, $bgcolor) {
+  position: relative;
+
+  &::before, &::after {
+      content: attr(data-text);
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: $fontcolor;
+      z-index: -1;
+      background: $bgcolor;
   }
 
+  &::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  &::after {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+            clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  &:hover::before {
+    z-index: 1;
+    left: -3px;
+    text-shadow: -2px 0 0 $titleglitchcolor1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleTop 2s;
+            animation: nameTitleTop 2s;
+  }
+
+  &:hover::after {
+    z-index: 1;
+    left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleBot 2s;
+            animation: nameTitleBot 2s;
+  }
 }
-*/
 
 /*
  * MENU
  */
 
-label[for='menu-button'] {
-  /*
-  font-size: 7rem;
-  */
-  font-size: 3rem;
-}
-
-input#menu-button {
-
-  /*
-   * MENU CLICK
-   */
-
-  &:checked ~ #main-container {
-   top: 10%;
-   left: 25%;
-   height: 80%;
-   width: 75%;
- }
-
-}
-
 #main-menu {
-
-  ol {
-    width: 100%;
-  }
 
   a {
     font-size: 4rem;
   }
-
-
   a li {
     margin: 0;
-  /*  @include glitch("menu-glitch", 15, $white, transparent, red, blue, 450, 115);
-  */
 
-  }
-
-  /*a li::before, a li::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-
-  a li::before {
-    left: 2px;
-    text-shadow: 1px 0 red;
-    clip: rect(44px, 450px, 56px, 0);
-  }
-
-  a li::after {
-    left: -2px;
-    text-shadow: -1px 0 blue;
+    @include menu-glitch($gray, $green);
   }
 
   a:hover li {
+    color: $green;
+  }
+}
 
-  }*/
+label[for='menu-button'] {
+  font-size: 3rem;
+}
 
+// iPad
+@media only screen
+       and (min-device-width: 1024px)
+       and (max-device-width: 1024px)
+       and (orientation: portrait)
+       and (-webkit-min-device-pixel-ratio: 2) {
+
+#main-menu a { font-size: 3rem; }
+
+}
+
+/*
+ * MAIN
+ */
+
+#scroll-down {
+  font-size: 1rem;
 }
 
 /*
  * INDEX.HTML
  */
 
+.name-title {
+  @include title-glitch($gray, $white);
+}
+
+@for $i from 1 through $projectNum {
+  $project-i: '#project-#{$i} .project-background,
+              #project-#{$i} .project-background > div';
+
+  #{$project-i} {
+    background-image: url("../projects/#{$i}/project.jpg");
+  }
+}
+
+.project-background > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: -15px;
+
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+
+  -webkit-animation: bgGlitch 4s linear infinite;
+          animation: bgGlitch 4s linear infinite;
+}
+
 .project-number {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 @supports not (clip: rect(auto, auto, auto, auto)) {
   .project-number {
-    opacity: 0.7;
+    opacity: 1;
   }
 }
+
+@supports not (-webkit-clip:rect(auto, auto, auto, auto)) {
+  .project-number {
+    opacity: 1;
+  }
+}
+
+.project-title span {
+  content: "";
+  @include glitch1();
+}
+
+
 /*
-#contact-table {
-  a {
-    color: $gray;
+ * CONTACT
+ */
+
+#contact-container {
+    em {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    a:hover p {
+      margin: 1.5rem 0 1.5rem 20px;
+    }
+
+}
+
+/*
+ * ABOUT
+ */
+
+#about .title span {
+  @include title-glitch($gray, $white);
+}
+
+#about p {
+  width: 80%;
+}
+
+.socialmedia {
+  padding-left: 10%;
+}
+
+/*
+ * PROJECTS
+ */
+
+.project {
+  p, ol, ul {
+    width: 80%;
   }
 }
-*/
-.contact-link {
-  /*border: 3px solid $white;
-  */
-  -webkit-box-shadow: 0 0 0px $darkgray;
-          box-shadow: 0 0 0px $darkgray;
 
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+/*
+ * ANIMATIONS
+ */
 
-  &:hover {
-    -webkit-box-shadow: 0 0 5px $darkgray;
-            box-shadow: 0 0 5px $darkgray;
+@-webkit-keyframes  projectTitle {
+  0% { content: attr(data-text1); }
+  10% { content: attr(data-text2); }
+  20% { content: attr(data-text3); }
+  30% { content: attr(data-text4); }
+  40% { content: attr(data-text1); }
+  50% { content: attr(data-text2); }
+  60% { content: attr(data-text3); }
+  70% { content: attr(data-text4); }
+  80% { content: attr(data-text1); }
+  90% { content: attr(data-text2); }
+  100% { content: attr(data-text3); }
+}
+
+@keyframes  projectTitle {
+  0% { content: attr(data-text1); }
+  10% { content: attr(data-text2); }
+  20% { content: attr(data-text3); }
+  30% { content: attr(data-text4); }
+  40% { content: attr(data-text1); }
+  50% { content: attr(data-text2); }
+  60% { content: attr(data-text3); }
+  70% { content: attr(data-text4); }
+  80% { content: attr(data-text1); }
+  90% { content: attr(data-text2); }
+  100% { content: attr(data-text3); }
+}
+
+@-webkit-keyframes nameTitleTop {
+  0% { left: 0;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
+  5% { left: 0 }
+  6% { left: -100px }
+  10% { left: -100px }
+  11% { left: 0 }
+  16% { left: 0 }
+  17% { left: -20px }
+  20% { left: -20px }
+  21% { left: 3px }
+  23% { left: 3px }
+  24% { left: -37px }
+  28% { left: -37px }
+  29% { left: -3px }
+  100% { left: -3px;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
+}
+
+@keyframes nameTitleTop {
+  0% { left: 0;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
+  5% { left: 0 }
+  6% { left: -100px }
+  10% { left: -100px }
+  11% { left: 0 }
+  16% { left: 0 }
+  17% { left: -20px }
+  20% { left: -20px }
+  21% { left: 3px }
+  23% { left: 3px }
+  24% { left: -37px }
+  28% { left: -37px }
+  29% { left: -3px }
+  100% { left: -3px; text-shadow:
+    -2px 0 0 $titleglitchcolor1; }
+}
+
+@-webkit-keyframes nameTitleBot {
+  0% { left: 0;
+    text-shadow: 2px 0 0 $titleglitchcolor2; }
+  1% { left: 5px }
+  3% { left: 0 }
+  10% { left: 0 }
+  11% { left: 50px }
+  16% { left: -60px }
+  17% { left: 0 }
+  30% { left: 0 }
+  31% { left: 14px }
+  100% { left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;}
+}
+
+@keyframes nameTitleBot {
+  0% { left: 0;
+    text-shadow: 2px 0 0 $titleglitchcolor2; }
+  1% { left: 5px }
+  3% { left: 0 }
+  10% { left: 0 }
+  11% { left: 50px }
+  16% { left: -60px }
+  17% { left: 0 }
+  30% { left: 0 }
+  31% { left: 14px }
+  100% { left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;}
+}
+
+@-webkit-keyframes bgGlitch {
+  $steps: 10;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+
+      $clipTop: random(100)+%;
+      $clipBot: random(100)+%;
+
+      -webkit-clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+              clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+    }
+  }
+}
+
+
+@keyframes bgGlitch {
+  $steps: 10;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+
+      $clipTop: random(100)+%;
+      $clipBot: random(100)+%;
+
+      -webkit-clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+              clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+    }
   }
 }

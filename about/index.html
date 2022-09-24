@@ -1,16 +1,64 @@
 <!-- Created by Sam Bossley. All Rights Reserved. -->
+
 <!DOCTYPE html>
 
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Sam Bossley" />
 
     <title>Sam Bossley</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/base.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/desktop.min.css" media="screen and (orientation: landscape)" />
   </head>
   <body>
-    
-    <script src="js/base.js"></script>
+
+    <!--MENU-->
+    <nav id="main-menu">
+      <ol>
+        <a href="../index.html"><li data-text="Home">Home</li></a>
+        <a href="">
+          <li data-text="About">About</li></a>
+        <a href="../projects/1/index.html">
+          <li data-text="MAASU">MAASU</li></a>
+        <a href="../projects/2/index.html">
+          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
+        <a href="../projects/3/index.html">
+          <li data-text="Hi-V ver. 2">Hi-V ver. 2</li></a>
+        <a href="../projects/4/index.html">
+          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
+        <a href="../index.html#contact-page">
+          <li data-text="Contact">Contact</li></a>
+      </ol>
+    </nav>
+
+    <!--MENU BUTTON-->
+    <input id="menu-button" type="checkbox" />
+    <label class="menu-white" for="menu-button"><b>X</b></label>
+
+    <!--CONTENT-->
+    <div id="main-container">
+
+      <!--ABOUT-->
+      <div id="about" class="page">
+        <img class="main-photo" src="../assets/img/sambossley.jpg" alt="Sam Bossley" />
+        <em class="title">
+          <span data-text="Sam Bossley">Sam Bossley</span>
+        </em>
+        <p>Sam Bossley is a website designer studying software engineering at The Ohio State University. In his free time, he enjoys 3D modelling, coding, and learning new skills. He currently does virtual reality game development with the R&D team in the Media Marketing and Communication Scholars Program. He also plays guitar.</p>
+
+        <p>Follow him on various social media:</p>
+        <ul class="socialmedia">
+          <a href="https://www.facebook.com/sam.bossley.9"><li>Facebook</li></a>
+          <a href="https://twitter.com/samaraikun"><li>Twitter</li></a>
+          <a href="https://www.instagram.com/samaraikun/"><li>Instagram</li></a>
+          <a href="https://soundcloud.com/sam-bossley"><li>Soundcloud</li></a>
+        </ul>
+
+      </div>
+
+    </div>
+
   </body>
 </html>

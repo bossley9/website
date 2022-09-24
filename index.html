@@ -6,13 +6,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Sam Bossley" />
+    <meta name="description" content="I am Sam Bossley, a website freelancer, software engineer, and musician." />
+    <meta name="keywords" content="Sam, Sam Bossley, Bossley, freelance, code, website, developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Sam Bossley" />
+    <meta property="og:description" content="I am Sam Bossley, a website freelancer, software engineer, and musician." />
+    <!--Change this-->
+    <meta property="og:image" content="http://sam.bossley.us/projects/new/assets/img/profile.jpg" />
+    <!--Change this-->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-color-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-color-32x32.png" />
 
     <title>Sam Bossley</title>
-    <link rel="stylesheet" type="text/css" href="css/icomoon.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,800">
-    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
+
     <link rel="stylesheet" type="text/css" href="css/base.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape)" href="css/desktop.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/desktop.min.css" media="screen and (orientation: landscape)" />
   </head>
   <body>
 
@@ -22,40 +32,52 @@
         <a href=""><li data-text="Home">Home</li></a>
         <a href="about/index.html">
           <li data-text="About">About</li></a>
-        <a href="projects/project-1.html">
+        <a href="projects/1/index.html">
           <li data-text="MAASU">MAASU</li></a>
-        <a href="projects/project-2.html">
+        <a href="projects/2/index.html">
           <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
-        <a href="projects/project-3.html">
-          <li data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</li></a>
-        <a href="projects/project-4.html">
+        <a href="projects/3/index.html">
+          <li data-text="Hi-V ver. 2">Hi-V ver. 2</li></a>
+        <a href="projects/4/index.html">
           <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
-        <a href="#contact-page">
+        <a href="#contact-page" onclick="toggleMenu()">
           <li data-text="Contact">Contact</li></a>
       </ol>
     </nav>
 
     <!--MENU BUTTON-->
-    <label for="menu-button"><i class="icon-linemenu-thick"></i></label>
     <input id="menu-button" type="checkbox" />
+    <label for="menu-button"><b>X</b></label>
 
     <!--CONTENT-->
     <div id="main-container">
 
       <!--LANDING-->
       <div id="landing-page" class="page">
-        <em class="title landing-title"><span>Sam Bossley</span></em>
+        <!--<div class="project-background"></div>-->
+        <em class="title landing-title">
+          <span class="name-title" data-text="Sam Bossley">Sam Bossley</span>
+        </em>
+
+        <span id="scroll-down">Scroll for projects</span>
+
       </div>
 
       <!--MAASU-->
       <div name="maasu" id="project-1" class="page">
         <div class="page-fixed">
 
-          <img class="project-background" src="assets/img/maasu.png" />
+          <div class="project-background"><div></div></div>
           <span class="project-number">1</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/1.html"><span data-text="MAASU">MAASU</span></a></em>
+            <em class="project-title"><a href="projects/1/index.html">
+              <span data-text="MAASU"
+                    data-text1="M4EXI"
+                    data-text2="MB4QO"
+                    data-text3="MEFLP"
+                    data-text4="M4YHK"></span>
+            </a></em>
           </div>
 
         </div>
@@ -65,11 +87,17 @@
       <div name="mtd" id="project-2" class="page project-page">
         <div class="page-fixed">
 
-          <img class="project-background" src="assets/img/maasu.png" />
+          <div class="project-background"><div></div></div>
           <span class="project-number">2</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/2.html"><span data-text="Morrill Tower Defense">Morrill Tower Defense</span></a></em>
+            <em class="project-title"><a href="projects/2/index.html">
+              <span data-text="Morrill Tower Defense"
+                    data-text1="M0tr1ll fow3r Dyffnsd"
+                    data-text2="Mudryll koqwr Dkfsnge"
+                    data-text3="Mqjrall zower Defense"
+                    data-text4="Mpvr7ll xower Defense"></span>
+            </a></em>
           </div>
 
         </div>
@@ -79,11 +107,17 @@
       <div name="hi-v" id="project-3" class="page project-page">
         <div class="page-fixed">
 
-          <img class="project-background" src="assets/img/maasu.png" />
+          <div class="project-background"><div></div></div>
           <span class="project-number">3</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/3.html"><span data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</span></a></em>
+            <em class="project-title"><a href="projects/3/index.html">
+              <span data-text="Hi-V ver. 2"
+                    data-text1="H1-l ier. 9"
+                    data-text2="Hl-j ier. 2"
+                    data-text3="Hl-i aer. 5"
+                    data-text4="Hv-i cer. s"></span>
+            </a></em>
           </div>
 
         </div>
@@ -93,11 +127,17 @@
       <div name="aev" id="project-4" class="page project-page">
         <div class="page-fixed">
 
-          <img class="project-background" src="assets/img/maasu.png" />
+          <div class="project-background"><div></div></div>
           <span class="project-number">4</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/4.html"><span data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</span></a></em>
+            <em class="project-title"><a href="projects/4/index.html">
+              <span data-text="Advanced Energy Vehicle"
+                    data-text1="edrincrd infrgy Vhhjcle"
+                    data-text2="4dyhncfd lndrgy Vdhlcle"
+                    data-text3="ydbgncpd jnkrgy Vfhkcle"
+                    data-text4="tdxqncad tnargy Vahrcle"></span>
+            </a></em>
           </div>
 
         </div>
@@ -106,53 +146,33 @@
       <!--CONTACT-->
       <div id="contact-page" class="page">
 
-        <table id="contact-table">
-          <thead></thead>
-          <tbody>
-            <tr class="contact-title">
-              <td colspan="4">
-                <h2 class="title"><div>Sam Bossley</div></h2>
-              </td>
-            </tr>
-            <tr>
-              <!--phone-->
-              <td class="contact-link">
-                <a href="tel:PHONE_NUMBER_HERE">
-                  <div><i class="icon-phone"></i></div>
-                </a>
-              </td>
-              <!--github-->
-              <td class="contact-link">
-                <a href="GITHUB_URL_HERE">
-                  <div><i class="icon-github"></i></div>
-                </a>
-              </td>
-              <!--linkedin-->
-              <td class="contact-link">
-                <a href="LINKEDIN_URL_HERE">
-                  <div><i class="icon-linkedin"></i></div>
-                </a>
-              </td>
-              <!--email-->
-              <td class="contact-link">
-                <a href="mailto:EMAIL_HERE">
-                  <div><i class="icon-mail"></i></div>
-                </a>
-              </td>
-            </tr>
-            <tr class="contact-resume">
-              <td colspan="4">
-                <em class="title"><a href="assets/Sam_Bossley.pdf" download target="_blank">Resume</a></em>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="contact-container">
+          <div class="page">
+            <p><em>Contact Sam Bossley</em></p>
 
+            <a href="tel:PHONE_NUMBER_HERE">
+              <p>PHONE_NUMBER_HERE</p></a>
+            <a href="GITHUB_URL_HERE">
+              <p>GITHUB_URL_HERE</p></a>
+            <a href="LINKEDIN_URL_HERE">
+              <p>LINKEDIN_URL_HERE</p></a>
+            <a href="mailto:EMAIL_HERE">
+              <p>EMAIL_HERE</p></a>
+            <a href="assets/Sam_Bossley.pdf" download target="_blank">
+              <p>resume</p></a>
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-    <script src="js/base.js"></script>
+    <script>
+      function toggleMenu() {
+        var id = document.getElementById('menu-button');
+        id.checked = !id.checked;
+      }
+    </script>
+
   </body>
 </html>
