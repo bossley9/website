@@ -1,153 +1,158 @@
+<!-- Created by Sam Bossley. All Rights Reserved. -->
+<!-- This project started on 06/28/18. -->
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Sam Bossley" />
-        <meta name="description" content="I am a freelance designer, musician, and artist." />
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-color-32x32.png" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sam Bossley" />
 
-        <title>Sam Bossley</title>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all" />
-    </head>
-    <!--Project start 12/16/16--> 
-    <!--Project end 1/9/17--> 
-    <body>
-        <div id="loader">
-            <img id="load-image" src="assets/sam_bossley_inner.svg" alt="Sam Bossley" />
-            <span id="progress">0%</span>
-        </div>
+    <title>Sam Bossley</title>
+    <link rel="stylesheet" type="text/css" href="css/icomoon.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,800">
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/base.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape)" href="css/desktop.min.css" />
+  </head>
+  <body>
 
-        <svg id="modulus" height="76px" width="76px">
-            <circle r="37px" cx="38px" cy="38px" fill="hsla(0 , 0%, 0%, 0)" stroke="#fff" stroke-width="2"></circle>
-            <circle id="modulus-loader" r="0" cx="38px" cy="38px"></circle>
-        </svg>
+    <!--MENU-->
+    <nav id="main-menu">
+      <ol>
+        <a href=""><li data-text="Home">Home</li></a>
+        <a href="about/index.html">
+          <li data-text="About">About</li></a>
+        <a href="projects/project-1.html">
+          <li data-text="MAASU">MAASU</li></a>
+        <a href="projects/project-2.html">
+          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
+        <a href="projects/project-3.html">
+          <li data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</li></a>
+        <a href="projects/project-4.html">
+          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
+        <a href="#contact-page">
+          <li data-text="Contact">Contact</li></a>
+      </ol>
+    </nav>
 
-        <div id="portal" class="main opening">
-            <div id="backdropGateway" class="backdrop"></div>
-            <div class="content">
-                <div id="main-filter" class="logo-container">
-                    <img id="logo" src="assets/sam_bossley.svg" alt="Sam Bossley" />
-                </div>
+    <!--MENU BUTTON-->
+    <label for="menu-button"><i class="icon-linemenu-thick"></i></label>
+    <input id="menu-button" type="checkbox" />
 
-                <span id="startTag" class="tagline">Scroll Down</span>
+    <!--CONTENT-->
+    <div id="main-container">
 
+      <!--LANDING-->
+      <div id="landing-page" class="page">
+        <em class="title landing-title"><span>Sam Bossley</span></em>
+      </div>
 
-            </div>
-            <div class="overlay"></div>
-        </div>
+      <!--MAASU-->
+      <div name="maasu" id="project-1" class="page">
+        <div class="page-fixed">
 
-        <div class="main transition-section">
-        </div>
-        <!--ABOUT-->
-        <div id="about" class="body-text main">
-            <div class="backdrop"></div>
-            <div class="backdrop backdrop2"></div>
+          <img class="project-background" src="assets/img/maasu.png" />
+          <span class="project-number">1</span>
 
-            <div class="content-left">
-                <article>
-                    <h1>Hello.</h1>
-                    <p>My name is Sam Bossley,</p>
-                    <p>I am a freelance designer, musician, and artist.</p>
-                    <p>Interested in viewing my work?</p>
-                    <p>Scroll down and take a look.</p>
-                </article>
-            </div>
-        </div>
-
-        <!--PORTFOLIO-->
-        <div id="portfolio" class="body-text main">
-
-
-
-
-            <a href="projects/ui.html">
-                <div class="project">
-                    <div class="sizing"></div>
-                    <div class="child">
-                        <span>Sam Ui</span>
-                        <img class="project-img" src="projects/assets/ui-index.png" alt="Sam Ui" />
-                    </div>
-                </div>
-            </a>
-
-            <a href="projects/sass.html">
-                <div class="project">
-                    <div class="sizing"></div>
-                    <div class="child">
-                        <span>Students for the Advancement of Science in Society</span>
-                        <img class="project-img" src="projects/assets/sass-index.png" alt="SASS Club" />
-                    </div>
-                </div>
-            </a>
-
-            <a href="projects/logo.html">
-                <div class="project">
-                    <div class="sizing"></div>
-                    <div class="child">
-                        <span>Logo</span>
-                        <img class="project-img" src="projects/assets/logo-index.png" alt="Logo" />
-                    </div>
-                </div>
-            </a>
-
-            <a href="projects/dispatch.html">
-                <div class="project">
-                    <div class="sizing"></div>
-                    <div class="child">
-                        <span>Dispatch Parallax Test</span>
-                        <img class="project-img" src="projects/assets/dispatch-index.png" alt="Dispatch" />
-                    </div>
-                </div>
-            </a>
-
-            <a href="projects/mercy.html">
-                <div class="project">
-                    <div class="sizing"></div>
-                    <div class="child">
-                        <span>Muse Lyrical Video</span>
-                        <img class="project-img" src="projects/assets/mercy-index.png" alt="Mercy" />
-                    </div>
-                </div>
-            </a>
-            
-
+          <div class="page">
+            <em class="project-title"><a href="projects/1.html"><span data-text="MAASU">MAASU</span></a></em>
+          </div>
 
         </div>
+      </div>
 
-        <!--CONTACT-->
-        <div id="contact" class="body-text main">
-            <div class="backdrop"></div>
+      <!--MTD-->
+      <div name="mtd" id="project-2" class="page project-page">
+        <div class="page-fixed">
 
-            <div class="filter">
-                <div class="content-contact-left">
-                    <header>Let's Get<br />Connected!</header>
-                    <p>I'd love to stay in touch.</p>
-                    <article>
-                        <h1>Sam Bossley</h1>
-                        <span>
-                            Floyds Knobs, Indiana, USA
-                            <br />
-                            +1 502 410 1792
-                            <br />
-                            <a href="MAILTO:bossley.samuel@gmail.com">bossley.samuel@gmail.com</a>
-                        </span>
+          <img class="project-background" src="assets/img/maasu.png" />
+          <span class="project-number">2</span>
 
-                    </article>
-                    <div class="content-contact-right">
-                        <a href="https://www.facebook.com/sam.bossley.9"><i class="icon-facebook"></i></a>
-                        <a href="https://twitter.com/samaraikun"><i class="icon-twitter"></i></a>
-                        <a href="https://www.instagram.com/samaraikun"><i class="icon-instagram"></i></a>
-                    </div>
-                </div>
+          <div class="page">
+            <em class="project-title"><a href="projects/2.html"><span data-text="Morrill Tower Defense">Morrill Tower Defense</span></a></em>
+          </div>
 
-                <a href="Resume.pdf" download="Resume.pdf">
-                    <span class="resume">Resume</span>
+        </div>
+      </div>
+
+      <!--HI-V-->
+      <div name="hi-v" id="project-3" class="page project-page">
+        <div class="page-fixed">
+
+          <img class="project-background" src="assets/img/maasu.png" />
+          <span class="project-number">3</span>
+
+          <div class="page">
+            <em class="project-title"><a href="projects/3.html"><span data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</span></a></em>
+          </div>
+
+        </div>
+      </div>
+
+      <!--AEV-->
+      <div name="aev" id="project-4" class="page project-page">
+        <div class="page-fixed">
+
+          <img class="project-background" src="assets/img/maasu.png" />
+          <span class="project-number">4</span>
+
+          <div class="page">
+            <em class="project-title"><a href="projects/4.html"><span data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</span></a></em>
+          </div>
+
+        </div>
+      </div>
+
+      <!--CONTACT-->
+      <div id="contact-page" class="page">
+
+        <table id="contact-table">
+          <thead></thead>
+          <tbody>
+            <tr class="contact-title">
+              <td colspan="4">
+                <h2 class="title"><div>Sam Bossley</div></h2>
+              </td>
+            </tr>
+            <tr>
+              <!--phone-->
+              <td class="contact-link">
+                <a href="tel:PHONE_NUMBER_HERE">
+                  <div><i class="icon-phone"></i></div>
                 </a>
-            </div>
-        </div>
+              </td>
+              <!--github-->
+              <td class="contact-link">
+                <a href="GITHUB_URL_HERE">
+                  <div><i class="icon-github"></i></div>
+                </a>
+              </td>
+              <!--linkedin-->
+              <td class="contact-link">
+                <a href="LINKEDIN_URL_HERE">
+                  <div><i class="icon-linkedin"></i></div>
+                </a>
+              </td>
+              <!--email-->
+              <td class="contact-link">
+                <a href="mailto:EMAIL_HERE">
+                  <div><i class="icon-mail"></i></div>
+                </a>
+              </td>
+            </tr>
+            <tr class="contact-resume">
+              <td colspan="4">
+                <em class="title"><a href="assets/Sam_Bossley.pdf" download target="_blank">Resume</a></em>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+
+      </div>
+
+    </div>
+
+    <script src="js/base.js"></script>
+  </body>
 </html>
