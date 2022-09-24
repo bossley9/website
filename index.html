@@ -1,65 +1,236 @@
-<html>
-<head>
-  <title>404 Not Found</title>
-  <style>
-    body {
-      background-color:#FFFFFF;
-      font-size: 15;
-      font-family:Times New Roman; 
-    }
-    .good {
-      background-color: #FBFBFB;
-      border: 1px solid #AAA;
-      border-collapse: collapse;
-      border-bottom: 1px solid #888;
-      border-radius: 3px;
-      box-shadow: 0px 2px 2px #AAA;
-      color: black;
-      height:10%;
-      width:90%
-    }
-    .bad {
-      height:120%;
-      width:100%;
-    }
-    .what {
-    font-size:15;
-    }
-    .oh {
-      background-color:#E6E6E6;
-    }
-  </style>
-</head>
-<body>
-  <script>
-    function Redirect() {
-      window.location="html2/stealth.html";
-    }
-  </script>
-  <h2>404 ERROR - NOT FOUND</h2>
-<i>The requested URL /gullible was not found on this server.</i>
-  <br>
-<hr></hr>
-  <script type="text/javascript">
-    document.write(Date());
-  </script>
-<table class="bad">
-<tr><td></td></tr>
-</table>
-<div class="oh">
-<br>
-<center><table class="good">
-  <tr><td>
-  <font class="what">
-  Did you really believe that? Didn't you notice that the page was a bit longer than it should have been? *sigh* ...you're so gullible. 
-  <br>
-  Well....I mean....at least you actually found this...alright, fine. I'll take you to the page.  >> 
-  <button onclick="Redirect()"> XD </button>
-  <<
-  </font>
-  </td></tr>
-</table></center>
-<br>
-</div>
-</body>
+<!DOCTYPE html>
+<!--Created and engineered by Sam Bossley-->
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content="300" />
+        <meta name="author" content="Sam Bossley" />
+        <meta name="viewport" content="initial-scale=0.1" />
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="web,design,about,pipeline,contact">
+        <link rel="icon" type="image/x-icon" href="img/Pipe.ico"/>
+        <link rel="icon" type="image/x-icon" href="img/Pipe16.ico"/>
+        <title>Pipeline</title>
+        <meta name="description" content="Website Designs for All Purposes">
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/Detect.js"></script>
+        <script type="text/javascript" src="js/flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function(){$('.flexslider').flexslider({animation:"slide",animationLoop:false,});});
+        </script>
+        <style type="text/css">
+            @import url(css/stylesheet.css);
+        </style>
+    </head>
+    <body>
+    <!--[if lte IE 9]>
+    <div style="position:fixed;width:100%;height:100%;top:0;left:0;z-index:1000000000;"><div id="iE-pop" style="position:relative;top:25%;width:50%;height:auto;margin:auto;background-color:#333;"><span onclick="document.getElementById('iE-pop').style.display = 'none';" style="cursor:pointer;position:absolute;right:0;top:0;width:70px;height:70px;font-size:70px;text-align:center;">X</span><br /><br /><br /><br /><span style="color:#FFF;padding:auto;font-size:100%;"><span style="color:#FF0000;">WARNING:</span> Some content on this webpage may not be compatible with this browser. Please upgrade your browser for the best experience.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;-Your Friendly Neighborhood Spiderman<br /><br /><br /></span></div></div>
+    <![endif]-->
+        <div id="Menu_Button1">
+            <span title="Menu"><img id="Setting" src="img/Setting.png" alt="Settings" style="width:55px;height:55px;" /></span>
+        </div>
+        <div id="Menu_Button2">
+            <span title="Reload"><a href="javascript:window.location.reload();"><img src="img/Reload.png" alt="Reload" style="width:55px;height:55px;" /></a></span>
+        </div>
+        <div id="Menu_Button3">
+            <span title="Search"><img src="img/Magnify.png" alt="Search" style="width:55px;height:55px;" /></span>
+        </div>
+        <div id="SearcH">
+            <div id="searchBAR" style="position:relative;width:65%;top:20%;height:54px;overflow:hidden;margin:0 auto;">
+          <!--
+                <form name="cse" id="searchbox_demo" method="get" action="https://www.google.com/cse">
+                    <input type="hidden" name="cref" value="" />
+                    <input type="hidden" name="ie" value="utf-8" />
+                    <input type="hidden" name="hl" value="" />
+                    <input name="q" type="text" id="Frwak" class="Contact_Input Contact_Input2" maxlength="75" autocomplete="off" placeholder="Search...">
+                    </input>
+                    <input name="sa" type="submit" id="Submission" value="Search" style="float:left;padding:13px;height:100%;font-size:25px;width:11%;border-radius:0px 7px 7px 0px;">
+                    </input>
+                </form>
+          <script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
+          -->
+                <script>
+                    (function() {
+                        var cx = '005538300451625629254:3wtvvkrjhze';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
+        </div>
+        <a href="#PAGE_Main" class="smoothScroll"><div  id="BackUp"><img src="img/Up.png" style="width:55px;height:55px;" \></div></a>
+        <div id="Menu_Whole">
+            <div id="Menu_Heading" style="text-align:center;">
+                <span style="display:block;margin:27px 0px;font-size:55px;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;cursor:default;">MENU</span>
+            </div>
+            <div id="Menu_Body">
+                <ul style="list-style-type:none;padding:0;width:100%;">
+                    <a href="#PAGE_Main" class="smoothScroll"><li>Home</li></a>
+                    <a href="#dos" class="smoothScroll"><li>About</li></a>
+                    <a href="#tres" class="smoothScroll"><li>Projects</li></a>
+                    <a href="#quatro" class="smoothScroll"><li>Contact</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="PAGE_Main">
+                <div style="position:absolute;top:0;left:0;width:100%;height:15%;background-color:#000;"></div>
+                <span title="Pipeline" style="position:relative;font-size:120px;font-family:'geometry';user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;cursor:default;width:100%;height:120px;top:35%;">P<span style="color:#98101E;">] [</span>PELINE</span>
+                <br \>
+                <br \>
+                <span title="Pipeline" style="position:relative;color:#0A6357;font-size:30px;font-family:'geometry';user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;cursor:default;width:100%;height:30px;top:40%;">Code Less. Do More.</span>
+
+                <div style="position:absolute;overflow:hidden;bottom:0;left:0;width:100%;padding:1% 0px;display:flex;height:15%;background-color:#000;">
+                    <div style="width:10%;"></div>
+                    <a id="Bar_Main_Item" href="#dos" class="smoothScroll">About</a>
+                    <a id="Bar_Main_Item" href="#tres" class="smoothScroll">Projects</a>
+                    <a id="Bar_Main_Item" href="#quatro" class="smoothScroll">Contact</a>
+                    <div style="width:10%;"></div>
+                </div>
+        </div>
+        <!--ABOUT-->
+        <div id="dos" class="ch2 PAGE_BODY">
+            <span style="font-family:'geometry';font-size:60px;display:block;margin-top:50px;">About Us</span>
+            <!--<p style="display:block;margin:30px 20px;"></p>-->
+            <img class="Profile" src="img/web/N-A.png" />
+            <span>Sam Bossley is the creator of multiple websites and designer of all of them. He likes to rock out to music and is genuinely interested in hire for a career in graphic design in his near future.</span>
+        </div>
+        <!--PROJECTS-->
+        <div id="tres" class="ch3 PAGE_BODY">
+            <span style="font-family:'geometry';font-size:60px;display:block;margin-top:50px;">Projects</span>
+            <br \>
+            <div class="flexslider">
+                <ul class="slides" style="list-style-type:none;">
+                    <li>
+                        <table id="ProjBody2" cellpadding="0" border="0">
+                            <tr>
+                                <td>
+                                    <a href="boma" title="Building Owners and Managers Association: Kentucky">
+                                        <img src="img/web/Boma.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="sass" title="Floyd Central SASS Club">
+                                        <img src="img/web/Sass.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="diagonal" title="Diagonal">
+                                        <img src="img/web/Diagonal.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="dispatch" title="Dispatch">
+                                        <img src="img/web/Dispatch.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="ProjBody2" cellpadding="0" border="0">
+                            <tr>
+                                <td>
+                                    <a href="supernova" title="Supernova">
+                                        <img src="img/web/Supernova.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="enlighten" title="Enlighten">
+                                        <img src="img/web/Enlighten.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="orange" title="Orange">
+                                        <img src="img/web/Orange.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="flow" title="Flow">
+                                        <img src="img/web/Flow.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="ProjBody2" cellpadding="0" border="0">
+                            <tr>
+                                <td>
+                                    <a href="lccc" title="LCCC">
+                                        <img src="img/web/N-A.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="adventurous" title="Adventurous">
+                                        <img src="img/web/N-A.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="" title="[Empty Project]">
+                                        <img src="img/web/N-A.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="" title="[Empty Project]">
+                                        <img src="img/web/N-A.png" style="width:425px;height:250px;opacity:1;" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <br />
+        </div>
+        <div class="PAGE_BODY" style="height:20%;background-color:#000;">
+        </div>
+        <!--CONTACT-->
+        <div id="quatro" class="ch4 PAGE_BODY">
+            <span style="font-family:'geometry';font-size:60px;display:block;margin-top:50px;">Contact</span>
+            <span style="font-size:17px;">Questions? Feel free to ask!</span>
+            <br />
+            <br />
+            <div style="position:relative;display:block;text-align:left;">
+                <div id="TextBodies">
+                    <form method="post" action="Email.php" enctype="text/plain">
+                        <span style="color:#AAA;text-decoration:;font-size:25px;font-family:'proxima-light';line-height:37px;">&nbsp;&nbsp;First and Last Name:</span>
+                        <input class="Contact_Input" type="text" maxlength="75" autocomplete="off" id="NameFandL" placeholder="John Smith">
+                        </input>
+                        <br />
+                        <span style="color:#AAA;text-decoration:;font-size:25px;font-family:'proxima-light';line-height:37px;">&nbsp;&nbsp;Email:</span>
+                        <input class="Contact_Input" type="text" maxlength="75" autocomplete="off" id="EmailAdd" placeholder="Email@example.com">
+                        </input>
+                        <br />
+                        <span style="color:#AAA;text-decoration:;font-size:25px;font-family:'proxima-light';line-height:37px;">&nbsp;&nbsp;Message:</span>
+                        <textarea class="Contact_Input" type="text" placeholder="Your Message..." autocomplete="off" style="height:10em;" id="MessAround"></textarea>
+                        <br />
+                        <div style="text-align:center;">
+                            <input type="submit" value="Send Message" id="Submission"></input>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!--    <style>
+.cse, .gsc-control-cse {
+    border:none;
+    background-color:#FF0000;
+}
+
+    </style>-->
+    </body>
 </html>
