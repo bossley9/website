@@ -1,0 +1,26 @@
+{
+  "name": "sam-bossley",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "export": "next export",
+    "deploy": "next build && next export"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "eslint": "^7.4.0",
+    "prettier": "^2.0.5",
+    "typescript": "3.7.3"
+  },
+  "license": "ISC"
+}
