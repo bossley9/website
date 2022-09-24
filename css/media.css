@@ -1,0 +1,139 @@
+
+/* Ipads, Kindles, tablets */
+
+/*
+@media screen and (max-width: 800px) {
+*/
+@media screen and (max-width: 1100px) {
+
+    .mobile-device {display: none}  
+
+    svg#LogoParent {display: none}
+
+    #Reset {display: none}
+
+    #fast-forward {display: none}
+
+    .logo-backup {
+        position:absolute;
+        top: 60%;
+        display: block;
+        height: 85%;
+    }
+    
+    .name-backup {display: block}
+
+    .main-nav {
+        font-size: 190%;
+        text-align: center;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .main-nav a {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .main-nav a:before, .main-nav a:after {display: none}
+
+    /*ABOUT*/
+
+    #About div {
+        height: 50%;
+        width: 100%;
+        float: none;
+    }
+
+    #imgviewport {
+        height: 100% !important;
+        width: 75% !important;
+    }
+
+    .about-2 {padding: 0 3%}
+
+    /* PROJECTS & PORTFOLIO */
+    
+    .project-child {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project-child:hover {background-size: cover}
+
+    ul.project-parent li {
+        height:360px !important;
+        width:640px !important;
+    }
+    
+    .ProjectLink {
+        opacity: 1;
+        text-decoration: none;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* CONTACT */
+
+    #Connection {width: 100%}
+
+    .FormInput {background-color: #101010}
+    
+    .icon-facebook {color: #3A5795 !important}
+    
+    .icon-twitter {color: #33C6F4 !important}
+    
+    .icon-google-plus {color: #DD4B39 !important}
+    
+    .Copyrights {display: none}
+
+}
+
+/*
+@media screen and (max-width: 800px) and (orientation: landscape) {
+}
+*/
+    
+/* Iphones, Androids, HTCs, phones (up to Iphone 6+) */
+
+/*
+@media screen and (max-width: 550px) {
+*/
+@media screen and (max-width: 800px) {
+
+    html, body {font-size: 0.7em}
+
+    .fullscreen-section {transition: none}
+
+    /* PROJECTS & PORTFOLIO */
+
+    .exsign {transition: none}
+
+    ul.project-parent li {
+        height:180px !important;
+        width:320px !important;
+    }
+
+    .ProjectLink span {font-size: 230% !important}
+
+}
+
+@media screen and (max-width: 550px) and (orientation: portrait) {
+
+    html, body {background-image: url(../assets/profiles/bowMobile.png)}
+
+    .main-nav {font-size: 170%}
+
+    .main-nav a {margin: 0 0.7%}
+
+}
+
+@media screen and (max-width: 550px) and (orientation: landscape) {
+
+    #About div {height: 60%}
+
+}

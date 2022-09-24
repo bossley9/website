@@ -1,332 +1,206 @@
-<!DOCTYPE html>
-<!--
-Copyright Sam Bossley 2015. All Rights Reserved.
-Credits to http://www.tympanus.net for blueprints.
--->
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta http-equiv="refresh" content="300" />
         <meta charset="UTF-8" />
         <meta name="author" content="Sam Bossley" />
-        <meta name="description" content="Inspired Code" />
-        <meta name="viewport" content="initial-scale=0.5" />
-        <link rel="icon" type="image/ico" href="favicon.ico" />
-        <style>@import url(css/stylesheet.css);</style>
+        <meta name="description" content="Artist. Musician. Freelancer." />
+        <meta name="keywords" content="sam,sam bossley,bossley,artist,musician,freelancer,design" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <title>Sam Bossley</title>
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/Reset061616.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="js/pre.js"></script>
+        <!--Project Started 05/19/16-->
+        <!--Project Developmental Version Ended 07/07/16-->
     </head>
-    <body>
-    <!---->
-    <div style="position:absolute;display:block;top:20%;right:0;width:10%;padding:10px;background-color:#FFF;color:#000;text-align:center;box-shadow:2px 2px 2px #777;font-size:20px;z-index:9999;">An updated version of this website is currently underway!<br /><br /> ~Sam</div>
-    <!---->
-        <div class="HashtagFilter"></div>
-        <i id="Eye" class="icon-info" onclick="OpenPop2()"></i>
-        <div id="MoreInfo">
-            <hr />
-            <br />
-            <b>Click the title</b> for more information about Sam, or <b>swipe/use arrow keys</b> to view websites!
-            <br />
-            <br />
-            <hr />
-        </div>
-        <div id="Embedded" class="HC">
-            <i class="icon-close" style="font-size:25px;color:#999;" onclick="EmbedClose()"></i>
-            <br />
-            Ctrl+C to link this site to your own website:
-            <br />
-            <br />
-            <input class="CopyLink HC" type="text" value="<a href='http://sam.bossleyfamily.com'>Check out Sam Bossley's website!</a>"></input>
-            <br />
-            Share on social media:
-            <br />
-            <br />
-            <span class="ReferenceMedia HC">
-                <a href="SHARE_ON_FACEBOOK_URL_HERE" title="Share on Facebook!"><i class="icon-facebook"></i></a>
-                <a href="SHARE_ON_TWITTER_URL_HERE" title="Share on Twitter!"><i class="icon-twitter"></i></a>
-            </span>
-        </div>
-        <section id="TopBar" class="Container">
-            <section id="UpperL" class="DF">
-                <span class="DF VC" style="padding-right:20px">
-                    <a href="FACEBOOK_URL_HERE"><i class="icon-facebook"></i></a>
-                    <a href="GOOGLEPLUS_URL_HERE"><i class="icon-google-plus"></i></a>
-                </span>
-            </section>
-            <section id="UpperR" class="DF">
-                <span class="DF VC" style="padding-left:20px">
-                    <a href="MAILTO:EMAIL_HERE"><i class="icon-mail"></i></a>
-                    <a href="javascript:EmbedOpen()"><i class="icon-embed"></i></a>
-                </span>
-            </section>
-        </section>
-        <section id="Titan" class="HC">
-            <span class="Title" onclick="OpenPop()">Sam Bossley</span>
-            <hr />
-            The man. The myth. The legend.
-        </section>
-        <section class="WebSegment">
-	        <script src="js/modernizr.custom.js"></script>
-	        <div class="container">
-		        <section class="slider">
-		            <div class="slide slide--current" data-content="content-1">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <!--<img class="zoomer__image" src="images/iphone.png" alt="iPhone" />-->
-                                <a href="boma/"><div class="preview">
-                                    <img src="img/project/Boma.png" alt="Building Owners and Managers Association" />
-				                    <div class="zoomer__area zoomer__area--size-2"></div>
-                                </div></a>
-			                </div>
-			            </div>
-                        <h2 class="slide__title">BOMA Kentucky</h2>
-		            </div>
-		            <div class="slide" data-content="content-2">
-			            <div class="slide__mover">
-                            <div class="zoomer flex-center">
-                                <a href="sass/"><div class="preview">
-				                    <img src="img/project/Sass.png" alt="Floyd Central SASS Club" />
-				                    <div class="zoomer__area zoomer__area--size-5"></div>
-				                </div></a>
-			                </div>
-		                </div>
-			            <h2 class="slide__title">Floyd Central SASS Club</h2>
-		            </div>
-		            <div class="slide" data-content="content-3">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-				                <a href="diagonal/"><div class="preview">
-				                    <img src="img/project/Diagonal.png" alt="Diagonal" />
-				                    <div class="zoomer__area zoomer__area--size-4"></div>
-				                </div></a>
-			                </div>
-			            </div>
-		                <h2 class="slide__title">Diagonal</h2>
-		            </div>
-		            <div class="slide" data-content="content-4">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-			                    <a href="dispatch"><div class="preview">
-				                    <img src="img/project/Dispatch.png" alt="Dispatch" />
-				                    <div class="zoomer__area zoomer__area--size-3"></div>
-				                </div></a>
-			                </div>
-		                </div>
-			            <h2 class="slide__title">Dispatch</h2>
-		            </div>
-		            <div class="slide" data-content="content-5">
-			            <div class="slide__mover">
-                            <div class="zoomer flex-center">
-                                <a href="supernova"><div class="preview">
-				                    <img src="img/project/Supernova.png" alt="Supernova" />
-				                    <div class="zoomer__area zoomer__area--size-5"></div>
-				                </div></a>
-			                </div>
-		                </div>
-			            <h2 class="slide__title">Supernova</h2>
-		            </div>
-		            <div class="slide" data-content="content-6">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="enlighten"><div class="preview">
-				                    <img src="img/project/Enlighten.png" alt="Enlighten" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Enlighten</h2>
-		            </div>
-		            <div class="slide" data-content="content-7">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="orange/"><div class="preview">
-				                    <img src="img/project/Orange.png" alt="Orange" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Orange</h2>
-		            </div>
-		            <div class="slide" data-content="content-8">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="vivian/"><div class="preview">
-				                    <img src="img/project/Vivian.png" alt="Vivian" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Vivian</h2>
-		            </div>
-		            <div class="slide" data-content="content-9">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="mercy/"><div class="preview">
-				                    <img src="img/project/Mercy.png" alt="Mercy" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Mercy</h2>
-		            </div>
-		            <div class="slide" data-content="content-10">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="oceans/"><div class="preview">
-				                    <img src="img/project/Oceans.png" alt="Oceans" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Oceans</h2>
-		            </div>
-		            <div class="slide" data-content="content-11">
-			            <div class="slide__mover">
-			                <div class="zoomer flex-center">
-                                <a href="javascript:alert('Oops! This feature is currently unavailable!');"><div class="preview">
-                                    <img src="img/project/NewProject.png" alt="New Project" />
-				                    <div class="zoomer__area zoomer__area--size-1"></div>
-                                </div><a/>
-			                </div>
-                        </div>
-			            <h2 class="slide__title">Click for Sam's latest project!</h2>
-		            </div>
-		            <nav id="ButtonClassy" class="slider__nav">
-                        <span class="button button--nav-prev"><i class="icon-arrowheadleft"></i></span>
-                        <span class="button button--zoom"><i class="icon-file-empty" onclick="EmbedClose()"></i></span>
-                        <span class="button button--nav-next"><i class="icon-arrowheadright"></i></span>
-		            </nav>
-		        </section>
-                <!--</div>-->
-		    <section id="TheSmallStuff" class="content">
-		        <div class="content__item" id="content-1">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Boma2.png" alt="Building Owners and Managers Association" />
-			        <div class="content__item-inner">
-			            <h2>BOMA Kentucky</h2>
-			            <h3>Building Owners and Managers Association: Kentucky</h3>
-                        <p>Last updated: June 29, 2015</p>
-                        <p>BOMA, or Building Owners and Managers Association, is an international organization overseeing building projects worldwide. This branch, formed in Lousiville, Kentucky, is slowly growing and expanding to fit the needs of its users.</p>
-                        <p><a href="boma/">Proceed to BOMA <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-2">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Sass2.png" alt="Floyd Central SASS Club" />
-			        <div class="content__item-inner">
-			            <h2>Floyd Central S.A.S.S. Club</h2>
-			            <h3>Students for the Advancement of Science in Society</h3>
-                        <p>Last updated: November 24, 2015</p>
-                        <p>The Floyd Central SASS Club is a concise extracurricular club created for the purpose of monitoring the biological health and condition of the local environment.</p>
-                        <p><a href="sass/">Proceed to the Floyd Central SASS Club <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-3">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Diagonal2.png" alt="iPad Mini Content" />
-			        <div class="content__item-inner">
-			            <h2>Diagonal</h2>
-			            <h3>Coding with a Tilt</h3>
-                        <p>Last updated: December 14, 2015</p>
-                        <p>This project encourages the idea of developing something new - the idea of diagonally positioned web pages.</p>
-                        <p><a href="diagonal/">Proceed to Diagonal <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-4">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Dispatch2.png" alt="Dispatch" />
-			        <div class="content__item-inner">
-			            <h2>Dispatch</h2>
-			            <h3>The Infinity Mission Development Community</h3>
-                        <p>Last updated: March 9, 2016</p>
-                        <p>This development community was designed for the Infinity Mission, a mission designed to create and fund a rocket durable enough to blast off into the great unknown, the Final Frontier.</p>
-                        <p><a href="dispatch/">Proceed to Dispatch <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-5">
-			        <img class="content__item-img rounded-right" src="img/project/Supernova.png" alt="Supernova" />
-			        <div class="content__item-inner">
-                        <h2>Supernova</h2>
-			            <h3>Intergalactic SVG</h3>
-                        <p>Last updated: March 14, 2015</p>
-                        <p>This project combines the use of Scalar Vector Graphics along with simple creativity and a little bit of good old-fashioned science fiction to create a blackhole-themed website.</p>
-                        <p><a href="supernova/">Proceed to Supernova <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-6">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Enlighten2.png" alt="Enlighten" />
-			        <div class="content__item-inner">
-			            <h2>Enlighten</h2>
-			            <h3>A New Horizon</h3>
-                        <p>Last updated: May 14, 2015</p>
-                        <p>This was created as a means of looking towards a bright and new horizon, a fresh beginning.</p>
-                        <p><a href="enlighten/">Proceed to Enlighten <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-7">
-			        <img class="content__item-img rounded-right" src="img/project/Orange.png" alt="Orange" />
-			        <div class="content__item-inner">
-			            <h2>Orange</h2>
-			            <h3>The Orange King</h3>
-                        <p>Last updated: June 10, 2015</p>
-                        <p>Created as a personalized fan web page. Many of these may appear in the near future.</p>
-                        <p><a href="orange/">Proceed to Orange <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-8">
-			        <img class="content__item-img rounded-right" src="img/project/Vivian.png" alt="Vivian" />
-			        <div class="content__item-inner">
-			            <h2>Vivian</h2>
-			            <h3>The jumpstart into the future</h3>
-                        <p>Last updated: December 23, 2015</p>
-                        <p>This is a step forward into the future and its innovation and specialization. The past will be no more.</p>
-                        <p><a href="vivian/">Proceed to Vivian <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-9">
-			        <img class="content__item-img rounded-right" src="img/project/prev/Mercy2.png" alt="Mercy" />
-			        <div class="content__item-inner">
-			            <h2>Mercy</h2>
-			            <h3>Muse (Drones)</h3>
-                        <p>Last updated: December 18, 2015</p>
-                        <p>A lyrical video made for the song "Mercy" by Muse. No copyright infringement intended.</p>
-                        <p><a href="mercy/">Proceed to Mercy <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-10">
-			        <img class="content__item-img rounded-right" src="img/project/Oceans.png" alt="Oceans" />
-			        <div class="content__item-inner">
-			            <h2>Oceans</h2>
-			            <h3>Wavy Skills</h3>
-                        <p>Last updated: December 6, 2015</p>
-                        <p>A simple and light site messing around with a transparent text background.</p>
-                        <p><a href="oceans/">Proceed to Oceans <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <div class="content__item" id="content-11">
-			        <img class="content__item-img rounded-right AddNew" src="img/project/NewProject.png" alt="New Project" />
-			        <div class="content__item-inner">
-                        <h2>[Project]</h2>
-			            <h3>UNDER CONSTRUCTION</h3>
-                        <p>Last updated: X X X</p>
-                        <p><a href="javascript:alert('Oops! This feature is currently unavailable!');">Proceed to PROJECT <i class="icon-arrowheadright"></i></a></p>
-			        </div>
-		        </div>
-		        <i class="icon-cross button--close"></i>
-		    </section>
-	    </div>
-        </section>
-        <div id="InfoContainer">
-            <div id="Info" class="DF">
-                <i class="icon-close" onclick="ClosePop()"></i>
-                <section class="DF PartI">
-                </section>
-                <section class="DF PartII">
-                    <span style="color:#888"><b>About</b></span>
-                    <hr />
-                    Sam Bossley, age 16, is the creator and developer of multiple websites for various organizations and clubs. His passion for web design started at the age of 13 and since then has coded over 25 websites. In his free time, he enjoys marching in the Floyd Central Marching Band, rocking out to music, and is genuinely interested in hire for a career in graphic design, physics, or engineering in his near future.
-                </section>
+    <body onload="javascript:IniX()">
+        <div class="filter-profiles"></div>
+        <div id="Reset"></div>
+        <span id="fast-forward">skip...</span>
+        <svg id="LogoParent" height="900" width="1600">
+            <path id="Shadow1" />
+            <path id="Shadow3-5" />
+            <path id="Shadow3" />
+            <path id="Shadow2" />
+            <path id="Shadow4" />
+            <path id="Shadow5" />
+            <path id="Shadow6" />
+            <path id="Shadow7" />
+            <path id="Shadow8" />
+            <path id="Logo" />
+            <text id="Name1" x="0" y="0" fill="#fff" stroke="">Sam</text>
+            <text id="Name2" x="0" y="0" fill="#fff" stroke="">Bossley</text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <img class="logo-backup center" src="assets/mobile/logo-m.svg" alt="Sam Bossley" />
+        <span class="name-backup">Sam Bossley</span>
+        <svg id="SlideParent">
+            <path id="Slide1" />
+            <path id="Slide2" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <svg id="exit-symbol" height="60" width="60">
+            <rect class="exsign xsign1" height="2" width="50" x="5" y="29" />
+            <rect class="exsign xsign2" height="2" width="50" x="5" y="29" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <span class="mobile-device"></span>
+        <nav class="main-nav">
+            <div class="Cover"></div>
+            <a href="About">About</a>
+            <a href="Portfolio">Portfolio</a>
+            <a href="Projects">Projects</a>
+            <a href="Contact">Contact</a>
+        </nav>
+
+        <!--ABOUT-->
+
+        <section id="About" class="fullscreen-section">
+            <h1>About</h1>
+            <div>
+                <div id="imgviewport" class="imgholder" imglink="assets/sam.png"></div>
             </div>
-        </div>
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	    <script type="text/javascript" src="js/classie.js"></script>
-	    <script type="text/javascript" src="js/dynamics.min.js"></script>
+            <div class="about-2">
+                <br /><br />
+                I design. You appreciate.
+                <br /><br />
+                The subtle art of originality is powerful. My work is entirely original. I am an artist, musician, website freelancer, and so much more. My work composes of these three elements. In order to succeed, I redesign, develop, and create. I actively strive to be the best in my work. 
+                <br /><br /><br />
+                Originality is, in fact, very powerful.           
+                <br /><br />
+            </div>
+        </section>
+
+        <!--PORTFOLIO-->
+
+        <section id="Portfolio" class="fullscreen-section">
+            <h1>Portfolio</h1>
+            This is the collection of fullscale developments I have completed or consider finished.
+            <ul id="project" class="project-parent">
+                <i class="icon-arrowheaddown"></i>
+                <span class="scrollspan">scroll please</span>
+                <!--
+                <li pname="Sam Bossley" project="" edit="06/26/16">
+                </li>--><li pname="Sam Ui" project="ui" edit="06/26/16">
+                </li><li pname="Dispatch" project="dispatch" edit="03/09/16">
+                </li><li pname="Mercy" project="mercy" edit="12/18/15">
+                </li><li pname="Diagonal" project="diagonal" edit="12/14/15">
+                </li><li pname="SASS Club" project="sass" edit="11/24/15">
+                </li><li pname="BOMA Kentucky" project="boma" edit="06/29/15">
+                </li><li pname="Orange" project="orange" edit="06/10/15">
+                </li><li pname="Enlighten" project="enlighten" edit="05/14/15">
+                </li><li pname="Supernova" project="supernova" edit="03/14/15">
+                </li>
+            </ul>
+        </section>
+
+        <!--PROJECTS-->
+
+        <section id="Projects" class="fullscreen-section">
+            <h1>Projects</h1>
+            These are uncomplete ideas actively undergoing development.
+            <ul id="unproject" class="project-parent">
+                <i class="icon-arrowheaddown"></i>
+                <span class="scrollspan">scroll please</span>
+                <li pname="Design Layout" project="profile" edit="09/01/16">
+                </li><li pname="Choose Your Own Ending" project="cyoe" edit="07/16/16">
+                </li><li pname="Canvas Game" project="game" edit="07/07/16">
+                </li><li pname="Gravity" project="gravity" edit="04/28/16">
+                </li><li pname="Coming of War" project="war" edit="03/26/16">
+                </li><li pname="Vivian" project="vivian" edit="12/23/15">
+                </li>
+            </ul>
+        </section>
+
+        <!--CONTACT-->
+
+        <section id="Contact" class="fullscreen-section">
+            <h1>Contact</h1>
+            Questions? I appreciate your feedback.
+            <br /><br /><br /><br />
+            <form id="Connection" method="POST" action="SendMail.php" enctype="text/plain">
+                <input id="ConnectName" required class="FormInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="words" maxlength="30" placeholder="First and Last Name"></input>
+                <br /><br />
+                <input id="ConnectEmail" required class="FormInput" type="email" autocomplete="off" autocorrect="off" autocapitalize="words" maxlength="30" placeholder="Email"></input>
+                <br /><br />
+                <textarea id="ConnectMessage" required class="FormInput" autocomplete="off" autocorrect="off" maxlength="300" placeholder="Message"></textarea>
+                <br /><br />
+                <div>
+                    <input id="ConnectSend" class="FormInput" type="submit" value="Send"></input>
+                </div>
+            </form>
+
+            <!--
+            <form name="contactform" method="post" action="SentMail.php">
+                <table width="450px">
+                    <tr>
+                        <td valign="top">
+                            <label for="first_name">First Name *</label>
+                        </td>             
+                        <td valign="top">
+                            <input  type="text" name="first_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="last_name">Last Name *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="last_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Email Address *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="email" maxlength="80" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="telephone">Telephone Number</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="telephone" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Comments *</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            -->
+            
+            <br /><br />
+            <span class="icons-link">
+                <a href="http://www.facebook.com/sam.bossley.9"><i class="icon-facebook"></i></a>
+                <a href="http://twitter.com/_sam_urai"><i class="icon-twitter"></i></a>
+                <a href="http://plus.google.com/113954724208608175592"><i class="icon-google-plus"></i></a>
+            </span>
+            <br /><br />
+            <br /><br />
+
+            <span class="Copyrights">&copy; <a href="http://sam.bossley.us">Sam Bossley</a> 2016. All Rights Reserved.
+        </section>
+
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/Pop.js"></script>
+        <script type="text/javascript" src="js/project.js"></script>
+        <script type="text/javascript" src="js/refraction.js"></script>
+        <script type="text/javascript" src="js/logo.js"></script>
     </body>
 </html>
