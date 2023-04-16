@@ -1,76 +1,67 @@
-baseURL: 'https://sam.bossley.us'
-defaultContentLanguage: 'en'
-languageCode: 'en-us'
+baseURL: "https://sam.bossley.us"
+title: "Sam Bossley"
+copyright: "Copyright Sam Bossley 2012-2023."
 
-buildDrafts: false
-buildFuture: false
+params:
+  Author: "Sam Bossley"
+  Email: "bossley.samuel@gmail.com"
+  Description: "I write about personal commentaries, tech articles, and ways of life."
+  ThoughtDateFmt: "Mon Jan 02 2006"
+  FeedDateFmt: "2006-01-02T15:04:05.000Z0700"
+  Tags:
+    - "sam"
+    - "bossley"
+    - "sam bossley"
+    - "tech"
+    - "commentary"
 
 paginate: 15
 
-params:
-  siteName: "Sam Bossley"
-  siteDesc: "Sam Bossley's website containing personal commentaries, tech articles, and ways of life."
-  author: "Sam Bossley"
-  email: "bossley.samuel@gmail.com"
-  dateFormat: "Mon Jan 02 2006"
-  feedFormat: "2006-01-02T15:04:05-0700"
-  gemFormat: "2006-01-02"
-
-disableHugoGeneratorInject: true # sorry
-
 permalinks:
-  thoughts: '/thoughts/:06/:01/:title/'
+  thoughts: "/thoughts/:06/:01/:title/"
 
+markup:
+  goldmark:
+    extensions:
+      # prevent hugo from processing single quotes as &rsquo;
+      typographer: false
+  # <pre><code> highlighting
+  highlight:
+    tabWidth: 2
+    noClasses: false
+
+buildDrafts: false
+buildExpired: false
+buildFuture: false
+
+defaultContentLanguage: "en"
+enableRobotsTXT: false # disable automatic robots.txt
+hasCJKLanguage: false # don't count words in CJK languages
+disableHugoGeneratorInject: false # promote hugo when possible
+
+# disable taxonomy without removing terms
 disableKinds:
-  # - section
-# disables taxonomy without removing terms (see ignoreErrors)
-  - taxonomy
-  - sitemap
+  - "taxonomy"
+  - "sitemap"
 ignoreErrors:
-  - 'error-disable-taxonomy'
-
-minify:
-  disableXML: true
-  minifyOutput: true
-  tdewolff:
-    html:
-      keepWhitespace: false
+  - "error-disable-taxonomy"
 
 taxonomies:
-  tag: tags
-
-mediaTypes:
-  text/gemini:
-    suffixes:
-      - "gmi"
-  application/rss:
-    suffixes:
-      - "xml"
+  tag: "tags"
 
 outputFormats:
-  Gemini:
-    name: GEMINI
-    isPlainText: true
-    isHTML: false
-    mediaType: text/gemini
-    protocol: "gemini://"
-    permalinkable: true
   Feed:
-    name: FEED
-    mediaType: application/rss
+    name: "FEED"
+    mediaType: "application/rss+xml"
     baseName: "feed"
 
 outputs:
-  page:
-    - HTML
-    - GEMINI
   home:
-    - HTML
-    - FEED
-    - GEMINI
+    - "HTML"
+    - "FEED"
   section:
-    - HTML
-    - GEMINI
+    - "HTML"
+  page:
+    - "HTML"
   term:
-    - HTML
-    - GEMINI
+    - "HTML"

@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <section class="recs">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description | humanize }}.</p>
+    {{ .Content }}
+  </section>
+{{ end }}

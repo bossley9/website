@@ -1,79 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $manifest :=
+      resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" .
+    }}
+    <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="msapplication-starturl" content="/index.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/index.html">
 
-    <title>{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Params.siteName }}</title>
-    <meta name="og:title" content="{{ .Title }}" />
-    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="theme-color" content="#fbfbf8">
 
-    <link rel="apple-touch-startup-image" href="/favicon/favicon.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="/favicon/favicon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon.png" />
-    <link rel="shortcut icon" sizes="192x192" href="/favicon/favicon.png" />
+    <title>{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="og:title" content="{{ .Title }}">
+    <meta name="twitter:title" content="{{ .Title }}">
 
-    <meta property="og:site_name" content="{{ .Site.Params.siteName }}" />
-    <meta name="twitter:site" content="{{ .Site.Params.siteName }}" />
-    <meta name="application-name" content="{{ .Site.Params.siteName }}" />
-    <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.siteName }}" />
+    <link rel="apple-touch-startup-image" href="/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon.png">
+    <link rel="shortcut icon" sizes="192x192" href="/favicon/favicon.png">
 
-    <meta name="author" content="{{ .Site.Params.author }}" />
-    <meta name="twitter:creator" content="{{ .Site.Params.author }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:site" content="{{ .Site.Title }}">
+    <meta name="application-name" content="{{ .Site.Title }}">
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 
-    {{ with .Description | default .Site.Params.siteDesc }}
-      <meta name="description" content="{{ . }}" />
-      <meta name="og:description" content="{{ . }}" />
-      <meta name="twitter:description" content="{{ . }}" />
+    <meta name="author" content="{{ .Site.Params.Author }}">
+    <meta name="twitter:creator" content="{{ .Site.Params.Author }}">
+
+    {{ with .Description | default .Site.Params.Description }}
+      <meta name="description" content="{{ . }}">
+      <meta name="og:description" content="{{ . }}">
+      <meta name="twitter:description" content="{{ . }}">
     {{ end }}
 
-    {{ with .Params.tags }}
-      <meta name="keywords" content="{{ delimit . "," }}" />
+    {{ with .Params.tags | default .Site.Params.Tags }}
+      <meta name="keywords" content="{{ delimit . "," }}">
     {{ end }}
 
     {{ with .Params.image }}
-      <meta name="og:image" content="{{ . }}" />
-      <meta name="twitter:image" content="{{ . }}" />
+      <meta name="og:image" content="{{ . }}">
+      <meta name="twitter:image" content="{{ . }}">
     {{ end }}
 
-    <meta name="og:url" content="{{ .Permalink }}" />
-    <link rel="canonical" href="{{ .Permalink }}" />
+    <meta name="og:url" content="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="summary">
+    <meta name="og:type" content="website">
 
-    <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/feed.xml" title="{{ .Site.Params.siteName }}" />
+    <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/feed.xml" title="{{ .Site.Title }}">
 
-    <style>{{ readFile "/layouts/styles.css" | replaceRE "/*.*/" "" | safeCSS }}</style>
+    <link rel="preload" as="font" type="font/woff" href="/fonts/Inter/Inter-Regular.woff" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="/fonts/Inter/Inter-Bold.woff" crossorigin>
+
+    {{ $options := (dict
+      "targetPath" "css/main.css"
+      "outputStyle" "compressed"
+    ) }}
+    {{ $styles :=
+      resources.Get "styles/main.scss" | resources.ExecuteAsTemplate "main.scss" . |
+      toCSS $options | resources.Fingerprint "sha512" | resources.Minify
+    }}
+    <link rel="stylesheet" type="text/css" href="{{ $styles.RelPermalink }}">
+    {{ $syntaxOptions := (dict
+      "targetPath" "css/syntax.css"
+      "outputStyle" "compressed"
+    ) }}
+    {{ $syntax :=
+      resources.Get "styles/syntax.scss" | resources.ExecuteAsTemplate "syntax.scss" . |
+      toCSS $syntaxOptions | resources.Fingerprint "sha512" | resources.Minify
+    }}
+    <link rel="stylesheet" type="text/css" href="{{ $syntax.RelPermalink }}">
   </head>
   <body>
-
-    <header>
-      <nav>
-        <a class="sitename" href="{{ .Site.BaseURL }}">sam bossley</a>
-        <a href="{{ .Site.BaseURL }}/meta">meta</a>
-        <a href="{{ .Site.BaseURL }}/thoughts">thoughts</a>
-        <a href="https://git.sr.ht/~bossley9">repos</a>
-        <a href="{{ .Site.BaseURL }}/tabs">tabs</a>
-        <a href="{{ .Site.BaseURL }}/recipes">recipes</a>
-        <a href="{{ .Site.BaseURL }}/recs">recs</a>
-        <a href="{{ .Site.BaseURL }}/feed.xml">rss</a>
-      </nav>
-    </header>
-
-    {{ block "content" . }}{{ end }}
-
-    <footer>
-      <p>
-        <a href="{{ .Site.BaseURL }}">Copyright Sam Bossley {{ now.Year }}</a>.
-        <a rel="noreferrer noopener" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
-      </p>
-    </footer>
-
+    {{ partial "header" }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" }}
   </body>
 </html>

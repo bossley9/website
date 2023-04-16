@@ -1,5 +1,0 @@
-{{- define  "content" }}
-{{- with .Site.GetPage "/thoughts" }}
-{{ range first 10 .Pages }}=> {{ .Permalink }} {{ .Date.Format .Site.Params.gemFormat }} {{ .Title }}
-{{ end }}{{ end }}=> /thoughts ...show more
-{{ end }}

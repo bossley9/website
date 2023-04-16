@@ -1,8 +1,0 @@
----
-title: Page Not Found
-description: The page you were looking for was not found.
----
-
-# Error 404: Page Not Found
-
-Sorry! This content was likely removed or renamed.

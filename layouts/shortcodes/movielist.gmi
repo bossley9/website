@@ -1,7 +1,0 @@
-# Movies
-{{ $movieDates := slice }}{{ range .Site.Data.favorites.movies }}{{ $movieDates = $movieDates | append .date }}{{ end }}{{ $movieDates = sort (uniq $movieDates) "" "desc" }}{{ range $movieDates }}{{ $movieDate := . }}
-## {{ cond (eq (len .) 0) "No Date" . }}
-{{ range where (where $.Site.Data.favorites.movies "date" $movieDate) "current" "!=" true }}
-* {{ .title }} ({{ .year }})
-  {{ if gt .rating 0 }}{{ .rating | lang.FormatNumber 1 }}/10.{{ end }}{{ if .note }} {{ .note }}{{ end }}{{ end }}
-{{ end }}

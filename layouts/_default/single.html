@@ -1,7 +1,10 @@
-{{ define "content" }}
-
-  <section class="h-article">
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    <p><time datetime={{ .Date.UTC.Format .Site.Params.FeedDateFmt }}>{{ .Date.Format .Site.Params.ThoughtDateFmt }}</time></p>
+    <ul class="taglist">
+    {{ range .Params.tags }}<li><a href="/tags/{{ urlize . }}/">#{{ . }}</a></li>{{ end }}
+    </ul>
     {{ .Content }}
-  </section>
-
+  </article>
 {{ end }}

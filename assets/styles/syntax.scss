@@ -1,0 +1,40 @@
+// generate via "hugo gen chromastyles --style=monokai > styles.css"
+.chroma {
+  // comments
+  .c, .c1, .ch, .cm, .cp, .cpf, .cs { color: #434c5e; }
+  @media (prefers-color-scheme: dark) {
+    .c, .c1, .ch, .cm, .cp, .cpf, .cs { color: #a0a6b2; }
+  }
+  // keyword, declaration, reserved, attribute
+  .k, .kd, .kr { color: #27598a; }
+  @media (prefers-color-scheme: dark) {
+    .k, .kd, .kr { color: #81a1c1; }
+  }
+  // keyword type, name builtin
+  .kt, .nb { color: #0e6f6c; }
+  @media (prefers-color-scheme: dark) {
+    .kt, .nb { color: #8fbcbb; }
+  }
+  // name attribute, tag
+  .na, .nt { color: #27598a; }
+  @media (prefers-color-scheme: dark) {
+    .na, .nt { color: #81a1c1; }
+  }
+  // name other
+  .nx { color: #077295; }
+  @media (prefers-color-scheme: dark) {
+    .nx { color: #88c0d0; }
+  }
+  // operator
+  .o { color: #434c5e; }
+  @media (prefers-color-scheme: dark) {
+    .o { color: #81a1c1; }
+  }
+  // punctuation
+  .p {}
+  // literal string double
+  .s2 { color: #a84295; }
+  @media (prefers-color-scheme: dark) {
+    .s2 { color: #a3be8c; }
+  }
+}

@@ -1,7 +1,5 @@
-<h1>Stories</h1>
-
 {{ $storyDates := slice }}
-{{ range .Site.Data.favorites.stories }}
+{{ range .Site.Data.recs.stories }}
 	{{ $storyDates = $storyDates | append .date }}
 {{ end }}
 {{ $storyDates = sort (uniq $storyDates) "" "desc" }}
@@ -10,11 +8,11 @@
 	{{ $storyDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
   <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.stories "date" $storyDate) "current" "!=" true }}
+    {{ range where (where $.Site.Data.recs.stories "date" $storyDate) "current" "!=" true }}
       <li>
         <span>
           {{ if .url }}<a href="{{ .url }}">{{ end }}
-            {{ .title }} by {{ .author }}
+            <cite>{{ .title }}</cite> by {{ .author }}
             {{ if .year }}({{ .year }}){{ end }}
           {{ if .url }}</a>{{ end }}
         </span>

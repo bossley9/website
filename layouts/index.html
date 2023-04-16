@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  {{ partial "meta" }}
+
+  <section>
+    {{ with site.GetPage "/thoughts" }}
+      <h1>Recent Thoughts</h1>
+      <ol class="thoughtlist">
+        {{ range first 10 .Pages }}
+          {{ partial "thoughts/listitem.html" . }}
+        {{ end }}
+      </ol>
+      <p><a href="{{ .Site.BaseURL }}/thoughts">more...</a></p>
+    {{ end }}
+  </section>
+
+{{ end }}

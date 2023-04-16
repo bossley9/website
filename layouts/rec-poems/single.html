@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article>
+    <h1><cite>{{ .Title }}</cite> by {{ .Params.author }}</h1>
+    {{ with .Params.note }}
+      <p>{{ . }}</p>
+    {{ end }}
+    {{ with .Params.year }}
+      <p>Written in {{ . }}.</p>
+    {{ end }}
+    <pre class="poem">{{ .RawContent }}</pre>
+
+    <br />
+    <p class="footer">I do not claim ownership for any of this writing. I only host it here because the sources for these works are often inaccessible or go missing and I want to preserve the beautiful works of these authors for others to enjoy.</p>
+    <p class="footer">If you are an author of this work and would like to have it removed, please contact me.</p>
+  </article>
+{{ end }}

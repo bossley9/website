@@ -1,7 +1,5 @@
-<h1>Movies</h1>
-
 {{ $movieDates := slice }}
-{{ range .Site.Data.favorites.movies }}
+{{ range .Site.Data.recs.movies }}
 	{{ $movieDates = $movieDates | append .date }}
 {{ end }}
 {{ $movieDates = sort (uniq $movieDates) "" "desc" }}
@@ -10,7 +8,7 @@
 	{{ $movieDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
   <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.movies "date" $movieDate) "current" "!=" true }}
+    {{ range where (where $.Site.Data.recs.movies "date" $movieDate) "current" "!=" true }}
       <li>
         <span>
           {{ .title }} ({{ .year }})

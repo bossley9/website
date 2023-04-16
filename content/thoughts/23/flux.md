@@ -1,0 +1,95 @@
+---
+title: "flux"
+description: "flux: a Miniflux client app"
+date: 2023-02-11T15:53:00-07:00
+tags:
+  - "miniflux"
+  - "frontend"
+  - "react native"
+  - "react query"
+  - "project"
+  - "tech"
+---
+
+Once again, I've been working diligently on another technical project.
+
+I now introduce **flux**, a Miniflux client phone app. It's not on the Google Play Store or the Apple App Store since it costs money to distribute (not to mention laws for compliance and security) but if people request it, I can create versioned builds as releases on Github or something like that.
+
+https://git.sr.ht/~bossley9/flux
+
+Miniflux is an open source libre RSS feed reader I've been using religiously for the past year now. With NixOS it's super easy to host yourself, and it provides every feature I've really ever wanted. Well, everything except for a proper mobile experience. Because I primarily read news feeds on the train to work or when I'm out in public, I wanted a convenient and easy way to view my feeds. It's possible to view Miniflux via the PWA it provides in its default web interface, but it's a bit clunky in my experience. Similarly, none of the existing Miniflux mobile clients I found on the app store suited my needs. I wanted something simple and concise. I concluded that the only way I would be satisfied with my feed reading experience was to create my own client. Thus, **flux** was born.
+
+## Design
+
+I decided to work with React Native and Typescript as my framework and language of choice. I am a web engineer by trade and am very familiar with React, so I decided to brush up on my frontend skills and pursue a framework I wouldn't have trouble styling. I also chose Typescript for its numerous advantages over plain Javascript (the most obvious being relative type safety).
+
+Because the scope of my application was not intended to grow beyond making a few API calls and displaying the retrieve content, I stuck with Expo to build my app. This was the first time I had used Expo in years, and it has improved significantly in user experience and ease of use.
+
+## User Interface
+
+I chose to structure the interface in the form of tabs based on my most frequent uses: Feeds (view all feeds), Starred (view starred entries), Unread (view unread entries), History (view read entries), and Settings (for logging out the user).
+
+{{<rawhtml>}}
+<video height="700" controls>
+  <source src="/static/thoughts/23/flux-exhibit.mp4" type="video/mp4" />
+  Sorry, your browser does not support embedded video.
+</video>
+{{</rawhtml>}}
+
+To make the project simpler, I decided to not implement any form of modifying user data. You won't be able to add, edit or remove feeds, disable feeds, add API keys, and any other interaction. The core functionality of the app is to view feed entries and star them if desired. I don't add or remove feeds very often and I think it's better to perform those actions via the official web interface.
+
+## API
+
+There's not much to say on the method of data querying/mutation I used. [Miniflux provides its own API](https://miniflux.app/docs/api.html) out of the box and it's extremely thorough.
+
+## React Query
+
+I chose [React Query](https://tanstack.com/query/latest) as my data management library of choice. It's incredibly elegant when it comes to data fetching, providing prefetching, stale data refetching, request deduplication, caching, and more out of the box. Data retrieval requests (called queries) and data modifications (called mutations) are made in the form of React hooks:
+
+```tsx
+const { data, isFetching, isError, error } = useQuery({
+  queryKey: ["data"],
+  queryFn: () => axios.get("https://api.some-website.com/v1/data"),
+});
+
+const { mutate: saveData } = useMutation({
+  mutationFn: () => axios.post("https://api.some-website.com/v1/data"),
+});
+
+<div>{data}</div>
+<button onClick={() => saveData()}>save data</button>
+```
+
+It's just as painless to fetch continuously rendered or paginated data (called infinite queries):
+
+```tsx
+const { data, hasNextPage, fetchNextPage } useInfiniteQuery({
+  queryKey: ["data"],
+  queryFn: ({ pageParam = 0 }) => {
+    const url = "https://api.some-website.com/v1/data?page=" + pageParam
+    return axios.get(url)
+  },
+  getNextPageParam: (lastPage, pages) => lastPage.cursor,
+})
+
+<div>
+  {data.pages.map((page, i) => {
+    return (
+      <Fragment key={i}>
+        {page.todos.map((todo) => {
+          return (
+            <div key={todo.id}>{todo.text}</div>
+          )
+        })}
+      </Fragment>
+    )
+  })}
+</div>
+{hasNextPage && <button onClick={() => fetchNextPage()}>next page</button>}
+```
+
+I really can't recommend it enough for any JS/TS application.
+
+## Conclusion
+
+This was a great experience for me to learn more about React Query and have a little fun making a mobile app I will use daily.

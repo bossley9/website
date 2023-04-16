@@ -1,0 +1,240 @@
+[
+  {
+    "type": "article",
+    "title": "So, what's next",
+    "author": "Denis Pushkarev",
+    "url": "https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md",
+    "published": "2023-02-14",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Avoiding useEffect with callback refs",
+    "author": "Dominik Dorfmeister",
+    "url": "https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs",
+    "published": "2022-08-14",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Why React isn't dying",
+    "author": "Dominik Dorfmeister",
+    "url": "https://tkdodo.eu/blog/why-react-isnt-dying",
+    "published": "2023-01-29",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Type-safe React Query",
+    "author": "Dominik Dorfmeister",
+    "url": "https://tkdodo.eu/blog/type-safe-react-query",
+    "published": "2023-01-07",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Refactor impactfully",
+    "author": "Dominik Dorfmeister",
+    "url": "https://tkdodo.eu/blog/refactor-impactfully",
+    "published": "2022-11-13",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "On quality, or why I am now just posting things",
+    "author": "Nihilazo",
+    "url": "https://tilde.town/~nihilazo/log/quality.html",
+    "published": "2022-12-06",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "Manjarno",
+    "author": "EmeraldSnorlax",
+    "url": "https://manjarno.snorlax.sh",
+    "published": "2022-11-06",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "\"Invalid Username or Password\": a useless security measure",
+    "author": "Kevin Burke",
+    "url": "https://kevin.burke.dev/kevin/invalid-username-or-password-useless/",
+    "published": "2014-12-01",
+    "date": "2022"
+  },
+  {
+    "type": "paper",
+    "title": "RSA and ECC: A Comparative Analysis",
+    "author": "Dindayal Mahto and Dilip Kumar Yadav",
+    "url": "https://sam.bossley.us/static/thoughts/22/rsa-and-ecc-comparative-analysis.pdf",
+    "published": "2017-02-01",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "35 Million Hot Dogs: Benchmarking Caddy vs. Nginx",
+    "author": "Tyblog",
+    "url": "https://blog.tjll.net/reverse-proxy-hot-dog-eating-contest-caddy-vs-nginx",
+    "published": "2022-09-14",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "Nix Flakes",
+    "author": "Eelco Dolstra",
+    "url": "https://www.tweag.io/blog/2020-05-25-flakes",
+    "published": "2020-05-25",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "Minimizing Liabilities Is Making It.",
+    "author": "Luke Smith",
+    "url": "https://lukesmith.xyz/articles/minimizing-liabilities-is-making-it",
+    "published": "2022-07-16",
+    "date": "2022"
+  },
+  {
+    "type": "article",
+    "title": "from apples to pears",
+    "author": "Ted Unangst",
+    "url": "https://flak.tedunangst.com/post/from-apples-to-pears",
+    "published": "2022-06-22",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "parallel tree running",
+    "author": "Ted Unangst",
+    "url": "https://flak.tedunangst.com/post/parallel-tree-running",
+    "published": "2022-05-16",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "On Politics",
+    "author": "Skyjake",
+    "url": "https://gmi.skyjake.fi/gemlog/2022-05_on-politics.gmi",
+    "published": "2022-05-05",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Stop Using Politics As A Cudgel to Discourage Experimentation",
+    "author": "Xe Iaso",
+    "url": "https://xeiaso.net/blog/politics-cudgel-experimentation-2022-04-21",
+    "published": "2022-04-01",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "cgo does clear errno",
+    "author": "Tedu",
+    "url": "https://flak.tedunangst.com/post/cgo-does-clear-errno",
+    "published": "2022-04-15",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Xe Iaso",
+    "author": "Technical Solutions Poorly Solve Problems",
+    "url": "https://xeiaso.net/blog/social-quandry-devops-2022-03-17",
+    "published": "2022-03-17",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Writing files 5 to 9 times faster than fprintf",
+    "author": "Victor Zverovich",
+    "url": "https://www.zverovich.net/2020/08/04/optimal-file-buffer-size.html",
+    "published": "2020-04-04",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "What \"Hardware is Hard\" Really Means",
+    "author": "Nirav Patel",
+    "url": "https://eclecti.cc/bytes/what-hardware-is-hard-really-means",
+    "published": "2022-01-31",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "A Vim Guide for Advanced Users",
+    "author": "Matthieu Cneude",
+    "url": "https://thevaluable.dev/vim-advanced",
+    "published": "2021-02-27",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Quitting Computer Hoarding",
+    "author": "Oliver Lowe",
+    "url": "https://www.olowe.co/2020/11/quitting-computer-hoarding.html",
+    "published": "2020-11-25",
+    "date": "2022",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Why computers suck and how learning from OpenBSD can make them marginally less horrible",
+    "author": "Arthur Rasmusson",
+    "url": "https://arccompute.com/blog/why-computers-suck-and-how-openbsd-makes-them-marginally-better",
+    "published": "2019-12-05",
+    "date": "2021",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Monero Maximalism: Or, How Bitcoin Is a ****coin",
+    "author": "Luke Smith",
+    "url": "https://lukesmith.xyz/articles/monero-maximalism-or-how-bitcoin-is-a-coin.html",
+    "published": "2021-04-21",
+    "date": "2021",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Dear open source developers",
+    "author": "Solene Rapenne",
+    "url": "https://dataswamp.org/~solene/2021-09-09-dear-developers.html",
+    "published": "2021-09-09",
+    "date": "2021",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "Obscenities are symptoms of Weak Minds",
+    "author": "Luke Smith",
+    "url": "https://lukesmith.xyz/articles/obscenities-are-symptoms-of-weak-minds",
+    "published": "2021-09-03",
+    "date": "2021",
+    "note": ""
+  },
+  {
+    "type": "article",
+    "title": "I Forgive Me",
+    "author": "Xe Iaso",
+    "published": "2021-08-22",
+    "url": "https://xeiaso.net/blog/i-forgive-me-2021-08-22",
+    "date": "2021"
+  },
+  {
+    "type": "paper",
+    "title": "The Threat of Comprehensive Overstimulation in Modern Society",
+    "author": "Gregory J. Robson",
+    "url": "https://sam.bossley.us/static/thoughts/20/comprehensive-overstimulation.pdf",
+    "published": "2016-12-08",
+    "date": "2020"
+  }
+]

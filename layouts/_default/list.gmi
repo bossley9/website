@@ -1,5 +1,0 @@
-{{ define "content" }}
-# Tagged "{{ .Title }}"
-
-{{ range .Pages }}=> {{ .Permalink }} {{ .Date.Format .Site.Params.gemFormat }} {{ .Title }}
-{{ end }}{{ end }}

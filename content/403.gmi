@@ -1,8 +1,0 @@
----
-title: Page Forbidden
-description: The page you were looking for has restricted access.
----
-
-# Error 403: Page Forbidden
-
-Sorry! This content is restricted.

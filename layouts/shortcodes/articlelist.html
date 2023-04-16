@@ -1,7 +1,5 @@
-<h1>Articles</h1>
-
 {{ $articleDates := slice }}
-{{ range .Site.Data.favorites.articles }}
+{{ range .Site.Data.recs.articles }}
 	{{ $articleDates = $articleDates | append .date }}
 {{ end }}
 {{ $articleDates = sort (uniq $articleDates) "" "desc" }}
@@ -10,12 +8,16 @@
 	{{ $articleDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
   <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.articles "date" $articleDate) "current" "!=" true }}
+    {{ range where (where $.Site.Data.recs.articles "date" $articleDate) "current" "!=" true }}
       <li>
         <span>
           <a href="{{ .url }}">
-            {{ .title }} by {{ .author }}
-            ({{ (time .published).Year }})
+            {{ if (eq .type "paper") }}
+              {{ .author }}, {{ (time .published).Year }}. <cite>{{ .title }}</cite>.
+            {{ else }}
+              {{ .title }} by {{ .author }}
+              ({{ (time .published).Year }})
+            {{ end }}
           </a>
         </span>
         <span>

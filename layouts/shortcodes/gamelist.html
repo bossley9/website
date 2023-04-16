@@ -1,11 +1,9 @@
-<h1>Games</h1>
-
-{{ range (first 1 (where .Site.Data.favorites.games "current" true)) }}
+{{ range (first 1 (where .Site.Data.recs.games "current" true)) }}
   <p>I'm currently playing {{ .title }}.</p>
 {{ end }}
 
 {{ $gameDates := slice }}
-{{ range .Site.Data.favorites.games }}
+{{ range .Site.Data.recs.games }}
 	{{ $gameDates = $gameDates | append .date }}
 {{ end }}
 {{ $gameDates = sort (uniq $gameDates) "" "desc" }}
@@ -14,7 +12,7 @@
 	{{ $gameDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
   <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.games "date" $gameDate) "current" "!=" true }}
+    {{ range where (where $.Site.Data.recs.games "date" $gameDate) "current" "!=" true }}
       <li>
         <span>
           {{ .title }} ({{ .year }})

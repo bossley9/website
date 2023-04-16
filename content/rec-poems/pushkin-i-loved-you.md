@@ -1,0 +1,21 @@
+---
+title: "I Loved You"
+author: "Alexander Sergeyevich Pushkin"
+note: "Translated to English."
+---
+
+I loved you, and I probably still do,
+
+And for a while the feeling may remain...
+
+But let my love no longer trouble you,
+
+I do not wish to cause you any pain.
+
+I loved you; and the hopelessness I knew,
+
+The jealousy, the shyness - though in vain -
+
+Made up a love so tender and so true
+
+As may God grant you to be loved again.

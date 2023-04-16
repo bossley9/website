@@ -1,11 +1,11 @@
-<h1>Books</h1>
-
-{{ range (first 1 (where .Site.Data.favorites.books "current" true)) }}
-  <p>I'm currently reading {{ .title }} by {{ .author }}.</p>
+{{ range (first 1 (where .Site.Data.recs.books "current" true)) }}
+        <p>
+          I&#39;m currently reading <i>{{ .title }}</i> by {{ .author }}.
+        </p>
 {{ end }}
 
 {{ $bookDates := slice }}
-{{ range .Site.Data.favorites.books }}
+{{ range .Site.Data.recs.books }}
 	{{ $bookDates = $bookDates | append .date }}
 {{ end }}
 {{ $bookDates = sort (uniq $bookDates) "" "desc" }}
@@ -14,7 +14,7 @@
 	{{ $bookDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
   <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.books "date" $bookDate) "current" "!=" true }}
+    {{ range where (where $.Site.Data.recs.books "date" $bookDate) "current" "!=" true }}
       <li>
         <span>
           <a href="https://isbnsearch.org/isbn/{{ .isbn }}">

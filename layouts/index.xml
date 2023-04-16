@@ -1,0 +1,27 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ .Site.Title }}</title>
+  <subtitle>{{ .Site.Params.Description }}</subtitle>
+  <link href="{{ .Site.BaseURL }}/feed.xml" rel="self"/>
+  <link href="{{ .Site.BaseURL }}/"/>
+  <updated>{{ now.UTC.Format .Site.Params.FeedDateFmt | safeHTML }}</updated>
+  <id>{{ .Site.BaseURL }}/</id>
+  <rights>{{ .Site.Copyright }}</rights>
+  <author>
+    <name>{{ .Site.Params.Author }}</name>
+    <email>{{ .Site.Params.Email }}</email>
+  </author>
+  {{ with .Site.GetPage "/thoughts" }}
+    {{ range .Pages | first 25 }}
+      <entry>
+        <title>{{ .Title }}</title>
+        <link href="{{ .Permalink }}"/>
+        <updated>{{ .Date.UTC.Format .Site.Params.FeedDateFmt | safeHTML }}</updated>
+        <id>{{ .Permalink }}</id>
+        <content type="html">
+          {{ .Content | htmlUnescape | safeHTML | htmlEscape }}
+        </content>
+      </entry>
+    {{ end }}
+  {{ end }}
+</feed>

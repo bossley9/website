@@ -1,11 +1,9 @@
-<h1>Anime</h1>
-
-{{ range (first 1 (where .Site.Data.favorites.anime "current" true)) }}
+{{ range (first 1 (where .Site.Data.recs.anime "current" true)) }}
   <p>I'm currently watching {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}.</p>
 {{ end }}
 
 {{ $animeDates := slice }}
-{{ range .Site.Data.favorites.anime }}
+{{ range .Site.Data.recs.anime }}
 	{{ $animeDates = $animeDates | append .date }}
 {{ end }}
 {{ $animeDates = sort (uniq $animeDates) "" "desc" }}
@@ -13,8 +11,8 @@
 {{ range $animeDates }}
 	{{ $animeDate := . }}
   <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
-  <ol class="recs">
-    {{ range where (where $.Site.Data.favorites.anime "date" $animeDate) "current" "!=" true }}
+  <ol>
+    {{ range where (where $.Site.Data.recs.anime "date" $animeDate) "current" "!=" true }}
       <li>
         <span>
           {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}

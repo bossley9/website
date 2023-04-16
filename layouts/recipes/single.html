@@ -1,19 +1,24 @@
-{{ define "content" }}
+{{ define "main" }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      <p>
+        Last updated 
+        <time datetime={{ .Date.UTC.Format .Site.Params.FeedDateFmt }}>{{ .Date.Format .Site.Params.ThoughtDateFmt }}</time>
+      </p>
+      <ul class="taglist">
+        {{ range .Params.tags }}
+          <li>
+            <a href="/tags/{{ urlize . }}/">#{{ . }}</a>
+          </li>
+        {{ end }}
+      </ul>
 
-<article>
-    <h1>{{ .Title }}</h1>
-    <span>Last updated {{ .Date.Format .Site.Params.dateFormat }}</span>
-    <ul class="taglist">
-    {{ range .Params.tags }}<li><a href="/tags/{{ urlize . }}/">#{{ . }}</a></li>{{ end }}
-    </ul>
+      {{ with .Params.prep }}<p>Prep time: {{ . }}</p>{{ end }}
+      {{ with .Params.cook }}<p>Cook time: {{ . }}</p>{{ end }}
+      {{ with .Params.wait }}<p>Wait time: {{ . }}</p>{{ end }}
 
-    {{ with .Params.prep }}<p><strong>Prep time: {{ . }}</strong></p>{{ end }}
-    {{ with .Params.cook }}<p><strong>Cook time: {{ . }}</strong></p>{{ end }}
-    {{ with .Params.wait }}<p><strong>Wait time: {{ . }}</strong></p>{{ end }}
+      <p>Serves: {{ .Params.servings }}</p>
 
-    {{ with .Params.servings }}<p><strong>Serves: {{ . }}</strong></p>{{ end }}
-
-    {{ .Content }}
-  </article>
-
+      {{ .Content }}
+    </article>
 {{ end }}
