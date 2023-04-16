@@ -1,3 +1,5 @@
 .hugo_build.lock
 resources/
+node_modules/
 dist/
+.astro/

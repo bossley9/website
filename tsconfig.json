@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "allowJs": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@static/*": ["static/*"]
+    },
+    "resolveJsonModule": true,
+    "strict": true
+  }
+}
