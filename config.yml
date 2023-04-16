@@ -34,6 +34,7 @@ buildDrafts: false
 buildExpired: false
 buildFuture: false
 
+assetDir: 'src/assets'
 contentDir: 'src/content'
 
 defaultContentLanguage: "en"
