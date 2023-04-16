@@ -1,15 +1,21 @@
 {{ define "main" }}
 
-  <h1>Thoughts</h1>
-  <p>Writing is one of my favorite pastimes. I mostly write about technical programs or software that interests me but I also write reviews and life reflections.</p>
-  {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
-    <h2>{{ .Key }}</h2>
-    <ol class="thoughtlist">
-      {{ range .Pages }}
-        {{ partial "thoughts/listitem.html" . }}
+    <section>
+      <h1>Thoughts</h1>
+      <p>
+        Writing is one of my favorite pastimes. I mostly write about technical
+        programs or software that interests me but I also write reviews and life
+        reflections.
+      </p>
+      {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
+            <h2>{{ .Key }}</h2>
+            <ol class="thoughtlist">
+              {{ range .Pages }}
+                {{ partial "thoughts/listitem.html" . }}
+              {{ end }}
+            </ol>
       {{ end }}
-    </ol>
-  {{ end }}
+    </section>
 
   {{ template "misc/pagination.html" . }}
 

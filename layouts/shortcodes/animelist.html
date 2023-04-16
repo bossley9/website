@@ -1,5 +1,8 @@
 {{ range (first 1 (where .Site.Data.recs.anime "current" true)) }}
-  <p>I'm currently watching {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}.</p>
+        <p>
+          I&#39;m currently watching {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}
+          .
+        </p>
 {{ end }}
 
 {{ $animeDates := slice }}
@@ -10,24 +13,24 @@
 
 {{ range $animeDates }}
 	{{ $animeDate := . }}
-  <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
-  <ol>
-    {{ range where (where $.Site.Data.recs.anime "date" $animeDate) "current" "!=" true }}
-      <li>
-        <span>
-          {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}
-          {{ if eq .type "anime/movie" }}({{ .year }}){{ end }}
-          {{ if eq .type "anime" }}({{ (time .run_start).Year }}){{ end }}
-        </span>
-        <span>
-        {{ if gt .rating 0 }}
-          {{ .rating | lang.FormatNumber 1 }}/10.
-        {{ end }}
-        {{ if .note }}
-          <i>{{ .note }}</i>
-        {{ end }}
-        </span>
-      </li>
-    {{ end }}
-  </ol>
+            <h2>{{ cond (eq (len .) 0) "No Date" . }}</h2>
+            <ol>
+              {{ range where (where $.Site.Data.recs.anime "date" $animeDate) "current" "!=" true }}
+                  <li>
+                    <span>
+                      {{ if .title_translated }}{{ .title_translated }}{{ else }}{{ .title }}{{ end }}
+                      {{ if eq .type "anime/movie" }}({{ .year }}){{ end }}
+                      {{ if eq .type "anime" }}({{ (time .run_start).Year }}){{ end }}
+                    </span>
+                    <span>
+                    {{ if gt .rating 0 }}
+                      {{ .rating | lang.FormatNumber 1 }}/10.
+                    {{ end }}
+                    {{ if .note }}
+                      <i>{{ .note }}</i>
+                    {{ end }}
+                    </span>
+                  </li>
+              {{ end }}
+            </ol>
 {{ end }}

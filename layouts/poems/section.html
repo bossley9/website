@@ -1,16 +1,21 @@
 {{ define "main" }}
 
-  <h1>Poems</h1>
-  <p>I am by nature a very thoughtful and emotional person. I often release my pain and expression in the form of poetry.</p>
+    <section>
+      <h1>Poems</h1>
+      <p>
+        I am by nature a very thoughtful and emotional person. I often release
+        my pain and expression in the form of poetry.
+      </p>
   {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
-    <h2>{{ .Key }}</h2>
-    <ol class="thoughtlist">
+            <h2>{{ .Key }}</h2>
+            <ol class="thoughtlist">
       {{ range .Pages }}
         {{ partial "thoughts/listitem.html" . }}
       {{ end }}
-    </ol>
+            </ol>
   {{ end }}
 
   {{ template "misc/pagination.html" . }}
+    </section>
 
 {{ end }}
