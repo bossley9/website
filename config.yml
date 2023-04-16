@@ -34,6 +34,8 @@ buildDrafts: false
 buildExpired: false
 buildFuture: false
 
+contentDir: 'src/content'
+
 defaultContentLanguage: "en"
 enableRobotsTXT: false # disable automatic robots.txt
 hasCJKLanguage: false # don't count words in CJK languages
