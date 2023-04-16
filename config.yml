@@ -36,6 +36,7 @@ buildFuture: false
 
 assetDir: 'src/assets'
 contentDir: 'src/content'
+dataDir: 'src/data'
 publishDir: 'dist'
 
 defaultContentLanguage: "en"
