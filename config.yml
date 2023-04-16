@@ -36,6 +36,7 @@ buildFuture: false
 
 assetDir: 'src/assets'
 contentDir: 'src/content'
+publishDir: 'dist'
 
 defaultContentLanguage: "en"
 enableRobotsTXT: false # disable automatic robots.txt
