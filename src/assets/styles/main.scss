@@ -27,7 +27,8 @@ $dark-secondary: #f29ea6;
   font-display: fallback;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   min-height: 100%;
   margin: 0;
@@ -36,7 +37,9 @@ html, body {
   font-size: 16px;
 }
 
-html, body, a {
+html,
+body,
+a {
   color: $light-fg;
   background-color: $light-bg;
   @media (prefers-color-scheme: dark) {
@@ -69,8 +72,7 @@ body {
 header,
 section,
 article,
-footer
-{
+footer {
   margin: 3rem auto;
 }
 
@@ -83,12 +85,17 @@ header nav {
   a {
     padding: 0.2rem;
     margin-bottom: 0.1rem;
-    &:not(:last-child) { margin-right: 0.2rem; }
-    &#title { font-weight: bold; }
+    &:not(:last-child) {
+      margin-right: 0.2rem;
+    }
+    &#title {
+      font-weight: bold;
+    }
   }
 }
 
-footer, .footer {
+footer,
+.footer {
   font-size: 0.75rem;
 
   svg {
@@ -125,8 +132,13 @@ h6 {
   margin: 1rem 0;
 }
 
-a { text-decoration: none; }
-a:hover,a:focus { text-decoration: underline; }
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
 a:focus {
   outline-style: dotted;
   outline-width: 1.5px;
@@ -139,7 +151,9 @@ ol.thoughtlist {
   margin: 0;
   padding: 0;
 
-  li { margin: 1rem 0; }
+  li {
+    margin: 1rem 0;
+  }
   li a {
     display: inline-flex;
     flex-direction: column;
@@ -149,7 +163,8 @@ ol.thoughtlist {
   }
 }
 
-ul.taglist, ul.linklist {
+ul.taglist,
+ul.linklist {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -157,14 +172,18 @@ ul.taglist, ul.linklist {
   flex-wrap: wrap;
   li {
     margin-bottom: 0.2rem;
-    &:not(:last-child) { margin-right: 0.5rem; }
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
   }
 }
 
 // sections
 
 section#meta {
-  a { text-decoration: underline; }
+  a {
+    text-decoration: underline;
+  }
 }
 
 .link {
@@ -175,14 +194,25 @@ section#meta {
 }
 
 article {
-  code { font-family: "Courier New", monospace; }
-  a { @extend .link }
+  code {
+    font-family: "Courier New", monospace;
+  }
+  a {
+    @extend .link;
+  }
   .anchor {
     margin-left: 0.5rem;
     display: none;
   }
-  h1, h2, h3, h4, h5, h6 {
-    &:hover .anchor { display: inline; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:hover .anchor {
+      display: inline;
+    }
   }
   p code {
     color: $light-secondary;
@@ -201,13 +231,20 @@ article {
       background-color: $dark-bg-alt;
     }
   }
-  pre code { margin-right: 1rem; }
-  ul, ol {
+  pre code {
+    margin-right: 1rem;
+  }
+  ul,
+  ol {
     margin: 1rem 0;
     padding-left: 1rem;
   }
-  ul { list-style-type: disc; }
-  ol { list-style-type: decimal; }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
   blockquote {
     margin: 1rem 0;
     padding: 0 1.5rem;
@@ -223,7 +260,8 @@ article {
   }
   table {
     border-collapse: collapse;
-    th, td {
+    th,
+    td {
       padding: 0.25rem;
       border: 0.1rem solid $light-fg-alt;
       @media (prefers-color-scheme: dark) {
@@ -231,7 +269,9 @@ article {
       }
     }
   }
-  img, video, audio {
+  img,
+  video,
+  audio {
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -241,9 +281,10 @@ article {
     max-height: 600px;
   }
   img::after {
-    content: " (image)";
+    content: ' (image)';
   }
-  img::before, img::after {
+  img::before,
+  img::after {
     font-style: italic;
     color: $light-fg-alt;
     @media (prefers-color-scheme: dark) {
@@ -252,7 +293,8 @@ article {
   }
 }
 
-article.tabs pre, pre.poem {
+article.tabs pre,
+pre.poem {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
@@ -262,12 +304,18 @@ article.tabs pre, pre.poem {
 }
 
 section.recs {
-  a { @extend .link }
+  a {
+    @extend .link;
+  }
   ol {
     padding: 0;
     list-style-type: none;
-    li { margin: 1rem 0; }
-    span { display: block; }
+    li {
+      margin: 1rem 0;
+    }
+    span {
+      display: block;
+    }
   }
 }
 
@@ -283,7 +331,9 @@ ul.pagination {
     display: inline-block;
     text-align: center;
   }
-  li.active { display: none; }
+  li.active {
+    display: none;
+  }
 
   a {
     padding: 0.2rem;
@@ -302,10 +352,28 @@ ul.pagination {
 
 // single pages
 
+ol.tagindex {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  a {
+    @extend .link;
+  }
+}
+
 table.rating-guide {
   border-collapse: collapse;
 
-  th,td {
+  th,
+  td {
     padding: 0.4rem;
     border-width: 1px;
     border-style: solid;

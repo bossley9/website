@@ -1,3 +1,32 @@
+:root {
+  --astro-code-color-text: #20242d;
+  --astro-code-color-background: #ebebe8;
+  --astro-code-token-constant: #27598a;
+  --astro-code-token-comment: #616e88;
+  --astro-code-token-keyword: #27598a;
+  --astro-code-token-function: #077295;
+  --astro-code-token-string-expression: #6f4467;
+  --astro-code-token-punctuation: #20242d;
+  --astro-code-token-string: #2e3440;
+  --astro-code-token-parameter: #2e3440;
+  --astro-code-token-link: #2e3440;
+
+  // translated from https://github.com/nordtheme/visual-studio-code/blob/develop/themes/nord-color-theme.json
+  @media (prefers-color-scheme: dark) {
+    --astro-code-color-text: #eceff4;
+    --astro-code-color-background: #2e3440;
+    --astro-code-token-constant: #81a1c1;
+    --astro-code-token-comment: #616e88;
+    --astro-code-token-keyword: #81a1c1;
+    --astro-code-token-function: #88c0d0;
+    --astro-code-token-string-expression: #a3be8c;
+    --astro-code-token-punctuation: #eceff4;
+    --astro-code-token-string: #d8dee9;
+    --astro-code-token-parameter: #d8dee9;
+    --astro-code-token-link: #d8dee9;
+  }
+}
+
 // generate via "hugo gen chromastyles --style=monokai > styles.css"
 .chroma {
   // comments
