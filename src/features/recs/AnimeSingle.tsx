@@ -24,7 +24,7 @@ export function AnimeSingle() {
   const groupedByDate: Record<string, AnimeList> = animeList
     .filter((item) => !item.current)
     .reduce<Record<string, AnimeList>>((acc, item) => {
-      const key = item.date || 'No Date'
+      const key = item.date
       if (!acc[key]) {
         acc[key] = []
       }
@@ -45,10 +45,7 @@ export function AnimeSingle() {
         </p>
       )}
       {Object.entries(groupedByDate)
-        .sort((a, b) => {
-          if (a[0] === 'No Date') return 1
-          return Number(b[0]) - Number(a[0])
-        })
+        .sort((a, b) => Number(b[0]) - Number(a[0]))
         .map(([year, items]) => (
           <Fragment key={year}>
             <h2>{year}</h2>

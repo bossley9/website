@@ -24,7 +24,7 @@ export function ShowSingle() {
   const groupedByDate: Record<string, ShowList> = showList
     .filter((item) => !item.current)
     .reduce<Record<string, ShowList>>((acc, item) => {
-      const key = item.date || 'No Date'
+      const key = item.date
       if (!acc[key]) {
         acc[key] = []
       }

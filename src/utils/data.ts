@@ -19,7 +19,7 @@ export const animeListSchema = z.array(
           'one of "title" or "title_translated" must be present'
         ),
       z.object({
-        date: z.string(),
+        date: dateSchema,
         rating: ratingSchema,
         note: z.string().optional(),
         current: currentSchema,
@@ -62,7 +62,7 @@ export const bookListSchema = z.array(
     year: dateSchema,
     publisher: z.string(),
     isbn: z.string().regex(/\d\d\d\d\d\d\d\d\d\d\d\d\d/),
-    date: z.string(),
+    date: dateSchema,
     rating: ratingSchema,
     note: z.string().optional(),
     current: currentSchema,
@@ -111,7 +111,7 @@ export const movieListSchema = z.array(
     year: dateSchema,
     director: z.string(),
     producer: z.string(),
-    date: z.string(),
+    date: dateSchema,
     rating: ratingSchema,
     note: z.string().optional(),
   })

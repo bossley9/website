@@ -22,7 +22,7 @@ export function MovieSingle() {
   const groupedByDate: Record<string, MovieList> = movieList.reduce<
     Record<string, MovieList>
   >((acc, item) => {
-    const key = item.date || 'No Date'
+    const key = item.date
     if (!acc[key]) {
       acc[key] = []
     }
@@ -35,10 +35,7 @@ export function MovieSingle() {
       <h1>Movies</h1>
       <p>{description}</p>
       {Object.entries(groupedByDate)
-        .sort((a, b) => {
-          if (a[0] === 'No Date') return 1
-          return Number(b[0]) - Number(a[0])
-        })
+        .sort((a, b) => Number(b[0]) - Number(a[0]))
         .map(([year, items]) => (
           <Fragment key={year}>
             <h2>{year}</h2>

@@ -24,7 +24,7 @@ export function MangaSingle() {
   const groupedByDate: Record<string, MangaList> = mangaList
     .filter((item) => !item.current)
     .reduce<Record<string, MangaList>>((acc, item) => {
-      const key = item.date || 'No Date'
+      const key = item.date
       if (!acc[key]) {
         acc[key] = []
       }

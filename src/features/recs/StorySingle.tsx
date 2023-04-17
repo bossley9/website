@@ -22,7 +22,7 @@ export function StorySingle() {
   const groupedByDate: Record<string, StoryList> = storyList.reduce<
     Record<string, StoryList>
   >((acc, item) => {
-    const key = item.date || 'No Date'
+    const key = item.date
     if (!acc[key]) {
       acc[key] = []
     }

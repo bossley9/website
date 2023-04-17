@@ -24,7 +24,7 @@ export function GameSingle() {
   const groupedByDate: Record<string, GameList> = gameList
     .filter((item) => !item.current)
     .reduce<Record<string, GameList>>((acc, item) => {
-      const key = item.date || 'No Date'
+      const key = item.date
       if (!acc[key]) {
         acc[key] = []
       }
