@@ -29,12 +29,10 @@ Because the scope of my application was not intended to grow beyond making a few
 
 I chose to structure the interface in the form of tabs based on my most frequent uses: Feeds (view all feeds), Starred (view starred entries), Unread (view unread entries), History (view read entries), and Settings (for logging out the user).
 
-{{<rawhtml>}}
 <video height="700" controls>
   <source src="/static/thoughts/23/flux-exhibit.mp4" type="video/mp4" />
   Sorry, your browser does not support embedded video.
 </video>
-{{</rawhtml>}}
 
 To make the project simpler, I decided to not implement any form of modifying user data. You won't be able to add, edit or remove feeds, disable feeds, add API keys, and any other interaction. The core functionality of the app is to view feed entries and star them if desired. I don't add or remove feeds very often and I think it's better to perform those actions via the official web interface.
 

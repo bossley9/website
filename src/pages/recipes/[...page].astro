@@ -1,0 +1,20 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { RecipeSection, type PageProps } from '@/features/recipes/RecipeSection'
+import { getCollection } from 'astro:content'
+import { sortByAlpha } from '@/utils/sorting'
+import { customPagination } from '@/utils/pagination'
+
+export async function getStaticPaths() {
+  const recipes = (await getCollection('recipes')).sort((a, b) =>
+    sortByAlpha(a.data.title, b.data.title)
+  )
+  return customPagination(recipes)
+}
+
+type Props = PageProps
+---
+
+<BaseLayout title="Recipes">
+  <RecipeSection {...Astro.props} />
+</BaseLayout>

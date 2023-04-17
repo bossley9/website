@@ -66,12 +66,10 @@ The Framework keyboards are nothing short of phenomenal. I'm a persistent critic
 
 Framework's keyboards are the perfect compromise of aesthetic to functionality. The keys are raised slightly higher than all my other keyboards by around 1 milimetre and have a more tactile give when pressing each key. The switches sound akin to muted Jelly POM keycaps with Halo Clears which happen to be my favorite types of keyboards. They produce a soft "thok" rather than a sharp mouse "click" or typewriter "clack" such as the keyboard below:
 
-{{<rawhtml>}}
-  <video controls>
-    <source src="/static/thoughts/22/framework-pom.mp4" type="video/mp4" />
-    Sorry, your browser does not support embedded video.
-  </video>
-{{</rawhtml>}}
+<video controls>
+  <source src="/static/thoughts/22/framework-pom.mp4" type="video/mp4" />
+  Sorry, your browser does not support embedded video.
+</video>
 
 [Jelly POM typing sounds, sourced from :3ildcat's video on POM Jelly Keycaps](https://youtu.be/8Cg6keYdQsg)
 
@@ -115,13 +113,10 @@ The Framework laptop is average in this aspect. It provides a single central hea
 
 The fans can be a bit on the loud end of the spectrum when running intense processes such as compilation but the average user will not encounter this issue. I compiled golang 1.18 and it held up fairly well. In all fairness, if you're using a Framework laptop for heavy compilation or intense video encoding, you should look for a different product entirely.
 
-{{<rawhtml>}}
-  <video controls>
-    <source src="/static/thoughts/22/framework-compilation.mp4" type="video/mp4" />
-    Sorry, your browser does not support embedded video.
-  </video>
-{{</rawhtml>}}
-
+<video controls>
+  <source src="/static/thoughts/22/framework-compilation.mp4" type="video/mp4" />
+  Sorry, your browser does not support embedded video.
+</video>
 
 ### Battery
 

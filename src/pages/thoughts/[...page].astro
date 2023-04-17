@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import {
+  ThoughtSection,
+  type PageProps,
+} from '@/features/thoughts/ThoughtSection'
+import { getCollection } from 'astro:content'
+import { sortByDate } from '@/utils/sorting'
+import { customPagination } from '@/utils/pagination'
+
+export async function getStaticPaths() {
+  const thoughts = (await getCollection('thoughts')).sort((a, b) =>
+    sortByDate(a.data.date, b.data.date)
+  )
+  return customPagination(thoughts)
+}
+
+type Props = PageProps
+---
+
+<BaseLayout title="Thoughts">
+  <ThoughtSection {...Astro.props} />
+</BaseLayout>

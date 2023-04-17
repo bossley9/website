@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { TabSingle, type PageProps } from '@/features/tabs/TabSingle'
+import { getCollection } from 'astro:content'
+import { getTabSlug } from '@/utils/content'
+
+export async function getStaticPaths() {
+  const tabs = await getCollection('tabs')
+  return tabs.map((tab) => {
+    const { date, title } = tab.data
+    return {
+      params: { slug: getTabSlug({ date, title }).slug },
+      props: { tab },
+    }
+  })
+}
+
+type Props = Omit<PageProps, 'children'>
+
+const { title, description, tags } = Astro.props.tab.data
+---
+
+<BaseLayout title={title} description={description} tags={tags}>
+  <TabSingle {...Astro.props} />
+</BaseLayout>

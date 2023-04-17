@@ -1,15 +1,23 @@
 OUTPUT = ./dist
 
-build: clean
-	hugo --minify --cleanDestinationDir
-	sed -i -e "s/&amp;/\&/g" $(OUTPUT)/feed.xml
+build: check clean
+	npm run astro build
 	./scripts/compress $(OUTPUT)
 
+check:
+	npm run lint
+	npm run astro sync
+	npm run astro check
+	npm run typecheck
+
 clean:
-	rm -rf $(OUTPUT)/ ./resources/ .hugo_build.lock
+	rm -rf $(OUTPUT)/
+
+staging:
+	npm run astro preview
 
 server:
-	hugo server
+	npm run astro dev
 
 review:
 	./scripts/spellcheck

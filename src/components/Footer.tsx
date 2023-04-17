@@ -29,7 +29,7 @@ export function Footer() {
           </svg>
         </a>
       </p>
-      <p>
+      <p className="donotprint">
         This site will never contain tracking, ads, or require javascript
         (unless a page specifically demonstrates javascript capabilities).
       </p>

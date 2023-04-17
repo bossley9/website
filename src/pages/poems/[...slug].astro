@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { PoemSingle, type PageProps } from '@/features/poems/PoemSingle'
+import { getCollection } from 'astro:content'
+import { getPoemSlug } from '@/utils/content'
+
+export async function getStaticPaths() {
+  const poems = await getCollection('poems')
+  return poems.map((poem) => {
+    const { date, title } = poem.data
+    return {
+      params: { slug: getPoemSlug({ date, title }).slug },
+      props: { poem },
+    }
+  })
+}
+
+type Props = Omit<PageProps, 'children'>
+
+const { title, description } = Astro.props.poem.data
+---
+
+<BaseLayout title={title} description={description}>
+  <PoemSingle {...Astro.props} />
+</BaseLayout>

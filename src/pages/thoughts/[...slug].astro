@@ -1,0 +1,31 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import {
+  ThoughtSingle,
+  type PageProps,
+} from '@/features/thoughts/ThoughtSingle'
+import { getThoughtSlug } from '@/utils/content'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const thoughts = await getCollection('thoughts')
+  return thoughts.map((thought) => {
+    const { date, title } = thought.data
+    return {
+      params: { slug: getThoughtSlug({ title, date }).slug },
+      props: { thought },
+    }
+  })
+}
+
+type Props = Omit<PageProps, 'children'>
+
+const { title, description, tags, image } = Astro.props.thought.data
+const { Content } = await Astro.props.thought.render()
+---
+
+<BaseLayout title={title} description={description} tags={tags} image={image}>
+  <ThoughtSingle {...Astro.props}>
+    <Content />
+  </ThoughtSingle>
+</BaseLayout>
