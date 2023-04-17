@@ -6,8 +6,8 @@ export function Footer() {
       <p className="donotprint">
         <a aria-label="rss feed" href="/feed.xml">
           <svg
-            width="12"
-            height="12"
+            width="16"
+            height="16"
             viewBox="0 0 448 448"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -28,13 +28,16 @@ export function Footer() {
             </g>
           </svg>
         </a>
+        &nbsp;&nbsp;
+        <a href="https://aboutfeeds.com">What is a feed?</a>
       </p>
       <p className="donotprint">
         This site will never contain tracking, ads, or require javascript
         (unless a page specifically demonstrates javascript capabilities).
       </p>
       <p>
-        <a href="/">{COPYRIGHT}</a>{' '}
+        <a href="/">{COPYRIGHT}</a>
+        &nbsp;
         <a href="https://creativecommons.org/licenses/by-nc/4.0/">
           CC BY-NC 4.0
         </a>
