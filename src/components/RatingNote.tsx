@@ -10,9 +10,10 @@ export function RatingNote({ rating, note }: Props) {
         `${rating.toLocaleString('en-us', {
           minimumFractionDigits: 1,
         })}/10.`}
+      {rating >= 0 && note && <>&nbsp;</>}
       {note && (
         <>
-          &nbsp;<i>{note}</i>
+          <i>{note}</i>
         </>
       )}
     </span>
