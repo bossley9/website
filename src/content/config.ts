@@ -36,10 +36,10 @@ export const collections = {
       description: z.string().optional(),
       date: z.date(),
       tags: z.array(z.string()),
-      prep: z.string().optional(),
-      cook: z.string().optional(),
-      wait: z.string().optional(),
       servings: z.number(),
+      prep: z.number().optional(),
+      cook: z.number().optional(),
+      wait: z.number().optional(),
     }),
   }),
   ['rec-poems']: defineCollection({

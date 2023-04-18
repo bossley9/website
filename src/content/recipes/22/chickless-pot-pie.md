@@ -6,8 +6,8 @@ tags:
   - "dinner"
   - "vegetarian"
   - "vegan"
-prep: "10 min"
-cook: "1 hr"
+prep: 10
+cook: 60
 servings: 4
 ---
 

@@ -5,8 +5,8 @@ date: 2023-03-22T22:33:00-07:00
 tags:
   - "dinner"
   - "pescetarian"
-prep: "10 min"
-cook: "30 min"
+prep: 10
+cook: 30
 servings: 6
 ---
 

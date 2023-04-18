@@ -5,9 +5,9 @@ date: 2022-02-05T10:45:00-07:00
 tags:
   - "dessert"
   - "vegetarian"
-prep: "1 hr"
-cook: "1.5 hrs"
-wait: "12 hrs"
+prep: 60
+cook: 90
+wait: 720
 servings: 6
 ---
 

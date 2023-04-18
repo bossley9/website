@@ -1,3 +1,4 @@
+import { RecipeTime } from '@/features/recipes/RecipeTime'
 import { slugify } from '@/utils/urls'
 import type { CollectionEntry } from 'astro:content'
 import type { ReactNode } from 'react'
@@ -25,9 +26,7 @@ export function RecipeSingle({ recipe, children }: PageProps) {
         ))}
       </ul>
 
-      {prep && <p>Prep time: {prep}</p>}
-      {cook && <p>Cook time: {cook}</p>}
-      {wait && <p>Wait time: {wait}</p>}
+      <RecipeTime prep={prep} cook={cook} wait={wait} />
 
       <p>Serves: {servings}</p>
 

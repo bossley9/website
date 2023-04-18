@@ -6,8 +6,8 @@ tags:
   - "dessert"
   - "vegetarian"
   - "vegan"
-prep: "2 hours"
-cook: "3.5 hours"
+prep: 120
+cook: 210
 servings: 10
 ---
 

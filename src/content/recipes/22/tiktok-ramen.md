@@ -5,8 +5,8 @@ date: 2022-01-27T12:33:00-07:00
 tags:
   - "lunch"
   - "vegetarian"
-prep: "10 min"
-cook: "10 min"
+prep: 10
+cook: 10
 servings: 1
 ---
 

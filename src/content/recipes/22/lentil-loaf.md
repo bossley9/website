@@ -6,7 +6,7 @@ tags:
   - "dinner"
   - "vegetarian"
   - "vegan"
-cook: "1.2 hrs"
+cook: 72
 servings: 4
 ---
 

@@ -5,7 +5,7 @@ date: 2022-02-15T10:45:00-07:00
 tags:
   - "lunch"
   - "vegetarian"
-cook: "1 hr"
+cook: 60
 servings: 2
 ---
 

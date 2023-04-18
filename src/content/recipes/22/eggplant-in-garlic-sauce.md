@@ -6,7 +6,7 @@ tags:
   - "dinner"
   - "vegetarian"
   - "vegan"
-cook: "15 min"
+cook: 15
 servings: 4
 ---
 

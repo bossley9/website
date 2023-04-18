@@ -16,7 +16,7 @@ export const animeListSchema = z.array(
         .partial()
         .refine(
           (data) => data.title || data.title_translated,
-          'one of "title" or "title_translated" must be present'
+          'at least one of "title" or "title_translated" must be present'
         ),
       z.object({
         date: dateSchema,

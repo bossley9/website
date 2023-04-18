@@ -6,7 +6,7 @@ tags:
   - "dinner"
   - "vegetarian"
   - "vegan"
-cook: "30 min"
+cook: 30
 servings: 2
 ---
 

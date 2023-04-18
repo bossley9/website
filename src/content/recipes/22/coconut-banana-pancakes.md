@@ -7,8 +7,8 @@ tags:
   - "lunch"
   - "vegetarian"
   - "vegan"
-prep: "10 min"
-cook: "15 min"
+prep: 10
+cook: 15
 servings: 2
 ---
 

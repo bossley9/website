@@ -5,8 +5,8 @@ date: 2022-12-03T20:40:00-07:00
 tags:
   - "dessert"
   - "vegetarian"
-prep: "1 hr"
-cook: "1 hr"
+prep: 60
+cook: 60
 servings: 6
 ---
 

@@ -5,9 +5,9 @@ date: 2022-08-22T16:57:00-07:00
 tags:
   - "dinner"
   - "vegetarian"
-prep: "20 min"
-cook: "40 min"
-wait: "40 min"
+prep: 20
+cook: 40
+wait: 40
 servings: 6
 ---
 

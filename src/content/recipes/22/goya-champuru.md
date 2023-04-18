@@ -5,8 +5,8 @@ date: 2022-10-30T15:36:00-07:00
 tags:
   - "dinner"
   - "vegetarian"
-prep: "15 min"
-cook: "15 min"
+prep: 15
+cook: 15
 servings: 4
 ---
 

@@ -5,8 +5,8 @@ date: 2022-10-30T12:04:00-07:00
 tags:
   - "dinner"
   - "vegetarian"
-prep: "2 hrs"
-cook: "1 hr 10 min"
+prep: 120
+cook: 70
 servings: 6
 ---
 

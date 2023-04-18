@@ -7,8 +7,8 @@ tags:
   - "dessert"
   - "snack"
   - "vegetarian"
-prep: "5 min"
-wait: "12 hrs"
+prep: 15
+wait: 720
 servings: 2
 ---
 

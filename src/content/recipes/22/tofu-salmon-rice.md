@@ -5,7 +5,7 @@ date: 2022-10-30T12:28:00-07:00
 tags:
   - "dinner"
   - "vegetarian"
-cook: "1 hr"
+cook: 60
 servings: 4
 ---
 
