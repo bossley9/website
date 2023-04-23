@@ -3,7 +3,7 @@ title: "Aether"
 date: 2019-11-03T20:00:00-04:00
 ---
 
-It's completely OK to be lost in the clouds
+It's completely ok to be lost in the clouds
 Floating high, feeling light
 Mind and body distinctly disjoint.
 
