@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "Read-only web apps",
+    "author": "Jeremy Keith",
+    "url": "https://adactio.com/journal/20113",
+    "published": "2023-04-20",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Islands Architecture",
+    "author": "Jason Miller",
+    "url": "https://jasonformat.com/islands-architecture/",
+    "published": "2020-08-11",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "So, what's next",
     "author": "Denis Pushkarev",
     "url": "https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md",

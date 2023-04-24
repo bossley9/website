@@ -2,7 +2,7 @@ import { EMAIL } from '@/constants'
 
 export function About() {
   return (
-    <section id="meta">
+    <section id="about">
       <h1>Hello, I&#39;m Sam (he/him/his)!</h1>
       <p>
         I&#39;m a 20-something year old software engineer living in California.
@@ -17,6 +17,7 @@ export function About() {
       </p>
       <p>
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+        <a rel="me" href="https://mas.to/@bossley9"></a>
       </p>
     </section>
   )
