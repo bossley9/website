@@ -143,6 +143,13 @@ a:focus {
   outline-width: 1.5px;
 }
 
+.link {
+  color: $light-primary;
+  @media (prefers-color-scheme: dark) {
+    color: $dark-primary;
+  }
+}
+
 // groups
 
 ol.thoughtlist {
@@ -177,7 +184,7 @@ ul.linklist {
   }
 }
 
-// sections
+// special sections
 
 section#about {
   a {
@@ -185,10 +192,15 @@ section#about {
   }
 }
 
-.link {
-  color: $light-primary;
-  @media (prefers-color-scheme: dark) {
-    color: $dark-primary;
+section.referrals {
+  ul {
+    padding-left: 1rem;
+  }
+  ul li {
+    margin: 1rem 0;
+  }
+  ul a {
+    @extend .link;
   }
 }
 

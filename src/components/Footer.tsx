@@ -32,6 +32,9 @@ export function Footer() {
         <a href="https://aboutfeeds.com">What is a feed?</a>
       </p>
       <p className="donotprint">
+        <a href="/referrals">Referrals</a>
+      </p>
+      <p className="donotprint">
         This site will never contain tracking, ads, or require javascript
         (unless a page specifically demonstrates javascript capabilities).
       </p>

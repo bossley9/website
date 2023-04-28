@@ -1,6 +1,46 @@
 [
   {
     "type": "article",
+    "title": "A Gentle Introduction to Islands",
+    "author": "Andy Jiang",
+    "url": "https://deno.com/blog/intro-to-islands",
+    "published": "2023-04-26",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Using Pandoc to format a Dissertation from Markdown to HTML, PDF, and ePub",
+    "author": "Terence Eden",
+    "url": "https://shkspr.mobi/blog/2023/04/using-pandoc-to-format-a-dissertation-from-markdown-to-html-pdf-and-epub",
+    "published": "2023-04-24",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Who should lead us?",
+    "author": "Drew Devault",
+    "url": "https://drewdevault.com/2023/04/24/2023-04-24-Who-leads-us.html",
+    "published": "2023-04-24",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "If you're happy with OpenBSD, probably any computer is good enough.",
+    "author": "Connor Oliver",
+    "url": "http://muezza.ca/thoughts/openbsd_imac_g4",
+    "published": "2023-02-05",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Why I Quit Google to Work for Myself",
+    "author": "Michael Lynch",
+    "url": "https://mtlynch.io/why-i-quit-google/",
+    "published": "2018-02-28",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Read-only web apps",
     "author": "Jeremy Keith",
     "url": "https://adactio.com/journal/20113",

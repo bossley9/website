@@ -7,50 +7,50 @@ import { description as movieDescription } from './MovieSingle'
 import { description as showDescription } from './ShowSingle'
 import { description as storyDescription } from './StorySingle'
 
-export function RecSection() {
-  const recList = [
-    {
-      title: 'Anime',
-      description: animeDescription.replace(/\.$/, ''),
-      slug: '/recs/anime',
-    },
-    {
-      title: 'Articles',
-      description: articleDescription.replace(/\.$/, ''),
-      slug: '/recs/articles',
-    },
-    {
-      title: 'Books',
-      description: bookDescription.replace(/\.$/, ''),
-      slug: '/recs/books',
-    },
-    {
-      title: 'Games',
-      description: gameDescription.replace(/\.$/, ''),
-      slug: '/recs/games',
-    },
-    {
-      title: 'Manga',
-      description: mangaDescription.replace(/\.$/, ''),
-      slug: '/recs/manga',
-    },
-    {
-      title: 'Movies',
-      description: movieDescription.replace(/\.$/, ''),
-      slug: '/recs/movies',
-    },
-    {
-      title: 'Shows',
-      description: showDescription.replace(/\.$/, ''),
-      slug: '/recs/shows',
-    },
-    {
-      title: 'Stories',
-      description: storyDescription.replace(/\.$/, ''),
-      slug: '/recs/stories',
-    },
-  ]
+const recList = [
+  {
+    title: 'Anime',
+    description: animeDescription.replace(/\.$/, ''),
+    slug: '/recs/anime',
+  },
+  {
+    title: 'Articles',
+    description: articleDescription.replace(/\.$/, ''),
+    slug: '/recs/articles',
+  },
+  {
+    title: 'Books',
+    description: bookDescription.replace(/\.$/, ''),
+    slug: '/recs/books',
+  },
+  {
+    title: 'Games',
+    description: gameDescription.replace(/\.$/, ''),
+    slug: '/recs/games',
+  },
+  {
+    title: 'Manga',
+    description: mangaDescription.replace(/\.$/, ''),
+    slug: '/recs/manga',
+  },
+  {
+    title: 'Movies',
+    description: movieDescription.replace(/\.$/, ''),
+    slug: '/recs/movies',
+  },
+  {
+    title: 'Shows',
+    description: showDescription.replace(/\.$/, ''),
+    slug: '/recs/shows',
+  },
+  {
+    title: 'Stories',
+    description: storyDescription.replace(/\.$/, ''),
+    slug: '/recs/stories',
+  },
+]
 
+export function RecSection() {
   return (
     <section>
       <h1>Recommendations</h1>
