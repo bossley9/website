@@ -65,6 +65,14 @@
   },
   {
     "type": "article",
+    "title": "Video Compression for Mere Mortals",
+    "author": "Xe Iaso",
+    "url": "https://xeiaso.net/blog/video-compression",
+    "published": "2023-02-08",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Avoiding useEffect with callback refs",
     "author": "Dominik Dorfmeister",
     "url": "https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs",
