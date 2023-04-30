@@ -4,6 +4,7 @@ import {
   ThoughtSingle,
   type PageProps,
 } from '@/features/thoughts/ThoughtSingle'
+import { ThoughtVideoSingle } from '@/features/thoughts/ThoughtVideoSingle'
 import { getThoughtSlug } from '@/utils/content'
 import { getCollection } from 'astro:content'
 
@@ -18,14 +19,20 @@ export async function getStaticPaths() {
   })
 }
 
-type Props = Omit<PageProps, 'children'>
+type Props = PageProps
 
-const { title, description, tags, image } = Astro.props.thought.data
+const { title, description, tags, image, video } = Astro.props.thought.data
 const { Content } = await Astro.props.thought.render()
 ---
 
 <BaseLayout title={title} description={description} tags={tags} image={image}>
-  <ThoughtSingle {...Astro.props}>
-    <Content />
-  </ThoughtSingle>
+  {
+    video ? (
+      <ThoughtVideoSingle {...Astro.props} />
+    ) : (
+      <ThoughtSingle {...Astro.props}>
+        <Content />
+      </ThoughtSingle>
+    )
+  }
 </BaseLayout>

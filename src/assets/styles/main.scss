@@ -204,6 +204,28 @@ section.referrals {
   }
 }
 
+article.thoughtvideo {
+  video {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 1rem;
+  }
+  .metadata {
+    display: flex;
+    align-items: center;
+  }
+  .metadata > * {
+    margin-right: 1rem;
+  }
+  .metadata .taglist li {
+    margin-bottom: 0;
+  }
+  .error {
+    color: red;
+  }
+}
+
 article {
   code {
     font-family: 'Courier New', monospace;

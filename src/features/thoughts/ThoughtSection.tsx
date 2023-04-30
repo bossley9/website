@@ -33,7 +33,7 @@ export function ThoughtSection({ page }: PageProps) {
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol className="thoughtlist">
-              {entries.map(({ data: { date, title } }) => {
+              {entries.map(({ data: { date, title, video } }) => {
                 const { url } = getThoughtSlug({ title, date })
                 return (
                   <ArticleListItem
@@ -41,6 +41,7 @@ export function ThoughtSection({ page }: PageProps) {
                     title={title}
                     date={date}
                     url={url}
+                    isVideo={Boolean(video)}
                   />
                 )
               })}

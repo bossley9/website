@@ -20,10 +20,21 @@ export async function get() {
     .slice(0, 25)
 
   const items: AtomFeed['items'] = recentThoughts.map(({ data, body }) => {
-    const { title, date } = data
+    const { title, date, video, description } = data
+    const permalink = BASE_URL + getThoughtSlug({ title, date }).url
+
+    if (video) {
+      return {
+        title: `${title} (video)`,
+        permalink,
+        date,
+        content: `<p>${description}</p>`,
+      }
+    }
+
     return {
       title,
-      permalink: BASE_URL + getThoughtSlug({ title, date }).url,
+      permalink,
       date,
       content: parser.render(body),
     }

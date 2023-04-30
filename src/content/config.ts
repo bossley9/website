@@ -8,6 +8,9 @@ export const collections = {
       date: z.date(),
       tags: z.array(z.string()),
       image: z.string().optional(),
+      video: z.string().url().optional(),
+      thumbnail: z.string().url().optional(),
+      captions: z.string().url().optional(),
     }),
   }),
   ['tabs']: defineCollection({
