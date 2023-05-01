@@ -91,6 +91,10 @@ header nav {
       font-weight: bold;
     }
   }
+
+  a.active {
+    text-decoration: underline;
+  }
 }
 
 footer,
