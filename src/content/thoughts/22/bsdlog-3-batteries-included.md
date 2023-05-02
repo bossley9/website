@@ -22,7 +22,7 @@ I've finally made a resolution and switched to a privately-hosted OpenBSD VPS to
 
 [https://nextcloud.com](https://nextcloud.com)
 
-[https://git.sr.ht/~bossley9/feedme](https://git.sr.ht/~bossley9/feedme)
+[https://github.com/bossley9/feedme](https://github.com/bossley9/feedme)
 
 The best part of hosting a VPS is that I own it. I can do whatever I want with it and no one can spy on me. Goodbye, Microsoft.
 

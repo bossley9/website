@@ -14,7 +14,7 @@ Here I am a year later, continuing this plunge. Taking that risk was one of the 
 
 Yesterday I took my first leap into the -current branch of OpenBSD. I'm going to be documenting my learning process with OpenBSD  (and -current) over the course of the year in the form of semi-regular logs since I find consistent journaling to be helpful for others and valuable for me to track my personal progress. These will be slightly less formal and include more technical specifics. I also track my current system usability in the form of dotfiles which you can find below.
 
-[https://git.sr.ht/~bossley9/dotfiles/tree/openbsd](https://git.sr.ht/~bossley9/dotfiles/tree/openbsd)
+[https://github.com/bossley9/dotfiles/tree/openbsd](https://github.com/bossley9/dotfiles/tree/openbsd)
 
 To anyone who is interested in trying OpenBSD, I have to say this: it is more than worth your time. You will learn so much about technology and security. Who knows? You might even become an OpenBSD developer someday, or dare to call it your favorite operating system like I do.
 

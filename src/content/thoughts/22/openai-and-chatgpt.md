@@ -193,7 +193,7 @@ function MyComponent({ data }: { data: number[] }) {
 
 Not exactly, although [the issue lies near the data length check](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator).
 
-Here's another real-life example from my [sn project](https://git.sr.ht/~bossley9/sn):
+Here's another real-life example from my [sn project](https://github.com/bossley9/sn):
 
 ```go
 // original code:

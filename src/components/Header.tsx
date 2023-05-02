@@ -16,7 +16,7 @@ export function Header({ currentUrl }: Props) {
         <a className={getClasses('/thoughts')} href="/thoughts">
           thoughts
         </a>
-        <a href="https://git.sr.ht/~bossley9">repos</a>
+        <a href="https://github.com/bossley9">repos</a>
         <a className={getClasses('/tabs')} href="/tabs">
           tabs
         </a>

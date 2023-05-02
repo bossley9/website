@@ -234,4 +234,4 @@ export async function get() {
 
 I've already converted this website over from Hugo to Astro. From your perspective, nothing will have changed. This migration won't affect anything on my website... it will just make me much happier when I add new content :)
 
-As always, you can [view the source code for my website's development branch here](https://git.sr.ht/~bossley9/website/tree/dev).
+As always, you can [view the source code for my website's development branch here](https://github.com/bossley9/website/tree/dev).

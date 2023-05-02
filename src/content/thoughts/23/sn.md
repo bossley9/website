@@ -12,7 +12,7 @@ tags:
 
 I've been working quietly on this project for over six months and today marks the final release of changes required for me to consider the project finished. This project is none other than **sn**, my Simplenote syncing client.
 
-https://git.sr.ht/~bossley9/sn
+https://github.com/bossley9/sn
 
 I started this project early last summer because I wanted to be able to sync text across all my devices. The benefits of having text syncing are obvious: real time grocery list syncing, jotting down notes for later, saving links to look at on desktop, and of course, writing while on the train to work (which I do frequently). My criteria for a perfect note-taking system was as follows:
 
@@ -29,7 +29,7 @@ The closest alternative I could find was Simplenote, a real-time websocket-synci
 
 I designed sn as a command-line syncing client for Simplenote to make text notes accessible and editable in Vim. Focusing on portability and speed, I chose Golang to implement the client because its toolchain is relatively mundane to set up and It is compatible on all operating systems I use including OpenBSD. It also is a statically-typed compiled language, providing speed and type safety out of the box.
 
-I wanted its usage to be synchronous in opposition to its websocket implementation because I wanted to perform each action atomically (download notes, sync notes, upload changes, clear auth, and so on). Simplenote communicates and stores data via [Simperium](https://simperium.com/) and although they provide a public HTTP API, it doesn't work the way it's describe in the documentation. Confusing documentation was a reoccurring theme throughout my development cycle (see [here](https://git.sr.ht/~bossley9/sn/tree/f7f31cb8ed29e50ba3256842098d539c367d6dd3/item/pkg/client/localdiffs.go#L49-51) and [here](https://git.sr.ht/~bossley9/sn/tree/f7f31cb8ed29e50ba3256842098d539c367d6dd3/item/pkg/client/client.go#L134-135)). For the initial MVP, I stuck to sending websocket messages as synchronous API calls and used this pattern for the rest of the project.
+I wanted its usage to be synchronous in opposition to its websocket implementation because I wanted to perform each action atomically (download notes, sync notes, upload changes, clear auth, and so on). Simplenote communicates and stores data via [Simperium](https://simperium.com/) and although they provide a public HTTP API, it doesn't work the way it's describe in the documentation. Confusing documentation was a reoccurring theme throughout my development cycle (see [here](https://github.com/bossley9/sn/blob/f7f31cb8ed29e50ba3256842098d539c367d6dd3/pkg/client/localdiffs.go#L49-L51) and [here](https://github.com/bossley9/sn/blob/f7f31cb8ed29e50ba3256842098d539c367d6dd3/pkg/client/client.go#L134-L135)). For the initial MVP, I stuck to sending websocket messages as synchronous API calls and used this pattern for the rest of the project.
 
 I was initially worried about having to store a plain text username and password. Fortunately, Simperium performs authentication using tokens, and generating a token only requires a single HTTP API call. Now that I host my own Bitwarden instance, I also added support for inputting a Bitwarden master password if the Bitwarden client is detected.
 
@@ -95,7 +95,7 @@ My main criticism of the Go language is its impartiality to file structure. Comi
 
 How do you tell if a file has been edited, and if so, what parts were edited? This is what **diffs** are: a formula for how to change a file from state A to state B.
 
-I learned a lot about how to track diffs over the course of this project and heavily relied on the principles from [Myers' Diff Algorithm](/static/thoughts/23/myers-diff-algorithm.pdf). At a high level, I record two copies of each note and compare the two to generate a diff. Simperium uses a diffing format called JSONDiff I formatted my diffs to match this representation. I may write about diffs in a future article so I'll save on details but you can see [my crude JSONDiff implementation](https://git.sr.ht/~bossley9/sn/tree/f7f31cb8ed29e50ba3256842098d539c367d6dd3/item/pkg/jsondiff/getdiff.go) to get a general sense of how diffing works.
+I learned a lot about how to track diffs over the course of this project and heavily relied on the principles from [Myers' Diff Algorithm](/static/thoughts/23/myers-diff-algorithm.pdf). At a high level, I record two copies of each note and compare the two to generate a diff. Simperium uses a diffing format called JSONDiff I formatted my diffs to match this representation. I may write about diffs in a future article so I'll save on details but you can see [my crude JSONDiff implementation](https://github.com/bossley9/sn/blob/f7f31cb8ed29e50ba3256842098d539c367d6dd3/pkg/jsondiff/getdiff.go) to get a general sense of how diffing works.
 
 ## Conclusion
 

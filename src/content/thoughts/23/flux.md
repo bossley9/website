@@ -15,7 +15,7 @@ Once again, I've been working diligently on another technical project.
 
 I now introduce **flux**, a Miniflux client phone app. It's not on the Google Play Store or the Apple App Store since it costs money to distribute (not to mention laws for compliance and security) but if people request it, I can create versioned builds as releases on Github or something like that.
 
-https://git.sr.ht/~bossley9/flux
+https://github.com/bossley9/flux
 
 Miniflux is an open source libre RSS feed reader I've been using religiously for the past year now. With NixOS it's super easy to host yourself, and it provides every feature I've really ever wanted. Well, everything except for a proper mobile experience. Because I primarily read news feeds on the train to work or when I'm out in public, I wanted a convenient and easy way to view my feeds. It's possible to view Miniflux via the PWA it provides in its default web interface, but it's a bit clunky in my experience. Similarly, none of the existing Miniflux mobile clients I found on the app store suited my needs. I wanted something simple and concise. I concluded that the only way I would be satisfied with my feed reading experience was to create my own client. Thus, **flux** was born.
 
