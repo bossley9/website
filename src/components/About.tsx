@@ -2,10 +2,10 @@ import { EMAIL } from '@/constants'
 
 export function About() {
   return (
-    <section id="about">
+    <section className="about">
       <h1>Hello, I&#39;m Sam (he/him/his)!</h1>
       <p>
-        I&#39;m a 20-something year old software engineer living in California.
+        I&#39;m a 20-something year old software engineer living in Columbus.
       </p>
       <p>
         In my freetime I enjoy writing, reading, music, memes, creating art, and
