@@ -154,6 +154,16 @@ a:focus {
   }
 }
 
+code {
+  font-family: 'Courier New', monospace;
+}
+.inline-code {
+  color: $light-secondary;
+  @media (prefers-color-scheme: dark) {
+    color: $dark-secondary;
+  }
+}
+
 // groups
 
 ol.thoughtlist {
@@ -213,6 +223,20 @@ section.about {
   }
 }
 
+section.keyboard {
+  code {
+    @extend .inline-code;
+  }
+  code a {
+    color: inherit;
+  }
+  iframe {
+    border: 0;
+    width: 100%;
+    min-height: 650px;
+  }
+}
+
 section.referrals {
   ul {
     padding-left: 1rem;
@@ -248,9 +272,6 @@ article.thoughtvideo {
 }
 
 article {
-  code {
-    font-family: 'Courier New', monospace;
-  }
   a {
     @extend .link;
   }
@@ -270,10 +291,7 @@ article {
   }
   p code,
   li code {
-    color: $light-secondary;
-    @media (prefers-color-scheme: dark) {
-      color: $dark-secondary;
-    }
+    @extend .inline-code;
   }
   pre {
     margin: 1rem 0;

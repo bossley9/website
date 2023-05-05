@@ -1,5 +1,16 @@
 import { COPYRIGHT } from '@/constants'
 
+const footerLinks: { href: string; name: string }[] = [
+  {
+    href: '/keyboard',
+    name: 'Keyboard',
+  },
+  {
+    href: '/referrals',
+    name: 'Referrals',
+  },
+]
+
 export function Footer() {
   return (
     <footer>
@@ -32,7 +43,14 @@ export function Footer() {
         <a href="https://aboutfeeds.com">What is a feed?</a>
       </p>
       <p className="donotprint">
-        <a href="/referrals">Referrals</a>
+        {footerLinks.map(({ href, name }, index) => (
+          <>
+            {Boolean(index) && <span> | </span>}
+            <a key={href} href={href}>
+              {name}
+            </a>
+          </>
+        ))}
       </p>
       <p className="donotprint">
         This site will never contain tracking, ads, or require javascript
