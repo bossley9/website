@@ -2,6 +2,10 @@ import { COPYRIGHT } from '@/constants'
 
 const footerLinks: { href: string; name: string }[] = [
   {
+    href: 'https://github.com/bossley9/dotfiles',
+    name: 'Dotfiles',
+  },
+  {
     href: '/keyboard',
     name: 'Keyboard',
   },
