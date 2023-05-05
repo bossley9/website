@@ -251,7 +251,8 @@ article {
       display: inline;
     }
   }
-  p code {
+  p code,
+  li code {
     color: $light-secondary;
     @media (prefers-color-scheme: dark) {
       color: $dark-secondary;
