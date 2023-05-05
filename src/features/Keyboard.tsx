@@ -21,6 +21,7 @@ export function Keyboard() {
         Take a look at my keyboard layout below.
       </p>
       <iframe
+        title="moonlander keyboard layout"
         referrerPolicy="no-referrer"
         src="https://configure.zsa.io/embed/moonlander/layouts/GLLvg/latest/0"
       />
