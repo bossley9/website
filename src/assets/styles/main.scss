@@ -191,6 +191,23 @@ ul.linklist {
 // special sections
 
 section.about {
+  div.stacked {
+    display: flex;
+    gap: 1rem;
+    @media (max-aspect-ratio: 1/1) {
+      flex-direction: column;
+    }
+  }
+
+  img.me {
+    height: 300px;
+    width: 300px;
+    border-radius: 0.25rem;
+    @media (max-aspect-ratio: 1/1) {
+      align-self: center;
+    }
+  }
+
   a {
     text-decoration: underline;
   }
