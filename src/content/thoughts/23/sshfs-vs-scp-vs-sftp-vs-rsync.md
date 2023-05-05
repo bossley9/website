@@ -78,3 +78,5 @@ Here is the final ranking of all the candidates:
 2. `sshfs` is the most convenient for browsing server files using local unix commands.
 3. `scp` provides nice file progress and is supposedly slightly faster than sftp, although it's always taken about the same in all my transfers.
 4. `rsync` falls last. I don't think I'll ever remember what each rsync flag means without looking them up every time. However, on a positive note, rsync can move files without copying.
+
+![a meme of a mother favoring her child "sftp" more than her child "rsync"](/static/thoughts/23/sshfs-favorite-child.png)
