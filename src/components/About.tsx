@@ -5,7 +5,11 @@ export function About() {
     <section className="about">
       <h1>Hello, I&#39;m Sam (he/him/his)!</h1>
       <div className="stacked">
-        <img className="me" src="/static/me.jpg" alt="a portrait of me" />
+        <img
+          className="me"
+          src="/static/me300x300.webp"
+          alt="a portrait of me"
+        />
         <div>
           <p>
             I&#39;m a 20-something year old frontend software engineer living in
