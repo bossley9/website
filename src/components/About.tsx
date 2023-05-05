@@ -7,7 +7,7 @@ export function About() {
       <div className="stacked">
         <img
           className="me"
-          src="/static/me300x300.webp"
+          src="/static/me700x700.webp"
           alt="a portrait of me"
         />
         <div>
