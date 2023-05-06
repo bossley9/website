@@ -304,7 +304,9 @@ article {
       background-color: $dark-bg-alt;
     }
   }
-  pre code {
+  // this solution to preformatted padding relies
+  // on Astro's internal code transformations
+  pre code .line {
     margin-right: 1rem;
   }
   ul,

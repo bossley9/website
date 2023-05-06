@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { COPYRIGHT } from '@/constants'
 
 const footerLinks: { href: string; name: string }[] = [
@@ -48,12 +49,10 @@ export function Footer() {
       </p>
       <p className="donotprint">
         {footerLinks.map(({ href, name }, index) => (
-          <>
+          <Fragment key={href}>
             {Boolean(index) && <span> | </span>}
-            <a key={href} href={href}>
-              {name}
-            </a>
-          </>
+            <a href={href}>{name}</a>
+          </Fragment>
         ))}
       </p>
       <p className="donotprint">
