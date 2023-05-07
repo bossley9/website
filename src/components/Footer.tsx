@@ -62,7 +62,10 @@ export function Footer() {
       <p>
         <a href="/">{COPYRIGHT}</a>
         &nbsp;
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <a
+          className="donotprint"
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+        >
           CC BY-NC 4.0
         </a>
       </p>

@@ -18,7 +18,7 @@ export function ThoughtSingle({
       <p>
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
       </p>
-      <ul className="taglist">
+      <ul className="taglist donotprint">
         {tags.map((tag) => (
           <li key={tag}>
             <a href={`/tags/${slugify(tag)}`}>#{tag}</a>
