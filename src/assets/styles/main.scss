@@ -209,6 +209,19 @@ section.about {
     }
   }
 
+  div.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  // remove margins from top and bottom elements
+  div.details > div:first-child > p:first-child {
+    margin-top: 0;
+  }
+  div.details > div:last-child > p:last-child {
+    margin-bottom: 0;
+  }
+
   img.me {
     height: 300px;
     width: 300px;
