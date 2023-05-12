@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "Open Source Maintainers Owe You Nothing",
+    "author": "Mike McQuaid",
+    "url": "https://mikemcquaid.com/open-source-maintainers-owe-you-nothing/",
+    "published": "2018-03-19",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "The intersectionality of web performance",
     "author": "Jeremy Keith",
     "url": "https://adactio.com/journal/20154",

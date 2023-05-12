@@ -1,6 +1,19 @@
 [
   {
     "type": "game",
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "year": "2023",
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "platform": "Nintendo Switch",
+    "url": "https://zelda.com/tears-of-the-kingdom/",
+    "date": "2023",
+    "note": "",
+    "current": true,
+    "rating": -1
+  },
+  {
+    "type": "game",
     "title": "Pokemon Scarlet",
     "year": "2022",
     "developer": "Game Freak",
