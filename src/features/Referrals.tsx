@@ -9,6 +9,14 @@ const referralList: Referral[] = [
     url: 'https://refer.discover.com/s/xgjm62',
   },
   {
+    name: 'Mint Mobile (wireless service provider)',
+    url: 'http://fbuy.me/uw-lF',
+  },
+  {
+    name: 'Root (car insurance)',
+    url: 'https://rootbonus.com/SamBossley?',
+  },
+  {
     name: 'Vultr (cloud hosting)',
     url: 'https://www.vultr.com/?ref=8919448',
   },
