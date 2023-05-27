@@ -4,12 +4,10 @@ import type { ReactNode } from 'react'
 
 export type PageProps = {
   thought: CollectionEntry<'thoughts'>
+  children?: ReactNode
 }
 
-export function ThoughtSingle({
-  thought,
-  children,
-}: PageProps & { children?: ReactNode }) {
+export function ThoughtSingle({ thought, children }: PageProps) {
   const { title, date, tags } = thought.data
 
   return (

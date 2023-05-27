@@ -114,7 +114,8 @@ footer,
 h1 {
   font-size: 2.369rem;
 }
-h2 {
+h2,
+.h2 {
   font-size: 1.777rem;
 }
 h3 {
@@ -277,6 +278,24 @@ article.thoughtvideo {
     margin-right: 1rem;
   }
   .metadata .taglist li {
+    margin-bottom: 0;
+  }
+  .desc {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: $light-bg-alt;
+    @media (prefers-color-scheme: dark) {
+      background-color: $dark-bg-alt;
+    }
+  }
+  .desc a {
+    background-color: inherit;
+  }
+  .desc > *:first-child {
+    margin-top: 0;
+  }
+  .desc > *:last-child {
     margin-bottom: 0;
   }
   .error {

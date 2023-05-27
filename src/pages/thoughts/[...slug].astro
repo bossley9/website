@@ -28,7 +28,9 @@ const { Content } = await Astro.props.thought.render()
 <BaseLayout title={title} description={description} tags={tags} image={image}>
   {
     video ? (
-      <ThoughtVideoSingle {...Astro.props} />
+      <ThoughtVideoSingle {...Astro.props}>
+        <Content />
+      </ThoughtVideoSingle>
     ) : (
       <ThoughtSingle {...Astro.props}>
         <Content />

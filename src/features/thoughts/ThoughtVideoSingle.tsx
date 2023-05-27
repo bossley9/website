@@ -1,7 +1,7 @@
 import { slugify } from '@/utils/urls'
 import type { PageProps } from '@/features/thoughts/ThoughtSingle'
 
-export function ThoughtVideoSingle({ thought }: PageProps) {
+export function ThoughtVideoSingle({ thought, children }: PageProps) {
   const { title, date, tags, video, thumbnail, captions, description } =
     thought.data
 
@@ -29,7 +29,7 @@ export function ThoughtVideoSingle({ thought }: PageProps) {
           .
         </p>
       </video>
-      <h1>{title}</h1>
+      <h1 className="h2">{title}</h1>
       <div className="metadata">
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
         <ul className="taglist">
@@ -40,7 +40,7 @@ export function ThoughtVideoSingle({ thought }: PageProps) {
           ))}
         </ul>
       </div>
-      <p>{description}</p>
+      <div className="desc">{children ? children : <p>{description}</p>}</div>
     </article>
   )
 }
