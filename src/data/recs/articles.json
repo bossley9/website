@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "CSS View Transitions Module Level 1",
+    "author": "W3C",
+    "url": "https://drafts.csswg.org/css-view-transitions-1",
+    "published": "2023-05-26",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Open Source Maintainers Owe You Nothing",
     "author": "Mike McQuaid",
     "url": "https://mikemcquaid.com/open-source-maintainers-owe-you-nothing/",
