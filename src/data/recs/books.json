@@ -13,6 +13,17 @@
   },
   {
     "type": "book",
+    "author": "Cormac McCarthy",
+    "title": "The Passenger",
+    "year": "2022",
+    "publisher": "Random House Large Print",
+    "isbn": "9780307268990",
+    "date": "2023",
+    "rating": 6.9,
+    "note": "Audiobook narrated by MacLeod Andrews and Julia Whelan."
+  },
+  {
+    "type": "book",
     "author": "Sam Quinones",
     "title": "Dreamland: The True Tale of America's Opiate Epidemic",
     "year": "2015",

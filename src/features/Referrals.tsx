@@ -5,6 +5,10 @@ type Referral = {
 
 const referralList: Referral[] = [
   {
+    name: 'Capital One (digital banking)',
+    url: 'https://capital.one/3OGvA5V',
+  },
+  {
     name: 'Discover (digital banking)',
     url: 'https://refer.discover.com/s/xgjm62',
   },
