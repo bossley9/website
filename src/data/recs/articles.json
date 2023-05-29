@@ -1,10 +1,26 @@
 [
   {
     "type": "article",
+    "title": "ActivityPub W3C Recommendation",
+    "author": "W3C",
+    "url": "https://www.w3.org/TR/activitypub/",
+    "published": "2018-01-23",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "CSS View Transitions Module Level 1",
     "author": "W3C",
     "url": "https://drafts.csswg.org/css-view-transitions-1",
     "published": "2023-05-26",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Ask the Developer, The Legend of Zelda: Tears of the Kingdom",
+    "author": "Nintendo",
+    "url": "https://www.nintendo.com/th/interview/totk/index.html",
+    "published": "2023-05-09",
     "date": "2023"
   },
   {
