@@ -41,7 +41,7 @@ export function ShowSingle() {
       {current && (
         <p>
           I&#39;m currently watching {current.title} (
-          {current.run_start.getFullYear()}).
+          {current.run_start.getUTCFullYear()}).
         </p>
       )}
       {Object.entries(groupedByDate)
@@ -56,11 +56,11 @@ export function ShowSingle() {
                   <li key={title + run_start + run_end}>
                     {item.type === 'podcast' ? (
                       <a href={item.url}>
-                        {title} ({run_start.getFullYear()}) (podcast)
+                        {title} ({run_start.getUTCFullYear()}) (podcast)
                       </a>
                     ) : (
                       <span>
-                        {title} ({run_start.getFullYear()})
+                        {title} ({run_start.getUTCFullYear()})
                       </span>
                     )}
                     <RatingNote rating={rating} note={note} />

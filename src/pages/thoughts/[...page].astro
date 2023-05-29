@@ -6,13 +6,13 @@ import {
 } from '@/features/thoughts/ThoughtSection'
 import { getCollection } from 'astro:content'
 import { sortByDate } from '@/utils/sorting'
-import { customPagination } from '@/utils/pagination'
+import { thoughtPagination } from '@/utils/pagination'
 
 export async function getStaticPaths() {
   const thoughts = (await getCollection('thoughts')).sort((a, b) =>
     sortByDate(a.data.date, b.data.date)
   )
-  return customPagination(thoughts)
+  return thoughtPagination(thoughts)
 }
 
 type Props = PageProps

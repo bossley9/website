@@ -54,7 +54,7 @@ export function AnimeSingle() {
                 const title = item.title_translated ?? item.title
                 const year =
                   item.type === 'anime'
-                    ? item.run_start.getFullYear()
+                    ? item.run_start.getUTCFullYear()
                     : item.year
                 return (
                   <li key={title}>

@@ -456,6 +456,23 @@ ul.pagination {
     }
   }
 }
+ul.year-pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 3rem 0;
+  padding: 0;
+
+  li {
+    margin: 0 0.5rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  li.active a {
+    text-decoration: underline;
+  }
+}
 
 // single pages
 

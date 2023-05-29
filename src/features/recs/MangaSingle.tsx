@@ -53,7 +53,7 @@ export function MangaSingle() {
                 return (
                   <li key={url}>
                     <span>
-                      {title} by {author} ({run_start.getFullYear()})
+                      {title} by {author} ({run_start.getUTCFullYear()})
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

@@ -11,7 +11,7 @@ export function TabSection({ page }: PageProps) {
   const groupedEntries = page.data.reduce<
     Record<number, CollectionEntry<'tabs'>[]>
   >((dict, entry) => {
-    const year = entry.data.date.getFullYear()
+    const year = entry.data.date.getUTCFullYear()
     if (!dict[year]) {
       dict[year] = []
     }

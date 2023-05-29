@@ -46,12 +46,12 @@ export function ArticleSingle() {
                       <a href={url}>
                         {type === 'paper' ? (
                           <>
-                            {author}, {published.getFullYear()}.{' '}
+                            {author}, {published.getUTCFullYear()}.{' '}
                             <cite>{title}</cite>.
                           </>
                         ) : (
                           <>
-                            {title} by {author} ({published.getFullYear()})
+                            {title} by {author} ({published.getUTCFullYear()})
                           </>
                         )}
                       </a>
