@@ -23,12 +23,13 @@ type Props = PageProps
 
 const { title, description, tags, image, video } = Astro.props.thought.data
 const { Content } = await Astro.props.thought.render()
+const hasContent = Astro.props.thought.body.trim().length > 0
 ---
 
 <BaseLayout title={title} description={description} tags={tags} image={image}>
   {
     video ? (
-      <ThoughtVideoSingle {...Astro.props}>
+      <ThoughtVideoSingle {...Astro.props} hasDescription={hasContent}>
         <Content />
       </ThoughtVideoSingle>
     ) : (

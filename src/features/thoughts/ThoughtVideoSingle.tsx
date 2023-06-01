@@ -1,7 +1,12 @@
 import { slugify } from '@/utils/urls'
 import type { PageProps } from '@/features/thoughts/ThoughtSingle'
 
-export function ThoughtVideoSingle({ thought, children }: PageProps) {
+type Props = PageProps & { hasDescription: boolean }
+export function ThoughtVideoSingle({
+  thought,
+  hasDescription,
+  children,
+}: Props) {
   const { title, date, tags, video, thumbnail, captions, description } =
     thought.data
 
@@ -40,7 +45,9 @@ export function ThoughtVideoSingle({ thought, children }: PageProps) {
           ))}
         </ul>
       </div>
-      <div className="desc">{children ? children : <p>{description}</p>}</div>
+      <div className="desc">
+        {hasDescription ? children : <p>{description}</p>}
+      </div>
     </article>
   )
 }

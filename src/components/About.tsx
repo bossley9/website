@@ -37,7 +37,7 @@ export function About() {
 
   return (
     <section className="about">
-      <h1>Hello, I&#39;m Sam (he/him/his)!</h1>
+      <h1>Hello, I&#39;m Sam!</h1>
       <div className="stacked">
         <img
           className="me"

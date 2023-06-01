@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "Item 30: Don't Repeat Type Information in Documentation",
+    "author": "Dan Vanderkam",
+    "url": "https://effectivetypescript.com/2023/05/31/jsdoc-repeat/",
+    "published": "2023-05-31",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Stop Being a Junior",
+    "author": "Kent C. Dodds",
+    "url": "https://kentcdodds.com/blog/stop-being-a-junior",
+    "published": "2023-05-30",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "ActivityPub W3C Recommendation",
     "author": "W3C",
     "url": "https://www.w3.org/TR/activitypub/",
