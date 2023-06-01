@@ -6,6 +6,7 @@ const feedExamples: FeedExample[] = [
     url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCX6OQ3DkcsbYNE6H8uQQuVA',
   },
   { name: 'Twitch', url: 'https://twitchrss.appspot.com/vod/moistcr1tikal' },
+  { name: 'Twitter', url: 'https://nitter.net/reactjs/rss' },
   { name: 'Medium', url: 'https://medium.com/feed/@emilymenonbender' },
   { name: 'Github', url: 'https://github.com/neovim/neovim/tags.atom' },
   { name: 'Acast', url: 'https://feeds.acast.com/public/shows/90daygays' },
@@ -22,17 +23,17 @@ export function WhatIsAFeed({ feedUrl }: Props) {
       <article className="what-is-a-feed">
         <h1 className="h2">What is a feed?</h1>
         <p>
-          A <dfn>feed</dfn> is a special website link you can use to get the
+          A <dfn>feed</dfn> is a special website url you can use to get the
           latest updates for that website. With feeds you can get real-time
           updates for Youtube channels, Twitch streams, Acast podcasts, blog
           posts, and website articles from one place. All you need to do is{' '}
-          <dfn>subscribe</dfn> to a feed.
+          <dfn>subscribe</dfn> to that feed with a <dfn>feed reader</dfn>.
         </p>
         <p>
           <em>Feeds give you control.</em> You won&#39;t see ads, miscellaneous
-          spam, or content curated by some mysterious algorithm. If you no
-          longer want to get updates for a feed, you simply{' '}
-          <dfn>unsubscribe</dfn> from the feed.
+          spam, or content curated by some mysterious algorithm. You&#39;ll only
+          see the content you signed up for. If you no longer want to get
+          updates for a feed, you simply <dfn>unsubscribe</dfn> from the feed.
         </p>
         <p>
           Feeds sometimes go by different names across the internet, such as
@@ -64,15 +65,17 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           </g>
         </svg>
         <p>
-          A lot of websites support feeds. When you subscribe to more than 10
-          feeds, you begin to see how useful it is to keep all of your news and
-          updates in one place.
+          A lot of websites support feeds. Subscribing to one or two feeds
+          won&#39;t feel beneficial, but once you&#39;re subscribed to 10, 20,
+          or 50 feeds, you&#39;ll begin to see how useful it is to keep all
+          these updates in one place.
         </p>
+
         <h1 className="h2">How do I subscribe to a feed?</h1>
         <p>
-          To subscribe to feeds, you&#39;ll need a <dfn>feed reader</dfn>. A
+          To subscribe to a feed, you&#39;ll need a <dfn>feed reader</dfn>. A
           feed reader (aka &#34;aggregator&#34;, &#34;news reader&#34;, or
-          &#34;RSS reader&#34;) keeps track of all your feed links and organizes
+          &#34;RSS reader&#34;) keeps track of all your feed urls and organizes
           all your feed updates. Here are a few common feed readers:
         </p>
         <ul>
@@ -92,8 +95,10 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           </li>
         </ul>
         <p>
-          All you need to do is get a feed url and paste it into your feed
-          reader to subscribe!
+          All feed readers work in similar fashions so it doesn&#39;t matter
+          which one you choose. Just pick the one you like the look of. You can
+          always export and import your feeds later. All you need to do is get a
+          feed url and paste it into your feed reader to subscribe!
         </p>
         <h1 className="h2">Where do I find feeds?</h1>
         <p>
@@ -110,7 +115,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           ))}
         </ul>
         <p>
-          You can also subscribe to my personal feed!{' '}
+          You can also subscribe to my personal feed:{' '}
           <a href={feedUrl.toString()}>{feedUrl.toString()}</a>
         </p>
       </article>
