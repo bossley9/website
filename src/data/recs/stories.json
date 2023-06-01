@@ -1,6 +1,24 @@
 [
   {
     "type": "poem",
+    "author": "Langston Hughes",
+    "title": "Island",
+    "url": "/rec-poems/langston-hughes-island",
+    "date": "2023",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "poem",
+    "author": "Rumi",
+    "title": "A Gift to Bring You",
+    "url": "/rec-poems/rumi-a-gift-to-bring-you",
+    "date": "2023",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "poem",
     "author": "Sappho",
     "title": "Midnight",
     "url": "/rec-poems/sappho-midnight",
