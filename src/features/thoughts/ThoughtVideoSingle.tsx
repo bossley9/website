@@ -1,6 +1,14 @@
 import { slugify } from '@/utils/urls'
 import type { PageProps } from '@/features/thoughts/ThoughtSingle'
 
+function getMimeType(fileName: string) {
+  if (fileName.endsWith('.webm')) {
+    return 'video/webm'
+  } else {
+    return 'video/mp4'
+  }
+}
+
 type Props = PageProps & { hasDescription: boolean }
 export function ThoughtVideoSingle({
   thought,
@@ -16,7 +24,7 @@ export function ThoughtVideoSingle({
   return (
     <article className="thoughtvideo">
       <video controls poster={thumbnail} preload="metadata">
-        <source src={video} type="video/mp4" />
+        <source src={video} type={getMimeType(video)} />
         {captions && (
           <track
             default
