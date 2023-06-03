@@ -71,7 +71,11 @@ export function Footer({ minimal = false }: Props) {
           className="donotprint"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
         >
-          CC BY-NC 4.0
+          CC BY-NC 4.0.
+        </a>
+        &nbsp;
+        <a className="donotprint" href="https://astro.build/">
+          Powered by Astro.
         </a>
       </p>
     </footer>

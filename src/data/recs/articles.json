@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "Decentralized Identifiers (DIDs) v1.0",
+    "author": "W3C",
+    "url": "https://www.w3.org/TR/did-core/",
+    "published": "2022-07-19",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Item 30: Don't Repeat Type Information in Documentation",
     "author": "Dan Vanderkam",
     "url": "https://effectivetypescript.com/2023/05/31/jsdoc-repeat/",
