@@ -3,6 +3,9 @@ OUTPUT = ./dist
 build: check clean
 	npm run astro build
 	./scripts/compress $(OUTPUT)
+	pdflatex src/resume.tex
+	mv ./resume.pdf $(OUTPUT)
+	rm ./resume.*
 
 check:
 	npm run lint
@@ -12,6 +15,7 @@ check:
 
 clean:
 	rm -rf $(OUTPUT)/
+	rm -rf ./resume.*
 
 staging:
 	npm run astro preview
