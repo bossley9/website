@@ -4,7 +4,7 @@ build: check clean
 	npm run astro build
 	./scripts/compress $(OUTPUT)
 	pdflatex src/resume.tex
-	mv ./resume.pdf $(OUTPUT)
+	mv ./resume.pdf $(OUTPUT)/sam-bossley.pdf
 	rm ./resume.*
 
 check:
