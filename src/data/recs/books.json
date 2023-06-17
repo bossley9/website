@@ -1,15 +1,26 @@
 [
   {
     "type": "book",
+    "author": "Cathy Park Hong",
+    "title": "Minor Feelings: An Asian American Reckoning",
+    "year": "2021",
+    "publisher": "One World",
+    "isbn": "9781984820389",
+    "date": "2023",
+    "rating": -1,
+    "note": "Audiobook narrated by Cathy Park Hong herself!",
+    "current": true
+  },
+  {
+    "type": "book",
     "author": "Noam Chomsky and Marv Waterstone",
     "title": "Consequences of Capitalism: Manufacturing Discontent and Resistance",
     "year": "2021",
     "publisher": "Haymarket books",
     "isbn": "9781642592634",
     "date": "2023",
-    "rating": -1,
-    "note": "",
-    "current": true
+    "rating": 7.0,
+    "note": "Marv and Chomsky do a great job talking about consequences but don't really provide viable solutions or actions on how we can turn capitalism on its head."
   },
   {
     "type": "book",

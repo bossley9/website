@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": "2023",
+    "director": "Joaquim Dos Santos and Kemp Powers and Justin K. Thompson",
+    "producer": "Phil Lord and Christopher Miller and Amy Pascal and Avi Arad and Christina Steinberg",
+    "date": "2023",
+    "rating": 8.4,
+    "note": "The subplots haven't yet been resolved so this is the highest rating I can give."
+  },
+  {
+    "type": "movie",
     "title": "Inspector Gadget",
     "year": "1999",
     "director": "David Kellogg",
@@ -1266,8 +1276,8 @@
     "director": "Bob Persichetti and Peter Ramsey and Rodney Rothman",
     "producer": "Avi Arad and Amy Pascal and Phil Lord and Christopher Miller and Christina Steinberg",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": 9.0,
+    "note": "An absolutely stunning movie."
   },
   {
     "type": "movie",
