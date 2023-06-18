@@ -159,9 +159,13 @@ code {
   font-family: 'Courier New', monospace;
 }
 .inline-code {
+  border-radius: 0.2rem;
+  padding: 0 0.3rem;
+  background-color: $light-bg-alt;
   color: $light-secondary;
   @media (prefers-color-scheme: dark) {
     color: $dark-secondary;
+    background-color: $dark-bg-alt;
   }
 }
 
