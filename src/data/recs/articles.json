@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "Making Python 100x faster with less than 100 lines of Rust",
+    "author": "Ohad Ravid",
+    "url": "https://ohadravid.github.io/posts/2023-03-rusty-python/",
+    "published": "2023-03-28",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Transition from Blogging to Youtube - my experience",
     "author": "Jeff Geerling",
     "url": "https://www.jeffgeerling.com/blog/2020/transition-blogging-youtube-my-experience",
