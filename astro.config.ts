@@ -28,4 +28,10 @@ export default defineConfig({
     },
     smartypants: false,
   },
+  experimental: {
+    redirects: true,
+  },
+  redirects: {
+    '/resume': '/sam-bossley.pdf',
+  },
 })
