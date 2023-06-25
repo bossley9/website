@@ -16,7 +16,7 @@ export function MemeSection({ years }: Props) {
           .map((year) => {
             return (
               <li key={year}>
-                <a href={'memes/' + year}>
+                <a href={'/memes/' + year}>
                   <span>
                     <strong>{year}</strong>
                   </span>
