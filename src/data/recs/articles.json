@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "Ban scanners IPs from OpenSMTP logs",
+    "author": "Solène Rapenne",
+    "url": "https://dataswamp.org/~solene/2023-06-22-opensmtpd-block-attempts.html",
+    "published": "2023-06-22",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "How to Kill a Decentralised Network (such as the Fediverse)",
+    "author": "Lionel Dricot",
+    "url": "https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html",
+    "published": "2023-06-23",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Making Python 100x faster with less than 100 lines of Rust",
     "author": "Ohad Ravid",
     "url": "https://ohadravid.github.io/posts/2023-03-rusty-python/",
@@ -350,7 +366,7 @@
   {
     "type": "article",
     "title": "Dear open source developers",
-    "author": "Solene Rapenne",
+    "author": "Solène Rapenne",
     "url": "https://dataswamp.org/~solene/2021-09-09-dear-developers.html",
     "published": "2021-09-09",
     "date": "2021",

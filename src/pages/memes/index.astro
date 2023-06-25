@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { MemeSection } from '@/features/memes/MemeSection'
+
+const years: number[] = [2023, 2022, 2021, 2018, 2017]
+---
+
+<BaseLayout title="Memes">
+  <MemeSection years={years} />
+</BaseLayout>

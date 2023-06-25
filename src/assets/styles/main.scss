@@ -197,6 +197,15 @@ ol.thoughtlist {
   }
 }
 
+ul.memelist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0.2rem 0;
+  }
+}
+
 ul.taglist,
 ul.linklist {
   list-style-type: none;
