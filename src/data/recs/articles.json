@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "Fast machines, slow machines",
+    "author": "Julio Merino",
+    "url": "https://jmmv.dev/2023/06/fast-machines-slow-machines.html",
+    "published": "2023-06-27",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Feeling when an app only deploys to us-east-1",
+    "author": "JonLuca DeCaro",
+    "url": "https://blog.jonlu.ca/posts/snappy-internet",
+    "published": "2023-06-26",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Ban scanners IPs from OpenSMTP logs",
     "author": "Solène Rapenne",
     "url": "https://dataswamp.org/~solene/2023-06-22-opensmtpd-block-attempts.html",
