@@ -25,6 +25,8 @@
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
         buildInputs = with pkgs; self.packages.${system}.default.buildInputs ++ [
+          # general dependencies
+          nodejs
           # spellcheck
           aspell
           aspellDicts.en
@@ -32,9 +34,18 @@
           aspellDicts.en-science
           # s3 access for media files
           s3cmd
+          # captioning
+          ffmpeg
+          openai-whisper-cpp
+          # compression
+          gzip
+          # deployment and other make actions
+          rsync
+          gnumake
         ];
         shellHook = ''
           set -o vi
+          alias g="git"
         '';
       };
     };

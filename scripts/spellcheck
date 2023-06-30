@@ -1,5 +1,5 @@
-#!/bin/sh
-# compress html files for webserver optimization
+#!/usr/bin/env sh
+# spell check staged files
 
 for file in $(git diff --name-only --staged); do
   aspell check $file

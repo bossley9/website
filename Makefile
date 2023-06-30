@@ -14,7 +14,7 @@ check:
 
 clean:
 	rm -rf $(OUTPUT)/
-	rm -rf ./resume.*
+	rm result
 
 staging:
 	npm run astro preview
