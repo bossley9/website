@@ -3,9 +3,8 @@ OUTPUT = ./dist
 build: check clean
 	npm run astro build
 	./scripts/compress $(OUTPUT)
-	pdflatex src/resume.tex
-	mv ./resume.pdf $(OUTPUT)/sam-bossley.pdf
-	rm ./resume.*
+	nix build
+	cp ./result/resume/sam-bossley.pdf $(OUTPUT)/sam-bossley.pdf
 
 check:
 	npm run lint
