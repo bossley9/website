@@ -21,5 +21,21 @@
           cp resume.pdf $out/resume/sam-bossley.pdf
         '';
       };
+
+      devShells.${system}.default = pkgs.stdenv.mkDerivation {
+        name = "website";
+        buildInputs = with pkgs; self.packages.${system}.default.buildInputs ++ [
+          # spellcheck
+          aspell
+          aspellDicts.en
+          aspellDicts.en-computers
+          aspellDicts.en-science
+          # s3 access for media files
+          s3cmd
+        ];
+        shellHook = ''
+          set -o vi
+        '';
+      };
     };
 }
