@@ -2,3 +2,4 @@ node_modules/
 dist/
 .astro/
 result
+keys.pub

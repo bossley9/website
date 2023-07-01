@@ -11,6 +11,11 @@
       pkgs = import nixpkgs { inherit system; };
     in
     {
+      nixosConfigurations.webserver = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ ./server/configuration.nix ];
+      };
+
       packages.${system}.default = pkgs.stdenv.mkDerivation {
         name = "resume";
         src = ./src/resume;
