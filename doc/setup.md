@@ -5,7 +5,11 @@
 3. Log into the web console and copy over ssh keys to perform the rest of the installation via ssh.
     ```sh
     mkdir ~/.ssh
+
     curl -L https://github.com/YOUR_USERNAME.keys > ~/.ssh/authorized_keys
+    # or, if you're me:
+    curl -L https://sam.bossley.us/keys > ~/.ssh/authorized_keys
+
     cat ~/.ssh/authorized_keys # sanity check
     ```
     The following steps can now be performed via SSH (`ssh nixos@MY_IP_ADDRESS`).

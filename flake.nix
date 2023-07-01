@@ -16,20 +16,47 @@
         modules = [ ./server/configuration.nix ];
       };
 
-      packages.${system}.default = pkgs.stdenv.mkDerivation {
-        name = "resume";
-        src = ./src/resume;
-        buildInputs = with pkgs; [ texlive.combined.scheme-full ];
-        buildPhase = ''
-          mkdir -p $out/resume
-          pdflatex resume.tex
-          cp resume.pdf $out/resume/sam-bossley.pdf
-        '';
+      packages.${system} = rec {
+        default = pkgs.stdenv.mkDerivation {
+          name = "website";
+          src = ./.;
+          buildPhase = ''
+            # non-empty build phase to prevent derivation
+            # from using makefile build by default
+            echo "skip default build phase."
+          '';
+          installPhase = ''
+            mkdir -p $out/
+            cp ${resume}/resume.pdf $out/sam-bossley.pdf
+            cp ${keys}/keys $out/keys
+          '';
+        };
+
+        keys = pkgs.stdenv.mkDerivation {
+          name = "keys";
+          src = ./keys;
+          installPhase = ''
+            mkdir -p $out
+            cp keys.pub $out/keys
+          '';
+        };
+
+        resume = pkgs.stdenv.mkDerivation {
+          name = "resume";
+          src = ./src/resume;
+          buildInputs = with pkgs; [ texlive.combined.scheme-full ];
+          buildPhase = ''
+            mkdir -p $out
+            pdflatex resume.tex
+            cp resume.pdf $out
+          '';
+        };
+
       };
 
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
-        buildInputs = with pkgs; self.packages.${system}.default.buildInputs ++ [
+        buildInputs = with pkgs; with self.packages.${system}; resume.buildInputs ++ [
           # general dependencies
           nodejs
           # spellcheck

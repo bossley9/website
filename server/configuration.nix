@@ -42,7 +42,7 @@ in
     isNormalUser = true;
     initialPassword = "test1234!";
     extraGroups = [ "wheel" ];
-    openssh.authorizedKeys.keys = lib.strings.splitString "\n" (builtins.readFile ../keys.pub);
+    openssh.authorizedKeys.keys = lib.strings.splitString "\n" (builtins.readFile ../keys/keys.pub);
   };
   environment.defaultPackages = lib.mkForce [ ]; # Remove default packages for security
   environment.systemPackages = with pkgs; [
@@ -151,6 +151,11 @@ in
             add_header Content-Security-Policy "default-src * data:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'";
             add_header Referrer-Policy "no-referrer-when-downgrade";
             add_header Feature-Policy "camera 'none'; fullscreen 'self'; geolocation 'none'; microphone 'none'";
+          }
+
+          location /keys {
+            types {}
+            default_type text/plain;
           }
 
           # static asset caching

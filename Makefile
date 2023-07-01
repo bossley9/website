@@ -4,7 +4,7 @@ build: check clean
 	npm run astro build
 	./scripts/compress $(OUTPUT)
 	nix build
-	cp ./result/resume/sam-bossley.pdf $(OUTPUT)/sam-bossley.pdf
+	cp -r ./result/* $(OUTPUT)
 
 check:
 	npm run lint
@@ -13,8 +13,9 @@ check:
 	npm run typecheck
 
 clean:
+	chmod -Rv 777 $(OUTPUT)/
 	rm -rf $(OUTPUT)/
-	rm result
+	rm -f result
 
 staging:
 	npm run astro preview
@@ -27,3 +28,5 @@ review:
 
 deploy: build
 	rsync -av -e 'ssh' --chmod=775 --no-owner --no-group --no-times --delete "$(OUTPUT)/" "nixos@sam.bossley.us:/var/www/sam.bossley.us"
+
+.PHONY: server
