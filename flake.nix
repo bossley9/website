@@ -60,10 +60,7 @@
           # general dependencies
           nodejs
           # spellcheck
-          aspell
-          aspellDicts.en
-          aspellDicts.en-computers
-          aspellDicts.en-science
+          (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))
           # s3 access for media files
           s3cmd
           # captioning

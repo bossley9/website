@@ -2,9 +2,9 @@ OUTPUT = ./dist
 
 build: check clean
 	npm run astro build
-	./scripts/compress $(OUTPUT)
 	nix build
 	cp -r ./result/* $(OUTPUT)
+	./scripts/compress $(OUTPUT)
 
 check:
 	npm run lint
