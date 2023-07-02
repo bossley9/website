@@ -43,6 +43,8 @@ export function About() {
           className="me"
           src="/static/me700x700.webp"
           alt="a portrait of me"
+          width={300}
+          height={300}
         />
         <div className="details">
           <div>

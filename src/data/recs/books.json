@@ -1,15 +1,26 @@
 [
   {
     "type": "book",
+    "author": "Donna Tartt",
+    "title": "The Secret History",
+    "year": "1992",
+    "publisher": "Vintage",
+    "isbn": "9781400031702",
+    "date": "2023",
+    "rating": -1,
+    "note": "Audiobook narrated by Donna Tartt.",
+    "current": true
+  },
+  {
+    "type": "book",
     "author": "Cathy Park Hong",
     "title": "Minor Feelings: An Asian American Reckoning",
     "year": "2021",
     "publisher": "One World",
     "isbn": "9781984820389",
     "date": "2023",
-    "rating": -1,
-    "note": "Audiobook narrated by Cathy Park Hong herself!",
-    "current": true
+    "rating": 7.0,
+    "note": "Audiobook narrated by Cathy Park Hong herself!"
   },
   {
     "type": "book",

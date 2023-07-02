@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "Wokatoi: Love is Hard for Otaku",
+    "year": "2020",
+    "director": "Yūichi Fukuda",
+    "producer": "Hiroki Wakamatsu",
+    "date": "2023",
+    "rating": 4.8,
+    "note": "I didn't expect this movie to turn into a musical."
+  },
+  {
+    "type": "movie",
     "title": "Spider-Man: Across the Spider-Verse",
     "year": "2023",
     "director": "Joaquim Dos Santos and Kemp Powers and Justin K. Thompson",
