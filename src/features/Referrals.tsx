@@ -13,6 +13,10 @@ const referralList: Referral[] = [
     url: 'https://refer.discover.com/s/xgjm62',
   },
   {
+    name: 'Libro.fm (audiobook provider)',
+    url: 'https://libro.fm/referral?rf_code=lfm336069',
+  },
+  {
     name: 'Mint Mobile (wireless service provider)',
     url: 'http://fbuy.me/uw-lF',
   },

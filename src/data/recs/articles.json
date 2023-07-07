@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "The Gentle Art of Patch Review",
+    "author": "Sage Sharp",
+    "url": "https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review",
+    "published": "2014-09-01",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Fast machines, slow machines",
     "author": "Julio Merino",
     "url": "https://jmmv.dev/2023/06/fast-machines-slow-machines.html",
