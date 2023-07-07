@@ -4,7 +4,7 @@ build: check clean
 	npm run astro build
 	nix build
 	cp -r ./result/* $(OUTPUT)
-	./scripts/compress $(OUTPUT)
+	./scripts/compress.sh $(OUTPUT)
 
 check:
 	npm run lint
@@ -24,7 +24,7 @@ server:
 	npm run astro dev
 
 review:
-	./scripts/spellcheck
+	./scripts/spellcheck.sh
 
 deploy: build
 	rsync -av -e 'ssh' --chmod=775 --no-owner --no-group --no-times --delete "$(OUTPUT)/" "nixos@sam.bossley.us:/var/www/sam.bossley.us"
