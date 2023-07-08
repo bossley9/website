@@ -2,6 +2,7 @@
 title: "Computer Basics"
 description: "I believe it is crucial that everyone has a relative understanding of basic hardware."
 date: 2020-12-07T14:11:00-04:00
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-cpu.jpg"
 tags:
   - "tech"
   - "hardware"
@@ -19,23 +20,23 @@ So what exactly is a computer?
 
 Simply put, a computer is by all definitions a machine that perform complex computations. While we normally view desktop PCs and laptops as computers, there are many more computers, such as mobile phones, video game consoles, smart TVs, and even smart fridges.
 
-![People make jokes that smart fridges are smart enough to make phone calls](/static/thoughts/20/computer-basics-fridge-1.jpg)
+![People make jokes that smart fridges are smart enough to make phone calls](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-fridge-1.jpg)
 
-![Smart fridges are the "pinnacle of technological advancement"](/static/thoughts/20/computer-basics-fridge-2.jpg)
+![Smart fridges are the "pinnacle of technological advancement"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-fridge-2.jpg)
 
 It's important to denote the difference between hardware and sofrware. As implied by their names, hardware components are tangible physical computer parts, whereas software components are electrical data components which run using the hardware components. Hardware includes components such as graphics cards, cpus, keyboards, mice, and wifi cards. Software includes components such as bootloaders, kernels, drivers, and of course, applications ("apps" for millenials and zoomers).
 
 Every computer (rather, the majority of computers) is comprised of the same hardware components that allow them to function. The most essential component of any computer is its motherboard. A motherboard is a simple IO (input and output) computer chip board that dictates the core functionalities of a computer (turning on/off a computer, detecting devices such as keyboards, mice, controllers, usbs) and contains an internal clock which syncs with world clock time. This clock is usually powered by a separate CMOS battery, and can actually cause your computer to not start if the battery runs out (surprisingly, it is actually quite rare for a clock battery to completely drain - the only time I've replaced a clock battery was for a computer that was 13 years old).
 
-![A CMOS battery in its designated slot](/static/thoughts/20/computer-basics-cmos.jpg)
+![A CMOS battery in its designated slot](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-cmos.jpg)
 
 The motherboard is considered the core of a computer because it connects all other physical computer components (hardware) together. When you plug in a usb, or plug in your phone charger, you are physically connecting a peripheral (I'll explain what this is later) to the motherboard.
 
-![A standard desktop computer motherboard](/static/thoughts/20/computer-basics-motherboard.jpg)
+![A standard desktop computer motherboard](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-motherboard.jpg)
 
 Although the motherboard usually contains basic circuitry to start and configure your computer, you won't be able to see much other than a black screen without a CPU. A CPU (Central Processing Unit) is a hardware component that can be considered the "brain" of the computer. It usually contains complex circuit architectures designed to be able to perform logical operations on data. The CPU starts your operating system, reads your data, opens your applications, and everything that requires computation. That means that the better your CPU is, the faster it can process data (e.g. the faster you computer will be at opening applications, running games, etc).
 
-![An average CPU being placed in its slot](/static/thoughts/20/computer-basics-cpu.jpg)
+![An average CPU being placed in its slot](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-cpu.jpg)
 
 It's an absolute marvel that tiny chips like this act as the brains of all our devices - and they will only continue to grow in computational power.
 
@@ -43,11 +44,11 @@ Because a CPU manages the core functionings of the computer, it can overheat ver
 
 Heatsinks are large pieces of conductive metal that, as the name suggests, absorb heat from the CPU. A heatsink usually resides directly on top of the CPU alongside one or two fans. Tiny fans are used to blow heat away from the CPU and heatsink to maintain the computer's internal homeostasis. Computer manufacturers have gotten increasingly more skilled at hiding the location and sound of a computer's fans; however, most computers still require slits or grills which allow air to flow out of the computer. This is why it is not ideal to use a laptop on a malleable surface such as a blanket - the blanket can effectively cover all laptop air ports and cause the computer to overheat and melt.
 
-![A standard CPU resting below a heatsink and fan](/static/thoughts/20/computer-basics-fan-desktop.jpg)
+![A standard CPU resting below a heatsink and fan](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-fan-desktop.jpg)
 
 This is an average desktop computer CPU fan. The metal block below the fan is not the CPU - it's actually the heatsink! Below the heatsink is a tiny CPU.
 
-![A standard laptop heatsink and fan](/static/thoughts/20/computer-basics-fan-laptop.jpg)
+![A standard laptop heatsink and fan](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-fan-laptop.jpg)
 
 Of course, in smaller devices such as the laptop pictures above, heatsinks and fans need to be minimized to fit within the case. The copper metal lines pictured act as a heatsink to carry the heat from the CPU to the fan.
 
@@ -63,7 +64,7 @@ Memory acts as a temporary storage for system data so that at any given moment, 
 
 Dynamic memory usually comes in the form of DRAM (commonly referred to as RAM). Most computers except mobile phones have 2-4 RAM chips.
 
-![Two RAM chips for a desktop computer](/static/thoughts/20/computer-basics-ram.jpg)
+![Two RAM chips for a desktop computer](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-ram.jpg)
 
 It's important to understand the distinction that RAM is a hardware component because it comes in the form of a physical chip that is internally plugged into the motherboard. Non-technical people used to think that if your computer was slow, you could download more RAM onto your computer and your computer would run faster. Computer enthusiasts, being the nerds we are, decided it would be funny to feed into this idea and made websites to troll people who thought RAM could be downloaded. Some of these sites are still available even today - and look like legitimate sites, too. If you follow through with them, they will tell you that you've been trolled.
 
@@ -77,7 +78,7 @@ When a computer is turned on or rebooted, it usually has files, documents, and a
 
 The most prominent form of data storage today is called Hard Disk Drive (HDD) storage. Created in the late 1950's, this hardware component consists of a multitude of stacked metal disks (not the CD disks you may be familiar with, but much smaller and more compact) with an arm reader piece which reads and writes data to each disk. The disks spin at very high speeds while the computer is running, and the disks themselves can survive for as long as 20 years (and in tech, that's nearly a lifetime).
 
-![A cross section of a standard HDD drive](/static/thoughts/20/computer-basics-hdd.jpg)
+![A cross section of a standard HDD drive](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-hdd.jpg)
 
 This mechanical component, however, was destined to be replaced - is it slow in terms of data reading and writing, and it requires a number of complex moving parts in order for it to function properly, causing high power consumption.
 
@@ -91,7 +92,7 @@ SSDs also have a limited lifetime. Eventually, the static charge maintaining the
 
 I also want to mention a new type of SSDs called NVME SSDs. Most SSDs are unpluggable, meaning they can be mounted and unmounted easily, such as flash drives. These SSDs are called SATA SSDs. Newer SSDs, called NVME SSDs, are chips that mount directly onto the motherboard of a computer. Since they are so close to the CPU, they are able to perform insanely fast data operations at low cost. These SSDs are more common in smartphones and newer laptops (2015+).
 
-![A visual comparison of a SATA SSD and an NVME SSD](/static/thoughts/20/computer-basics-nvme-vs-sata.jpg)
+![A visual comparison of a SATA SSD and an NVME SSD](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-nvme-vs-sata.jpg)
 
 The SATA SSD (on the left) is larger and contained within a plastic casing, whereas the NVME SSD (on the right) is a physical plug-in chip.
 
@@ -142,7 +143,7 @@ And now let me demonstrate that the underlying operating system of a computer do
 
 If I gave you a computer with a screen that looked like this, what operating system do you think it's running? MacOS, right?
 
-![A computer screen with a desktop strikingly similar to MacOS...](/static/thoughts/20/computer-basics-macos-kde-clone.jpg)
+![A computer screen with a desktop strikingly similar to MacOS...](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-macos-kde-clone.jpg)
 
 This screenshot is actually from a KDE Plasma Manjaro Linux operating system with a desktop environment made to mimic MacOS.
 
@@ -150,7 +151,7 @@ This screenshot is actually from a KDE Plasma Manjaro Linux operating system wit
 
 And what about this screen?
 
-![A computer screen with a desktop largely dominated by terminal applications](/static/thoughts/20/computer-basics-macos-riced.jpg)
+![A computer screen with a desktop largely dominated by terminal applications](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-macos-riced.jpg)
 
 This is a riced MacOS desktop using KWM Amethyst. I think it's evident enough that the user interfaces and applications of a computer are largely independent of the operating system. The operating system is how the underlying system works and not what the user experiences.
 

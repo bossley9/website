@@ -2,7 +2,7 @@
 title: "Dune (1965)"
 description: "This review encompasses my thoughts after reading the famous scifi novel Dune by Frank Herbert. While it was not at all what I expected, There were a lot of beautiful pieces of the book I'd like to discuss before the movie adaptation releases."
 date: 2021-01-19T12:01:00-04:00
-image: /static/thoughts/21/dune-cover.jpg
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/dune-cover.jpg"
 tags:
   - "book"
   - "review"
@@ -11,7 +11,7 @@ tags:
 
 If you recognize the title of this writing, I know you've read the novel Dune (1965) by Frank Herbert. As I've just completed the novel, I wanted to share a few thoughts about the book before the movie adaptation releases to theaters and hopefully use this review to make judgements on the adaptation and how faithfully it carried over the same ideas.
 
-![The book cover of Dune](/static/thoughts/21/dune-cover.jpg)
+![The book cover of Dune](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/dune-cover.jpg)
 
 [Dune trailer](https://youtube.com/watch?v=n9xhJrPXop4)
 
@@ -91,11 +91,11 @@ In every interaction, the fremen save water when available. They even withdraw t
 
 Even the lifestyle of the fremen revolves around water. The gear they wear constantly, the stillsuits, are bodily regulators which conserve and recycle the sweat the body produces. In addition, the all use face masks and sinus condensers to conserve and use as little moisture as possible.
 
-![Paul and Jessica on a sand dune with stillsuits and sinus condensers](/static/thoughts/21/dune-stillsuit-1.jpg)
+![Paul and Jessica on a sand dune with stillsuits and sinus condensers](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/dune-stillsuit-1.jpg)
 
 Paul (Timothee Chalamet) and Jessica (Rebecca Ferguson) from the new film adaptation. The film has not been released yet but I would speculate this takes place shortly after they have integrated into the fremen sietch led by Stilgar. A mask lies hanging around Jessica's neck.
 
-![Chani in full stillsuit garb](/static/thoughts/21/dune-stillsuit-2.jpg)
+![Chani in full stillsuit garb](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/dune-stillsuit-2.jpg)
 
 Chani, played by Zendaya. This is likely in one of the fremen caves. You can see the sinus condenser, stillsuit gear, and blue eyes resulting from the spice addiction.
 

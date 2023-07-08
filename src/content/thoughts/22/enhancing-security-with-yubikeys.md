@@ -2,6 +2,7 @@
 title: "Enhancing Security With Yubikeys"
 description: "I've recently started using Yubikeys and really like them. They're a stronger and more convenient form of authentication."
 date: 2022-11-06T11:27:00-07:00
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/yubikey-size-comparison.jpg"
 tags:
   - "recommendation"
   - "yubikey"
@@ -16,7 +17,7 @@ Without physical access to the device being hacked, accessing protected data is 
 
 In addition, Yubikeys are convenient. Authentication with Yubikey takes a fraction of a second. The keys are small and portable and can fit onto keychains. You can use a Yubikey to lock a device, encrypt a hard drive, or enforce MFA with modern accounts such as Google, Microsoft, and Github.
 
-![Size comparison of a Yubikey to a standard USB drive from Microcenter and a pen](/static/thoughts/22/yubikey-size-comparison.jpg)
+![Size comparison of a Yubikey to a standard USB drive from Microcenter and a pen](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/yubikey-size-comparison.jpg)
 
 While there are many brands of FIDO authentication to choose from, I chose Yubikey because it is the most popular on the market and has stellar support: [Google employees have been using Yubikey since 2009](https://www.yubico.com/resources/reference-customers/google/).
 
@@ -67,5 +68,5 @@ You can generate a Yubikey API key if necessary by visiting the [official Yubike
 
 Many people are skeptical about the validity or safety of Yubikeys for good reason - after all, Yubikeys are only a recent phenomenon. However, elliptic curve 25519 encryption is [proven to be just as strong as RSA 4096 encryption](https://proton.me/blog/elliptic-curve-cryptography) with the additional benefit of using a smaller keyspace and therefore requiring less computational power.
 
-If you're still paranoid, [here are the white papers](/static/thoughts/22/rsa-and-ecc-comparative-analysis.pdf).
+If you're still paranoid, [here are the white papers](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/rsa-and-ecc-comparative-analysis.pdf).
 

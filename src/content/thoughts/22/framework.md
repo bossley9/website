@@ -2,15 +2,15 @@
 title: "Framework"
 description: "A review of the Framework laptop"
 date: 2022-09-09T18:33:00-07:00
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-laptop.jpg"
 tags:
   - "hardware"
   - "framework"
   - "openbsd"
   - "laptop"
-image: /static/thoughts/22/framework-laptop.jpg
 ---
 
-![A standard Framework laptop with its top keyboard cover removed](/static/thoughts/22/framework-laptop.jpg)
+![A standard Framework laptop with its top keyboard cover removed](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-laptop.jpg)
 
 ## Introduction
 
@@ -54,11 +54,11 @@ Even the small details matter. When open the chassis for the first time, I thoug
 
 The bezel is an elegantly light frame with a flexible plastic texture that magnetically attaches to the monitor of the computer. I cannot emphasize enough how simple it is to detatch and reattach a new bezel, one of the most irritating steps in replacing a laptop camera. The magnetic strip snaps the new bezel in place as if nothing changed. As an additional security bonus, all bezels feature built-in microphone and camera hardware switches to enable or disable those devices at any time.
 
-![the Framework bezel with provided camera and microphone kill switches](/static/thoughts/22/framework-bezel.jpg)
+![the Framework bezel with provided camera and microphone kill switches](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-bezel.jpg)
 
 The bezel is not the only magnetic component. Practically all pieces of the chassis and case have magnetic guides to ensure you properly reassemble each part. Framework even provides a maintenance tool with each device that uses a magnetic screwdriver head. This is extraordinary. The most frustrating part of any hardware disassembling or reassembling hardware is aligning and tightening tiny hardware screws, but the magnetic tool tip makes any hardware replacement a walk in the park. 
 
-![the all-purpose Framework tool](/static/thoughts/22/framework-tool.jpg)
+![the all-purpose Framework tool](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-tool.jpg)
 
 ### Keyboard
 
@@ -67,7 +67,7 @@ The Framework keyboards are nothing short of phenomenal. I'm a persistent critic
 Framework's keyboards are the perfect compromise of aesthetic to functionality. The keys are raised slightly higher than all my other keyboards by around 1 milimetre and have a more tactile give when pressing each key. The switches sound akin to muted Jelly POM keycaps with Halo Clears which happen to be my favorite types of keyboards. They produce a soft "thok" rather than a sharp mouse "click" or typewriter "clack" such as the keyboard below:
 
 <video controls>
-  <source src="/static/thoughts/22/framework-pom.mp4" type="video/mp4" />
+  <source src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-pom.mp4" type="video/mp4" />
   Sorry, your browser does not support embedded video.
 </video>
 
@@ -83,7 +83,7 @@ The trackpad is my least favorite feature. The surface is not very slick and req
 
 The Framework laptop provides a glossy screen with a 2256x1504 resolution. I used to prefer matte screens over glossy screens but have since reconsidered: Macbooks have changed my mind, funnily enough. Although matte screens reduce glare and smudges, they also tend to mute a lot of vibrance in color that I did not notice until I began using a glossy screen every weekday for work. It is a very noticeable difference that gives more life to the content I view.
 
-![a comparison in screen glossiness between my Framework laptop and my Dell Latitude (before it died)](/static/thoughts/22/framework-screen.jpg)
+![a comparison in screen glossiness between my Framework laptop and my Dell Latitude (before it died)](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-screen.jpg)
 
 The dpi (dots per inch) resolution 2256x1504 is much higher than in the 1920x1080 with which I am most familiar but it is a pleasant change of pace. The higher resolution provides surplus screen real estate and makes video playback crisper. The only complaint I have with the screen is that its 3:2 aspect ratio results in top and bottom black bars when viewing 16:9 fullscreen videos.
 
@@ -101,7 +101,7 @@ Another personal preference of mine is to have LED notifier lights on the front 
 
 My final minor complaint for this device is that no ethernet port expansion card exists, but this is no longer a concern as Framework has already begun work on officially producing ethernet expansion cards. Ethernet is disappearing from a majority of modern laptops due to the growing presence of wifi (and no one probably knows what ethernet is for anymore) but I greatly prefer wired gigabit connections over spotty wifi on my home devices. It's awesome that Framework will soon be able to provide the option to use ethernet.
 
-![a sneak preview of Framework's ethernet expansion card in the works](/static/thoughts/22/framework-ethernet.png)
+![a sneak preview of Framework's ethernet expansion card in the works](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-ethernet.png)
 
 > Edit: the ethernet expansion card is now available for purchase from the Framework marketplace.
 
@@ -114,7 +114,7 @@ The Framework laptop is average in this aspect. It provides a single central hea
 The fans can be a bit on the loud end of the spectrum when running intense processes such as compilation but the average user will not encounter this issue. I compiled golang 1.18 and it held up fairly well. In all fairness, if you're using a Framework laptop for heavy compilation or intense video encoding, you should look for a different product entirely.
 
 <video controls>
-  <source src="/static/thoughts/22/framework-compilation.mp4" type="video/mp4" />
+  <source src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-compilation.mp4" type="video/mp4" />
   Sorry, your browser does not support embedded video.
 </video>
 

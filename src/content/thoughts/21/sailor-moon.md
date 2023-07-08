@@ -2,7 +2,7 @@
 title: "Sailor Moon (1992-1993)"
 description: "I decided to officially watch the original Sailor Moon show after being virtually perplexed by its popularity and influence in my life."
 date: 2021-02-28T23:11:00-04:00
-image: https://static0.cbrimages.com/wordpress/wp-content/uploads/2017/03/sailor-moon-inner-senshi.jpg
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-moon-inner-senshi.jpg"
 tags:
   - "review"
   - "show"
@@ -20,7 +20,7 @@ It came to my attention that although I knew about Sailor Moon as a character, I
 
 So at the start of February I decided to rewatch (or, shall I say, watch) the original Sailor Moon that aired in 1992.
 
-![a Sailor Moon scene depicting all of the original Sailor Soldiers](https://static0.cbrimages.com/wordpress/wp-content/uploads/2017/03/sailor-moon-inner-senshi.jpg)
+![a Sailor Moon scene depicting all of the original Sailor Soldiers](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-moon-inner-senshi.jpg)
 
 While I could go into detail analyzing every single feature I liked and disliked about the show, I'll try to keep my thoughts relatively brief. I'll start by describing the plot (spoiler alert!), then continue with other significant topics of discussion that peaked my interest.
 
@@ -130,7 +130,17 @@ This image is a perfect representation of the average atmosphere of the sailor s
 
 Furthermore, she is a poor sailor soldier. She constantly cowers in the corner until told to do something, and always avoids evil. Additionally, when given powerful magic tools (such as the Moon Disguise Pen), she always uses them for her own personal gain - and her own gain just so happens to help her defeat an enemy in the end.
 
-[Usagi using magic tools for her own benefit](https://youtu.be/CXzlaedBJNU)
+<video controls crossorigin="anonymous">
+  <source src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-moon-using-her-powers-for-justice.webm" type="video/webm" />
+  <track
+    default
+    kind="captions"
+    label="English"
+    srcLang="en"
+    src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-moon-using-her-powers-for-justice.vtt"
+  />
+  Sorry, your browser does not support embedded video.
+</video>
 
 It's extremely hard to relate to the main character when most of what she does is cry and cower.
 
@@ -140,7 +150,7 @@ The plot of the series is poorly paced. The show follows a slice-of-life format 
 
 I also don't understand how the enemy has such a hard time tracking down Sailor Moon and her team of soldiers. For example, in episode 36, one of the monsters tries to unveil Sailor Moon's identity by disguising themself as a hairdresser and analyzing girls' hairstyles to find Sailor Moon. Instead of choosing the obvious candidate Usagi who is the only person in the hair salon to have big long double ponytails, the monster gets confused and thinks the wrong person is Sailor Moon. I'm still unsure how no one can seem to notice the fact that Sailor Moon and Usagi both have the same hair, body type, and voice.
 
-![Sailor Moon and Usagi Tsukino appearance comparison. Both have the same appearance with slight alterations in wardrobe taste](/static/thoughts/21/sailor-who.jpg)
+![Sailor Moon and Usagi Tsukino appearance comparison. Both have the same appearance with slight alterations in wardrobe taste](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-who.jpg)
 
 ## Conclusion
 

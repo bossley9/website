@@ -2,7 +2,7 @@
 title: "How to Mimic Google Maps Popular Times"
 description: "How to mimic Google Maps Popular Times to track live and averaged visit data using Amazon AWS, Nodejs and GraphQL."
 date: 2019-08-08T00:00:00-04:00
-image: /static/thoughts/19/mimic-google-histogram.png
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/mimic-google-histogram.png"
 tags:
   - "tech"
   - "ecmascript"
@@ -14,7 +14,7 @@ tags:
 
 ## Part 1
 
-![A snapshot of the garage status histogram I created.](/static/thoughts/19/mimic-google-histogram.png)
+![A snapshot of the garage status histogram I created.](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/mimic-google-histogram.png)
 
 It's pretty cool to be able to show how busy a place is at the present moment.
 

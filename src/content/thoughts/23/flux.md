@@ -30,7 +30,7 @@ Because the scope of my application was not intended to grow beyond making a few
 I chose to structure the interface in the form of tabs based on my most frequent uses: Feeds (view all feeds), Starred (view starred entries), Unread (view unread entries), History (view read entries), and Settings (for logging out the user).
 
 <video height="700" controls>
-  <source src="/static/thoughts/23/flux-exhibit.mp4" type="video/mp4" />
+  <source src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/flux-exhibit.mp4" type="video/mp4" />
   Sorry, your browser does not support embedded video.
 </video>
 

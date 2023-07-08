@@ -2,7 +2,7 @@
 title: "Parasite (2019)"
 description: "My thoughts on the movie Parasite"
 date: 2019-11-27T16:16:00-04:00
-image: /static/thoughts/19/parasite-movie-cover.jpg
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/parasite-movie-cover.jpg"
 tags:
   - "review"
   - "movie"
@@ -88,7 +88,7 @@ One aspect of movies that tends to be forgotten is the soundtrack. Parasite's so
 
 I also want to elaborate the physical cover of the movie.
 
-![Parasite movie cover](/static/thoughts/19/parasite-movie-cover.jpg)
+![Parasite movie cover](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/parasite-movie-cover.jpg)
 
 The placement of items on the cover gives an idea as to the roles each character plays, as well as their intentions. Specifically in Korea and in other various countries, bars are usually displayed over a person's eyes to anonymize a criminal suspect. Similarly, covering your eyes hides your intentions and adds ambiguity to your words. The cover depicts all characters with a bar over their eyes, to indicate that each and every one of them are guilty for some crime - whether that be lying, cheating, or killing. It also makes a distinction to separate the Parks and the Kims using white and black labels respectively, demonstrating that everyone shares in crime, albeit different crimes and different motives, regardless of social status.
 

@@ -2,7 +2,7 @@
 title: "Government Websites Suck (Revisited)"
 description: "I revisited the Ohio Molina Medicaid website after writing a review against it two years ago."
 date: 2023-06-02T21:29:00-07:00
-image: "/static/thoughts/23/government-websites-home.png"
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/government-websites-home.png"
 tags:
   - "tech"
   - "reflection"
@@ -21,7 +21,7 @@ As a frontend engineer, I feel responsible for ensuring that the world uses best
 
 ## Web Audit
 
-![Ohio Molina Medicaid benefits home page](/static/thoughts/23/government-websites-home.png)
+![Ohio Molina Medicaid benefits home page](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/government-websites-home.png)
 
 ### User Experience
 

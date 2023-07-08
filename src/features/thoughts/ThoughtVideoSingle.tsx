@@ -23,7 +23,12 @@ export function ThoughtVideoSingle({
 
   return (
     <article className="thoughtvideo">
-      <video controls poster={thumbnail} preload="metadata">
+      <video
+        controls
+        poster={thumbnail}
+        preload="metadata"
+        crossOrigin="anonymous"
+      >
         <source src={video} type={getMimeType(video)} />
         {captions && (
           <track

@@ -95,7 +95,7 @@ My main criticism of the Go language is its impartiality to file structure. Comi
 
 How do you tell if a file has been edited, and if so, what parts were edited? This is what **diffs** are: a formula for how to change a file from state A to state B.
 
-I learned a lot about how to track diffs over the course of this project and heavily relied on the principles from [Myers' Diff Algorithm](/static/thoughts/23/myers-diff-algorithm.pdf). At a high level, I record two copies of each note and compare the two to generate a diff. Simperium uses a diffing format called JSONDiff I formatted my diffs to match this representation. I may write about diffs in a future article so I'll save on details but you can see [my crude JSONDiff implementation](https://github.com/bossley9/sn/blob/f7f31cb8ed29e50ba3256842098d539c367d6dd3/pkg/jsondiff/getdiff.go) to get a general sense of how diffing works.
+I learned a lot about how to track diffs over the course of this project and heavily relied on the principles from [Myers' Diff Algorithm](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/myers-diff-algorithm.pdf). At a high level, I record two copies of each note and compare the two to generate a diff. Simperium uses a diffing format called JSONDiff I formatted my diffs to match this representation. I may write about diffs in a future article so I'll save on details but you can see [my crude JSONDiff implementation](https://github.com/bossley9/sn/blob/f7f31cb8ed29e50ba3256842098d539c367d6dd3/pkg/jsondiff/getdiff.go) to get a general sense of how diffing works.
 
 ## Conclusion
 

@@ -27,7 +27,7 @@ servings: 4
 
 1. Drain the tofu and pat dry with paper towel. Then vertically cut the block into halves, then trim each resulting block in the shape of a semi-circle to resemble salmon. Cut vertical slits into the top and bottom of the blocks.
 
-![tofu cut shape resembling fish](/static/recipes/22/tofu-salmon-rice-tofu-shape.jpg)
+![tofu cut shape resembling fish](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/recipes/2022/tofu-salmon-rice-tofu-shape.jpg)
 
 2. Start to cook two cups of rice in a rice cooker.
 3. In a bowl, mix the rice vinegar, soy sauce, miso paste, olive oil, water, garlic power, and paprika.

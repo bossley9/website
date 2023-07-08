@@ -2,6 +2,7 @@
 title: "I Don't Like To Show My Teeth"
 description: "In October of 2019 I broke my front two teeth."
 date: 2022-12-15T13:04:00-07:00
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/smile-crown.jpg"
 tags:
   - "reflection"
   - "storytime"
@@ -24,7 +25,7 @@ Horrified, I brought my hand to my mouth and felt the jagged edges and gaping ho
 
 I skipped my cohort meeting and quickly walked home to call my dentist and scheduled an emergency appointment the next day. My dentist told me that if it was a smaller tooth chip and I had retrieved my tooth fragments, what they'd normally do is just use a special glue to cement the tooth back together, but in my case I broke off so much of my teeth that nerve was exposed and they would have to give me crowns, which are fake porcelain teeth made to mimic my teeth.
 
-![A crown being inserted onto a tooth](/static/thoughts/22/smile-crown.jpg)
+![A crown being inserted onto a tooth](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/smile-crown.jpg)
 
 Before I knew what was happening or what crowns meant, they began the procedure. They had to act fast to prevent my nerves from getting damaged. I watched as they took a comically massive needle and stuck it multiple times underneath my upper lip into my upper gum, then took a drill and drilled off the remaining bits of my teeth. After drilling most of my teeth off, they gave me a mirror to show me. I remember thinking to myself, "I guess there's no going back!"
 

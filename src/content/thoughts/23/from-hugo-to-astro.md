@@ -130,7 +130,7 @@ In order to find a good replacement for Hugo, I first noted my requirements, the
 
 This criteria helped me narrow down my options very quickly. A lot of popular JS frameworks like Create React App, Svelte, NextJS, and Solid Start were immediately eliminated due to their initial client JavaScript bundle. I just hate seeing blank pages with stuff like this if I disable JavaScript.
 
-![a blank website saying "You need to enable JavaScript to run this app."](/static/thoughts/23/astro-no-client-javascript.png)
+![a blank website saying "You need to enable JavaScript to run this app."](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/astro-no-client-javascript.png)
 
 Because I removed Gemini content from my site a few months ago, it also gave me the creative freedom to only allow a single type of output content, allowing me to narrow the options further. In the end, I landed on the the first builder that met all criteria: Astro.
 

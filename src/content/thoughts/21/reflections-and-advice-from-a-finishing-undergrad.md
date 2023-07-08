@@ -41,17 +41,17 @@ Institutional emails are a fundamentally flawed concept: for an average of four 
 
 To make matters worse, virtually all of the emails I've received from my institutional email is junk mail. This includes emails such as campus promotions, redundant administration updates, arbitrary prospective employers, and department messages. It's hard to filter through an inbox to find the extremely important emails (such as student loan information, major status, or tax document notifications) when the majority of emails you receive go immediately to the trash. I have actually tried to block messages from some of the senders I receive the most junk mail from, only to find out that I am not allowed to block them because they also use the osu.edu subdomain and I am not allowed to block a person within my organization.
 
-![a notification detailing the inability to block emails from senders within your organization](/static/thoughts/21/refl-undergrad-cant-block-sender.png)
+![a notification detailing the inability to block emails from senders within your organization](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-cant-block-sender.png)
 
 This is extremely problematic because if a student was harrassing me over email, I wouldn't be able to block their emails or report them.
 
 Let me show you an example of my current inbox. I last checked my email on Sunday and I now have 12 new emails. Guess how many are important?
 
-![a long list of unread emails in my inbox](/static/thoughts/21/refl-undergrad-inbox.jpg)
+![a long list of unread emails in my inbox](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-inbox.jpg)
 
 One. Only one. Some of the emails are spam companies that send emails to every osu.edu domain (e.g. "NOBULL"). Others are confirmations or reminders for events that are sent every week and cannot be disabled ("OSU Workday", "MyChart"). Some are about my major that do not pertain to me. Some are classwork emails. My point is that the administration itself perpetuates the idea that students should ignore most of their emails. If fact, the administration even knows that people don't carefully read their emails because they have to send out emails labeled "please read" - instead of begging students to read specific emails, why not make it so that the emails each student receives are more significant and relevant?
 
-![an engineering email with the subject 'please read'](/static/thoughts/21/refl-undergrad-please-read.jpg)
+![an engineering email with the subject 'please read'](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-please-read.jpg)
 
 Because I care so much about this issue, I'm not just going to complain about it - I'll actually propose my own solution to the problem.
 
@@ -152,13 +152,13 @@ Furthermore, the university does not seem to take depression and suicide serious
 
 You're probably wondering, "I wonder what other initiatives Ohio State took to ensure that the collective mental health of the student body improves?" Well, I'm glad you asked. What they did is bring puppies to the Oval. Yes, you heard right. Now, instead of walking on the Oval to get to classes, picture this: you can now walk on the Oval and pet a puppy before getting to your class. The executives on the OSU board must be very proud of their solutions.
 
-![madagascar penguin meme reading "well boys, we did it. Depression is no more"](/static/thoughts/21/refl-undergrad-depression-no-more.jpg)
+![madagascar penguin meme reading "well boys, we did it. Depression is no more"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-depression-no-more.jpg)
 
 But instead of criticizing the university administration's poor handling of student mental well-being and leaving the conversation, I will additionally provide two tangible solutions that the administration can still act on to reasonably improve currently active mental health initiatives.
 
 1. Add guard fences with pronged edges to the roof of every university parking garage. This may seem like an unobtainable goal due to costs and implementation but it has already been done for one of the campus parking garages. Why can't we do this for all of the parking garages? This will physically reduce the effectiveness of suicidal attempts.
 
-![a steep metal bar fence with inward curved edges encasing the roof floor of a parking garage](/static/thoughts/21/refl-undergrad-parking-fence.jpg)
+![a steep metal bar fence with inward curved edges encasing the roof floor of a parking garage](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-parking-fence.jpg)
 
 2. Allocate more funds to the Wilce Students Health Center with the intent of hiring more staff. This is self explanatory. As the university student body grows every year, the university will always need more student counselors, therapists, and health care professionals.
 
@@ -168,25 +168,25 @@ The COVID-19 pandemic was an unprecedented situation for everyone, not just the 
 
 > I say "optional" because while the university forces students to test at least once a week, they do not enforce testing. There are students who have never tested and have received no disciplinary action for their reckless behaviour. It's even evident from their email that they do not care if students test.
 
-![an email body stating that students who are compliant will be rewarded](/static/thoughts/21/refl-undergrad-compliant.jpg)
+![an email body stating that students who are compliant will be rewarded](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-compliant.jpg)
 
 > The email first states that all students are required to participate in weekly tests. Then, not even two sentences after, they mention "students who are compliant with testing..." implying that students have the option to be compliant with testing! This is basic rhetoric - if you mention "students who are compliant", you imply that there are students who are not compliant. Therefore, it is implied that there is a choice to comply. The university should not act surprised when they send out emails like this and students are noncompliant with testing.
 > 
 > I think it's also laughable that the university believes that prizes will incentivize people to take COVID tests. Ask yourself this - if someone sends you a 20 minute survey and states that "you will be entered in drawings for prizes", how likely are you realistically going to take that survey? I think this meme made by a fellow OSU student explains the incentive perfectly.
 
-![meme from a student stating that while the world burns around them, at least they won a $25 gift card](/static/thoughts/21/refl-undergrad-gift-card.jpg)
+![meme from a student stating that while the world burns around them, at least they won a $25 gift card](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-gift-card.jpg)
 
 Ohio State has also decided to start social media campaigns to help students find reasons to stay safe (because we all know how effective social media campaigns are). One of my personal favorites is called "What's your why?" in which a case study displays a quote of someone explaining why they actively choose to social distance and wear a mask. Students took the creative liberty of making their own versions of this compaign, and here are a few of my favorites:
 
-![because OSU has too many red carts](/static/thoughts/21/refl-undergrad-red-carts.jpg)
+![because OSU has too many red carts](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-red-carts.jpg)
 
-![so I can get trashed at bulls](/static/thoughts/21/refl-undergrad-trashed-at-bulls.jpg)
+![so I can get trashed at bulls](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-trashed-at-bulls.jpg)
 
-![because I don't want to hear students complain that zoom is a scam](/static/thoughts/21/refl-undergrad-zoom-scam.jpg)
+![because I don't want to hear students complain that zoom is a scam](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-zoom-scam.jpg)
 
-![because it's easier to hide depression behind a mask](/static/thoughts/21/refl-undergrad-depression-mask.jpg)
+![because it's easier to hide depression behind a mask](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-depression-mask.jpg)
 
-![because I can show Youtube videos instead of lecturing](/static/thoughts/21/refl-undergrad-youtube-lecture.jpg)
+![because I can show Youtube videos instead of lecturing](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-youtube-lecture.jpg)
 
 To worsen matters further, the university seems to believe that blaming students for the rates of rising COVID-19 cases will scare students into testing, and they could not be further from the truth. Every time someone from the administration sends an email, students publicly speak out against them on social media for doing a terrible job. Here is a great example of criticism against the most recent email the administration has sent out. I'm still waiting for the moment that the university begins to care about the students and help them through the pandemic, not blame them for it.
 
@@ -233,7 +233,7 @@ Let me explain.
 
 At every campus garbage disposal area, we have the following signs:
 
-![A recycling graphic on all OSU trash cans](/static/thoughts/21/refl-undergrad-recycle.jpg)
+![A recycling graphic on all OSU trash cans](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-recycle.jpg)
 
 informational recycling sticker specifying what that glass, plastic jugs, paper, cardboard, and metal can be recycled.
 
@@ -283,9 +283,9 @@ The environment in which memes thrive is best described as failure. The clocktow
 
 [clocktower in Smash Ultimate](https://www.reddit.com/r/OSU/comments/bfhve7/so_i_made_the_clocktower_in_smash/)
 
-![Google maps displaying the clocktower as a religious destination](/static/thoughts/21/refl-undergrad-clocktower-religious.jpg)
+![Google maps displaying the clocktower as a religious destination](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-clocktower-religious.jpg)
 
-![the clocktower can jokingly be seen from space](/static/thoughts/21/refl-undergrad-clocktower-space.jpg)
+![the clocktower can jokingly be seen from space](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-clocktower-space.jpg)
 
 * The toothbrush incident. I really don't want to say any more than that so I'll just link the two source posts below. It's NSFW so don't say I didn't warn you.
 
@@ -307,7 +307,7 @@ The environment in which memes thrive is best described as failure. The clocktow
 
 [this is a test](https://www.reddit.com/r/OSU/comments/lhvj2m/this_is_a_test_of_the_buckeye_alert_system_for/)
 
-![A picture of a phone buckeye alert and kermit the frog shooting a gun rapidly with the title 'every two weeks on indianola'](/static/thoughts/21/refl-undergrad-buckeye-alert.jpg)
+![A picture of a phone buckeye alert and kermit the frog shooting a gun rapidly with the title 'every two weeks on indianola'](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-buckeye-alert.jpg)
 
 * The "the" in The Ohio State University. Our university's official title is The Ohio State University and students like to brag about it whenever a non-OSU student refers to our university as "Ohio State", or "Ohio State University".
 
@@ -355,13 +355,13 @@ The environment in which memes thrive is best described as failure. The clocktow
 
 [COE knows you're sick](https://www.reddit.com/r/OSU/comments/lvmfmz/to_the_person_who_emailed_the_entire_college_of/)
 
-![an unprofessional administration email without a header, a subject, or a closing statement](/static/thoughts/21/refl-undergrad-professional-emails.jpg)
+![an unprofessional administration email without a header, a subject, or a closing statement](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-professional-emails.jpg)
 
-![a reply sent to every student saying "who are you and why did you do this?"](/static/thoughts/21/refl-undergrad-who-and-why.jpg)
+![a reply sent to every student saying "who are you and why did you do this?"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-who-and-why.jpg)
 
-![a reply meant for only Brittany but sent to the entire college of engineering](/static/thoughts/21/refl-undergrad-brittany.jpg)
+![a reply meant for only Brittany but sent to the entire college of engineering](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-brittany.jpg)
 
-![an email sent to every student with the body "sure"](/static/thoughts/21/refl-undergrad-sure.jpg)
+![an email sent to every student with the body "sure"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-sure.jpg)
 
 While there are so many other memes I could talk about, such as the Oval construction, Xerxes, the electronic scooters, SEIs, weird dorm interactions and supposed "ghosts", or even Scott or its legendary grilled cheese, I simply don't have enough time to discuss it all.
 
@@ -375,7 +375,7 @@ While there are so many other memes I could talk about, such as the Oval constru
 
 [Scott](https://www.reddit.com/r/OSU/comments/kep7j0/title/)
 
-![scott grilled cheese is vandalized on the sidewalk](/static/thoughts/21/refl-undergrad-grilled-cheese.jpg)
+![scott grilled cheese is vandalized on the sidewalk](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/refl-undergrad-grilled-cheese.jpg)
 
 ### It's not always about you.
 

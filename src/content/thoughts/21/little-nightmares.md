@@ -2,11 +2,13 @@
 title: "Little Nightmares (2017)"
 description: "In this article, I review why I think Little Nightmares is a fantastic horror game, as well as what makes a good horror game."
 date: 2021-03-28T16:50:00-04:00
-image: https://mir-s3-cdn-cf.behance.net/project_modules/1400/51195b43077245.57e2848987b53.jpg
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/little-nightmares-cover-art.jpg"
 tags:
   - "review"
   - "video game"
 ---
+
+![Little Nightmares cover art](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/little-nightmares-cover-art.jpg)
 
 Admittedly, I'm not the biggest fan of the horror genre.
 
