@@ -1,4 +1,3 @@
-import { EMAIL } from '@/constants'
 import bookData from '@/data/recs/books.json'
 import gameData from '@/data/recs/games.json'
 import {
@@ -61,8 +60,15 @@ export function About() {
               and libre.
             </p>
             <p>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-              <a rel="me" href="https://mas.to/@bossley9"></a>
+              You can contact me at{' '}
+              <span className="social">
+                bossley [dot] samuel [at] gmail [dot] com
+              </span>{' '}
+              or find me on the fediverse as{' '}
+              <a className="social" rel="me" href="https://mas.to/@bossley9">
+                @bossley9@mas.to
+              </a>
+              . I tend to check both semi-frequently so don&#39;t be shy!
             </p>
           </div>
           <div>
