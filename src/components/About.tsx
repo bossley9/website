@@ -60,11 +60,11 @@ export function About() {
               and libre.
             </p>
             <p>
-              You can contact me at{' '}
+              You can contact me at&nbsp;
               <span className="social">
                 bossley [dot] samuel [at] gmail [dot] com
-              </span>{' '}
-              or find me on the fediverse as{' '}
+              </span>
+              &nbsp; or find me on the fediverse as&nbsp;
               <a className="social" rel="me" href="https://mas.to/@bossley9">
                 @bossley9@mas.to
               </a>
