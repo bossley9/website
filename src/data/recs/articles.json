@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "Permission",
+    "author": "Jeremy Keith",
+    "url": "https://adactio.com/journal/20315",
+    "published": "2023-07-11",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "The Gentle Art of Patch Review",
     "author": "Sage Sharp",
     "url": "https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review",

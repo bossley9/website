@@ -179,6 +179,16 @@ dfn {
   }
 }
 
+abbr {
+  cursor: help;
+  color: $light-primary;
+  text-decoration: wavy underline $light-primary;
+  @media (prefers-color-scheme: dark) {
+    color: $dark-primary;
+    text-decoration: wavy underline $dark-primary;
+  }
+}
+
 // groups
 
 ol.thoughtlist {
