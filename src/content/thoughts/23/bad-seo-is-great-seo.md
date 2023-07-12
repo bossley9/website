@@ -39,7 +39,7 @@ When I first started pouring more content onto my website and social media accou
     <meta name="keywords" content="sam,sam bossley,website,tech,frontend" />
     ```
 3. Add a `robots.txt` file to your website root with bot crawling rules. This allows bots (Google, Bing, Microsoft) to look at your webpages and put them into their search engine results.
-    ```txt
+    ```
     User-agent: *
     Allow: /
     ```
@@ -53,7 +53,7 @@ Starting in 2022 and continuing until 2023, I began to receive a steady increase
 I finally decided to pull the plug.
 
 1. Obfuscate my email. This won't suppress all bots but it will filter out a majority of them.
-    ```txt
+    ```
     // instead of
     bossley.samuel@gmail.com
     // try
