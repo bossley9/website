@@ -8,7 +8,7 @@ export function Header({ currentUrl }: Props) {
   }
 
   return (
-    <header className="donotprint">
+    <header className="dnp">
       <nav>
         <a id="title" href="/">
           {SITE_TITLE}

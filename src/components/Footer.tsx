@@ -22,7 +22,7 @@ export function Footer({ minimal = false }: Props) {
     <footer>
       {!minimal && (
         <>
-          <p className="donotprint">
+          <p className="dnp">
             <a aria-label="rss feed" href="/feed.xml">
               <svg
                 width="16"
@@ -50,7 +50,7 @@ export function Footer({ minimal = false }: Props) {
             &nbsp;&nbsp;
             <a href="/what-is-a-feed">What is a feed?</a>
           </p>
-          <p className="donotprint">
+          <p className="dnp">
             {footerLinks.map(({ href, name }, index) => (
               <Fragment key={href}>
                 {Boolean(index) && <span> | </span>}
@@ -58,7 +58,7 @@ export function Footer({ minimal = false }: Props) {
               </Fragment>
             ))}
           </p>
-          <p className="donotprint">
+          <p className="dnp">
             This site will never contain tracking, ads, or require JavaScript
             (unless a page specifically demonstrates JavaScript capabilities).
           </p>
@@ -68,13 +68,13 @@ export function Footer({ minimal = false }: Props) {
         <a href="/">{COPYRIGHT}</a>
         &nbsp;
         <a
-          className="donotprint"
+          className="dnp"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
         >
           CC BY-NC 4.0.
         </a>
         &nbsp;
-        <a className="donotprint" href="https://astro.build/">
+        <a className="dnp" href="https://astro.build/">
           Powered by Astro.
         </a>
       </p>

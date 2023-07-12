@@ -30,15 +30,15 @@ export function TabSingle({ tab }: PageProps) {
         Last updated{' '}
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
       </p>
-      <ul className="taglist donotprint">
+      <ul className="taglist dnp">
         {tags.map((tag) => (
           <li key={tag}>
             <a href={`/tags/${slugify(tag)}`}>#{tag}</a>
           </li>
         ))}
       </ul>
-      <br className="donotprint" />
-      <ul className="linklist donotprint">
+      <br className="dnp" />
+      <ul className="linklist dnp">
         {bandcamp && (
           <li>
             <a href={bandcamp}>Bandcamp</a>
