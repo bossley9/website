@@ -2,6 +2,7 @@
 title: "Bad SEO is great SEO"
 description: "Everyone these days is striving for perfect SEO, so what is it? And what's the catch?"
 date: 2023-07-11T09:58:00-04:00
+image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/seo-search.png"
 tags:
   - "reflection"
   - "seo"

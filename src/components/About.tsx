@@ -70,6 +70,11 @@ export function About() {
               </a>
               . I tend to check both semi-frequently so don&#39;t be shy!
             </p>
+            <p className="fediring">
+              <a href="https://fediring.net/previous?host=sam.bossley.us">←</a>
+              <a href="https://fediring.net/">Fediring</a>
+              <a href="https://fediring.net/next?host=sam.bossley.us">→</a>
+            </p>
           </div>
           <div>
             {book && (
