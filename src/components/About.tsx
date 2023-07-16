@@ -65,8 +65,8 @@ export function About() {
                 bossley [dot] samuel [at] gmail [dot] com
               </span>
               &nbsp; or find me on the fediverse as&nbsp;
-              <a className="social" rel="me" href="https://mas.to/@bossley9">
-                @bossley9@mas.to
+              <a className="social" rel="me" href="https://calckey.world/@sam">
+                @sam@calckey.world
               </a>
               . I tend to check both semi-frequently so don&#39;t be shy!
             </p>
