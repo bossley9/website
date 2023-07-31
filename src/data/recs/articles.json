@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "\"Quantum\" Doesn’t Solve Anything for Cybersecurity",
+    "author": "Kelly Shortridge",
+    "url": "https://kellyshortridge.com/blog/posts/quantum-doesnt-solve-anything/#fn:1",
+    "published": "2023-07-25",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "The Small Web Browser, an inclusive proposal",
+    "author": "xavi92",
+    "url": "https://xavi.privatedns.org/blog/small-web-browser",
+    "published": "2022-12-31",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Permission",
     "author": "Jeremy Keith",
     "url": "https://adactio.com/journal/20315",
