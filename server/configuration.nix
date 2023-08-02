@@ -72,7 +72,7 @@ in
 
   services.openssh = {
     enable = true;
-    allowSFTP = false;
+    allowSFTP = true;
     settings = {
       PasswordAuthentication = false;
       PermitRootLogin = "no";
