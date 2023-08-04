@@ -1,26 +1,11 @@
-import bookData from '@/data/recs/books.json'
 import gameData from '@/data/recs/games.json'
-import {
-  bookListSchema,
-  type Book,
-  gameListSchema,
-  type Game,
-} from '@/utils/schemas'
+import { gameListSchema, type Game } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
+import { getCurrentlyReadingItem } from '@/utils/data'
 
 export function About() {
-  let bookList: Book[] = []
-  try {
-    bookList = bookListSchema.parse(bookData)
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e)
-    } else {
-      throw e
-    }
-  }
-  const book = bookList.find((item) => item.current)
+  const readingItem = getCurrentlyReadingItem()
 
   let gameList: Game[] = []
   try {
@@ -72,10 +57,10 @@ export function About() {
             </p>
           </div>
           <div>
-            {book && (
+            {readingItem && (
               <p>
                 <strong>Book club:</strong> I&#39;m currently reading{' '}
-                <i>{book.title}</i> by {book.author}.
+                <i>{readingItem.title}</i> by {readingItem.author}.
               </p>
             )}
             {game && (
