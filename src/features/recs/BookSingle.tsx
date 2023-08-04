@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/books.json'
-import { bookListSchema, type BookList } from '@/utils/data'
+import { bookListSchema, type Book } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Print books and audiobooks.'
 
 export function BookSingle() {
-  let bookList: BookList = []
+  let bookList: Book[] = []
   try {
     bookList = bookListSchema.parse(data)
   } catch (e) {
@@ -21,9 +21,9 @@ export function BookSingle() {
 
   const current = bookList.find((item) => item.current)
 
-  const groupedByDate: Record<string, BookList> = bookList
+  const groupedByDate: Record<string, Book[]> = bookList
     .filter((item) => !item.current)
-    .reduce<Record<string, BookList>>((acc, item) => {
+    .reduce<Record<string, Book[]>>((acc, item) => {
       const key = item.date
       if (!acc[key]) {
         acc[key] = []

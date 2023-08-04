@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/stories.json'
-import { storyListSchema, type StoryList } from '@/utils/data'
+import { storyListSchema, type Story } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Short stories and poems.'
 
 export function StorySingle() {
-  let storyList: StoryList = []
+  let storyList: Story[] = []
   try {
     storyList = storyListSchema.parse(data)
   } catch (e) {
@@ -19,8 +19,8 @@ export function StorySingle() {
     }
   }
 
-  const groupedByDate: Record<string, StoryList> = storyList.reduce<
-    Record<string, StoryList>
+  const groupedByDate: Record<string, Story[]> = storyList.reduce<
+    Record<string, Story[]>
   >((acc, item) => {
     const key = item.date
     if (!acc[key]) {

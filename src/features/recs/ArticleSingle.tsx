@@ -1,13 +1,13 @@
 import { Fragment } from 'react'
 import data from '@/data/recs/articles.json'
-import { articleListSchema, type ArticleList } from '@/utils/data'
+import { articleListSchema, type Article } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Blog posts, journal articles, and white papers.'
 
 export function ArticleSingle() {
-  let articleList: ArticleList = []
+  let articleList: Article[] = []
   try {
     articleList = articleListSchema.parse(data)
   } catch (e) {
@@ -18,8 +18,8 @@ export function ArticleSingle() {
     }
   }
 
-  const groupedByDate: Record<string, ArticleList> = articleList.reduce<
-    Record<string, ArticleList>
+  const groupedByDate: Record<string, Article[]> = articleList.reduce<
+    Record<string, Article[]>
   >((acc, item) => {
     const key = item.date
     if (!acc[key]) {

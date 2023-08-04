@@ -1,6 +1,19 @@
 [
   {
     "type": "manga",
+    "author": "Natsuhiko Kyougoku and Aki Shimizu",
+    "title": "Summer of the Ubume",
+    "run_start": "2013-01-01",
+    "run_end": "2014-01-01",
+    "url": "https://mangatoto.com/series/26675/the-summer-of-the-ubume",
+    "date": "2023",
+    "volumes": 1,
+    "rating": -1,
+    "current": true,
+    "note": "The manga adaptation of the novel of the same name"
+  },
+  {
+    "type": "manga",
     "author": "Sui Ishida",
     "title": "Tokyo Ghoul: Re",
     "run_start": "2014-10-16",

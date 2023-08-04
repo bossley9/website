@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/movies.json'
-import { movieListSchema, type MovieList } from '@/utils/data'
+import { movieListSchema, type Movie } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Theater movies, documentaries, and extended videos.'
 
 export function MovieSingle() {
-  let movieList: MovieList = []
+  let movieList: Movie[] = []
   try {
     movieList = movieListSchema.parse(data)
   } catch (e) {
@@ -19,8 +19,8 @@ export function MovieSingle() {
     }
   }
 
-  const groupedByDate: Record<string, MovieList> = movieList.reduce<
-    Record<string, MovieList>
+  const groupedByDate: Record<string, Movie[]> = movieList.reduce<
+    Record<string, Movie[]>
   >((acc, item) => {
     const key = item.date
     if (!acc[key]) {

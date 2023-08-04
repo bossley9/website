@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/shows.json'
-import { showListSchema, type ShowList } from '@/utils/data'
+import { showListSchema, type Show } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Cartoons, TV shows, podcasts, and episodic films.'
 
 export function ShowSingle() {
-  let showList: ShowList = []
+  let showList: Show[] = []
   try {
     showList = showListSchema.parse(data)
   } catch (e) {
@@ -21,9 +21,9 @@ export function ShowSingle() {
 
   const current = showList.find((item) => item.current)
 
-  const groupedByDate: Record<string, ShowList> = showList
+  const groupedByDate: Record<string, Show[]> = showList
     .filter((item) => !item.current)
-    .reduce<Record<string, ShowList>>((acc, item) => {
+    .reduce<Record<string, Show[]>>((acc, item) => {
       const key = item.date
       if (!acc[key]) {
         acc[key] = []

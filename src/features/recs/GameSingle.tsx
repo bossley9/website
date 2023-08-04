@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/games.json'
-import { gameListSchema, type GameList } from '@/utils/data'
+import { gameListSchema, type Game } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Video games played on any platform.'
 
 export function GameSingle() {
-  let gameList: GameList = []
+  let gameList: Game[] = []
   try {
     gameList = gameListSchema.parse(data)
   } catch (e) {
@@ -21,9 +21,9 @@ export function GameSingle() {
 
   const current = gameList.find((item) => item.current)
 
-  const groupedByDate: Record<string, GameList> = gameList
+  const groupedByDate: Record<string, Game[]> = gameList
     .filter((item) => !item.current)
-    .reduce<Record<string, GameList>>((acc, item) => {
+    .reduce<Record<string, Game[]>>((acc, item) => {
       const key = item.date
       if (!acc[key]) {
         acc[key] = []

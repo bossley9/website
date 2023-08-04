@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/manga.json'
-import { mangaListSchema, type MangaList } from '@/utils/data'
+import { mangaListSchema, type Manga } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Japanese manga and comic books.'
 
 export function MangaSingle() {
-  let mangaList: MangaList = []
+  let mangaList: Manga[] = []
   try {
     mangaList = mangaListSchema.parse(data)
   } catch (e) {
@@ -21,9 +21,9 @@ export function MangaSingle() {
 
   const current = mangaList.find((item) => item.current)
 
-  const groupedByDate: Record<string, MangaList> = mangaList
+  const groupedByDate: Record<string, Manga[]> = mangaList
     .filter((item) => !item.current)
-    .reduce<Record<string, MangaList>>((acc, item) => {
+    .reduce<Record<string, Manga[]>>((acc, item) => {
       const key = item.date
       if (!acc[key]) {
         acc[key] = []

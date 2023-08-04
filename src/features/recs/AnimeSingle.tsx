@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
 import { RatingNote } from '@/components/RatingNote'
 import data from '@/data/recs/anime.json'
-import { animeListSchema, type AnimeList } from '@/utils/data'
+import { animeListSchema, type Anime } from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export const description = 'Japanese animated shows and movies.'
 
 export function AnimeSingle() {
-  let animeList: AnimeList = []
+  let animeList: Anime[] = []
   try {
     animeList = animeListSchema.parse(data)
   } catch (e) {
@@ -21,9 +21,9 @@ export function AnimeSingle() {
 
   const current = animeList.find((item) => item.current)
 
-  const groupedByDate: Record<string, AnimeList> = animeList
+  const groupedByDate: Record<string, Anime[]> = animeList
     .filter((item) => !item.current)
-    .reduce<Record<string, AnimeList>>((acc, item) => {
+    .reduce<Record<string, Anime[]>>((acc, item) => {
       const key = item.date
       if (!acc[key]) {
         acc[key] = []

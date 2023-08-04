@@ -2,15 +2,15 @@ import bookData from '@/data/recs/books.json'
 import gameData from '@/data/recs/games.json'
 import {
   bookListSchema,
-  type BookList,
+  type Book,
   gameListSchema,
-  type GameList,
-} from '@/utils/data'
+  type Game,
+} from '@/utils/schemas'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 
 export function About() {
-  let bookList: BookList = []
+  let bookList: Book[] = []
   try {
     bookList = bookListSchema.parse(bookData)
   } catch (e) {
@@ -22,7 +22,7 @@ export function About() {
   }
   const book = bookList.find((item) => item.current)
 
-  let gameList: GameList = []
+  let gameList: Game[] = []
   try {
     gameList = gameListSchema.parse(gameData)
   } catch (e) {
