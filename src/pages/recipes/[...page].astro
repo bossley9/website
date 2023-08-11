@@ -10,7 +10,7 @@ import { customPagination } from "@/utils/pagination";
 
 export async function getStaticPaths() {
   const recipes = (await getCollection("recipes")).sort((a, b) =>
-    sortByAlpha(a.data.title, b.data.title)
+    sortByAlpha(a.data.title, b.data.title),
   );
   return customPagination(recipes);
 }

@@ -1,5 +1,5 @@
 export const getObjectEntries = Object.entries as <
-  T extends Record<symbol, unknown>
+  T extends Record<symbol, unknown>,
 >(
-  obj: T
+  obj: T,
 ) => [keyof T, T[keyof T]][];

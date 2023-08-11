@@ -10,7 +10,7 @@ import { thoughtPagination } from "@/utils/pagination";
 
 export async function getStaticPaths() {
   const thoughts = (await getCollection("thoughts")).sort((a, b) =>
-    sortByDate(a.data.date, b.data.date)
+    sortByDate(a.data.date, b.data.date),
   );
   return thoughtPagination(thoughts);
 }

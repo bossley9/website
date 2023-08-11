@@ -3,7 +3,7 @@ import { sortByDate } from "@/utils/sorting";
 import { getRecipeSlug, getTabSlug, getThoughtSlug } from "@/utils/content";
 
 export function extractTagsFromContents(
-  allContent: MarkdownInstance<Record<string, unknown>>[]
+  allContent: MarkdownInstance<Record<string, unknown>>[],
 ): string[] {
   return [
     ...new Set(allContent.map((content) => content.frontmatter.tags).flat()),
@@ -25,7 +25,7 @@ export type TagMeta = {
 };
 
 export function groupContentsByTag(
-  allContent: MarkdownInstance<Record<string, unknown>>[]
+  allContent: MarkdownInstance<Record<string, unknown>>[],
 ): Record<string, TagMeta[]> {
   return allContent
     .filter((content): content is MarkdownInstance<ResolvedFrontmatter> => {
@@ -45,7 +45,7 @@ export function groupContentsByTag(
       return validTags && validTitle && validDate;
     })
     .sort((a, b) =>
-      sortByDate(new Date(a.frontmatter.date), new Date(b.frontmatter.date))
+      sortByDate(new Date(a.frontmatter.date), new Date(b.frontmatter.date)),
     )
     .reduce<Record<string, TagMeta[]>>((dict, content) => {
       for (const key of content.frontmatter.tags) {

@@ -15,14 +15,14 @@ const animeSchema = z.intersection(
       .partial()
       .refine(
         (data) => data.title || data.title_translated,
-        'at least one of "title" or "title_translated" must be present'
+        'at least one of "title" or "title_translated" must be present',
       ),
     z.object({
       date: dateSchema,
       rating: ratingSchema,
       note: z.string().optional(),
       current: currentSchema,
-    })
+    }),
   ),
   z.discriminatedUnion("type", [
     z.object({
@@ -35,7 +35,7 @@ const animeSchema = z.intersection(
       type: z.literal("anime/movie"),
       year: dateSchema,
     }),
-  ])
+  ]),
 );
 export const animeListSchema = z.array(animeSchema);
 export type Anime = z.infer<typeof animeSchema>;
@@ -103,7 +103,7 @@ const mangaSchema = z.intersection(
       run_start: z.coerce.date(),
       run_end: runEndSchema,
     }),
-  ])
+  ]),
 );
 export const mangaListSchema = z.array(mangaSchema);
 export type Manga = z.infer<typeof mangaSchema>;
@@ -140,7 +140,7 @@ const showSchema = z.intersection(
       type: z.literal("podcast"),
       url: z.string().url(),
     }),
-  ])
+  ]),
 );
 export const showListSchema = z.array(showSchema);
 export type Show = z.infer<typeof showSchema>;

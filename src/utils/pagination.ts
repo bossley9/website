@@ -40,7 +40,7 @@ export type YearPage<T> = {
 
 type ThoughtsByYear = Record<number, CollectionEntry<"thoughts">[]>;
 export function thoughtPagination(
-  data: CollectionEntry<"thoughts">[]
+  data: CollectionEntry<"thoughts">[],
 ): GetStaticPathsResult {
   const initialThoughtsByYear: ThoughtsByYear = {};
   const thoughtsByYear: ThoughtsByYear = data.reduce((acc, val) => {
@@ -54,7 +54,7 @@ export function thoughtPagination(
   }, initialThoughtsByYear);
 
   const sortedPages = getObjectEntries(thoughtsByYear).sort(
-    ([a], [b]) => b - a
+    ([a], [b]) => b - a,
   );
   const years = sortedPages.map(([year]) => year);
 
