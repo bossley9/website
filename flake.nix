@@ -59,6 +59,7 @@
         buildInputs = with pkgs; with self.packages.${system}; resume.buildInputs ++ [
           # general dependencies
           nodejs
+          deno
           # spellcheck
           (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))
           # s3 access for media files
