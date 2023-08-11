@@ -27,6 +27,6 @@ review:
 	./scripts/spellcheck.sh
 
 deploy: build
-	rsync -av -e 'ssh' --chmod=775 --no-owner --no-group --no-times --delete "$(OUTPUT)/" "nixos@sam.bossley.us:/var/www/sam.bossley.us"
+	rsync -av -e 'ssh -p 24' --chmod=775 --no-owner --no-group --no-times --delete "$(OUTPUT)/" "nixos@sam.bossley.us:/var/www/sam.bossley.us"
 
 .PHONY: server

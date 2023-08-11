@@ -73,6 +73,7 @@ in
   services.openssh = {
     enable = true;
     allowSFTP = true;
+    ports = [ 24 ];
     settings = {
       PasswordAuthentication = false;
       PermitRootLogin = "no";
@@ -104,7 +105,7 @@ in
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [
-      22 # OpenSSH (automatically allowed but explicitly adding for sanity)
+      24 # OpenSSH (custom port to reduce extraneous pings)
       80 # HTTP
       443 # HTTPS
       873 # Rsync
