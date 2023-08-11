@@ -1,16 +1,26 @@
 [
   {
     "type": "manga",
-    "author": "Natsuhiko Kyougoku and Aki Shimizu",
-    "title": "Summer of the Ubume",
-    "run_start": "2013-01-01",
-    "run_end": "2014-01-01",
-    "url": "https://mangatoto.com/series/26675/the-summer-of-the-ubume",
+    "author": "Natsuhiko Kyougoku",
+    "title": "Box of Spirits and Goblins",
+    "year": "1995",
+    "url": "https://manganato.com/manga-py960733",
     "date": "2023",
     "volumes": 1,
     "rating": -1,
     "current": true,
-    "note": "The manga adaptation of the novel of the same name"
+    "note": "Manga adaptation of the novel of the same name."
+  },
+  {
+    "type": "manga",
+    "author": "Natsuhiko Kyougoku",
+    "title": "Summer of the Ubume",
+    "year": "1994",
+    "url": "https://mangatoto.com/series/26675/the-summer-of-the-ubume",
+    "date": "2023",
+    "volumes": 1,
+    "rating": 6.8,
+    "note": "Manga adaptation of the novel of the same name."
   },
   {
     "type": "manga",

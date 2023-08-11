@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "Suzume",
+    "year": "2022",
+    "director": "Manakoto Shinkai",
+    "producer": "Kōichirō Itō and Genki Kawamura",
+    "date": "2023",
+    "rating": 6.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
     "title": "Wokatoi: Love is Hard for Otaku",
     "year": "2020",
     "director": "Yūichi Fukuda",
@@ -1597,7 +1607,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
     "date": "2010",
-    "rating": -1,
+    "rating": 7.7,
     "note": ""
   },
   {
@@ -1607,7 +1617,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
     "date": "2010",
-    "rating": -1,
+    "rating": 8.4,
     "note": ""
   },
   {
@@ -1617,7 +1627,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh and Tim Sanders",
     "date": "2010",
-    "rating": -1,
+    "rating": 8.0,
     "note": ""
   },
   {

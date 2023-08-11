@@ -49,11 +49,16 @@ export function MangaSingle() {
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol>
-              {items.map(({ url, title, author, run_start, rating, note }) => {
+              {items.map((manga) => {
+                const { url, title, author, rating, note } = manga
+
+                const startYear =
+                  'run_start' in manga ? manga.run_start : new Date(manga.year)
+
                 return (
                   <li key={url}>
                     <span>
-                      {title} by {author} ({run_start.getUTCFullYear()})
+                      {title} by {author} ({startYear.getUTCFullYear()})
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

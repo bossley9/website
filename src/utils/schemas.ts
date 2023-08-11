@@ -83,19 +83,28 @@ const gameSchema = z.object({
 export const gameListSchema = z.array(gameSchema)
 export type Game = z.infer<typeof gameSchema>
 
-const mangaSchema = z.object({
-  type: z.literal('manga'),
-  author: z.string(),
-  title: z.string(),
-  run_start: z.coerce.date(),
-  run_end: runEndSchema,
-  url: z.string().url(),
-  date: dateSchema,
-  volumes: z.number(),
-  rating: ratingSchema,
-  note: z.string().optional(),
-  current: currentSchema,
-})
+const mangaSchema = z.intersection(
+  z.object({
+    type: z.literal('manga'),
+    author: z.string(),
+    title: z.string(),
+    url: z.string().url(),
+    date: dateSchema,
+    volumes: z.number(),
+    rating: ratingSchema,
+    note: z.string().optional(),
+    current: currentSchema,
+  }),
+  z.union([
+    z.object({
+      year: dateSchema,
+    }),
+    z.object({
+      run_start: z.coerce.date(),
+      run_end: runEndSchema,
+    }),
+  ])
+)
 export const mangaListSchema = z.array(mangaSchema)
 export type Manga = z.infer<typeof mangaSchema>
 
