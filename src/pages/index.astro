@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { Home } from '@/features/Home'
-import { sortByDate } from '@/utils/sorting'
-import { getCollection } from 'astro:content'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Home } from "@/features/Home";
+import { sortByDate } from "@/utils/sorting";
+import { getCollection } from "astro:content";
 
-const recentThoughts = (await getCollection('thoughts'))
+const recentThoughts = (await getCollection("thoughts"))
   .sort((a, b) => sortByDate(a.data.date, b.data.date))
-  .slice(0, 10)
+  .slice(0, 10);
 ---
 
 <BaseLayout>

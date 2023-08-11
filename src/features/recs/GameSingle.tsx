@@ -1,38 +1,38 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/games.json'
-import { gameListSchema, type Game } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/games.json";
+import { type Game, gameListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Video games played on any platform.'
+export const description = "Video games played on any platform.";
 
 export function GameSingle() {
-  let gameList: Game[] = []
+  let gameList: Game[] = [];
   try {
-    gameList = gameListSchema.parse(data)
+    gameList = gameListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
-  const current = gameList.find((item) => item.current)
+  const current = gameList.find((item) => item.current);
 
   const groupedByDate: Record<string, Game[]> = gameList
     .filter((item) => !item.current)
     .reduce<Record<string, Game[]>>((acc, item) => {
-      const key = item.date
+      const key = item.date;
       if (!acc[key]) {
-        acc[key] = []
+        acc[key] = [];
       }
       if (!item.current) {
-        acc[key]?.push(item)
+        acc[key]?.push(item);
       }
-      return acc
-    }, {})
+      return acc;
+    }, {});
 
   return (
     <section className="recs">
@@ -53,11 +53,11 @@ export function GameSingle() {
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

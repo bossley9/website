@@ -1,33 +1,34 @@
-import { slugify } from '@/utils/urls'
-import type { CollectionEntry } from 'astro:content'
+import { slugify } from "@/utils/urls";
+import type { CollectionEntry } from "astro:content";
 
 export type PageProps = {
-  tab: CollectionEntry<'tabs'>
-}
+  tab: CollectionEntry<"tabs">;
+};
 
 export function TabSingle({ tab }: PageProps) {
-  const { title, date, tags, bandcamp, soundcloud, spotify, youtube } = tab.data
+  const { title, date, tags, bandcamp, soundcloud, spotify, youtube } =
+    tab.data;
 
   const mapKeyItems = {
-    ['/']: 'slide up',
-    ['\\']: 'slide down',
-    ['h']: 'hammer-on',
-    ['p']: 'pull-off',
-    ['~']: 'vibrato',
-    ['+']: 'harmonic',
-    ['x']: 'mute note',
-    ['*']: 'ring',
-  }
+    ["/"]: "slide up",
+    ["\\"]: "slide down",
+    ["h"]: "hammer-on",
+    ["p"]: "pull-off",
+    ["~"]: "vibrato",
+    ["+"]: "harmonic",
+    ["x"]: "mute note",
+    ["*"]: "ring",
+  };
   const mapKey =
     Object.entries(mapKeyItems)
       .map(([symbol, meaning]) => `${symbol}  ${meaning}`)
-      .join('\n') + '\n'
+      .join("\n") + "\n";
 
   return (
     <article className="tabs">
       <h1>{title}</h1>
       <p>
-        Last updated{' '}
+        Last updated{" "}
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
       </p>
       <ul className="taglist dnp">
@@ -65,5 +66,5 @@ export function TabSingle({ tab }: PageProps) {
         {tab.body}
       </pre>
     </article>
-  )
+  );
 }

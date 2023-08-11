@@ -1,38 +1,38 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/shows.json'
-import { showListSchema, type Show } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/shows.json";
+import { type Show, showListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Cartoons, TV shows, podcasts, and episodic films.'
+export const description = "Cartoons, TV shows, podcasts, and episodic films.";
 
 export function ShowSingle() {
-  let showList: Show[] = []
+  let showList: Show[] = [];
   try {
-    showList = showListSchema.parse(data)
+    showList = showListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
-  const current = showList.find((item) => item.current)
+  const current = showList.find((item) => item.current);
 
   const groupedByDate: Record<string, Show[]> = showList
     .filter((item) => !item.current)
     .reduce<Record<string, Show[]>>((acc, item) => {
-      const key = item.date
+      const key = item.date;
       if (!acc[key]) {
-        acc[key] = []
+        acc[key] = [];
       }
       if (!item.current) {
-        acc[key]?.push(item)
+        acc[key]?.push(item);
       }
-      return acc
-    }, {})
+      return acc;
+    }, {});
 
   return (
     <section className="recs">
@@ -51,10 +51,10 @@ export function ShowSingle() {
             <h2>{year}</h2>
             <ol>
               {items.map((item) => {
-                const { title, run_start, run_end, rating, note } = item
+                const { title, run_start, run_end, rating, note } = item;
                 return (
                   <li key={title + run_start + run_end}>
-                    {item.type === 'podcast' ? (
+                    {item.type === "podcast" ? (
                       <a href={item.url}>
                         {title} ({run_start.getUTCFullYear()}) (podcast)
                       </a>
@@ -65,11 +65,11 @@ export function ShowSingle() {
                     )}
                     <RatingNote rating={rating} note={note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

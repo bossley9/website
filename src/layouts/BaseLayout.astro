@@ -1,18 +1,18 @@
 ---
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGS, AUTHOR } from '@/constants'
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGS, AUTHOR } from "@/constants";
 
-import '@/assets/styles/main.scss'
-import '@/assets/styles/syntax.scss'
+import "@/assets/styles/main.scss";
+import "@/assets/styles/syntax.scss";
 
 type Props = {
-  title?: string
-  description?: string | undefined
-  tags?: string[]
-  image?: string | undefined
-  minimal?: boolean
-}
+  title?: string;
+  description?: string | undefined;
+  tags?: string[];
+  image?: string | undefined;
+  minimal?: boolean;
+};
 
 const {
   title,
@@ -20,7 +20,7 @@ const {
   tags = SITE_TAGS,
   image,
   minimal = false,
-} = Astro.props
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -68,7 +68,7 @@ const {
     <meta name="og:description" content={description} />
     <meta name="twitter:description" content={description} />
 
-    <meta name="keywords" content={tags.join(',')} />
+    <meta name="keywords" content={tags.join(",")} />
 
     {
       image && (
@@ -88,7 +88,7 @@ const {
     <link
       rel="alternate"
       type="application/rss+xml"
-      href={new URL('/feed.xml', Astro.site)}
+      href={new URL("/feed.xml", Astro.site)}
       title={SITE_TITLE}
     />
 

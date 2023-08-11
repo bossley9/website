@@ -1,13 +1,13 @@
-import { defineConfig } from 'astro/config'
-import { rehypeHeadingIds } from '@astrojs/markdown-remark'
-import { rehypeAutolinkHeadingsOverride } from './plugins/rehypeAutolinkHeadingsOverride'
-import react from '@astrojs/react'
-import compress from 'astro-compress'
+import { defineConfig } from "astro/config";
+import { rehypeHeadingIds } from "@astrojs/markdown-remark";
+import { rehypeAutolinkHeadingsOverride } from "./plugins/rehypeAutolinkHeadingsOverride";
+import react from "@astrojs/react";
+import compress from "astro-compress";
 
 export default defineConfig({
-  outDir: './dist',
-  publicDir: './static',
-  site: 'https://sam.bossley.us', // required for canonical url injection
+  outDir: "./dist",
+  publicDir: "./static",
+  site: "https://sam.bossley.us", // required for canonical url injection
   integrations: [
     react(),
     compress({
@@ -24,7 +24,7 @@ export default defineConfig({
       rehypeAutolinkHeadingsOverride,
     ],
     shikiConfig: {
-      theme: 'css-variables',
+      theme: "css-variables",
     },
     smartypants: false,
   },
@@ -32,6 +32,6 @@ export default defineConfig({
     redirects: true,
   },
   redirects: {
-    '/resume': '/sam-bossley.pdf',
+    "/resume": "/sam-bossley.pdf",
   },
-})
+});

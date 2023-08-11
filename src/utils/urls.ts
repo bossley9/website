@@ -6,13 +6,13 @@ export function slugify(str: string) {
   return str
     .trim()
     .toLocaleLowerCase()
-    .replace(/[^a-zA-Z0-9\- ]/g, '')
-    .replace(/\s+/g, '-')
+    .replace(/[^a-zA-Z0-9\- ]/g, "")
+    .replace(/\s+/g, "-");
 }
 
 export function dateSlugify(date: Date, title: string) {
-  const year = date.toLocaleDateString('en', { year: '2-digit' })
-  const month = date.toLocaleDateString('en', { month: '2-digit' })
-  const id = slugify(title)
-  return year + '/' + month + '/' + id
+  const year = date.toLocaleDateString("en", { year: "2-digit" });
+  const month = date.toLocaleDateString("en", { month: "2-digit" });
+  const id = slugify(title);
+  return year + "/" + month + "/" + id;
 }

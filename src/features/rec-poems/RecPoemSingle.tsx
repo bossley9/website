@@ -1,11 +1,11 @@
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
 export type PageProps = {
-  poem: CollectionEntry<'rec-poems'>
-}
+  poem: CollectionEntry<"rec-poems">;
+};
 
 export function RecPoemSingle({ poem }: PageProps) {
-  const { title, author, note, year } = poem.data
+  const { title, author, note, year } = poem.data;
   return (
     <article>
       <h1>
@@ -26,5 +26,5 @@ export function RecPoemSingle({ poem }: PageProps) {
         please contact me.
       </p>
     </article>
-  )
+  );
 }

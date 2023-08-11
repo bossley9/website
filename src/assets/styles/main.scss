@@ -157,7 +157,7 @@ a:focus {
 
 code,
 .formatted {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 .inline-code {
   border-radius: 0.2rem;
@@ -437,7 +437,7 @@ article {
     max-height: 600px;
   }
   img::after {
-    content: ' (image)';
+    content: " (image)";
   }
   img::before,
   img::after {

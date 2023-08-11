@@ -1,44 +1,44 @@
-import bookData from '@/data/recs/books.json'
-import mangaData from '@/data/recs/manga.json'
+import bookData from "@/data/recs/books.json";
+import mangaData from "@/data/recs/manga.json";
 import {
-  bookListSchema,
-  mangaListSchema,
   type Book,
+  bookListSchema,
   type Manga,
-} from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+  mangaListSchema,
+} from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
 export function getCurrentlyReadingItem(): Book | Manga | null {
-  let bookList: Book[] = []
+  let bookList: Book[] = [];
   try {
-    bookList = bookListSchema.parse(bookData)
+    bookList = bookListSchema.parse(bookData);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
-  const book = bookList.find((item) => item.current)
+  const book = bookList.find((item) => item.current);
   if (book) {
-    return book
+    return book;
   }
 
-  let mangaList: Manga[] = []
+  let mangaList: Manga[] = [];
   try {
-    mangaList = mangaListSchema.parse(mangaData)
+    mangaList = mangaListSchema.parse(mangaData);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
-  const manga = mangaList.find((item) => item.current)
+  const manga = mangaList.find((item) => item.current);
   if (manga) {
-    return manga
+    return manga;
   }
 
-  return null
+  return null;
 }

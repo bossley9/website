@@ -1,23 +1,23 @@
-import { Fragment } from 'react'
-import { ArticleListItem } from '@/components/ArticleListItem'
-import { YearPaginationNav } from '@/components/YearPaginationNav'
-import { getThoughtSlug } from '@/utils/content'
-import type { YearPage } from '@/utils/pagination'
-import type { CollectionEntry } from 'astro:content'
+import { Fragment } from "react";
+import { ArticleListItem } from "@/components/ArticleListItem";
+import { YearPaginationNav } from "@/components/YearPaginationNav";
+import { getThoughtSlug } from "@/utils/content";
+import type { YearPage } from "@/utils/pagination";
+import type { CollectionEntry } from "astro:content";
 
-export type PageProps = { page: YearPage<CollectionEntry<'thoughts'>> }
+export type PageProps = { page: YearPage<CollectionEntry<"thoughts">> };
 
 export function ThoughtSection({ page }: PageProps) {
   const groupedEntries = page.data.reduce<
-    Record<number, CollectionEntry<'thoughts'>[]>
+    Record<number, CollectionEntry<"thoughts">[]>
   >((dict, entry) => {
-    const year = entry.data.date.getUTCFullYear()
+    const year = entry.data.date.getUTCFullYear();
     if (!dict[year]) {
-      dict[year] = []
+      dict[year] = [];
     }
-    dict[year]?.push(entry)
-    return dict
-  }, {})
+    dict[year]?.push(entry);
+    return dict;
+  }, {});
 
   return (
     <section>
@@ -34,7 +34,7 @@ export function ThoughtSection({ page }: PageProps) {
             <h2>{year}</h2>
             <ol className="thoughtlist">
               {entries.map(({ data: { date, title, video } }) => {
-                const { url } = getThoughtSlug({ title, date })
+                const { url } = getThoughtSlug({ title, date });
                 return (
                   <ArticleListItem
                     key={url}
@@ -43,7 +43,7 @@ export function ThoughtSection({ page }: PageProps) {
                     url={url}
                     isVideo={Boolean(video)}
                   />
-                )
+                );
               })}
             </ol>
           </Fragment>
@@ -54,5 +54,5 @@ export function ThoughtSection({ page }: PageProps) {
         baseUrl="/thoughts"
       />
     </section>
-  )
+  );
 }

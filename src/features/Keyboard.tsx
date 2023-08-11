@@ -30,5 +30,5 @@ export function Keyboard() {
         src="https://configure.zsa.io/embed/moonlander/layouts/GLLvg/latest/0"
       />
     </section>
-  )
+  );
 }

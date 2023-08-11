@@ -1,25 +1,25 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import {
   RecPoemSingle,
   type PageProps,
-} from '@/features/rec-poems/RecPoemSingle'
-import { getCollection } from 'astro:content'
-import { getRecPoemSlug } from '@/utils/content'
+} from "@/features/rec-poems/RecPoemSingle";
+import { getCollection } from "astro:content";
+import { getRecPoemSlug } from "@/utils/content";
 
 export async function getStaticPaths() {
-  const poems = await getCollection('rec-poems')
+  const poems = await getCollection("rec-poems");
   return poems.map((poem) => {
-    const { author, title } = poem.data
+    const { author, title } = poem.data;
     return {
       params: { slug: getRecPoemSlug({ author, title }).slug },
       props: { poem },
-    }
-  })
+    };
+  });
 }
 
-type Props = PageProps
-const { title, author } = Astro.props.poem.data
+type Props = PageProps;
+const { title, author } = Astro.props.poem.data;
 ---
 
 <BaseLayout title={`${title} by ${author}`}>

@@ -1,24 +1,24 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { RecipeSingle, type PageProps } from '@/features/recipes/RecipeSingle'
-import { getCollection } from 'astro:content'
-import { getRecipeSlug } from '@/utils/content'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { RecipeSingle, type PageProps } from "@/features/recipes/RecipeSingle";
+import { getCollection } from "astro:content";
+import { getRecipeSlug } from "@/utils/content";
 
 export async function getStaticPaths() {
-  const recipes = await getCollection('recipes')
+  const recipes = await getCollection("recipes");
   return recipes.map((recipe) => {
-    const { date, title } = recipe.data
+    const { date, title } = recipe.data;
     return {
       params: { slug: getRecipeSlug({ date, title }).slug },
       props: { recipe },
-    }
-  })
+    };
+  });
 }
 
-type Props = Omit<PageProps, 'children'>
+type Props = Omit<PageProps, "children">;
 
-const { title, description, tags } = Astro.props.recipe.data
-const { Content } = await Astro.props.recipe.render()
+const { title, description, tags } = Astro.props.recipe.data;
+const { Content } = await Astro.props.recipe.render();
 ---
 
 <BaseLayout title={title} description={description} tags={tags}>

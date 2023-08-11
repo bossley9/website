@@ -1,13 +1,13 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { MemeSingle, type PageProps } from '@/features/memes/MemeSingle'
-import { parsePlaylist } from '@/utils/playlists'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { MemeSingle, type PageProps } from "@/features/memes/MemeSingle";
+import { parsePlaylist } from "@/utils/playlists";
 
-import m2023 from '@/data/memes/memes-2023.m3u?raw'
-import m2022 from '@/data/memes/memes-2022.m3u?raw'
-import m2021 from '@/data/memes/memes-2021.m3u?raw'
-import m2018 from '@/data/memes/memes-2018.m3u?raw'
-import m2017 from '@/data/memes/memes-2017.m3u?raw'
+import m2023 from "@/data/memes/memes-2023.m3u?raw";
+import m2022 from "@/data/memes/memes-2022.m3u?raw";
+import m2021 from "@/data/memes/memes-2021.m3u?raw";
+import m2018 from "@/data/memes/memes-2018.m3u?raw";
+import m2017 from "@/data/memes/memes-2017.m3u?raw";
 
 export async function getStaticPaths() {
   const files = [
@@ -16,17 +16,17 @@ export async function getStaticPaths() {
     { data: m2021, year: 2021 },
     { data: m2018, year: 2018 },
     { data: m2017, year: 2017 },
-  ]
+  ];
 
   return files.map(({ data, year }) => {
     return {
       params: { year },
       props: { playlist: parsePlaylist(data), year },
-    }
-  })
+    };
+  });
 }
 
-type Props = PageProps
+type Props = PageProps;
 ---
 
 <BaseLayout title={`Memes (${Astro.props.year})`}>

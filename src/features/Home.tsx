@@ -1,11 +1,11 @@
-import { About } from '@/components/About'
-import { ArticleListItem } from '@/components/ArticleListItem'
-import { getThoughtSlug } from '@/utils/content'
-import type { CollectionEntry } from 'astro:content'
+import { About } from "@/components/About";
+import { ArticleListItem } from "@/components/ArticleListItem";
+import { getThoughtSlug } from "@/utils/content";
+import type { CollectionEntry } from "astro:content";
 
 type PageProps = {
-  recentThoughts: CollectionEntry<'thoughts'>[]
-}
+  recentThoughts: CollectionEntry<"thoughts">[];
+};
 
 export function Home({ recentThoughts }: PageProps) {
   return (
@@ -15,7 +15,7 @@ export function Home({ recentThoughts }: PageProps) {
         <h1>Recent Thoughts</h1>
         <ol className="thoughtlist">
           {recentThoughts.map(({ data: { date, title, video } }) => {
-            const { url } = getThoughtSlug({ date, title })
+            const { url } = getThoughtSlug({ date, title });
             return (
               <ArticleListItem
                 key={url}
@@ -24,7 +24,7 @@ export function Home({ recentThoughts }: PageProps) {
                 url={url}
                 isVideo={Boolean(video)}
               />
-            )
+            );
           })}
         </ol>
         <p>
@@ -32,5 +32,5 @@ export function Home({ recentThoughts }: PageProps) {
         </p>
       </section>
     </>
-  )
+  );
 }

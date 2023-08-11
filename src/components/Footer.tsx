@@ -1,26 +1,26 @@
-import { Fragment } from 'react'
-import { COPYRIGHT } from '@/constants'
+import { Fragment } from "react";
+import { COPYRIGHT } from "@/constants";
 
 const footerLinks: { href: string; name: string }[] = [
   {
-    href: 'https://github.com/bossley9/dotfiles',
-    name: 'Dotfiles',
+    href: "https://github.com/bossley9/dotfiles",
+    name: "Dotfiles",
   },
   {
-    href: '/keyboard',
-    name: 'Keyboard',
+    href: "/keyboard",
+    name: "Keyboard",
   },
   {
-    href: '/keys',
-    name: 'Keys',
+    href: "/keys",
+    name: "Keys",
   },
   {
-    href: '/referrals',
-    name: 'Referrals',
+    href: "/referrals",
+    name: "Referrals",
   },
-]
+];
 
-type Props = { minimal?: boolean }
+type Props = { minimal?: boolean };
 export function Footer({ minimal = false }: Props) {
   return (
     <footer>
@@ -57,7 +57,7 @@ export function Footer({ minimal = false }: Props) {
           <p className="dnp">
             {footerLinks.map(({ href, name }, index) => (
               <Fragment key={href}>
-                {Boolean(index) && <span> | </span>}
+                {Boolean(index) && <span>&nbsp;|&nbsp;</span>}
                 <a href={href}>{name}</a>
               </Fragment>
             ))}
@@ -83,5 +83,5 @@ export function Footer({ minimal = false }: Props) {
         </a>
       </p>
     </footer>
-  )
+  );
 }

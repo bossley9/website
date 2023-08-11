@@ -1,10 +1,10 @@
-import { ArticleListItem } from '@/components/ArticleListItem'
-import { PaginationNav } from '@/components/PaginationNav'
-import { getRecipeSlug } from '@/utils/content'
-import type { CustomPage } from '@/utils/pagination'
-import type { CollectionEntry } from 'astro:content'
+import { ArticleListItem } from "@/components/ArticleListItem";
+import { PaginationNav } from "@/components/PaginationNav";
+import { getRecipeSlug } from "@/utils/content";
+import type { CustomPage } from "@/utils/pagination";
+import type { CollectionEntry } from "astro:content";
 
-export type PageProps = { page: CustomPage<CollectionEntry<'recipes'>> }
+export type PageProps = { page: CustomPage<CollectionEntry<"recipes">> };
 
 export function RecipeSection({ page }: PageProps) {
   return (
@@ -16,10 +16,10 @@ export function RecipeSection({ page }: PageProps) {
       </p>
       <ol className="thoughtlist">
         {page.data.map(({ data: { date, title } }) => {
-          const { url } = getRecipeSlug({ title, date })
+          const { url } = getRecipeSlug({ title, date });
           return (
             <ArticleListItem key={url} title={title} date={date} url={url} />
-          )
+          );
         })}
       </ol>
       <PaginationNav
@@ -28,5 +28,5 @@ export function RecipeSection({ page }: PageProps) {
         baseUrl="/recipes"
       />
     </section>
-  )
+  );
 }

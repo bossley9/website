@@ -1,38 +1,38 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/books.json'
-import { bookListSchema, type Book } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/books.json";
+import { type Book, bookListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Print books and audiobooks.'
+export const description = "Print books and audiobooks.";
 
 export function BookSingle() {
-  let bookList: Book[] = []
+  let bookList: Book[] = [];
   try {
-    bookList = bookListSchema.parse(data)
+    bookList = bookListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
-  const current = bookList.find((item) => item.current)
+  const current = bookList.find((item) => item.current);
 
   const groupedByDate: Record<string, Book[]> = bookList
     .filter((item) => !item.current)
     .reduce<Record<string, Book[]>>((acc, item) => {
-      const key = item.date
+      const key = item.date;
       if (!acc[key]) {
-        acc[key] = []
+        acc[key] = [];
       }
       if (!item.current) {
-        acc[key]?.push(item)
+        acc[key]?.push(item);
       }
-      return acc
-    }, {})
+      return acc;
+    }, {});
 
   return (
     <section className="recs">
@@ -59,11 +59,11 @@ export function BookSingle() {
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

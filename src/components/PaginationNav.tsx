@@ -1,22 +1,24 @@
 type Props = {
-  index: number
-  total: number
-  baseUrl: string
-}
+  index: number;
+  total: number;
+  baseUrl: string;
+};
 
 export function PaginationNav({ index, total, baseUrl }: Props) {
-  const NUM_SLOTS = 5
-  let start = Math.max(1, index - Math.floor(NUM_SLOTS / 2))
-  const end = Math.min(total, start + NUM_SLOTS - 1)
+  const NUM_SLOTS = 5;
+  let start = Math.max(1, index - Math.floor(NUM_SLOTS / 2));
+  const end = Math.min(total, start + NUM_SLOTS - 1);
 
   if (end - start + 1 < NUM_SLOTS) {
-    start = Math.max(1, end - NUM_SLOTS + 1)
+    start = Math.max(1, end - NUM_SLOTS + 1);
   }
 
-  const navIndices: number[] = []
+  const navIndices: number[] = [];
   for (let i = start; i <= end; i++) {
-    navIndices.push(i)
+    navIndices.push(i);
   }
+
+  const prevHref = index - 1 === 1 ? baseUrl : baseUrl + "/page/" + (index - 1);
 
   return (
     <ul className="pagination">
@@ -35,12 +37,7 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
             </a>
           </li>
           <li>
-            <a
-              href={
-                index - 1 === 1 ? baseUrl : baseUrl + '/page/' + (index - 1)
-              }
-              aria-label="previous page"
-            >
+            <a href={prevHref} aria-label="previous page">
               <svg
                 height="16"
                 width="16"
@@ -56,10 +53,10 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
       {navIndices.map((calcIndex) => (
         <li
           key={calcIndex}
-          {...(calcIndex === index && { className: 'active' })}
+          {...(calcIndex === index && { className: "active" })}
         >
           <a
-            href={calcIndex === 1 ? baseUrl : baseUrl + '/page/' + calcIndex}
+            href={calcIndex === 1 ? baseUrl : baseUrl + "/page/" + calcIndex}
             aria-label={`page ${calcIndex}`}
           >
             {calcIndex}
@@ -69,7 +66,7 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
       {index < total && (
         <>
           <li>
-            <a href={baseUrl + '/page/' + (index + 1)} aria-label="next page">
+            <a href={baseUrl + "/page/" + (index + 1)} aria-label="next page">
               <svg
                 height="16"
                 width="16"
@@ -81,7 +78,7 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
             </a>
           </li>
           <li>
-            <a href={baseUrl + '/page/' + total} aria-label="last page">
+            <a href={baseUrl + "/page/" + total} aria-label="last page">
               <svg
                 height="16"
                 width="16"
@@ -95,5 +92,5 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
         </>
       )}
     </ul>
-  )
+  );
 }

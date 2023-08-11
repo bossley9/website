@@ -1,38 +1,38 @@
 type Referral = {
-  name: string
-  url: string
-}
+  name: string;
+  url: string;
+};
 
 const referralList: Referral[] = [
   {
-    name: 'Capital One (digital banking)',
-    url: 'https://capital.one/3OGvA5V',
+    name: "Capital One (digital banking)",
+    url: "https://capital.one/3OGvA5V",
   },
   {
-    name: 'Digital Ocean (cloud hosting)',
-    url: 'https://m.do.co/c/9c4a22d5b53b',
+    name: "Digital Ocean (cloud hosting)",
+    url: "https://m.do.co/c/9c4a22d5b53b",
   },
   {
-    name: 'Discover (digital banking)',
-    url: 'https://refer.discover.com/s/xgjm62',
+    name: "Discover (digital banking)",
+    url: "https://refer.discover.com/s/xgjm62",
   },
   {
-    name: 'Libro.fm (audiobook provider)',
-    url: 'https://libro.fm/referral?rf_code=lfm336069',
+    name: "Libro.fm (audiobook provider)",
+    url: "https://libro.fm/referral?rf_code=lfm336069",
   },
   {
-    name: 'Mint Mobile (wireless service provider)',
-    url: 'http://fbuy.me/uw-lF',
+    name: "Mint Mobile (wireless service provider)",
+    url: "http://fbuy.me/uw-lF",
   },
   {
-    name: 'Root (car insurance)',
-    url: 'https://rootbonus.com/SamBossley?',
+    name: "Root (car insurance)",
+    url: "https://rootbonus.com/SamBossley?",
   },
   {
-    name: 'Vultr (cloud hosting)',
-    url: 'https://www.vultr.com/?ref=8919448',
+    name: "Vultr (cloud hosting)",
+    url: "https://www.vultr.com/?ref=8919448",
   },
-]
+];
 
 export function Referrals() {
   return (
@@ -53,5 +53,5 @@ export function Referrals() {
         I am not an affiliate or paid sponsor of any of these products.
       </p>
     </section>
-  )
+  );
 }

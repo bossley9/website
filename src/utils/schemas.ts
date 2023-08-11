@@ -1,9 +1,9 @@
-import { z } from 'zod'
+import { z } from "zod";
 
-const ratingSchema = z.number().gte(-1).lte(10)
-const dateSchema = z.string().regex(/\d\d\d\d/)
-const currentSchema = z.literal(true).optional()
-const runEndSchema = z.union([z.coerce.date(), z.literal('present')])
+const ratingSchema = z.number().gte(-1).lte(10);
+const dateSchema = z.string().regex(/\d\d\d\d/);
+const currentSchema = z.literal(true).optional();
+const runEndSchema = z.union([z.coerce.date(), z.literal("present")]);
 
 const animeSchema = z.intersection(
   z.intersection(
@@ -24,36 +24,36 @@ const animeSchema = z.intersection(
       current: currentSchema,
     })
   ),
-  z.discriminatedUnion('type', [
+  z.discriminatedUnion("type", [
     z.object({
-      type: z.literal('anime'),
+      type: z.literal("anime"),
       seasons: z.number(),
       run_start: z.coerce.date(),
       run_end: runEndSchema,
     }),
     z.object({
-      type: z.literal('anime/movie'),
+      type: z.literal("anime/movie"),
       year: dateSchema,
     }),
   ])
-)
-export const animeListSchema = z.array(animeSchema)
-export type Anime = z.infer<typeof animeSchema>
+);
+export const animeListSchema = z.array(animeSchema);
+export type Anime = z.infer<typeof animeSchema>;
 
 const articleSchema = z.object({
-  type: z.union([z.literal('article'), z.literal('paper')]),
+  type: z.union([z.literal("article"), z.literal("paper")]),
   title: z.string(),
   author: z.string(),
   url: z.string().url(),
   published: z.coerce.date(),
   date: dateSchema,
   note: z.string().optional(),
-})
-export const articleListSchema = z.array(articleSchema)
-export type Article = z.infer<typeof articleSchema>
+});
+export const articleListSchema = z.array(articleSchema);
+export type Article = z.infer<typeof articleSchema>;
 
 const bookSchema = z.object({
-  type: z.literal('book'),
+  type: z.literal("book"),
   author: z.string(),
   title: z.string(),
   year: dateSchema,
@@ -63,12 +63,12 @@ const bookSchema = z.object({
   rating: ratingSchema,
   note: z.string().optional(),
   current: currentSchema,
-})
-export const bookListSchema = z.array(bookSchema)
-export type Book = z.infer<typeof bookSchema>
+});
+export const bookListSchema = z.array(bookSchema);
+export type Book = z.infer<typeof bookSchema>;
 
 const gameSchema = z.object({
-  type: z.literal('game'),
+  type: z.literal("game"),
   title: z.string(),
   year: dateSchema,
   developer: z.string().optional(),
@@ -79,13 +79,13 @@ const gameSchema = z.object({
   rating: ratingSchema,
   note: z.string().optional(),
   current: currentSchema,
-})
-export const gameListSchema = z.array(gameSchema)
-export type Game = z.infer<typeof gameSchema>
+});
+export const gameListSchema = z.array(gameSchema);
+export type Game = z.infer<typeof gameSchema>;
 
 const mangaSchema = z.intersection(
   z.object({
-    type: z.literal('manga'),
+    type: z.literal("manga"),
     author: z.string(),
     title: z.string(),
     url: z.string().url(),
@@ -104,12 +104,12 @@ const mangaSchema = z.intersection(
       run_end: runEndSchema,
     }),
   ])
-)
-export const mangaListSchema = z.array(mangaSchema)
-export type Manga = z.infer<typeof mangaSchema>
+);
+export const mangaListSchema = z.array(mangaSchema);
+export type Manga = z.infer<typeof mangaSchema>;
 
 const movieSchema = z.object({
-  type: z.literal('movie'),
+  type: z.literal("movie"),
   title: z.string(),
   year: dateSchema,
   director: z.string(),
@@ -117,9 +117,9 @@ const movieSchema = z.object({
   date: dateSchema,
   rating: ratingSchema,
   note: z.string().optional(),
-})
-export const movieListSchema = z.array(movieSchema)
-export type Movie = z.infer<typeof movieSchema>
+});
+export const movieListSchema = z.array(movieSchema);
+export type Movie = z.infer<typeof movieSchema>;
 
 const showSchema = z.intersection(
   z.object({
@@ -131,22 +131,22 @@ const showSchema = z.intersection(
     note: z.string().optional(),
     current: currentSchema,
   }),
-  z.discriminatedUnion('type', [
+  z.discriminatedUnion("type", [
     z.object({
-      type: z.literal('show'),
+      type: z.literal("show"),
       seasons: z.number(),
     }),
     z.object({
-      type: z.literal('podcast'),
+      type: z.literal("podcast"),
       url: z.string().url(),
     }),
   ])
-)
-export const showListSchema = z.array(showSchema)
-export type Show = z.infer<typeof showSchema>
+);
+export const showListSchema = z.array(showSchema);
+export type Show = z.infer<typeof showSchema>;
 
 const storySchema = z.object({
-  type: z.literal('poem'),
+  type: z.literal("poem"),
   author: z.string(),
   title: z.string(),
   url: z.string(), // relative URLs may be present
@@ -154,6 +154,6 @@ const storySchema = z.object({
   rating: ratingSchema,
   note: z.string().optional(),
   current: currentSchema,
-})
-export const storyListSchema = z.array(storySchema)
-export type Story = z.infer<typeof storySchema>
+});
+export const storyListSchema = z.array(storySchema);
+export type Story = z.infer<typeof storySchema>;

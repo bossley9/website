@@ -1,12 +1,12 @@
 type Props = {
-  title: string
-  date: Date
-  url: string
-  isVideo?: boolean
-}
+  title: string;
+  date: Date;
+  url: string;
+  isVideo?: boolean;
+};
 
 export function ArticleListItem({ title, date, url, isVideo = false }: Props) {
-  const formattedTitle = isVideo ? `${title} (video)` : title
+  const formattedTitle = isVideo ? `${title} (video)` : title;
   return (
     <li>
       <a href={url}>
@@ -14,5 +14,5 @@ export function ArticleListItem({ title, date, url, isVideo = false }: Props) {
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
       </a>
     </li>
-  )
+  );
 }

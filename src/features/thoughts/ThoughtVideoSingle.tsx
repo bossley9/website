@@ -1,25 +1,25 @@
-import { slugify } from '@/utils/urls'
-import type { PageProps } from '@/features/thoughts/ThoughtSingle'
+import { slugify } from "@/utils/urls";
+import type { PageProps } from "@/features/thoughts/ThoughtSingle";
 
 function getMimeType(fileName: string) {
-  if (fileName.endsWith('.webm')) {
-    return 'video/webm'
+  if (fileName.endsWith(".webm")) {
+    return "video/webm";
   } else {
-    return 'video/mp4'
+    return "video/mp4";
   }
 }
 
-type Props = PageProps & { hasDescription: boolean }
+type Props = PageProps & { hasDescription: boolean };
 export function ThoughtVideoSingle({
   thought,
   hasDescription,
   children,
 }: Props) {
   const { title, date, tags, video, thumbnail, captions, description } =
-    thought.data
+    thought.data;
 
   // sanity check: only valid videos can render this layout
-  if (!video) return null
+  if (!video) return null;
 
   return (
     <article className="thoughtvideo">
@@ -40,7 +40,7 @@ export function ThoughtVideoSingle({
           />
         )}
         <p className="error">
-          Sorry, your browser does not support embedded video.{' '}
+          Sorry, your browser does not support embedded video.{" "}
           <a href={video} download>
             Download it here
           </a>
@@ -62,5 +62,5 @@ export function ThoughtVideoSingle({
         {hasDescription ? children : <p>{description}</p>}
       </div>
     </article>
-  )
+  );
 }

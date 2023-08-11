@@ -1,6 +1,6 @@
-import { slugify } from '@/utils/urls'
+import { slugify } from "@/utils/urls";
 
-export type PageProps = { tags: string[] }
+export type PageProps = { tags: string[] };
 
 export function TagSection({ tags }: PageProps) {
   return (
@@ -14,5 +14,5 @@ export function TagSection({ tags }: PageProps) {
         ))}
       </ol>
     </section>
-  )
+  );
 }

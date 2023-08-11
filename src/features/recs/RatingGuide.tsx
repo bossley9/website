@@ -48,5 +48,5 @@ export function RatingGuide() {
         </tbody>
       </table>
     </section>
-  )
+  );
 }

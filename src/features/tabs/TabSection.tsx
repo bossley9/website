@@ -1,23 +1,23 @@
-import { Fragment } from 'react'
-import { ArticleListItem } from '@/components/ArticleListItem'
-import { PaginationNav } from '@/components/PaginationNav'
-import { getTabSlug } from '@/utils/content'
-import type { CustomPage } from '@/utils/pagination'
-import type { CollectionEntry } from 'astro:content'
+import { Fragment } from "react";
+import { ArticleListItem } from "@/components/ArticleListItem";
+import { PaginationNav } from "@/components/PaginationNav";
+import { getTabSlug } from "@/utils/content";
+import type { CustomPage } from "@/utils/pagination";
+import type { CollectionEntry } from "astro:content";
 
-export type PageProps = { page: CustomPage<CollectionEntry<'tabs'>> }
+export type PageProps = { page: CustomPage<CollectionEntry<"tabs">> };
 
 export function TabSection({ page }: PageProps) {
   const groupedEntries = page.data.reduce<
-    Record<number, CollectionEntry<'tabs'>[]>
+    Record<number, CollectionEntry<"tabs">[]>
   >((dict, entry) => {
-    const year = entry.data.date.getUTCFullYear()
+    const year = entry.data.date.getUTCFullYear();
     if (!dict[year]) {
-      dict[year] = []
+      dict[year] = [];
     }
-    dict[year]?.push(entry)
-    return dict
-  }, {})
+    dict[year]?.push(entry);
+    return dict;
+  }, {});
 
   return (
     <section>
@@ -33,7 +33,7 @@ export function TabSection({ page }: PageProps) {
             <h2>{year}</h2>
             <ol className="thoughtlist">
               {entries.map(({ data: { date, title } }) => {
-                const { url } = getTabSlug({ title, date })
+                const { url } = getTabSlug({ title, date });
                 return (
                   <ArticleListItem
                     key={url}
@@ -41,7 +41,7 @@ export function TabSection({ page }: PageProps) {
                     date={date}
                     url={url}
                   />
-                )
+                );
               })}
             </ol>
           </Fragment>
@@ -52,5 +52,5 @@ export function TabSection({ page }: PageProps) {
         baseUrl="/tabs"
       />
     </section>
-  )
+  );
 }

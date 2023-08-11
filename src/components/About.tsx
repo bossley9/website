@@ -1,23 +1,23 @@
-import gameData from '@/data/recs/games.json'
-import { gameListSchema, type Game } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
-import { getCurrentlyReadingItem } from '@/utils/data'
+import gameData from "@/data/recs/games.json";
+import { type Game, gameListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
+import { getCurrentlyReadingItem } from "@/utils/data";
 
 export function About() {
-  const readingItem = getCurrentlyReadingItem()
+  const readingItem = getCurrentlyReadingItem();
 
-  let gameList: Game[] = []
+  let gameList: Game[] = [];
   try {
-    gameList = gameListSchema.parse(gameData)
+    gameList = gameListSchema.parse(gameData);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
-  const game = gameList.find((item) => item.current)
+  const game = gameList.find((item) => item.current);
 
   return (
     <section className="about">
@@ -59,13 +59,13 @@ export function About() {
           <div>
             {readingItem && (
               <p>
-                <strong>Book club:</strong> I&#39;m currently reading{' '}
+                <strong>Book club:</strong> I&#39;m currently reading{" "}
                 <i>{readingItem.title}</i> by {readingItem.author}.
               </p>
             )}
             {game && (
               <p>
-                <strong>Play along:</strong> I&#39;m currently playing{' '}
+                <strong>Play along:</strong> I&#39;m currently playing{" "}
                 {game.title}.
               </p>
             )}
@@ -73,5 +73,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import { slugify } from '@/utils/urls'
-import type { CollectionEntry } from 'astro:content'
-import type { ReactNode } from 'react'
+import { slugify } from "@/utils/urls";
+import type { CollectionEntry } from "astro:content";
+import type { ReactNode } from "react";
 
 export type PageProps = {
-  thought: CollectionEntry<'thoughts'>
-  children?: ReactNode
-}
+  thought: CollectionEntry<"thoughts">;
+  children?: ReactNode;
+};
 
 export function ThoughtSingle({ thought, children }: PageProps) {
-  const { title, date, tags } = thought.data
+  const { title, date, tags } = thought.data;
 
   return (
     <article>
@@ -25,5 +25,5 @@ export function ThoughtSingle({ thought, children }: PageProps) {
       </ul>
       {children}
     </article>
-  )
+  );
 }

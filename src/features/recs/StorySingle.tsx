@@ -1,34 +1,34 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/stories.json'
-import { storyListSchema, type Story } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/stories.json";
+import { type Story, storyListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Short stories and poems.'
+export const description = "Short stories and poems.";
 
 export function StorySingle() {
-  let storyList: Story[] = []
+  let storyList: Story[] = [];
   try {
-    storyList = storyListSchema.parse(data)
+    storyList = storyListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
   const groupedByDate: Record<string, Story[]> = storyList.reduce<
     Record<string, Story[]>
   >((acc, item) => {
-    const key = item.date
+    const key = item.date;
     if (!acc[key]) {
-      acc[key] = []
+      acc[key] = [];
     }
-    acc[key]?.push(item)
-    return acc
-  }, {})
+    acc[key]?.push(item);
+    return acc;
+  }, {});
 
   return (
     <section className="recs">
@@ -50,11 +50,11 @@ export function StorySingle() {
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

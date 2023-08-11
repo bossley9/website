@@ -1,38 +1,38 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/anime.json'
-import { animeListSchema, type Anime } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/anime.json";
+import { type Anime, animeListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Japanese animated shows and movies.'
+export const description = "Japanese animated shows and movies.";
 
 export function AnimeSingle() {
-  let animeList: Anime[] = []
+  let animeList: Anime[] = [];
   try {
-    animeList = animeListSchema.parse(data)
+    animeList = animeListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
-  const current = animeList.find((item) => item.current)
+  const current = animeList.find((item) => item.current);
 
   const groupedByDate: Record<string, Anime[]> = animeList
     .filter((item) => !item.current)
     .reduce<Record<string, Anime[]>>((acc, item) => {
-      const key = item.date
+      const key = item.date;
       if (!acc[key]) {
-        acc[key] = []
+        acc[key] = [];
       }
       if (!item.current) {
-        acc[key]?.push(item)
+        acc[key]?.push(item);
       }
-      return acc
-    }, {})
+      return acc;
+    }, {});
 
   return (
     <section className="recs">
@@ -51,11 +51,11 @@ export function AnimeSingle() {
             <h2>{year}</h2>
             <ol>
               {items.map((item) => {
-                const title = item.title_translated ?? item.title
+                const title = item.title_translated ?? item.title;
                 const year =
-                  item.type === 'anime'
+                  item.type === "anime"
                     ? item.run_start.getUTCFullYear()
-                    : item.year
+                    : item.year;
                 return (
                   <li key={title}>
                     <span>
@@ -63,11 +63,11 @@ export function AnimeSingle() {
                     </span>
                     <RatingNote rating={item.rating} note={item.note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import type { Playlist } from '@/utils/playlists'
+import type { Playlist } from "@/utils/playlists";
 
 export type PageProps = {
-  playlist: Playlist
-  year: number
-}
+  playlist: Playlist;
+  year: number;
+};
 
 export function MemeSingle({ playlist, year }: PageProps) {
   return (
@@ -17,5 +17,5 @@ export function MemeSingle({ playlist, year }: PageProps) {
         ))}
       </ul>
     </article>
-  )
+  );
 }

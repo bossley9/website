@@ -1,4 +1,4 @@
-type Props = { years: number[] }
+type Props = { years: number[] };
 
 export function MemeSection({ years }: Props) {
   return (
@@ -6,7 +6,7 @@ export function MemeSection({ years }: Props) {
       <h1>Memes</h1>
       <p>
         This is a collection of all my meme playlists. I could save all of these
-        videos in various Youtube playlists but I prefer to keep them in the{' '}
+        videos in various Youtube playlists but I prefer to keep them in the{" "}
         <code className="inline-code">.m3u</code> file format if videos are
         deleted or made private.
       </p>
@@ -16,15 +16,15 @@ export function MemeSection({ years }: Props) {
           .map((year) => {
             return (
               <li key={year}>
-                <a href={'/memes/' + year}>
+                <a href={"/memes/" + year}>
                   <span>
                     <strong>{year}</strong>
                   </span>
                 </a>
               </li>
-            )
+            );
           })}
       </ol>
     </section>
-  )
+  );
 }

@@ -1,18 +1,18 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { PoemSection, type PageProps } from '@/features/poems/PoemSection'
-import { getCollection } from 'astro:content'
-import { sortByDate } from '@/utils/sorting'
-import { customPagination } from '@/utils/pagination'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { PoemSection, type PageProps } from "@/features/poems/PoemSection";
+import { getCollection } from "astro:content";
+import { sortByDate } from "@/utils/sorting";
+import { customPagination } from "@/utils/pagination";
 
 export async function getStaticPaths() {
-  const poems = (await getCollection('poems')).sort((a, b) =>
+  const poems = (await getCollection("poems")).sort((a, b) =>
     sortByDate(a.data.date, b.data.date)
-  )
-  return customPagination(poems)
+  );
+  return customPagination(poems);
 }
 
-type Props = PageProps
+type Props = PageProps;
 ---
 
 <BaseLayout title="Poems">

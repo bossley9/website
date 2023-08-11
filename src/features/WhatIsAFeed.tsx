@@ -1,22 +1,22 @@
-type FeedExample = { name: string; url: string }
+type FeedExample = { name: string; url: string };
 
 const feedExamples: FeedExample[] = [
   {
-    name: 'Youtube',
-    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCX6OQ3DkcsbYNE6H8uQQuVA',
+    name: "Youtube",
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCX6OQ3DkcsbYNE6H8uQQuVA",
   },
-  { name: 'Twitch', url: 'https://twitchrss.appspot.com/vod/moistcr1tikal' },
-  { name: 'Twitter', url: 'https://nitter.net/reactjs/rss' },
-  { name: 'Medium', url: 'https://medium.com/feed/@emilymenonbender' },
-  { name: 'Github', url: 'https://github.com/neovim/neovim/tags.atom' },
-  { name: 'Acast', url: 'https://feeds.acast.com/public/shows/90daygays' },
+  { name: "Twitch", url: "https://twitchrss.appspot.com/vod/moistcr1tikal" },
+  { name: "Twitter", url: "https://nitter.net/reactjs/rss" },
+  { name: "Medium", url: "https://medium.com/feed/@emilymenonbender" },
+  { name: "Github", url: "https://github.com/neovim/neovim/tags.atom" },
+  { name: "Acast", url: "https://feeds.acast.com/public/shows/90daygays" },
   {
-    name: 'Webtoon',
-    url: 'https://www.webtoons.com/en/challenge/summoned/rss?title_no=365069+',
+    name: "Webtoon",
+    url: "https://www.webtoons.com/en/challenge/summoned/rss?title_no=365069+",
   },
-]
+];
 
-type Props = { feedUrl: URL }
+type Props = { feedUrl: URL };
 export function WhatIsAFeed({ feedUrl }: Props) {
   return (
     <>
@@ -26,7 +26,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           A <dfn>feed</dfn> is a special website url you can use to get the
           latest updates for that website. With feeds you can get real-time
           updates for Youtube channels, Twitch streams, Acast podcasts, blog
-          posts, and website articles from one place. All you need to do is{' '}
+          posts, and website articles from one place. All you need to do is{" "}
           <dfn>subscribe</dfn> to that feed with a <dfn>feed reader</dfn>.
         </p>
         <p>
@@ -115,10 +115,10 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           ))}
         </ul>
         <p>
-          You can also subscribe to my personal feed:{' '}
+          You can also subscribe to my personal feed:{" "}
           <a href={feedUrl.toString()}>{feedUrl.toString()}</a>
         </p>
       </article>
     </>
-  )
+  );
 }

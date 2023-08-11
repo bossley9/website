@@ -1,24 +1,24 @@
-import dompurify from 'isomorphic-dompurify'
-import { escape } from 'html-escaper'
+import dompurify from "isomorphic-dompurify";
+import { escape } from "html-escaper";
 
 export type AtomFeed = {
-  title: string
-  subtitle: string
-  feedUrl: string
-  siteUrl: string
-  copyright?: string
-  name: string
-  email: string
+  title: string;
+  subtitle: string;
+  feedUrl: string;
+  siteUrl: string;
+  copyright?: string;
+  name: string;
+  email: string;
   items: {
-    title: string
-    permalink: string
-    date: Date
-    content: string // valid HTML string
-  }[]
-}
+    title: string;
+    permalink: string;
+    date: Date;
+    content: string; // valid HTML string
+  }[];
+};
 
 export function genAtomFeed(feed: AtomFeed) {
-  const now = new Date()
+  const now = new Date();
   return [
     '<?xml version="1.0" encoding="utf-8"?>',
     '<feed xmlns="http://www.w3.org/2005/Atom">',
@@ -29,25 +29,25 @@ export function genAtomFeed(feed: AtomFeed) {
     `<updated>${now.toISOString()}</updated>`,
     `<id>${feed.siteUrl}</id>`,
     ...(feed.copyright ? [`<rights>${feed.copyright}</rights>`] : []),
-    '<author>',
+    "<author>",
     `<name>${feed.name}</name>`,
     `<email>${feed.email}</email>`,
-    '</author>',
+    "</author>",
     ...feed.items
       .map((item) => {
         return [
-          '<entry>',
+          "<entry>",
           `<title>${item.title}</title>`,
           `<link href="${item.permalink}"/>`,
           `<updated>${item.date.toISOString()}</updated>`,
           `<id>${item.permalink}</id>`,
           '<content type="html">',
           escape(dompurify.sanitize(item.content)),
-          '</content>',
-          '</entry>',
-        ]
+          "</content>",
+          "</entry>",
+        ];
       })
       .flat(),
-    '</feed>',
-  ].join('')
+    "</feed>",
+  ].join("");
 }

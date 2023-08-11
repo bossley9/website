@@ -1,7 +1,7 @@
-import { z, defineCollection } from 'astro:content'
+import { z, defineCollection } from "astro:content";
 
 export const collections = {
-  ['thoughts']: defineCollection({
+  ["thoughts"]: defineCollection({
     schema: z.object({
       title: z.string(),
       description: z.string(),
@@ -13,27 +13,27 @@ export const collections = {
       captions: z.string().url().optional(),
     }),
   }),
-  ['tabs']: defineCollection({
+  ["tabs"]: defineCollection({
     schema: z.object({
       title: z.string(),
       description: z.string(),
       date: z.date(),
       tags: z.array(z.string()),
-      difficulty: z.enum(['beginner', 'easy', 'medium', 'hard', 'difficult']),
+      difficulty: z.enum(["beginner", "easy", "medium", "hard", "difficult"]),
       bandcamp: z.string().url().optional(),
       soundcloud: z.string().url().optional(),
       spotify: z.string().url().optional(),
       youtube: z.string().url().optional(),
     }),
   }),
-  ['poems']: defineCollection({
+  ["poems"]: defineCollection({
     schema: z.object({
       title: z.string(),
       date: z.date(),
       description: z.string().optional(),
     }),
   }),
-  ['recipes']: defineCollection({
+  ["recipes"]: defineCollection({
     schema: z.object({
       title: z.string(),
       description: z.string().optional(),
@@ -45,7 +45,7 @@ export const collections = {
       wait: z.number().optional(),
     }),
   }),
-  ['rec-poems']: defineCollection({
+  ["rec-poems"]: defineCollection({
     schema: z.object({
       title: z.string(),
       author: z.string(),
@@ -53,4 +53,4 @@ export const collections = {
       note: z.string().optional(),
     }),
   }),
-}
+};

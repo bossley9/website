@@ -1,34 +1,35 @@
-import { Fragment } from 'react'
-import { RatingNote } from '@/components/RatingNote'
-import data from '@/data/recs/movies.json'
-import { movieListSchema, type Movie } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import { RatingNote } from "@/components/RatingNote";
+import data from "@/data/recs/movies.json";
+import { type Movie, movieListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Theater movies, documentaries, and extended videos.'
+export const description =
+  "Theater movies, documentaries, and extended videos.";
 
 export function MovieSingle() {
-  let movieList: Movie[] = []
+  let movieList: Movie[] = [];
   try {
-    movieList = movieListSchema.parse(data)
+    movieList = movieListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
   const groupedByDate: Record<string, Movie[]> = movieList.reduce<
     Record<string, Movie[]>
   >((acc, item) => {
-    const key = item.date
+    const key = item.date;
     if (!acc[key]) {
-      acc[key] = []
+      acc[key] = [];
     }
-    acc[key]?.push(item)
-    return acc
-  }, {})
+    acc[key]?.push(item);
+    return acc;
+  }, {});
 
   return (
     <section className="recs">
@@ -48,11 +49,11 @@ export function MovieSingle() {
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

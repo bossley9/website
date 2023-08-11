@@ -1,23 +1,23 @@
-import { Fragment } from 'react'
-import { ArticleListItem } from '@/components/ArticleListItem'
-import { PaginationNav } from '@/components/PaginationNav'
-import { getPoemSlug } from '@/utils/content'
-import type { CustomPage } from '@/utils/pagination'
-import type { CollectionEntry } from 'astro:content'
+import { Fragment } from "react";
+import { ArticleListItem } from "@/components/ArticleListItem";
+import { PaginationNav } from "@/components/PaginationNav";
+import { getPoemSlug } from "@/utils/content";
+import type { CustomPage } from "@/utils/pagination";
+import type { CollectionEntry } from "astro:content";
 
-export type PageProps = { page: CustomPage<CollectionEntry<'poems'>> }
+export type PageProps = { page: CustomPage<CollectionEntry<"poems">> };
 
 export function PoemSection({ page }: PageProps) {
   const groupedEntries = page.data.reduce<
-    Record<number, CollectionEntry<'poems'>[]>
+    Record<number, CollectionEntry<"poems">[]>
   >((dict, entry) => {
-    const year = entry.data.date.getUTCFullYear()
+    const year = entry.data.date.getUTCFullYear();
     if (!dict[year]) {
-      dict[year] = []
+      dict[year] = [];
     }
-    dict[year]?.push(entry)
-    return dict
-  }, {})
+    dict[year]?.push(entry);
+    return dict;
+  }, {});
 
   return (
     <section>
@@ -33,7 +33,7 @@ export function PoemSection({ page }: PageProps) {
             <h2>{year}</h2>
             <ol className="thoughtlist">
               {entries.map(({ data: { date, title } }) => {
-                const { url } = getPoemSlug({ title, date })
+                const { url } = getPoemSlug({ title, date });
                 return (
                   <ArticleListItem
                     key={url}
@@ -41,7 +41,7 @@ export function PoemSection({ page }: PageProps) {
                     date={date}
                     url={url}
                   />
-                )
+                );
               })}
             </ol>
           </Fragment>
@@ -52,5 +52,5 @@ export function PoemSection({ page }: PageProps) {
         baseUrl="/poems"
       />
     </section>
-  )
+  );
 }

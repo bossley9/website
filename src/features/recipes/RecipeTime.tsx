@@ -1,31 +1,31 @@
 type Props = {
-  prep: number | undefined
-  cook: number | undefined
-  wait: number | undefined
-}
+  prep: number | undefined;
+  cook: number | undefined;
+  wait: number | undefined;
+};
 
 function prettyPrintTime(minutes: number) {
-  const hours = Math.floor(minutes / 60)
-  const remainder = minutes % 60
+  const hours = Math.floor(minutes / 60);
+  const remainder = minutes % 60;
 
-  let formattedTime = ''
+  let formattedTime = "";
 
   if (hours > 0) {
-    formattedTime = hours > 1 ? `${hours} hrs` : `${hours} hr`
+    formattedTime = hours > 1 ? `${hours} hrs` : `${hours} hr`;
     if (remainder > 0) {
-      formattedTime = formattedTime + ' '
+      formattedTime = formattedTime + " ";
     }
   }
 
   if (remainder > 0) {
-    formattedTime = formattedTime + `${remainder} min`
+    formattedTime = formattedTime + `${remainder} min`;
   }
 
-  return formattedTime
+  return formattedTime;
 }
 
 export function RecipeTime({ prep = 0, cook = 0, wait = 0 }: Props) {
-  const totalTime = prep + cook + wait
+  const totalTime = prep + cook + wait;
   return (
     <>
       {Boolean(prep) && <p>Prep time: {prettyPrintTime(prep)}</p>}
@@ -33,5 +33,5 @@ export function RecipeTime({ prep = 0, cook = 0, wait = 0 }: Props) {
       {Boolean(wait) && <p>Wait time: {prettyPrintTime(wait)}</p>}
       {<p>Total time: {prettyPrintTime(totalTime)}</p>}
     </>
-  )
+  );
 }

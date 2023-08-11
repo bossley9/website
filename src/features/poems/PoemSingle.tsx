@@ -1,11 +1,11 @@
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
 export type PageProps = {
-  poem: CollectionEntry<'poems'>
-}
+  poem: CollectionEntry<"poems">;
+};
 
 export function PoemSingle({ poem }: PageProps) {
-  const { title, date, description } = poem.data
+  const { title, date, description } = poem.data;
 
   return (
     <article>
@@ -20,5 +20,5 @@ export function PoemSingle({ poem }: PageProps) {
       )}
       <pre className="poem">{poem.body.trimStart()}</pre>
     </article>
-  )
+  );
 }

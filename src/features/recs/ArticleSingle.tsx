@@ -1,33 +1,33 @@
-import { Fragment } from 'react'
-import data from '@/data/recs/articles.json'
-import { articleListSchema, type Article } from '@/utils/schemas'
-import { ZodError } from 'zod'
-import { fromZodError } from 'zod-validation-error'
+import { Fragment } from "react";
+import data from "@/data/recs/articles.json";
+import { type Article, articleListSchema } from "@/utils/schemas";
+import { ZodError } from "zod";
+import { fromZodError } from "zod-validation-error";
 
-export const description = 'Blog posts, journal articles, and white papers.'
+export const description = "Blog posts, journal articles, and white papers.";
 
 export function ArticleSingle() {
-  let articleList: Article[] = []
+  let articleList: Article[] = [];
   try {
-    articleList = articleListSchema.parse(data)
+    articleList = articleListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
-      throw fromZodError(e)
+      throw fromZodError(e);
     } else {
-      throw e
+      throw e;
     }
   }
 
   const groupedByDate: Record<string, Article[]> = articleList.reduce<
     Record<string, Article[]>
   >((acc, item) => {
-    const key = item.date
+    const key = item.date;
     if (!acc[key]) {
-      acc[key] = []
+      acc[key] = [];
     }
-    acc[key]?.push(item)
-    return acc
-  }, {})
+    acc[key]?.push(item);
+    return acc;
+  }, {});
 
   return (
     <section className="recs">
@@ -44,9 +44,9 @@ export function ArticleSingle() {
                   <li key={url}>
                     <span>
                       <a href={url}>
-                        {type === 'paper' ? (
+                        {type === "paper" ? (
                           <>
-                            {author}, {published.getUTCFullYear()}.{' '}
+                            {author}, {published.getUTCFullYear()}.{" "}
                             <cite>{title}</cite>.
                           </>
                         ) : (
@@ -62,11 +62,11 @@ export function ArticleSingle() {
                       </span>
                     )}
                   </li>
-                )
+                );
               })}
             </ol>
           </Fragment>
         ))}
     </section>
-  )
+  );
 }

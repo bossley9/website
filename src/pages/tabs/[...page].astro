@@ -1,18 +1,18 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { TabSection, type PageProps } from '@/features/tabs/TabSection'
-import { getCollection } from 'astro:content'
-import { sortByDate } from '@/utils/sorting'
-import { customPagination } from '@/utils/pagination'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { TabSection, type PageProps } from "@/features/tabs/TabSection";
+import { getCollection } from "astro:content";
+import { sortByDate } from "@/utils/sorting";
+import { customPagination } from "@/utils/pagination";
 
 export async function getStaticPaths() {
-  const tabs = (await getCollection('tabs')).sort((a, b) =>
+  const tabs = (await getCollection("tabs")).sort((a, b) =>
     sortByDate(a.data.date, b.data.date)
-  )
-  return customPagination(tabs)
+  );
+  return customPagination(tabs);
 }
 
-type Props = PageProps
+type Props = PageProps;
 ---
 
 <BaseLayout title="Tabs">
