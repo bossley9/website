@@ -67,7 +67,8 @@
           # captioning
           ffmpeg
           openai-whisper-cpp
-          # compression
+          # minification and compression
+          minify
           gzip
           # deployment and other make actions
           rsync
