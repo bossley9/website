@@ -77,6 +77,7 @@
         shellHook = ''
           set -o vi
           alias g="git"
+          ./scripts/setup.sh
         '';
       };
     };

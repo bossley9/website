@@ -8,8 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "typecheck": "tsc",
-    "prepare": "husky install"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@astrojs/react": "^2.1.1",
@@ -29,7 +28,6 @@
   "devDependencies": {
     "@types/html-escaper": "^3.0.0",
     "@types/markdown-it": "^12.2.3",
-    "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "prettier-plugin-astro": "^0.8.0"
   }
