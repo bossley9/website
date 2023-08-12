@@ -7,7 +7,7 @@ build: check clean
 	./scripts/compress.sh $(OUTPUT)
 
 check:
-	npm run lint
+	deno lint
 	npm run astro sync
 	npm run astro check
 	npm run typecheck

@@ -1,5 +1,14 @@
 {
+  "lint": {
+    "exclude": [
+      "dist",
+      ".astro"
+    ]
+  },
   "fmt": {
-    "exclude": ["doc/", "src/content/"]
+    "exclude": [
+      "doc/",
+      "src/content/"
+    ]
   }
 }
