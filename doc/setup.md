@@ -37,8 +37,12 @@
     nixos-generate-config --root /mnt
     ```
 8. Be sure to double check the hardware configuration for discrepancies or updates.
+    ```sh
+    less /mnt/etc/nixos/hardware-configuration.nix
+    ```
 9. Install the operating system.
     ```sh
-    nixos-install --no-root-passwd --flake "github.com:bossley9/website#webserver"
+    git clone https://github.com/bossley9/website
+    nixos-install --no-root-passwd --flake ./website#webserver
     ```
 10. In the Vultr dashboard, remove the custom ISO. This will trigger a VPS reboot. Then verify you can access the server as `admin@domain` or `admin@ip` via SSH.
