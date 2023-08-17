@@ -19,7 +19,7 @@ I want to get back into doing what I enjoy: writing and providing commentary on 
 
 Because of this, I will be dropping my support for my Gemini server beginning in October. If you only view this content via Gemini, you can follow my main site with the link below.
 
-[https://sam.bossley.us](https://sam.bossley.us)
+[https://sam.bossley.xyz](https://sam.bossley.xyz)
 
 Fortunately, this will be a fantastic opportunity for me. I have already begun devising what I plan to do with my less restrictive content format. I already plan on migrating my webserver over to NixOS after various Tweag posts convinced me of its usefulness. Who knows, I might start experimenting with Web Assembly or HTML5 canvas projects here in the future.
 

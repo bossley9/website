@@ -8,7 +8,7 @@
 
     curl -L https://github.com/YOUR_USERNAME.keys > ~/.ssh/authorized_keys
     # or, if you're me:
-    curl https://sam.bossley.us/keys > ~/.ssh/authorized_keys
+    curl https://sam.bossley.xyz/keys > ~/.ssh/authorized_keys
 
     cat ~/.ssh/authorized_keys # sanity check
     ```

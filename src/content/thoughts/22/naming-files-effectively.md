@@ -146,16 +146,16 @@ If you're a public personality or media influencer, you've likely already heard 
 Here is how dashes improve SEO. Pretend I have three files on my website under the following urls:
 
 ```
-https://sam.bossley.us/my-link-here
-https://sam.bossley.us/my link here
-https://sam.bossley.us/my_link_here
-https://sam.bossley.us/mylinkhere
+https://sam.bossley.xyz/my-link-here
+https://sam.bossley.xyz/my link here
+https://sam.bossley.xyz/my_link_here
+https://sam.bossley.xyz/mylinkhere
 ```
 
 Of the three of these urls, the one containing dashes will be the highest result on most search engines. The reason is because dashes define natural word borders while the other examples do not. The lack of space between "words" means that search engines such as Google will not be able to detect and match individual words. Additionally, the HTTP and HTTPS protocols encode all whitespace characters. This means that the link containing whitespace will become the following:
 
 ```
-https://sam.bossley.us/my%20link%20here
+https://sam.bossley.xyz/my%20link%20here
 ```
 
 Using the power of deduction, using dashes to separate words is the best candidate to improving SEO. Try this exercise: if you're a content producer or rising influencer, search your name on a popular search engine (such as Google) and count your position from the first result. If you're not the first result, you can probably employ techniques like this to improve SEO.

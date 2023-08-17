@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   outDir: "./dist",
   publicDir: "./static",
-  site: "https://sam.bossley.us", // required for canonical url injection
+  site: "https://sam.bossley.xyz", // required for canonical url injection
   integrations: [react()],
   markdown: {
     rehypePlugins: [

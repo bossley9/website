@@ -120,25 +120,25 @@ in
     recommendedOptimisation = true;
     recommendedTlsSettings = true;
     virtualHosts = {
-      "www.bossley.us" = {
+      "www.bossley.xyz" = {
         forceSSL = true;
         enableACME = true;
-        globalRedirect = "sam.bossley.us";
+        globalRedirect = "sam.bossley.xyz";
       };
-      "bossley.us" = {
+      "bossley.xyz" = {
         forceSSL = true;
         enableACME = true;
-        globalRedirect = "sam.bossley.us";
+        globalRedirect = "sam.bossley.xyz";
       };
-      "www.sam.bossley.us" = {
+      "www.sam.bossley.xyz" = {
         forceSSL = true;
         enableACME = true;
-        globalRedirect = "sam.bossley.us";
+        globalRedirect = "sam.bossley.xyz";
       };
-      "sam.bossley.us" = {
+      "sam.bossley.xyz" = {
         forceSSL = true;
         enableACME = true;
-        root = "/var/www/sam.bossley.us";
+        root = "/var/www/sam.bossley.xyz";
         extraConfig = builtins.readFile ./nginx.conf;
       };
     };
