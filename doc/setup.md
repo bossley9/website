@@ -8,7 +8,7 @@
 
     curl -L https://github.com/YOUR_USERNAME.keys > ~/.ssh/authorized_keys
     # or, if you're me:
-    curl -L https://sam.bossley.us/keys > ~/.ssh/authorized_keys
+    curl https://sam.bossley.us/keys > ~/.ssh/authorized_keys
 
     cat ~/.ssh/authorized_keys # sanity check
     ```
@@ -39,6 +39,6 @@
 8. Be sure to double check the hardware configuration for discrepancies or updates.
 9. Install the operating system.
     ```sh
-    nixos-install --no-root-passwd --flake https://github.com/bossley9/website#webserver
+    nixos-install --no-root-passwd --flake "github.com:bossley9/website#webserver"
     ```
 10. In the Vultr dashboard, remove the custom ISO. This will trigger a VPS reboot. Then verify you can access the server as `admin@domain` or `admin@ip` via SSH.
