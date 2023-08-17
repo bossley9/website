@@ -18,7 +18,7 @@ in
   boot.loader = {
     grub = {
       enable = true;
-      device = "/dev/vda";
+      devices = [ "/dev/vda" ];
     };
     timeout = 2;
   };
