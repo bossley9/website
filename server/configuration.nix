@@ -26,7 +26,7 @@ in
   networking = {
     hostName = "webserver";
     useDHCP = false; # False recommended for security
-    interfaces.enp1s0.useDHCP = true;
+    interfaces.ens3.useDHCP = true;
   };
 
   services.timesyncd.enable = true;
@@ -38,9 +38,8 @@ in
   };
 
   users.mutableUsers = false;
-  users.users.nixos = {
+  users.users.admin = {
     isNormalUser = true;
-    initialPassword = "test1234!";
     extraGroups = [ "wheel" ];
     openssh.authorizedKeys.keys = lib.strings.splitString "\n" (builtins.readFile ../keys/keys.pub);
   };

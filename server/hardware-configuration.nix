@@ -3,22 +3,23 @@
 {
   imports = [ ];
 
-  boot.initrd.availableKernelModules = [ "ahci" "xhci_pci" "virtio_pci" "sr_mod" "virtio_blk" ];
+  boot.initrd.availableKernelModules = [ "ata_piix" "uhci_hcd" "virtio_pci" "sr_mod" "virtio_blk" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/c8ff8700-3bd1-4f66-92b2-de4dffdc2c8e";
+    device = "/dev/disk/by-label/main";
     fsType = "ext4";
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-uuid/df166a5f-e7db-440a-b9eb-f77332eed326"; }
+    { device = "/dev/disk/by-labe/swap"; }
   ];
 
   networking.useDHCP = lib.mkDefault true;
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   virtualisation.hypervGuest.enable = false;
 }
