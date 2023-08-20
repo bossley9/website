@@ -1,4 +1,3 @@
-import dompurify from "isomorphic-dompurify";
 import { escape } from "html-escaper";
 
 export type AtomFeed = {
@@ -42,7 +41,7 @@ export function genAtomFeed(feed: AtomFeed) {
           `<updated>${item.date.toISOString()}</updated>`,
           `<id>${item.permalink}</id>`,
           '<content type="html">',
-          escape(dompurify.sanitize(item.content)),
+          escape(item.content),
           "</content>",
           "</entry>",
         ];
