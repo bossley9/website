@@ -2,10 +2,15 @@ import gameData from "@/data/recs/games.json";
 import { type Game, gameListSchema } from "@/utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
-import { getCurrentlyReadingItem } from "@/utils/data";
+import {
+  getCurrentlyReadingItem,
+  getCurrentlyWatchingItem,
+  getWatchingItemTitle,
+} from "@/utils/data";
 
 export function About() {
   const readingItem = getCurrentlyReadingItem();
+  const watchingItem = getCurrentlyWatchingItem();
 
   let gameList: Game[] = [];
   try {
@@ -61,6 +66,12 @@ export function About() {
               <p>
                 <strong>Book club:</strong> I&#39;m currently reading{" "}
                 <i>{readingItem.title}</i> by {readingItem.author}.
+              </p>
+            )}
+            {watchingItem && (
+              <p>
+                <strong>Watch party:</strong> I&#39;m currently watching{" "}
+                {getWatchingItemTitle(watchingItem)}.
               </p>
             )}
             {game && (
