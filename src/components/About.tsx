@@ -50,9 +50,9 @@ export function About() {
               and libre.
             </p>
             <p>
-              You can contact me at&nbsp;
+              To get in touch you can email me at&nbsp;
               <span className="social">
-                bossley [dot] samuel [at] gmail [dot] com
+                sam [at] [this domain], which is bossley [dot] xyz
               </span>
               &nbsp; or find me on the fediverse as&nbsp;
               <a className="social" rel="me" href="https://calckey.world/@sam">

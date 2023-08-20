@@ -25,6 +25,10 @@ const referralList: Referral[] = [
     url: "http://fbuy.me/uw-lF",
   },
   {
+    name: "Proton (Mail service)",
+    url: "https://pr.tn/ref/F7MN4WDZQEY0",
+  },
+  {
     name: "Root (car insurance)",
     url: "https://rootbonus.com/SamBossley?",
   },
