@@ -8,11 +8,12 @@ build: check clean
 
 check:
 	deno lint
-	npm run astro sync
-	npm run astro check
+	deno run -A npm:astro sync
+	deno run -A npm:astro check
 	npm run typecheck
 
 clean:
+	mkdir -p $(OUTPUT)/
 	chmod -Rv 777 $(OUTPUT)/
 	rm -rf $(OUTPUT)/
 	rm -f result
