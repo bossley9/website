@@ -1,7 +1,7 @@
 OUTPUT = ./dist
 
 build: check clean
-	npm run astro build
+	deno task build
 	nix build
 	cp -r ./result/* $(OUTPUT)
 	./scripts/compress.sh $(OUTPUT)
@@ -16,9 +16,6 @@ clean:
 	chmod -Rv 777 $(OUTPUT)/
 	rm -rf $(OUTPUT)/
 	rm -f result
-
-staging:
-	npm run astro preview
 
 server:
 	npm run astro dev

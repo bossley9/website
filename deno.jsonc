@@ -1,4 +1,12 @@
 {
+  "tasks": {
+    "build": "deno run -A npm:astro build",
+    "dev": "deno run -A npm:astro dev"
+  },
+  "imports": {
+    "@astrojs/internal-helpers/path": "npm:@astrojs/internal-helpers/path",
+    "html-escaper": "npm:html-escaper"
+  },
   "lint": {
     "exclude": [
       "dist",
