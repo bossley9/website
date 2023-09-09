@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "Dungeons & Dragons: Honor Among Thieves",
+    "year": "2023",
+    "director": "Jonathan Goldstein and John Francis Daley",
+    "producer": "Jeremy Latcham and Brian Goldner and Nick Meyer",
+    "date": "2023",
+    "rating": 7.6,
+    "note": "A great movie even if you have no DND knowledge. If you do have DND knowledge, you'll understand a lot of small name references and implicit natural 20 or natural 1 rolls."
+  },
+  {
+    "type": "movie",
     "title": "Suzume",
     "year": "2022",
     "director": "Manakoto Shinkai",
