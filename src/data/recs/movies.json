@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "The Hobbit: An Unexpected Journey",
+    "year": "2012",
+    "director": "Peter Jackson",
+    "producer": "Carolynne Cunningham and Zane Weiner and Fran Walsh and Peter Jackson",
+    "date": "2023",
+    "rating": 6.9,
+    "note": "Pretty decent if you're a fan of the book like I am... except for all the CGI."
+  },
+  {
+    "type": "movie",
     "title": "Dungeons & Dragons: Honor Among Thieves",
     "year": "2023",
     "director": "Jonathan Goldstein and John Francis Daley",
