@@ -1,6 +1,31 @@
 [
   {
     "type": "game",
+    "title": "No Man's Sky",
+    "year": "2016",
+    "developer": "Hello Games",
+    "publisher": "Hello Games",
+    "platform": "Desktop",
+    "url": "https://www.nomanssky.com/",
+    "date": "2023",
+    "note": "It's like Subnautica but in space. The Star Wars sci-fi realism is amazing.",
+    "current": true,
+    "rating": 8.2
+  },
+  {
+    "type": "game",
+    "title": "Veloren",
+    "year": "2018",
+    "developer": "Veloren",
+    "publisher": "Veloren",
+    "platform": "Desktop",
+    "url": "https://veloren.net/",
+    "date": "2023",
+    "note": "",
+    "rating": 7.0
+  },
+  {
+    "type": "game",
     "title": "The Legend of Zelda: Tears of the Kingdom",
     "year": "2023",
     "developer": "Nintendo",

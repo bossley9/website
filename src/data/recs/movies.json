@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "Percy Jackson & the Olympians: The Lightning Thief",
+    "year": "2010",
+    "director": "Chris Columbus",
+    "producer": "Karen Rosenfelt and Chris Columbus and Michael Barnathan and Mark Radcliffe",
+    "date": "2023",
+    "rating": 6.2,
+    "note": "This movie was a lot worse than I remember. I guess it wasn't a completely terrible movie if you never read the book."
+  },
+  {
+    "type": "movie",
     "title": "The Hobbit: An Unexpected Journey",
     "year": "2012",
     "director": "Peter Jackson",

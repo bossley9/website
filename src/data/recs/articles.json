@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "The Saga of the Closure Compiler, and Why TypeScript Won",
+    "author": "Dan Vanderkam",
+    "url": "https://effectivetypescript.com/2023/09/27/closure-compiler/",
+    "published": "2023-09-27",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "A note to young folks: download the things you love",
     "author": "Matt Birchler",
     "url": "https://birchtree.me/blog/a-note-to-young-folks-download-the-videos-you-love/",
