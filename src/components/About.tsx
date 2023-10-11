@@ -31,6 +31,7 @@ export function About() {
         <img
           className="me"
           src="/static/me700x700.webp"
+          srcSet="/static/me300x300.jpg 300w, /static/me700x700.webp 700w"
           alt="a portrait of me"
           width={300}
           height={300}
