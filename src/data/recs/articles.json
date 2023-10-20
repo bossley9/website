@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "Just paying Figma $15/month because nothing else fucking works",
+    "author": "Amos Wenger",
+    "url": "https://fasterthanli.me/articles/just-paying-figma-15-dollars",
+    "published": "2023-10-19",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "The Saga of the Closure Compiler, and Why TypeScript Won",
     "author": "Dan Vanderkam",
     "url": "https://effectivetypescript.com/2023/09/27/closure-compiler/",
