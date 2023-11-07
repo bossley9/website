@@ -1,5 +1,13 @@
 [
   {
+    "type": "anime/movie",
+    "title_translated": "Jujutsu Kaisen 0",
+    "year": "2021",
+    "date": "2023",
+    "rating": 7.0,
+    "note": "Sub."
+  },
+  {
     "type": "anime",
     "title_translated": "Mobile Suit Gundam SEED",
     "seasons": 1,
@@ -23,12 +31,12 @@
   {
     "type": "anime",
     "title_translated": "Jujutsu Kaisen",
-    "seasons": 1,
+    "seasons": 2,
     "run_start": "2020-10-03",
     "run_end": "2021-03-27",
     "date": "2021",
     "rating": 7.5,
-    "note": "Sub. The Lost In Paradise Outro is fantastic."
+    "note": "Sub. The Lost In Paradise Outro is fantastic. Currently airing."
   },
   {
     "type": "anime",

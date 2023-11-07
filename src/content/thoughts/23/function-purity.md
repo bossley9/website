@@ -6,6 +6,7 @@ tags:
   - "tech"
   - "function purity"
   - "frontend"
+  - "talk"
 ---
 
 > This is a simplified transcription of a talk I gave last week on function purity.

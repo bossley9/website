@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "How to install Nextcloud on FreeNAS in an iocage jail with hardened security",
+    "author": "Samuel Dowling",
+    "url": "https://www.samueldowling.com/2020/07/24/install-nextcloud-on-freenas-iocage-jail-with-hardened-security/",
+    "published": "2020-07-24",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "How Bear does analytics with CSS",
+    "author": "Herman Martinus",
+    "url": "https://herman.bearblog.dev/how-bear-does-analytics-with-css/",
+    "published": "2023-11-01",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "Web Components Will Outlive Your JavaScript Framework",
     "author": "Jake Lazaroff",
     "url": "https://jakelazaroff.com/words/web-components-will-outlive-your-javascript-framework",
