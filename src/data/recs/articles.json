@@ -1,6 +1,62 @@
 [
   {
     "type": "article",
+    "title": "You Might Not Need an Effect",
+    "author": "React",
+    "url": "https://react.dev/learn/you-might-not-need-an-effect",
+    "published": "2023-06-09",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Richard Stallman's political discourse on sex",
+    "author": "Drew Devault",
+    "url": "https://drewdevault.com/2023/11/25/2023-11-26-RMS-on-sex.html",
+    "published": "2023-11-25",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Be the browser’s mentor, not its micromanager.",
+    "author": "Andy Bell",
+    "url": "https://buildexcellentwebsit.es/",
+    "published": "2022-05-05",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Reflecting on 18 years at Google",
+    "author": "Hixie",
+    "url": "https://ln.hixie.ch/?start=1700627373&count=1",
+    "published": "2023-11-22",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Push Ifs Up And Fors Down",
+    "author": "Alex Kladov",
+    "url": "https://matklad.github.io/2023/11/15/push-ifs-up-and-fors-down.html",
+    "published": "2023-11-15",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Microservices aren't the problem. Incompetent people are",
+    "author": "Dmitry Non",
+    "url": "https://nondv.wtf/blog/posts/microservices-arent-the-problem-incompetent-people-are.html",
+    "published": "2023-11-08",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "Interesting Bugs Caught by ESLint’s no-constant-binary-expression",
+    "author": "Jordan Eldredge",
+    "url": "https://jordaneldredge.com/blog/interesting-bugs-caught-by-eslints-no-constant-binary-expression/",
+    "published": "2022-06-19",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "How to install Nextcloud on FreeNAS in an iocage jail with hardened security",
     "author": "Samuel Dowling",
     "url": "https://www.samueldowling.com/2020/07/24/install-nextcloud-on-freenas-iocage-jail-with-hardened-security/",
