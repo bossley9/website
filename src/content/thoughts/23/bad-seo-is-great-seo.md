@@ -11,7 +11,7 @@ tags:
 
 ![A Google search of "SEO"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/seo-search.png)
 
-<abbr title="Search Engine Optimization">SEO</abbr> is a fancy blanket acronym for getting your pages to the top of search engine results. If you have great SEO, your website (or online store, or Youtube channel, or Instagram account) will be the first result on Google search or Bing search.
+*SEO* (Search Engine Optimization) is a fancy blanket acronym for getting your pages to the top of search engine results. If you have great SEO, your website (or online store, or Youtube channel, or Instagram account) will be the first result on Google search or Bing search.
 
 When I first started pouring more content onto my website and social media accounts, I wanted to have the best SEO like all big online brands. I performed a quick Google search of my name and wasn't surprised to find I wasn't even on the first page of results. Fortunately, I have a fairly uncommon last name and do not share a name with any large celebrity, so optimizing my discoverability was relatively simple:
 

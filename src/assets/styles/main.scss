@@ -1,17 +1,18 @@
-$light-fg: #20242d;
-$light-fg-alt: #4e5564;
-$light-bg: #fbfbf8;
-$light-bg-alt: #ebebe8;
-$light-primary: #27598a;
-$light-secondary: #932a7f;
-$light-secondary: #933841;
+:root {
+  --light-fg: #20242d;
+  --light-fg-alt: #4e5564;
+  --light-bg: #fbfbf8;
+  --light-bg-alt: #ebebe8;
+  --light-primary: #27598a;
+  --light-secondary: #933841;
 
-$dark-fg: #eceff4;
-$dark-fg-alt: #b1b6bd;
-$dark-bg: #252a33;
-$dark-bg-alt: #2f3540;
-$dark-primary: #5fd7ff;
-$dark-secondary: #f29ea6;
+  --dark-fg: #eceff4;
+  --dark-fg-alt: #b1b6bd;
+  --dark-bg: #252a33;
+  --dark-bg-alt: #2f3540;
+  --dark-primary: #5fd7ff;
+  --dark-secondary: #f29ea6;
+}
 
 // defaults
 
@@ -39,11 +40,11 @@ body {
 html,
 body,
 a {
-  color: $light-fg;
-  background-color: $light-bg;
+  color: var(--light-fg);
+  background-color: var(--light-bg);
   @media (prefers-color-scheme: dark) {
-    color: $dark-fg;
-    background-color: $dark-bg;
+    color: var(--dark-fg);
+    background-color: var(--dark-bg);
   }
 }
 
@@ -102,9 +103,9 @@ footer,
   font-size: 0.75rem;
 
   svg {
-    fill: $light-fg-alt;
+    fill: var(--light-fg-alt);
     @media (prefers-color-scheme: dark) {
-      fill: $dark-fg-alt;
+      fill: var(--dark-fg-alt);
     }
   }
 }
@@ -114,8 +115,7 @@ footer,
 h1 {
   font-size: 2.369rem;
 }
-h2,
-.h2 {
+h2 {
   font-size: 1.777rem;
 }
 h3 {
@@ -149,9 +149,9 @@ a:focus {
 }
 
 .link {
-  color: $light-primary;
+  color: var(--light-primary);
   @media (prefers-color-scheme: dark) {
-    color: $dark-primary;
+    color: var(--dark-primary);
   }
 }
 
@@ -162,30 +162,20 @@ code,
 .inline-code {
   border-radius: 0.2rem;
   padding: 0 0.3rem;
-  background-color: $light-bg-alt;
-  color: $light-secondary;
+  background-color: var(--light-bg-alt);
+  color: var(--light-secondary);
   @media (prefers-color-scheme: dark) {
-    color: $dark-secondary;
-    background-color: $dark-bg-alt;
+    color: var(--dark-secondary);
+    background-color: var(--dark-bg-alt);
   }
 }
 
 dfn {
   font-style: normal;
   font-weight: bold;
-  color: $light-primary;
+  color: var(--light-primary);
   @media (prefers-color-scheme: dark) {
-    color: $dark-primary;
-  }
-}
-
-abbr {
-  cursor: help;
-  color: $light-primary;
-  text-decoration: wavy underline $light-primary;
-  @media (prefers-color-scheme: dark) {
-    color: $dark-primary;
-    text-decoration: wavy underline $dark-primary;
+    color: var(--dark-primary);
   }
 }
 
@@ -333,9 +323,9 @@ article.thoughtvideo {
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 0.25rem;
-    background-color: $light-bg-alt;
+    background-color: var(--light-bg-alt);
     @media (prefers-color-scheme: dark) {
-      background-color: $dark-bg-alt;
+      background-color: var(--dark-bg-alt);
     }
   }
   .desc a {
@@ -379,10 +369,10 @@ article {
     padding: 1rem;
     border-radius: 0.25rem;
     font-size: 0.9rem;
-    background-color: $light-bg-alt;
+    background-color: var(--light-bg-alt);
     overflow-x: auto;
     @media (prefers-color-scheme: dark) {
-      background-color: $dark-bg-alt;
+      background-color: var(--dark-bg-alt);
     }
   }
   // this solution to preformatted padding relies
@@ -407,11 +397,11 @@ article {
     font-style: italic;
     border-left-width: 0.25rem;
     border-left-style: solid;
-    border-left-color: $light-bg-alt;
-    color: $light-fg-alt;
+    border-left-color: var(--light-bg-alt);
+    color: var(--light-fg-alt);
     @media (prefers-color-scheme: dark) {
-      border-left-color: $dark-bg-alt;
-      color: $dark-fg-alt;
+      border-left-color: var(--dark-bg-alt);
+      color: var(--dark-fg-alt);
     }
   }
   table {
@@ -419,9 +409,9 @@ article {
     th,
     td {
       padding: 0.25rem;
-      border: 0.1rem solid $light-fg-alt;
+      border: 0.1rem solid var(--light-fg-alt);
       @media (prefers-color-scheme: dark) {
-        border: 0.1rem solid $dark-fg-alt;
+        border: 0.1rem solid var(--dark-fg-alt);
       }
     }
   }
@@ -442,9 +432,9 @@ article {
   img::before,
   img::after {
     font-style: italic;
-    color: $light-fg-alt;
+    color: var(--light-fg-alt);
     @media (prefers-color-scheme: dark) {
-      color: $dark-fg-alt;
+      color: var(--dark-fg-alt);
     }
   }
 }
@@ -499,9 +489,9 @@ ul.pagination {
   }
 
   svg {
-    fill: $light-fg-alt;
+    fill: var(--light-fg-alt);
     @media (prefers-color-scheme: dark) {
-      fill: $dark-fg-alt;
+      fill: var(--dark-fg-alt);
     }
   }
 }
@@ -550,9 +540,9 @@ table.rating-guide {
     padding: 0.4rem;
     border-width: 1px;
     border-style: solid;
-    border-color: $light-fg-alt;
+    border-color: var(--light-fg-alt);
     @media (prefers-color-scheme: dark) {
-      border-color: $dark-fg-alt;
+      border-color: var(--dark-fg-alt);
     }
   }
 }

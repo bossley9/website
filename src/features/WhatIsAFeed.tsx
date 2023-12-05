@@ -6,7 +6,6 @@ const feedExamples: FeedExample[] = [
     url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCX6OQ3DkcsbYNE6H8uQQuVA",
   },
   { name: "Twitch", url: "https://twitchrss.appspot.com/vod/moistcr1tikal" },
-  { name: "Twitter", url: "https://nitter.net/reactjs/rss" },
   { name: "Medium", url: "https://medium.com/feed/@emilymenonbender" },
   { name: "Github", url: "https://github.com/neovim/neovim/tags.atom" },
   { name: "Acast", url: "https://feeds.acast.com/public/shows/90daygays" },
@@ -21,7 +20,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
   return (
     <>
       <article className="what-is-a-feed">
-        <h1 className="h2">What is a feed?</h1>
+        <h1>What is a feed?</h1>
         <p>
           A <dfn>feed</dfn> is a special website url you can use to get the
           latest updates for that website. With feeds you can get real-time
@@ -71,7 +70,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           these updates in one place.
         </p>
 
-        <h1 className="h2">How do I subscribe to a feed?</h1>
+        <h2>How do I subscribe to a feed?</h2>
         <p>
           To subscribe to a feed, you&#39;ll need a <dfn>feed reader</dfn>. A
           feed reader (aka &#34;aggregator&#34;, &#34;news reader&#34;, or
@@ -80,18 +79,16 @@ export function WhatIsAFeed({ feedUrl }: Props) {
         </p>
         <ul>
           <li>
-            <a href="https://www.inoreader.com/">
-              Inoreader (Web, iOS, Android)
-            </a>
+            <a href="https://miniflux.app/">Miniflux (I use this one)</a>
           </li>
           <li>
-            <a href="https://feeder.co/">Feeder (Web, iOS, Android)</a>
+            <a href="https://www.inoreader.com/">Inoreader</a>
           </li>
           <li>
-            <a href="https://feedly.com/">Feedly (Web, iOS, Android)</a>
+            <a href="https://feeder.co/">Feeder</a>
           </li>
           <li>
-            <a href="https://miniflux.app/">Miniflux (Web, iOS, Android)</a>
+            <a href="https://feedly.com/">Feedly</a>
           </li>
         </ul>
         <p>
@@ -100,7 +97,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           always export and import your feeds later. All you need to do is get a
           feed url and paste it into your feed reader to subscribe!
         </p>
-        <h1 className="h2">Where do I find feeds?</h1>
+        <h2>Where do I find feeds?</h2>
         <p>
           Try peeking around a website&#39;s header or footer to find the feed
           icon. If you can&#39;t find one, most feed readers are smart enough to

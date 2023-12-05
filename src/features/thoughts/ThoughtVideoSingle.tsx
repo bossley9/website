@@ -47,7 +47,7 @@ export function ThoughtVideoSingle({
           .
         </p>
       </video>
-      <h1 className="h2">{title}</h1>
+      <h1>{title}</h1>
       <div className="metadata">
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
         <ul className="taglist">
