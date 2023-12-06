@@ -35,7 +35,7 @@ export function GameSingle() {
     }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Games</h1>
       <p>{description}</p>
       {current && <p>I&#39;m currently playing {current.title}.</p>}

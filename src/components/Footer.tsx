@@ -68,7 +68,7 @@ export function Footer({ minimal = false }: Props) {
           </p>
         </>
       )}
-      <p>
+      <p className="copyrights">
         <a href="/">{COPYRIGHT}</a>
         &nbsp;
         <a

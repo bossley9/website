@@ -10,7 +10,7 @@ export function Header({ currentUrl }: Props) {
   return (
     <header className="dnp">
       <nav>
-        <a id="title" href="/">
+        <a className="title" href="/">
           {SITE_TITLE}
         </a>
         <a className={getClasses("/thoughts")} href="/thoughts">

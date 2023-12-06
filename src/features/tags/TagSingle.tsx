@@ -8,9 +8,11 @@ export type PageProps = {
 
 export function TagSingle({ tag, pages }: PageProps) {
   return (
-    <section>
-      <h1>Tagged &#34;{tag}&#34;</h1>
-      <ol className="thoughtlist">
+    <section className="tag-single">
+      <h1>
+        Tagged &#34;<span className="tag-name">{tag}</span>&#34;
+      </h1>
+      <ol className="articlelist">
         {pages
           .filter(({ url }) => url.length > 0) // sanity check: do not display invalid entries
           .map(({ date, title, url }) => (

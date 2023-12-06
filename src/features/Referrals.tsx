@@ -53,9 +53,9 @@ export function Referrals() {
           </li>
         ))}
       </ul>
-      <p className="footer">
+      <small>
         I am not an affiliate or paid sponsor of any of these products.
-      </p>
+      </small>
     </section>
   );
 }

@@ -35,7 +35,7 @@ export function ShowSingle() {
     }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Shows</h1>
       <p>{description}</p>
       {current && (

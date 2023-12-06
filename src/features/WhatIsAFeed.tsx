@@ -41,6 +41,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
           this icon:
         </p>
         <svg
+          className="rss-logo"
           aria-label="rss feed symbol"
           width="20"
           height="20"
@@ -79,7 +80,7 @@ export function WhatIsAFeed({ feedUrl }: Props) {
         </p>
         <ul>
           <li>
-            <a href="https://miniflux.app/">Miniflux (I use this one)</a>
+            <a href="https://miniflux.app/">Miniflux (I use this daily)</a>
           </li>
           <li>
             <a href="https://www.inoreader.com/">Inoreader</a>

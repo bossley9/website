@@ -4,9 +4,9 @@ export type PageProps = { tags: string[] };
 
 export function TagSection({ tags }: PageProps) {
   return (
-    <section>
+    <section className="tag-index">
       <h1>Tag Index</h1>
-      <ol className="tagindex">
+      <ol>
         {tags.map((tag) => (
           <li key={tag}>
             <a href={`/tags/${slugify(tag)}`}>#{tag}</a>

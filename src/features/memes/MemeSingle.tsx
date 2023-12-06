@@ -7,15 +7,15 @@ export type PageProps = {
 
 export function MemeSingle({ playlist, year }: PageProps) {
   return (
-    <article>
+    <article className="meme-single">
       <h1>Memes ({year})</h1>
-      <ul className="memelist">
+      <ol>
         {playlist.map(({ file, comment }) => (
           <li key={file}>
             <a href={file}>{comment ?? file}</a>
           </li>
         ))}
-      </ul>
+      </ol>
     </article>
   );
 }

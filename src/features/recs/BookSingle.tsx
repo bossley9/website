@@ -35,7 +35,7 @@ export function BookSingle() {
     }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Books</h1>
       <p>{description}</p>
       {current && (

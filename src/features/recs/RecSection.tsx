@@ -52,7 +52,7 @@ const recList = [
 
 export function RecSection() {
   return (
-    <section>
+    <section className="rec-section">
       <h1>Recommendations</h1>
       <p>
         Here I try to record lists of pretty much everything I&#39;ve ever read,
@@ -62,12 +62,10 @@ export function RecSection() {
       </p>
       <p>
         See my&nbsp;
-        <a className="link" href="/recs/rating-guide">
-          rating guide
-        </a>
+        <a href="/recs/rating-guide">rating guide</a>
         &nbsp;for more details on how I rate content.
       </p>
-      <ol className="thoughtlist">
+      <ol className="articlelist">
         {recList.map(({ title, description, slug }) => (
           <li key={slug}>
             <a href={slug}>

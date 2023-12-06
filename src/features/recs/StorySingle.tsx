@@ -31,7 +31,7 @@ export function StorySingle() {
   }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Stories</h1>
       <p>{description}</p>
       {Object.entries(groupedByDate)

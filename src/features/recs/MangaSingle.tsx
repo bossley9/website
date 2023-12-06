@@ -35,7 +35,7 @@ export function MangaSingle() {
     }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Manga</h1>
       <p>{description}</p>
       {current && (

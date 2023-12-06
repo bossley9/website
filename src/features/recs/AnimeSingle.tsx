@@ -35,7 +35,7 @@ export function AnimeSingle() {
     }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Anime</h1>
       <p>{description}</p>
       {current && (

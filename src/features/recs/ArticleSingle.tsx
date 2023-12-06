@@ -30,7 +30,7 @@ export function ArticleSingle() {
   }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Articles</h1>
       <p>{description}</p>
       {Object.entries(groupedByDate)

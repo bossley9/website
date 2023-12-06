@@ -11,12 +11,12 @@ export function ThoughtSingle({ thought, children }: PageProps) {
   const { title, date, tags } = thought.data;
 
   return (
-    <article>
+    <article className="thought-single">
       <h1>{title}</h1>
       <p>
         <time dateTime={date.toISOString()}>{date.toDateString()}</time>
       </p>
-      <ul className="taglist dnp">
+      <ul className="dnp taglist">
         {tags.map((tag) => (
           <li key={tag}>
             <a href={`/tags/${slugify(tag)}`}>#{tag}</a>

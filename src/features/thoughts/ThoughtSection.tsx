@@ -32,7 +32,7 @@ export function ThoughtSection({ page }: PageProps) {
         .map(([year, entries]) => (
           <Fragment key={year}>
             <h2>{year}</h2>
-            <ol className="thoughtlist">
+            <ol className="articlelist">
               {entries.map(({ data: { date, title, video } }) => {
                 const { url } = getThoughtSlug({ title, date });
                 return (

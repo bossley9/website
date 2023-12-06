@@ -14,7 +14,7 @@ export function RecipeSection({ page }: PageProps) {
         Cooking is an art. I enjoy creating and trying new food and I want to
         share more of my recipes.
       </p>
-      <ol className="thoughtlist">
+      <ol className="articlelist">
         {page.data.map(({ data: { date, title } }) => {
           const { url } = getRecipeSlug({ title, date });
           return (

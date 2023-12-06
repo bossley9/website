@@ -12,7 +12,7 @@ export function RecipeSingle({ recipe, children }: PageProps) {
   const { title, date, tags, prep, cook, wait, servings } = recipe.data;
 
   return (
-    <article>
+    <article className="recipe-single">
       <h1>{title}</h1>
       <p>
         Last updated{" "}

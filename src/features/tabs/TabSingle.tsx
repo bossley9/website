@@ -25,7 +25,7 @@ export function TabSingle({ tab }: PageProps) {
       .join("\n") + "\n";
 
   return (
-    <article className="tabs">
+    <article className="tab-single">
       <h1>{title}</h1>
       <p>
         Last updated{" "}
@@ -39,7 +39,7 @@ export function TabSingle({ tab }: PageProps) {
         ))}
       </ul>
       <br className="dnp" />
-      <ul className="linklist dnp">
+      <ul className="taglist dnp">
         {bandcamp && (
           <li>
             <a href={bandcamp}>Bandcamp</a>

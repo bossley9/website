@@ -32,7 +32,7 @@ export function MovieSingle() {
   }, {});
 
   return (
-    <section className="recs">
+    <section className="rec-single">
       <h1>Movies</h1>
       <p>{description}</p>
       {Object.entries(groupedByDate)

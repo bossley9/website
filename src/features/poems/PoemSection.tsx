@@ -31,7 +31,7 @@ export function PoemSection({ page }: PageProps) {
         .map(([year, entries]) => (
           <Fragment key={year}>
             <h2>{year}</h2>
-            <ol className="thoughtlist">
+            <ol className="articlelist">
               {entries.map(({ data: { date, title } }) => {
                 const { url } = getPoemSlug({ title, date });
                 return (

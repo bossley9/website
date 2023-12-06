@@ -13,7 +13,7 @@ export function Home({ recentThoughts }: PageProps) {
       <About />
       <section>
         <h1>Recent Thoughts</h1>
-        <ol className="thoughtlist">
+        <ol className="articlelist">
           {recentThoughts.map(({ data: { date, title, video } }) => {
             const { url } = getThoughtSlug({ date, title });
             return (

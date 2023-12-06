@@ -52,11 +52,9 @@ export function About() {
             </p>
             <p>
               To get in touch you can email me at&nbsp;
-              <span className="social">
-                sam [at] [this domain], which is bossley [dot] xyz
-              </span>
-              &nbsp; or find me on the fediverse as&nbsp;
-              <a className="social" rel="me" href="https://calckey.world/@sam">
+              <code>sam[at][this domain]</code>
+              &nbsp;or find me on the fediverse as&nbsp;
+              <a rel="me" href="https://calckey.world/@sam">
                 @sam@calckey.world
               </a>
               . I tend to check both semi-frequently so don&#39;t be shy!
