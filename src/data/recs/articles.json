@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "reaction, in replacement of fail2ban",
+    "author": "ppom",
+    "url": "https://blog.ppom.me/en-reaction/",
+    "published": "2023-11-24",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "You don't need JavaScript for that",
+    "author": "Kilian Valkhof",
+    "url": "https://www.htmhell.dev/adventcalendar/2023/2/",
+    "published": "2023-12-02",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "You Might Not Need an Effect",
     "author": "React",
     "url": "https://react.dev/learn/you-might-not-need-an-effect",
