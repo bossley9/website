@@ -56,9 +56,9 @@ I finally decided to pull the plug.
 1. Obfuscate my email. This won't suppress all bots but it will filter out a majority of them.
     ```
     // instead of
-    bossley.samuel@gmail.com
+    john.doe@gmail.com
     // try
-    bossley [dot] samuel [at] gmail [dot] com
+    john [dot] doe [at] gmail [dot] com
     ```
 2. Disable most of my public social media accounts, or private them. I don't use a majority of them anyways.
 3. Remove all bot traffic except maybe a few search engines. I will likely remove the remaining ones if I get tired of them.
