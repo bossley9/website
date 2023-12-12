@@ -442,8 +442,7 @@ article.thought-single {
       background-color: var(--dark-bg-alt);
     }
   }
-  // this solution to preformatted padding relies
-  // on Astro's internal code transformations
+  /* this solution to preformatted padding relies on Astro's internal code transformations */
   pre code .line {
     margin-right: 1rem;
   }
@@ -551,7 +550,6 @@ article.meme-single {
     @include primary-link;
   }
   ol {
-    // list-style-type: none;
     margin: 0;
     padding: 0;
     li {
