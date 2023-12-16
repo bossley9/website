@@ -3,6 +3,7 @@ title: "Lentil Loaf"
 description: "How to make lentil loaf"
 date: 2022-04-23T20:06:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
   - "vegan"

@@ -3,6 +3,7 @@ title: "Update"
 description: "An arbitrary update"
 date: 2021-05-14T11:04:00-07:00
 tags:
+  - "thought"
   - "reflection"
 ---
 

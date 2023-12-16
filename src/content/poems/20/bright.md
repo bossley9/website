@@ -1,6 +1,8 @@
 ---
 title: "Bright"
 date: 2020-08-08T15:08:00-04:00
+tags:
+  - "poem"
 ---
 
 Flying high in the sky

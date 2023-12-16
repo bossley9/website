@@ -3,6 +3,7 @@ title: "Vim 9"
 description: "An overview of my thoughts on Vim 9 and the new Vim9script"
 date: 2022-06-28T21:53:00-07:00
 tags:
+  - "thought"
   - "vim"
   - "vimscript"
 ---

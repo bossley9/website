@@ -1,6 +1,8 @@
 ---
 title: "Silent Dreams"
 date: 2019-12-21T17:27:00-04:00
+tags:
+  - "poem"
 ---
 
 I used to stare at the stars and wonder,

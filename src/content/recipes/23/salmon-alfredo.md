@@ -3,6 +3,7 @@ title: "Salmon Alfredo"
 description: "How to make salmon alfredo"
 date: 2023-03-22T22:33:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "pescetarian"
 prep: 10

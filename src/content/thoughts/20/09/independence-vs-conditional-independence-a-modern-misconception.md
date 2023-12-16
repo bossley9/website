@@ -3,6 +3,7 @@ title: "Independence vs Conditional Independence: A Modern Misconception"
 description: "In this full disclosure of my thoughts, I hope to explain to people the difference of being an independent person vs being a conditionally independent person. With that explanation, I aim to help other people learn to be more independent."
 date: 2020-09-12T14:57:00-04:00
 tags:
+  - "thought"
   - "reflection"
 ---
 

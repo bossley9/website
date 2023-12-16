@@ -1,6 +1,8 @@
 ---
 title: "Jupiter"
 date: 2021-05-11T16:07:00-07:00
+tags:
+  - "poem"
 ---
 
 A thousand worlds all shed their tears for you,

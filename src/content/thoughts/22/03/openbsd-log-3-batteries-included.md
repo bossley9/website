@@ -3,6 +3,7 @@ title: "OpenBSD Log 3: Batteries Included"
 description: "My battery woes in addition to personal server setup and moving away from Microsoft."
 date: 2022-03-12T11:56:00-07:00
 tags:
+  - "thought"
   - "openbsd"
   - "battery"
   - "microsoft"

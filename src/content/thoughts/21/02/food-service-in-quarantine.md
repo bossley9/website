@@ -3,6 +3,7 @@ title: "Food Service in Quarantine"
 description: "After working in the food industry for nearly a year in quarantine, I thought it might be prudent to give my thoughts on what it's like to work in the industry during COVID-19 - as well as provide some general information and tips to customers and delivery drivers about experiences from the perspective of a restaurant employee."
 date: 2021-02-04T00:19:00-04:00
 tags:
+  - "thought"
   - "reflection"
   - "recommendation"
 ---

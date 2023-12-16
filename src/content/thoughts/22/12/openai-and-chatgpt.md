@@ -3,6 +3,7 @@ title: "OpenAI and ChatGPT"
 description: "Since everyone is talking about ChatGPT I thought I might try it."
 date: 2022-12-16T15:46:00-07:00
 tags:
+  - "thought"
   - "tech"
   - "openai"
   - "artificial intelligence"

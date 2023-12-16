@@ -1,6 +1,8 @@
 ---
 title: "Waving Goodbye"
 date: 2023-06-19T20:32:00-07:00
+tags:
+  - "poem"
 ---
 
 When waves clash, they clash.

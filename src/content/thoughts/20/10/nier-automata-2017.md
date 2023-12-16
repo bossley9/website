@@ -4,6 +4,7 @@ description: "After waiting such a long time to write my review on Nier: Automat
 date: 2020-10-31T21:38:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/nier-automata-cover.jpg"
 tags:
+  - "thought"
   - "review"
   - "video game"
 ---

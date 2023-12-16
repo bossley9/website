@@ -1,6 +1,8 @@
 ---
 title: "Stars"
 date: 2019-11-09T01:02:00-04:00
+tags:
+  - "poem"
 ---
 
 Who knows how long I will be waiting by the sea shore, awaiting my rescue.

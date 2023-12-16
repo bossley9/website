@@ -1,6 +1,8 @@
 ---
 title: "Any Sunday Afternoon"
 date: 2023-09-24T15:42:00-04:00
+tags:
+  - "poem"
 ---
 
 Warm hues after Saturday blues

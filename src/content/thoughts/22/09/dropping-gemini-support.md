@@ -3,6 +3,7 @@ title: "Dropping Gemini Support"
 description: "I will be dropping Gemini support on October 1st."
 date: 2022-09-23T21:50:00-07:00
 tags:
+  - "thought"
   - "gemini"
   - "reflection"
 ---

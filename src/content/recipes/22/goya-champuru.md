@@ -3,6 +3,7 @@ title: "Goya Champuru"
 description: "How to make goya champuru"
 date: 2022-10-30T15:36:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
 prep: 15

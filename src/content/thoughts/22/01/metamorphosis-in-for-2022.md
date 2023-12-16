@@ -3,6 +3,7 @@ title: "Metamorphosis in (for) 2022"
 description: "My goals for the coming year"
 date: 2022-01-21T16:08:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "goals"
 ---

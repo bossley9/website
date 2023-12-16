@@ -4,6 +4,7 @@ description: "I revisited the Ohio Molina Medicaid website after writing a revie
 date: 2023-06-02T21:29:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/government-websites-home.png"
 tags:
+  - "thought"
   - "tech"
   - "reflection"
   - "frontend"

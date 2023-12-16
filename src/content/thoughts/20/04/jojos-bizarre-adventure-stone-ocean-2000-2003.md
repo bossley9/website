@@ -4,6 +4,7 @@ description: "My review of the sixth part of Jojo, Stone Ocean"
 date: 2020-04-19T00:29:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/stone-ocean-end.jpg"
 tags:
+  - "thought"
   - "review"
   - "manga"
 ---

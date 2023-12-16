@@ -3,6 +3,7 @@ title: "flux"
 description: "flux: a Miniflux client app"
 date: 2023-02-11T15:53:00-07:00
 tags:
+  - "thought"
   - "miniflux"
   - "frontend"
   - "react native"

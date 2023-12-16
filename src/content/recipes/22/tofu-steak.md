@@ -3,6 +3,7 @@ title: "Tofu Steak"
 description: "How to make tofu steak"
 date: 2022-03-17T19:04:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
   - "vegan"

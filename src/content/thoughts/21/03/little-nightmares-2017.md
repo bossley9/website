@@ -4,6 +4,7 @@ description: "In this article, I review why I think Little Nightmares is a fanta
 date: 2021-03-28T16:50:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/little-nightmares-cover-art.jpg"
 tags:
+  - "thought"
   - "review"
   - "video game"
 ---

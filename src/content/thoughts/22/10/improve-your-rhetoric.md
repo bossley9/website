@@ -3,6 +3,7 @@ title: "Improve Your Rhetoric"
 description: "Everything you do is some form of communication. As such, we need to learn to be better at it."
 date: 2022-10-22T23:17:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "writing"
   - "rhetoric"

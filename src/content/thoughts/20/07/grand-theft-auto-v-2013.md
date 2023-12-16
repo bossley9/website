@@ -4,6 +4,7 @@ description: "My thoughts on Grand Theft Auto V"
 date: 2020-07-03T19:18:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-cover-art.jpg"
 tags:
+  - "thought"
   - "review"
   - "video game"
   - "gta"

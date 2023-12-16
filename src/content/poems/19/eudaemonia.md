@@ -1,6 +1,8 @@
 ---
 title: "Eudaemona"
 date: 2019-12-24T17:33:00-04:00
+tags:
+  - "poem"
 ---
 
 Eudaemonia, eudaemonia,

@@ -3,6 +3,7 @@ title: "Spicy Beans and Rice"
 description: "How to make spicy beans and rice"
 date: 2022-02-15T10:45:00-07:00
 tags:
+  - "recipe"
   - "lunch"
   - "vegetarian"
 cook: 60

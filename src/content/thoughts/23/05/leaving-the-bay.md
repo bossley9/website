@@ -3,6 +3,7 @@ title: "Leaving the Bay"
 description: "I've been living in the US California bay area for a little over two years. Now that I'm moving away on to bigger and better things, I want to reflect on the past two years and share my experiences. What will I miss about the bay area, and what am I glad to leave?"
 date: 2023-05-29T07:46:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "california"
 ---

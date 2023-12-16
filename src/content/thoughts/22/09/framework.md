@@ -4,6 +4,7 @@ description: "A review of the Framework laptop"
 date: 2022-09-09T18:33:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/framework-laptop.jpg"
 tags:
+  - "thought"
   - "hardware"
   - "framework"
   - "openbsd"

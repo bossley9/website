@@ -3,6 +3,7 @@ title: "Vim: The Ubiquitous Text Editor"
 description: "I hope to persuade not only developers but everyone to learn vim and its keybindings. Vim is a text editing software that is built around the keyboard, and because of this, editing files in vim is all about learning keybindings and key sequences. I've spent the past eight months trying to wrap my head around vim keybindings, and while I'm still getting comfortable with the new text editing process, it has increased my productivity by allowing me to navigate files much faster and improving my typing speed. I hope to persuade everyone regardless of their background or computer skill to try vim."
 date: 2020-12-22T15:56:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "recommendation"
 ---

@@ -3,6 +3,7 @@ title: "True Minimalism"
 description: "There's a lot of misconceptions floating around about what minimalism is and I would like to dispel those misconceptions."
 date: 2023-04-22T16:26:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "minimalism"
 ---

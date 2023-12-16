@@ -2,6 +2,8 @@
 title: "Black Lives Matter"
 date: 2020-06-04T02:24:00-04:00
 description: "Written after the tragic murder of George Floyd."
+tags:
+  - "poem"
 ---
 
 To dream is to sin.

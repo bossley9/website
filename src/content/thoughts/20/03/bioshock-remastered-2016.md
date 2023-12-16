@@ -4,6 +4,7 @@ description: "My thoughts of the game Bioshock"
 date: 2020-03-19T12:18:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-big-daddy.jpg"
 tags:
+  - "thought"
   - "video game"
   - "review"
 ---

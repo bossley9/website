@@ -3,6 +3,7 @@ title: "Function Purity"
 description: "In this session we will talk about why function purity is important and how it can help improve performance, code readability, reduce bugs, and make our code more framework-agnostic."
 date: 2023-06-23T18:52:00-07:00
 tags:
+  - "thought"
   - "tech"
   - "function purity"
   - "frontend"

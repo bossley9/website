@@ -3,6 +3,7 @@ title: "Apple and Self Repair"
 description: "Apple held true to their self repair promises and delivered. Let's see if it was worth it."
 date: 2022-04-28T17:07:00-07:00
 tags:
+  - "thought"
   - "apple"
   - "open source"
   - "right to repair"

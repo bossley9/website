@@ -3,6 +3,7 @@ title: "Existential Dread"
 description: "I have been suffering from an existential crisis ever since May trying to understand what my life means."
 date: 2022-01-12T00:20:29-07:00
 tags:
+  - "thought"
   - "reflection"
   - "existential"
 ---

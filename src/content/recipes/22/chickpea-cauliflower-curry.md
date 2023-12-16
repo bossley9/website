@@ -3,6 +3,7 @@ title: "Chickpea Cauliflower Curry"
 description: "How to make chickpea cauliflower curry"
 date: 2022-04-10T14:19:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
   - "vegan"

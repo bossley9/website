@@ -4,6 +4,7 @@ description: "Everyone these days is striving for perfect SEO, so what is it? An
 date: 2023-07-11T09:58:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/seo-search.png"
 tags:
+  - "thought"
   - "reflection"
   - "seo"
   - "website"

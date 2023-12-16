@@ -3,6 +3,7 @@ title: "sshfs vs scp vs sftp vs rsync"
 description: "While transferring large quantities of files across machines, I've decided to do a bit of research into which solution provides the best performance and user experience."
 date: 2023-05-04T20:56:00-07:00
 tags:
+  - "thought"
   - "tech"
   - "sshfs"
   - "scp"

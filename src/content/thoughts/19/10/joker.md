@@ -3,6 +3,7 @@ title: "Joker (2019)"
 description: "My opinion of the movie Joker"
 date: 2019-10-14T22:59:00-04:00
 tags:
+  - "thought"
   - "movie"
   - "review"
 ---

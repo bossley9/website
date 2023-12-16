@@ -4,6 +4,7 @@ description: "I wanted to share a little bit about my tattoo design process and 
 date: 2020-12-16T10:47:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/meta-6.jpg"
 tags:
+  - "thought"
   - "reflection"
 ---
 

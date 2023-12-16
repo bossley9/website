@@ -3,6 +3,7 @@ title: "Tofu Salmon Rice"
 description: "How to make tofu salmon rice"
 date: 2022-10-30T12:28:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
 cook: 60

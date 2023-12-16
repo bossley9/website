@@ -4,6 +4,7 @@ description: "After watching Star Trek: The Next Generation in its entirety, I h
 date: 2020-06-30T21:28:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-enterprise-d.jpg"
 tags:
+  - "thought"
   - "review"
   - "show"
 ---

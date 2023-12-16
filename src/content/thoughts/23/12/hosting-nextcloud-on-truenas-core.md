@@ -3,6 +3,7 @@ title: "Hosting Nextcloud on TrueNAS Core"
 description: "This is a guide on how to host a public instance securely on TrueNAS Core."
 date: 2023-12-07T20:35:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "nextcloud"
   - "truenas"

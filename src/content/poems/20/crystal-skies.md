@@ -1,6 +1,8 @@
 ---
 title: "Crystal Skies"
 date: 2020-03-03T02:32:00-04:00
+tags:
+  - "poem"
 ---
 
 Never again will I gaze upon crystal skies

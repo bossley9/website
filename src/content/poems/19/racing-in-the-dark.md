@@ -1,6 +1,8 @@
 ---
 title: "Racing in the Dark"
 date: 2019-09-07T23:05:00-04:00
+tags:
+  - "poem"
 ---
 
 It's 11:05. Take one step forward, two steps

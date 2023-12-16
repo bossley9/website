@@ -3,6 +3,7 @@ title: "Naming Files Effectively"
 description: "Following these file naming conventions can actually make your life easier."
 date: 2022-02-10T19:47:00-07:00
 tags:
+  - "thought"
   - "tech"
   - "unix"
 ---

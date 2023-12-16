@@ -1,6 +1,8 @@
 ---
 title: "Ghost"
 date: 2020-05-08T02:29:00-04:00
+tags:
+  - "poem"
 ---
 
 Ghost,

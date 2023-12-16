@@ -4,6 +4,7 @@ description: "My opinions of the new Animal Crossing game, New Horizons"
 date: 2020-04-12T14:34:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-fishing-tourney.jpg"
 tags:
+  - "thought"
   - "video game"
   - "review"
 ---

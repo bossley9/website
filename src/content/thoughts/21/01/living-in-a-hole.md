@@ -3,6 +3,7 @@ title: "Living in a Hole"
 description: "In this article I explore my inner demons and provide social commentary on how I have overcome them."
 date: 2021-01-28T12:25:00-04:00
 tags:
+  - "thought"
   - "reflection"
 ---
 

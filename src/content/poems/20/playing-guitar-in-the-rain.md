@@ -1,6 +1,8 @@
 ---
 title: "Playing Guitar in the Rain"
 date: 2020-04-15T17:58:00-04:00
+tags:
+  - "poem"
 ---
 
 So I'm

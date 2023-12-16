@@ -4,6 +4,7 @@ description: "If we want to make the internet a more user-friendly place, we nee
 date: 2022-03-02T20:59:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/optimization-my-site.png"
 tags:
+  - "thought"
   - "tech"
   - "frontend"
   - "optimization"

@@ -1,6 +1,8 @@
 ---
 title: "Real"
 date: 2023-01-16T13:53:00-07:00
+tags:
+  - "poem"
 ---
 
 When the present becomes the past it is lost forever.

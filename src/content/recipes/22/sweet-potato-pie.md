@@ -3,6 +3,7 @@ title: "Sweet Potato Pie"
 description: "How to make sweet potato pie"
 date: 2022-12-03T20:40:00-07:00
 tags:
+  - "recipe"
   - "dessert"
   - "vegetarian"
 prep: 60

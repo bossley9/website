@@ -1,6 +1,8 @@
 ---
 title: "Burn"
 date: 2019-09-10T23:44:00-04:00
+tags:
+  - "poem"
 ---
 
 Burn

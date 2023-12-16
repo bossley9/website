@@ -3,6 +3,7 @@ title: "sn"
 description: "sn: a simple syncing client for Simplenote"
 date: 2023-01-04T13:33:00-07:00
 tags:
+  - "thought"
   - "simplenote"
   - "golang"
   - "diff"

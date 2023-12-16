@@ -3,6 +3,7 @@ title: "How to Fix Twitter."
 description: "Why I am simultaneously hopeful and afraid of the future of Twitter."
 date: 2022-04-26T21:52:00-07:00
 tags:
+  - "thought"
   - "elon musk"
   - "social media"
   - "twitter"

@@ -3,6 +3,7 @@ title: "Red Bean Congee"
 description: "How to make red bean congee"
 date: 2022-05-20T23:44:00-07:00
 tags:
+  - "recipe"
   - "dessert"
   - "vegetarian"
   - "vegan"

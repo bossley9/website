@@ -3,6 +3,7 @@ title: "Overnight Oats"
 description: "How to make overnight oats"
 date: 2022-01-06T16:25:00-07:00
 tags:
+  - "recipe"
   - "breakfast"
   - "dessert"
   - "snack"

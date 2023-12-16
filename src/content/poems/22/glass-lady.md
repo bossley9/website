@@ -1,6 +1,8 @@
 ---
 title: "Glass Lady"
 date: 2022-02-25T19:03:00-07:00
+tags:
+  - "poem"
 ---
 
 I'm busy, I said.

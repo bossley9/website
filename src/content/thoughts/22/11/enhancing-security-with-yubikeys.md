@@ -4,6 +4,7 @@ description: "I've recently started using Yubikeys and really like them. They're
 date: 2022-11-06T11:27:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/yubikey-size-comparison.jpg"
 tags:
+  - "thought"
   - "recommendation"
   - "yubikey"
   - "security"

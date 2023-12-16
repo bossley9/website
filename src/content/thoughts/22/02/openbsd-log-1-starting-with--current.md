@@ -3,6 +3,7 @@ title: "OpenBSD Log 1: Starting with -current"
 description: "OpenBSD has been an influential change for me over the past year. I want to start documenting my learning process this year."
 date: 2022-02-12T22:09:00-07:00
 tags:
+  - "thought"
   - "openbsd"
 ---
 

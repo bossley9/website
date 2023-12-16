@@ -3,6 +3,7 @@ title: "Why Unix?"
 description: "Here are my reasons as to why everyone should switch to Unix-based operating systems that follow the Unix Philosophy."
 date: 2021-04-15T12:35:00-04:00
 tags:
+  - "thought"
   - "recommendation"
   - "tech"
 ---

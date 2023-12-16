@@ -1,6 +1,8 @@
 ---
 title: "The Island"
 date: 2019-08-09T13:18:00-04:00
+tags:
+  - "poem"
 ---
 
 I feel like I'm stranded on an island

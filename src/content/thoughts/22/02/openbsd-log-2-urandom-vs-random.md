@@ -3,6 +3,7 @@ title: "OpenBSD Log 2: Urandom vs Random"
 description: "Which is better, Urandom or Random?"
 date: 2022-02-20T23:05:00-07:00
 tags:
+  - "thought"
   - "openbsd"
   - "urandom"
   - "random"

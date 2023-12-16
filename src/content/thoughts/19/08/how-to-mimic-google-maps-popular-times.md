@@ -4,6 +4,7 @@ description: "How to mimic Google Maps Popular Times to track live and averaged 
 date: 2019-08-08T00:00:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/mimic-google-histogram.png"
 tags:
+  - "thought"
   - "tech"
   - "ecmascript"
   - "aws"

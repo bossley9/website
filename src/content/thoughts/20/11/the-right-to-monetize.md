@@ -3,6 +3,7 @@ title: "The Right To Monetize"
 description: 'Youtube has only recently changed their monetizing policy, allowing them to receive revenue from originally "free" content. In this article, I examine whether it is morally justifiable in the present age for Youtube to follow a strictly for-profit business model.'
 date: 2020-11-20T14:26:00-04:00
 tags:
+  - "thought"
   - "reflection"
 ---
 

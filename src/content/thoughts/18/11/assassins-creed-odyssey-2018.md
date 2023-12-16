@@ -3,6 +3,7 @@ title: "Assassin's Creed: Odyssey (2018)"
 description: "My opinion of the latest Assassin's Creed game, Odyssey"
 date: 2018-11-08T00:00:00-04:00
 tags:
+  - "thought"
   - "video game"
   - "review"
   - "assassin's creed"

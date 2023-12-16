@@ -3,6 +3,7 @@ title: "Chickless Pot Pie"
 description: "How to make chickless pot pie"
 date: 2022-04-18T18:29:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
   - "vegan"

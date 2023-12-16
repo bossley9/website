@@ -4,6 +4,7 @@ description: "I believe it is crucial that everyone has a relative understanding
 date: 2020-12-07T14:11:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/computer-basics-cpu.jpg"
 tags:
+  - "thought"
   - "tech"
   - "hardware"
 ---

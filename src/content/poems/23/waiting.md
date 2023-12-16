@@ -1,6 +1,8 @@
 ---
 title: "Waiting"
 date: 2023-03-01T20:26:00-07:00
+tags:
+  - "poem"
 ---
 
 Lights continue to drift across the vacancy of the sky.

@@ -3,6 +3,7 @@ title: "Do Androids Dream of Electric Sheep? by Philip K. Dick (1968)"
 description: "My thoughts on the book that inspired Blade Runner"
 date: 2019-01-10T00:00:00-04:00
 tags:
+  - "thought"
   - "book"
   - "review"
 ---

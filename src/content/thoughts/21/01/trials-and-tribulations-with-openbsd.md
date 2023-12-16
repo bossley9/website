@@ -3,6 +3,7 @@ title: "Trials and Tribulations with OpenBSD"
 description: "As I trudged through working with and setting up the various BSDs, I wanted to document my findings and why I will continue using OpenBSD in the future."
 date: 2021-01-13T01:30:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "openbsd"
 ---

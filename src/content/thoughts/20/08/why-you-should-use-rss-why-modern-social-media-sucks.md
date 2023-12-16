@@ -7,6 +7,7 @@ description:
   intend to see will be shown to you."
 date: 2020-08-13T10:57:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "recommendation"
 ---

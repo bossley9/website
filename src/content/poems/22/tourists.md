@@ -1,6 +1,8 @@
 ---
 title: "Tourists"
 date: 2022-01-19T19:34:00-07:00
+tags:
+  - "poem"
 ---
 
 We're all imposters

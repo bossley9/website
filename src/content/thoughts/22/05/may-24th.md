@@ -3,6 +3,7 @@ title: "May 24th"
 description: "Working a full year in a full time frontend engineering position has taught me a lot."
 date: 2022-05-24T16:51:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "frontend"
 ---

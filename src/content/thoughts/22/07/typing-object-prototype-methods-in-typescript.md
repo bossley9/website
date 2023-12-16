@@ -3,6 +3,7 @@ title: "Typing Object Prototype Methods in Typescript"
 description: "How to better type Object prototype methods in Typescript"
 date: 2022-07-11T17:04:00-07:00
 tags:
+  - "thought"
   - "typescript"
 ---
 

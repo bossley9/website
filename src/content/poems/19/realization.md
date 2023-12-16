@@ -1,6 +1,8 @@
 ---
 title: "Realization"
 date: 2019-07-26T15:17:00-04:00
+tags:
+  - "poem"
 ---
 
 When you look into my eyes, you see a soft light. I resonate

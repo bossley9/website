@@ -3,6 +3,7 @@ title: "Reflections And Advice From a Finishing Undergrad"
 description: "These are personal reflections as I complete my final year of undergrad."
 date: 2021-03-14T15:07:00-04:00
 tags:
+  - "thought"
   - "reflection"
   - "school"
 ---

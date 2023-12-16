@@ -3,6 +3,7 @@ title: "Coconut Banana Pancakes"
 description: "How to make coconut banana pancakes"
 date: 2022-01-29T15:49:00-07:00
 tags:
+  - "recipe"
   - "breakfast"
   - "lunch"
   - "vegetarian"

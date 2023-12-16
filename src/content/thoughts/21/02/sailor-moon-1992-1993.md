@@ -4,6 +4,7 @@ description: "I decided to officially watch the original Sailor Moon show after 
 date: 2021-02-28T23:11:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/sailor-moon-inner-senshi.jpg"
 tags:
+  - "thought"
   - "review"
   - "show"
 ---

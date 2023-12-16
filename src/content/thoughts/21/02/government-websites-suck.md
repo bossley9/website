@@ -3,6 +3,7 @@ title: "Government Websites Suck"
 description: "I think the government websites of the United States need to be redesigned by the younger generation. Poorly-design government websites only make taxes, government services, and understanding government workings more complicated."
 date: 2021-02-22T11:01:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "reflection"
   - "frontend"

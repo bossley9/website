@@ -3,6 +3,7 @@ title: "Eggplant in Garlic Sauce"
 description: "How to make eggplant in garlic sauce"
 date: 2022-04-24T17:39:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
   - "vegan"

@@ -2,6 +2,8 @@
 title: "Running Memories"
 date: 2020-08-28T23:16:00-04:00
 description: "A self reflection."
+tags:
+  - "poem"
 ---
 
 We'll never catch that man

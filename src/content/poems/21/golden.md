@@ -1,6 +1,8 @@
 ---
 title: "Golden"
 date: 2021-01-25T01:42:00-04:00
+tags:
+  - "poem"
 ---
 
 Yesterday, we laugh. Today, we work. Tomorrow, we love.

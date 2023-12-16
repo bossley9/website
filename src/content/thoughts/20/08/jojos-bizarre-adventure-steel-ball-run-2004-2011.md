@@ -4,6 +4,7 @@ description: "This is a summary of my thoughts after reading the seventh part of
 date: 2020-08-02T15:12:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/sbr-valentine-america.jpg"
 tags:
+  - "thought"
   - "review"
   - "manga"
 ---

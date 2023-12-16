@@ -3,6 +3,7 @@ title: "Basic Security"
 description: "Here are a few basic security tips you can follow to greatly increase the security of your online presence."
 date: 2021-09-25T21:02:00-07:00
 tags:
+  - "thought"
   - "recommendation"
   - "tech"
   - "security"

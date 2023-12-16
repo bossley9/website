@@ -3,6 +3,7 @@ title: "Indian Vegetable Lasagna"
 description: "How to make indian vegetable lasagna"
 date: 2022-10-30T12:04:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
 prep: 120

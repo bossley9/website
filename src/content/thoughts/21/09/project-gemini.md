@@ -3,6 +3,7 @@ title: "Project Gemini"
 description: "What is Project Gemini, and why is it the future of the internet?"
 date: 2021-09-02T00:17:00-07:00
 tags:
+  - "thought"
   - "recommendation"
   - "tech"
   - "gemini"

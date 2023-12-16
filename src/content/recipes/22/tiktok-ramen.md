@@ -3,6 +3,7 @@ title: "TikTok Ramen"
 description: "How to make TikTok ramen"
 date: 2022-01-27T12:33:00-07:00
 tags:
+  - "recipe"
   - "lunch"
   - "vegetarian"
 prep: 10

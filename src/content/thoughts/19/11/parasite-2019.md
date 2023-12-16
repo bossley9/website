@@ -4,6 +4,7 @@ description: "My thoughts on the movie Parasite"
 date: 2019-11-27T16:16:00-04:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2019/parasite-movie-cover.jpg"
 tags:
+  - "thought"
   - "review"
   - "movie"
 ---

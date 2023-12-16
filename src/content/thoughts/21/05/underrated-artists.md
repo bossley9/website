@@ -3,6 +3,7 @@ title: "Underrated Artists"
 description: "I give you all my niche artist recommendations for the different genres I listen to."
 date: 2021-05-31T17:24:00-07:00
 tags:
+  - "thought"
   - "recommendation"
   - "music"
 ---

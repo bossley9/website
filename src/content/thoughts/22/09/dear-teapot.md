@@ -3,6 +3,7 @@ title: "Dear Teapot"
 description: "A message to Teapot regarding the recent Uber hack and GTA VI Rockstar leak."
 date: 2022-09-20T17:33:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "gta"
 ---

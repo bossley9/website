@@ -3,6 +3,7 @@ title: "I Bought A House"
 description: "I bought my first house and want to explain why I bought a house as well as how I bought it so future new homeowners understand the process."
 date: 2023-10-20T19:19:00-04:00
 tags:
+  - "thought"
   - "house"
 ---
 

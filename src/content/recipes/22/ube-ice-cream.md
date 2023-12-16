@@ -3,6 +3,7 @@ title: "Ube Ice Cream"
 description: "How to make ube ice cream"
 date: 2022-02-05T10:45:00-07:00
 tags:
+  - "recipe"
   - "dessert"
   - "vegetarian"
 prep: 60

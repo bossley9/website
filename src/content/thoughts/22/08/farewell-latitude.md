@@ -4,6 +4,7 @@ description: "Giving my computer a formal send-off."
 date: 2022-08-18T22:30:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/latitude-1.jpg"
 tags:
+  - "thought"
   - "hardware"
 ---
 

@@ -3,6 +3,7 @@ title: "Switching from coc to Neovim's LSP"
 description: "I've finally made the switch from coc.nvim to Neovim's native LSP and would like to explain why and how I made the transition in case other Neovim users like me have been thinking about switching for a long time."
 date: 2023-08-20T10:58:00-04:00
 tags:
+  - "thought"
   - "tech"
   - "vim"
   - "neovim"

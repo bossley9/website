@@ -3,6 +3,7 @@ title: "Random Number Generation"
 description: "How to generate seemingly random numbers computationally using mathematics"
 date: 2021-08-25T20:21:00-07:00
 tags:
+  - "thought"
   - "tech"
 ---
 

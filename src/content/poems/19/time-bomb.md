@@ -1,6 +1,8 @@
 ---
 title: "Time Bomb"
 date: 2019-10-09T18:46:00-04:00
+tags:
+  - "poem"
 ---
 
 It's a funny world we live in

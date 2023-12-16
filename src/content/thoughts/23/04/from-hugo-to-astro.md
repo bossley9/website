@@ -3,6 +3,7 @@ title: "From Hugo to Astro"
 description: "I finally switched my website infrastructure from Hugo to Astro and here's why."
 date: 2023-04-16T23:48:00-07:00
 tags:
+  - "thought"
   - "hugo"
   - "astro"
   - "tech"

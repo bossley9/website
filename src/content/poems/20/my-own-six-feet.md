@@ -2,6 +2,8 @@
 title: "My Own Six Feet"
 date: 2020-04-11T02:43:00-04:00
 description: "A reference to the social distancing rule of the pandemic. Inspired by Naomi Wild's 6 Feet."
+tags:
+  - "poem"
 ---
 
 So suddenly,

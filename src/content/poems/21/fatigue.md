@@ -1,6 +1,8 @@
 ---
 title: "Fatigue"
 date: 2021-03-25T11:31:00-04:00
+tags:
+  - "poem"
 ---
 
 So.

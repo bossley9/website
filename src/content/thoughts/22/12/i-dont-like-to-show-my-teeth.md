@@ -4,6 +4,7 @@ description: "In October of 2019 I broke my front two teeth."
 date: 2022-12-15T13:04:00-07:00
 image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/smile-crown.jpg"
 tags:
+  - "thought"
   - "reflection"
   - "storytime"
   - "dentist"

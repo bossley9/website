@@ -3,6 +3,7 @@ title: "TypeScript Foundations"
 description: "Learn about the fundamentals and core essentials of TypeScript: what it is, why we use it, and explaining the basic language concepts."
 date: 2023-11-06T19:44:00-04:00
 tags:
+  - "thought"
   - "frontend"
   - "tech"
   - "typescript"

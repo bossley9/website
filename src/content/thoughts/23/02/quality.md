@@ -3,6 +3,7 @@ title: "Quality"
 description: "An analysis of the quality of the content I produce."
 date: 2023-02-25T10:16:00-07:00
 tags:
+  - "thought"
   - "reflection"
   - "quality"
 ---

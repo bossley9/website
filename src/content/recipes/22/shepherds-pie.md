@@ -3,6 +3,7 @@ title: "Shepherd's Pie"
 description: "How to make a shepherd's pie"
 date: 2022-08-22T16:57:00-07:00
 tags:
+  - "recipe"
   - "dinner"
   - "vegetarian"
 prep: 20

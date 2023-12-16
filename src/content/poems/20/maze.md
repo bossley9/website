@@ -1,6 +1,8 @@
 ---
 title: "Maze"
 date: 2020-04-05T13:35:00-04:00
+tags:
+  - "poem"
 ---
 
 That cold, dark gaze from a conceptual maze.

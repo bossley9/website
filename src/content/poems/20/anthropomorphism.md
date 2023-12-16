@@ -1,6 +1,8 @@
 ---
 title: "Anthropomorphism"
 date: 2020-04-15T15:10:00-04:00
+tags:
+  - "poem"
 ---
 
 
