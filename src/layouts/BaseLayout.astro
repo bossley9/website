@@ -1,7 +1,13 @@
 ---
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGS, AUTHOR } from "@/_utils/constants";
+import {
+  AUTHOR,
+  BASE_URL,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_TAGS
+  } from "@/_utils/constants";
 
 import "@/assets/styles/main.scss";
 import "@/assets/styles/syntax.scss";
@@ -17,17 +23,24 @@ type Props = {
 const {
   title,
   description = SITE_DESCRIPTION,
-  tags = SITE_TAGS,
+  tags: startTags,
   image,
   minimal = false,
 } = Astro.props;
+
+const tags = Array.isArray(startTags) && startTags.length > 0
+  ? startTags
+  : SITE_TAGS;
 ---
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link rel="manifest" href="/manifest.json" />
 
     <meta name="mobile-web-app-capable" content="yes" />
@@ -36,25 +49,29 @@ const {
 
     <meta name="theme-color" content="#fbfbf8" />
 
-    {
-      minimal ? (
-        <title>{title ?? SITE_TITLE}</title>
-      ) : (
-        <title>{title ? `${title} - ${SITE_TITLE}` : SITE_TITLE}</title>
-      )
-    }
-    <meta name="og:title" content={title ?? SITE_TITLE} />
-    <meta name="twitter:title" content={title ?? SITE_TITLE} />
+    {minimal
+      ? <title>{title || SITE_TITLE}</title>
+      : <title>{title ? `${title} - ${SITE_TITLE}` : SITE_TITLE}</title>}
+    <meta name="og:title" content={title || SITE_TITLE} />
+    <meta name="twitter:title" content={title || SITE_TITLE} />
 
     <link rel="apple-touch-startup-image" href="/favicon/favicon.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="/favicon/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/favicon/favicon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
       href="/favicon/favicon.png"
     />
-    <link rel="shortcut icon" sizes="192x192" href="/favicon/favicon.png" />
+    <link
+      rel="shortcut icon"
+      sizes="192x192"
+      href="/favicon/favicon.png"
+    />
 
     <meta property="og:site_name" content={SITE_TITLE} />
     <meta name="twitter:site" content={SITE_TITLE} />
@@ -70,14 +87,13 @@ const {
 
     <meta name="keywords" content={tags.join(",")} />
 
-    {
-      image && (
+    {image &&
+      (
         <>
           <meta name="og:image" content={image} />
           <meta name="twitter:image" content={image} />
         </>
-      )
-    }
+      )}
 
     <meta name="og:url" content={Astro.url} />
     <link rel="canonical" href={Astro.url} />
@@ -88,7 +104,7 @@ const {
     <link
       rel="alternate"
       type="application/rss+xml"
-      href={new URL("/feed.xml", Astro.site)}
+      href={new URL("/feed.xml", BASE_URL).toString()}
       title={SITE_TITLE}
     />
 

@@ -51,10 +51,7 @@ export function PaginationNav({ index, total, baseUrl }: Props) {
         </>
       )}
       {navIndices.map((calcIndex) => (
-        <li
-          key={calcIndex}
-          {...(calcIndex === index && { className: "active" })}
-        >
+        <li key={calcIndex} className={calcIndex === index ? "active" : ""}>
           <a
             href={calcIndex === 1 ? baseUrl : baseUrl + "/page/" + calcIndex}
             aria-label={`page ${calcIndex}`}
