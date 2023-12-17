@@ -41,7 +41,8 @@ export function getRecipeSlug({ date, title }: RecipeSlugProps) {
 
 type RecPoemSlugProps = { author: string; title: string };
 export function getRecPoemSlug({ author, title }: RecPoemSlugProps) {
-  const slug = slugify(author) + "-" + slugify(title);
+  const lastName = author.substring(author.lastIndexOf(" ") + 1);
+  const slug = slugify(lastName) + "-" + slugify(title);
   return {
     slug,
     url: "/rec-poems/" + slug + "/",
