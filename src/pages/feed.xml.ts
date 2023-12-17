@@ -11,6 +11,8 @@ import { sortByDate } from "@/_utils/sorting";
 import { type AtomFeed, genAtomFeed } from "@/_utils/atom";
 import { markdownIt, getCollection } from "@deps";
 
+export const url = "/feed.xml";
+
 const parser = new markdownIt();
 
 export async function get() {
@@ -42,8 +44,8 @@ export async function get() {
   const feed: AtomFeed = {
     title: SITE_TITLE,
     subtitle: SITE_DESCRIPTION,
-    feedUrl: BASE_URL + "/feed.xml",
-    siteUrl: BASE_URL + "/",
+    feedUrl: new URL(url, BASE_URL).toString(),
+    siteUrl: new URL(BASE_URL).toString(),
     copyright: COPYRIGHT,
     name: AUTHOR,
     email: EMAIL,

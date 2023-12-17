@@ -1,15 +1,16 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
-import data from "@/data/recs/games.json";
-import { type Game, gameListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import data from "@/data/recs/books.json";
+import { type Book, bookListSchema } from "@/_utils/schemas";
+import { fromZodError, ZodError } from "@deps";
 
-export const description = "Video games played on any platform.";
+export const title = "Books";
+export const description = "Print books and audiobooks.";
 
-export function GameSingle() {
-  let gameList: Game[] = [];
+export default function () {
+  let bookList: Book[] = [];
   try {
-    gameList = gameListSchema.parse(data);
+    bookList = bookListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
       throw fromZodError(e);
@@ -18,11 +19,11 @@ export function GameSingle() {
     }
   }
 
-  const current = gameList.find((item) => item.current);
+  const current = bookList.find((item) => item.current);
 
-  const groupedByDate: Record<string, Game[]> = gameList
+  const groupedByDate: Record<string, Book[]> = bookList
     .filter((item) => !item.current)
-    .reduce<Record<string, Game[]>>((acc, item) => {
+    .reduce<Record<string, Book[]>>((acc, item) => {
       const key = item.date;
       if (!acc[key]) {
         acc[key] = [];
@@ -35,20 +36,26 @@ export function GameSingle() {
 
   return (
     <section className="rec-single">
-      <h1>Games</h1>
+      <h1>Books</h1>
       <p>{description}</p>
-      {current && <p>I&#39;m currently playing {current.title}.</p>}
+      {current && (
+        <p>
+          I&#39;m currently reading <i>{current.title}</i> by {current.author}.
+        </p>
+      )}
       {Object.entries(groupedByDate)
         .sort((a, b) => Number(b[0]) - Number(a[0]))
         .map(([year, items]) => (
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol>
-              {items.map(({ url, title, year, rating, note }) => {
+              {items.map(({ isbn, title, author, year, rating, note }) => {
                 return (
-                  <li key={url}>
+                  <li key={isbn}>
                     <span>
-                      {title} ({year})
+                      <a href={`https://isbnsearch.org/isbn/${isbn}`}>
+                        {title} by {author} ({year})
+                      </a>
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

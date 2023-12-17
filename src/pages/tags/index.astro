@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { TagSection } from "@/features/tags/TagSection";
+import TagSection, { title } from "@/features/tags/index";
 import { extractTagsFromContents } from "@/_utils/tags";
 
 const allContent = await Astro.glob("../../content/**/*.md");
 const tags = extractTagsFromContents(allContent);
 ---
 
-<BaseLayout title="Tag Index">
+<BaseLayout title={title}>
   <TagSection tags={tags} />
 </BaseLayout>

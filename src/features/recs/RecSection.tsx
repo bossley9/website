@@ -1,11 +1,13 @@
-import { description as animeDescription } from "./AnimeSingle";
-import { description as articleDescription } from "./ArticleSingle";
-import { description as bookDescription } from "./BookSingle";
-import { description as gameDescription } from "./GameSingle";
-import { description as mangaDescription } from "./MangaSingle";
-import { description as movieDescription } from "./MovieSingle";
-import { description as showDescription } from "./ShowSingle";
-import { description as storyDescription } from "./StorySingle";
+import { description as animeDescription } from "./anime";
+import { description as articleDescription } from "./articles";
+import { description as bookDescription } from "./books";
+import { description as gameDescription } from "./games";
+import { description as mangaDescription } from "./manga";
+import { description as movieDescription } from "./movies";
+import { description as showDescription } from "./shows";
+import { description as storyDescription } from "./stories";
+
+export const title = "Recommendations";
 
 const recList = [
   {
@@ -50,7 +52,7 @@ const recList = [
   },
 ];
 
-export function RecSection() {
+export default function () {
   return (
     <section className="rec-section">
       <h1>Recommendations</h1>

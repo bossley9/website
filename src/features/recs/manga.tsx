@@ -1,15 +1,16 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
-import data from "@/data/recs/books.json";
-import { type Book, bookListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import data from "@/data/recs/manga.json";
+import { type Manga, mangaListSchema } from "@/_utils/schemas";
+import { fromZodError, ZodError } from "@deps";
 
-export const description = "Print books and audiobooks.";
+export const title = "Manga";
+export const description = "Japanese manga and comic books.";
 
-export function BookSingle() {
-  let bookList: Book[] = [];
+export default function () {
+  let mangaList: Manga[] = [];
   try {
-    bookList = bookListSchema.parse(data);
+    mangaList = mangaListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
       throw fromZodError(e);
@@ -18,11 +19,11 @@ export function BookSingle() {
     }
   }
 
-  const current = bookList.find((item) => item.current);
+  const current = mangaList.find((item) => item.current);
 
-  const groupedByDate: Record<string, Book[]> = bookList
+  const groupedByDate: Record<string, Manga[]> = mangaList
     .filter((item) => !item.current)
-    .reduce<Record<string, Book[]>>((acc, item) => {
+    .reduce<Record<string, Manga[]>>((acc, item) => {
       const key = item.date;
       if (!acc[key]) {
         acc[key] = [];
@@ -35,7 +36,7 @@ export function BookSingle() {
 
   return (
     <section className="rec-single">
-      <h1>Books</h1>
+      <h1>Manga</h1>
       <p>{description}</p>
       {current && (
         <p>
@@ -48,13 +49,16 @@ export function BookSingle() {
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol>
-              {items.map(({ isbn, title, author, year, rating, note }) => {
+              {items.map((manga) => {
+                const { url, title, author, rating, note } = manga;
+
+                const startYear =
+                  "run_start" in manga ? manga.run_start : new Date(manga.year);
+
                 return (
-                  <li key={isbn}>
+                  <li key={url}>
                     <span>
-                      <a href={`https://isbnsearch.org/isbn/${isbn}`}>
-                        {title} by {author} ({year})
-                      </a>
+                      {title} by {author} ({startYear.getUTCFullYear()})
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

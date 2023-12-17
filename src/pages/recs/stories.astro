@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { StorySingle, description } from "@/features/recs/StorySingle";
+import StorySingle, { title, description } from "@/features/recs/stories";
 ---
 
-<BaseLayout title="Stories" description={description}>
+<BaseLayout title={title} description={description}>
   <StorySingle />
 </BaseLayout>

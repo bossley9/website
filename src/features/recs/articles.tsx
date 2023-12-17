@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import data from "@/data/recs/articles.json";
 import { type Article, articleListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import { fromZodError, ZodError } from "@deps";
 
+export const title = "Articles";
 export const description = "Blog posts, journal articles, and white papers.";
 
-export function ArticleSingle() {
+export default function () {
   let articleList: Article[] = [];
   try {
     articleList = articleListSchema.parse(data);

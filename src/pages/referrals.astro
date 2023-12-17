@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { Referrals } from "@/features/Referrals";
+import Referrals, { title } from "@/features/referrals";
 ---
 
-<BaseLayout title="Referrals">
+<BaseLayout title={title}>
   <Referrals />
 </BaseLayout>

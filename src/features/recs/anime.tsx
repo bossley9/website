@@ -2,11 +2,12 @@ import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
 import data from "@/data/recs/anime.json";
 import { type Anime, animeListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import { fromZodError, ZodError } from "@deps";
 
+export const title = "Anime";
 export const description = "Japanese animated shows and movies.";
 
-export function AnimeSingle() {
+export default function () {
   let animeList: Anime[] = [];
   try {
     animeList = animeListSchema.parse(data);

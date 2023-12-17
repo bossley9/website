@@ -2,11 +2,12 @@ import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
 import data from "@/data/recs/shows.json";
 import { type Show, showListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import { fromZodError, ZodError } from "@deps";
 
+export const title = "Shows";
 export const description = "Cartoons, TV shows, podcasts, and episodic films.";
 
-export function ShowSingle() {
+export default function () {
   let showList: Show[] = [];
   try {
     showList = showListSchema.parse(data);

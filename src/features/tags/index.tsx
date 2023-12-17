@@ -1,8 +1,10 @@
 import { slugify } from "@/_utils/urls";
 
+export const title = "Tag Index";
+
 export type PageProps = { tags: string[] };
 
-export function TagSection({ tags }: PageProps) {
+export default function ({ tags }: PageProps) {
   return (
     <section className="tag-index">
       <h1>Tag Index</h1>

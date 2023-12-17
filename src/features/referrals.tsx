@@ -1,3 +1,5 @@
+export const title = "Referrals";
+
 type Referral = {
   name: string;
   url: string;
@@ -38,7 +40,7 @@ const referralList: Referral[] = [
   },
 ];
 
-export function Referrals() {
+export default function () {
   return (
     <section className="referrals">
       <h1>Referrals</h1>

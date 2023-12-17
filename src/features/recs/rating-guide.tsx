@@ -1,4 +1,6 @@
-export function RatingGuide() {
+export const title = "Rating Guide";
+
+export default function () {
   return (
     <section>
       <h1>Rating Guide</h1>

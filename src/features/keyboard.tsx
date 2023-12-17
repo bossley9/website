@@ -1,4 +1,6 @@
-export function Keyboard() {
+export const title = "Keyboard";
+
+export default function () {
   return (
     <section className="keyboard">
       <h1>Keyboard</h1>

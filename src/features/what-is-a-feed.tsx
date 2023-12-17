@@ -1,5 +1,9 @@
-type FeedExample = { name: string; url: string };
+import { BASE_URL } from "@/_utils/constants";
 
+export const title = "What is a feed?";
+export const minimal = true;
+
+type FeedExample = { name: string; url: string };
 const feedExamples: FeedExample[] = [
   {
     name: "Youtube",
@@ -15,8 +19,8 @@ const feedExamples: FeedExample[] = [
   },
 ];
 
-type Props = { feedUrl: URL };
-export function WhatIsAFeed({ feedUrl }: Props) {
+export default function () {
+  const feedUrl = new URL("/feed.xml", BASE_URL);
   return (
     <>
       <article className="what-is-a-feed">

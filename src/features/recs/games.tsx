@@ -1,15 +1,16 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
-import data from "@/data/recs/manga.json";
-import { type Manga, mangaListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import data from "@/data/recs/games.json";
+import { type Game, gameListSchema } from "@/_utils/schemas";
+import { fromZodError, ZodError } from "@deps";
 
-export const description = "Japanese manga and comic books.";
+export const title = "Games";
+export const description = "Video games played on any platform.";
 
-export function MangaSingle() {
-  let mangaList: Manga[] = [];
+export default function () {
+  let gameList: Game[] = [];
   try {
-    mangaList = mangaListSchema.parse(data);
+    gameList = gameListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
       throw fromZodError(e);
@@ -18,11 +19,11 @@ export function MangaSingle() {
     }
   }
 
-  const current = mangaList.find((item) => item.current);
+  const current = gameList.find((item) => item.current);
 
-  const groupedByDate: Record<string, Manga[]> = mangaList
+  const groupedByDate: Record<string, Game[]> = gameList
     .filter((item) => !item.current)
-    .reduce<Record<string, Manga[]>>((acc, item) => {
+    .reduce<Record<string, Game[]>>((acc, item) => {
       const key = item.date;
       if (!acc[key]) {
         acc[key] = [];
@@ -35,29 +36,20 @@ export function MangaSingle() {
 
   return (
     <section className="rec-single">
-      <h1>Manga</h1>
+      <h1>Games</h1>
       <p>{description}</p>
-      {current && (
-        <p>
-          I&#39;m currently reading <i>{current.title}</i> by {current.author}.
-        </p>
-      )}
+      {current && <p>I&#39;m currently playing {current.title}.</p>}
       {Object.entries(groupedByDate)
         .sort((a, b) => Number(b[0]) - Number(a[0]))
         .map(([year, items]) => (
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol>
-              {items.map((manga) => {
-                const { url, title, author, rating, note } = manga;
-
-                const startYear =
-                  "run_start" in manga ? manga.run_start : new Date(manga.year);
-
+              {items.map(({ url, title, year, rating, note }) => {
                 return (
                   <li key={url}>
                     <span>
-                      {title} by {author} ({startYear.getUTCFullYear()})
+                      {title} ({year})
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

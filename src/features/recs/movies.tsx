@@ -1,15 +1,17 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/_components/RatingNote";
-import data from "@/data/recs/stories.json";
-import { type Story, storyListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import data from "@/data/recs/movies.json";
+import { type Movie, movieListSchema } from "@/_utils/schemas";
+import { fromZodError, ZodError } from "@deps";
 
-export const description = "Short stories and poems.";
+export const title = "Movies";
+export const description =
+  "Theater movies, documentaries, and extended videos.";
 
-export function StorySingle() {
-  let storyList: Story[] = [];
+export default function () {
+  let movieList: Movie[] = [];
   try {
-    storyList = storyListSchema.parse(data);
+    movieList = movieListSchema.parse(data);
   } catch (e) {
     if (e instanceof ZodError) {
       throw fromZodError(e);
@@ -18,8 +20,8 @@ export function StorySingle() {
     }
   }
 
-  const groupedByDate: Record<string, Story[]> = storyList.reduce<
-    Record<string, Story[]>
+  const groupedByDate: Record<string, Movie[]> = movieList.reduce<
+    Record<string, Movie[]>
   >((acc, item) => {
     const key = item.date;
     if (!acc[key]) {
@@ -31,7 +33,7 @@ export function StorySingle() {
 
   return (
     <section className="rec-single">
-      <h1>Stories</h1>
+      <h1>Movies</h1>
       <p>{description}</p>
       {Object.entries(groupedByDate)
         .sort((a, b) => Number(b[0]) - Number(a[0]))
@@ -39,13 +41,11 @@ export function StorySingle() {
           <Fragment key={year}>
             <h2>{year}</h2>
             <ol>
-              {items.map(({ url, title, author, rating, note }) => {
+              {items.map(({ title, year, rating, note }) => {
                 return (
-                  <li key={url}>
+                  <li key={title + year}>
                     <span>
-                      <a href={url}>
-                        <cite>{title}</cite> by {author}
-                      </a>
+                      {title} ({year})
                     </span>
                     <RatingNote rating={rating} note={note} />
                   </li>

@@ -1,6 +1,8 @@
+export const title = "Memes";
+
 type Props = { years: number[] };
 
-export function MemeSection({ years }: Props) {
+export default function ({ years }: Props) {
   return (
     <section className="meme-section">
       <h1>Memes</h1>
