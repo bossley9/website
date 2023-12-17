@@ -1,4 +1,4 @@
-import { ArticleListItem } from "@/components/ArticleListItem";
+import { ArticleListItem } from "@/_components/ArticleListItem";
 import type { TagMeta } from "@/_utils/tags";
 
 export type PageProps = {

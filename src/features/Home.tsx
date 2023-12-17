@@ -1,5 +1,5 @@
-import { About } from "@/components/About";
-import { ArticleListItem } from "@/components/ArticleListItem";
+import { About } from "@/_components/About";
+import { ArticleListItem } from "@/_components/ArticleListItem";
 import { getThoughtSlug } from "@/_utils/content";
 import type { CollectionEntry } from "@deps";
 

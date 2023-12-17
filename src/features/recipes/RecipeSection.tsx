@@ -1,5 +1,5 @@
-import { ArticleListItem } from "@/components/ArticleListItem";
-import { PaginationNav } from "@/components/PaginationNav";
+import { ArticleListItem } from "@/_components/ArticleListItem";
+import { PaginationNav } from "@/_components/PaginationNav";
 import { getRecipeSlug } from "@/_utils/content";
 import type { CustomPage } from "@/_utils/pagination";
 import type { CollectionEntry } from "@deps";

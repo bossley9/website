@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { RatingNote } from "@/components/RatingNote";
+import { RatingNote } from "@/_components/RatingNote";
 import data from "@/data/recs/books.json";
 import { type Book, bookListSchema } from "@/_utils/schemas";
 import { ZodError, fromZodError } from "@deps";

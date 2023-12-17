@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { RatingNote } from "@/components/RatingNote";
+import { RatingNote } from "@/_components/RatingNote";
 import data from "@/data/recs/manga.json";
 import { type Manga, mangaListSchema } from "@/_utils/schemas";
 import { ZodError, fromZodError } from "@deps";

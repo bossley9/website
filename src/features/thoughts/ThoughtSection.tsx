@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import { ArticleListItem } from "@/components/ArticleListItem";
-import { YearPaginationNav } from "@/components/YearPaginationNav";
+import { ArticleListItem } from "@/_components/ArticleListItem";
+import { YearPaginationNav } from "@/_components/YearPaginationNav";
 import { getThoughtSlug } from "@/_utils/content";
 import type { YearPage } from "@/_utils/pagination";
 import type { CollectionEntry } from "@deps";
