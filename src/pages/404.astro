@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const title = "Page not found"
 ---
 
-<BaseLayout title="Page not found">
+<BaseLayout title={title}>
   <section>
     <h1>Error 404: Page not found</h1>
     <p>
@@ -10,5 +12,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       it or moved it somewhere else.
     </p>
     <p>I rarely delete things from my website :)</p>
+    <p>
+      <a href="/">Go home</a>
+    </p>
   </section>
 </BaseLayout>

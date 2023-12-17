@@ -6,7 +6,7 @@ export function RatingGuide() {
         I rate the content I review on a scale of 0 to 10. Here is a general
         idea of what you can expect:
       </p>
-      <table className="rating-guide">
+      <table>
         <thead>
           <th>Rating</th>
           <th>Description</th>

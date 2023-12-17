@@ -153,11 +153,13 @@ a {
   }
 }
 
+/* globally hide all page anchors */
+/* unless explicitly allowed */
+a.anchor {
+  margin-left: 0.5rem;
+  display: none;
+}
 @mixin heading-anchors {
-  a.anchor {
-    margin-left: 0.5rem;
-    display: none;
-  }
   h1,
   h2,
   h3,
@@ -170,7 +172,7 @@ a {
   }
 }
 
-*:focus {
+*:not(iframe):focus {
   outline-style: dotted;
   outline-width: 2px;
 }

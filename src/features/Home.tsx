@@ -12,9 +12,10 @@ export function Home({ recentThoughts }: PageProps) {
     <>
       <About />
       <section>
-        <h1>Recent Thoughts</h1>
+        <h2>Recent Thoughts</h2>
         <ol className="articlelist">
-          {recentThoughts.map(({ data: { date, title, video } }) => {
+          {recentThoughts.map((thought) => {
+            const { date, title, video } = thought.data;
             const { url } = getThoughtSlug({ date, title });
             return (
               <ArticleListItem

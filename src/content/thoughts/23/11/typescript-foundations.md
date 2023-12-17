@@ -723,14 +723,14 @@ The only way to prevent this error from occurring is careful code review.
 
 If you're having a hard time trying to remember all this information, TypeScript makes really great resources. For one, their handbook is excellent.
 
-https://www.typescriptlang.org/docs/handbook/intro.html
+[https://www.typescriptlang.org/docs/handbook/intro.html](https://www.typescriptlang.org/docs/handbook/intro.html)
 
 They also make their own cheatsheets which are really cool to check out.
 
-https://www.typescriptlang.org/cheatsheets
+[https://www.typescriptlang.org/cheatsheets](https://www.typescriptlang.org/cheatsheets)
 
 And, of course, I highly recommend the book *Effective TypeScript* by Dan Vanderkam. It's a really great resource (as are his blog posts).
 
-https://effectivetypescript.com/
+[https://effectivetypescript.com/](https://effectivetypescript.com/)
 
 **That's it for TypeScript foundations!** This wasn't a fully comprehensive overview of every single feature of TypeScript by any means (I didn't cover classes, enums, or conditional types), but I touched on all the concepts I consider to be very important to understanding TypeScript.
