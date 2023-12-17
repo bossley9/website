@@ -1,7 +1,7 @@
 import { ArticleListItem } from "@/components/ArticleListItem";
 import { PaginationNav } from "@/components/PaginationNav";
-import { getRecipeSlug } from "@/utils/content";
-import type { CustomPage } from "@/utils/pagination";
+import { getRecipeSlug } from "@/_utils/content";
+import type { CustomPage } from "@/_utils/pagination";
 import type { CollectionEntry } from "astro:content";
 
 export type PageProps = { page: CustomPage<CollectionEntry<"recipes">> };

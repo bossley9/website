@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { TagSection } from "@/features/tags/TagSection";
-import { extractTagsFromContents } from "@/utils/tags";
+import { extractTagsFromContents } from "@/_utils/tags";
 
 const allContent = await Astro.glob("../../content/**/*.md");
 const tags = extractTagsFromContents(allContent);

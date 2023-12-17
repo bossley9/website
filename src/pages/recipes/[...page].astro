@@ -5,8 +5,8 @@ import {
   type PageProps,
 } from "@/features/recipes/RecipeSection";
 import { getCollection } from "astro:content";
-import { sortByAlpha } from "@/utils/sorting";
-import { customPagination } from "@/utils/pagination";
+import { sortByAlpha } from "@/_utils/sorting";
+import { customPagination } from "@/_utils/pagination";
 
 export async function getStaticPaths() {
   const recipes = (await getCollection("recipes")).sort((a, b) =>

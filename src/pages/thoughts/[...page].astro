@@ -5,8 +5,8 @@ import {
   type PageProps,
 } from "@/features/thoughts/ThoughtSection";
 import { getCollection } from "astro:content";
-import { sortByDate } from "@/utils/sorting";
-import { thoughtPagination } from "@/utils/pagination";
+import { sortByDate } from "@/_utils/sorting";
+import { thoughtPagination } from "@/_utils/pagination";
 
 export async function getStaticPaths() {
   const thoughts = (await getCollection("thoughts")).sort((a, b) =>

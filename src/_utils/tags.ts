@@ -1,6 +1,6 @@
 import type { MarkdownInstance } from "astro";
-import { sortByDate } from "@/utils/sorting";
-import { getRecipeSlug, getTabSlug, getThoughtSlug } from "@/utils/content";
+import { sortByDate } from "@/_utils/sorting";
+import { getRecipeSlug, getTabSlug, getThoughtSlug } from "@/_utils/content";
 
 export function extractTagsFromContents(
   allContent: MarkdownInstance<Record<string, unknown>>[],

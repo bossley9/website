@@ -1,12 +1,12 @@
 import gameData from "@/data/recs/games.json";
-import { type Game, gameListSchema } from "@/utils/schemas";
+import { type Game, gameListSchema } from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 import {
   getCurrentlyReadingItem,
   getCurrentlyWatchingItem,
   getWatchingItemTitle,
-} from "@/utils/data";
+} from "@/_utils/data";
 
 export function About() {
   const readingItem = getCurrentlyReadingItem();

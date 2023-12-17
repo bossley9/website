@@ -1,4 +1,4 @@
-import { dateSlugify, slugify } from "@/utils/urls";
+import { dateSlugify, slugify } from "@/_utils/urls";
 
 type ThoughtSlugProps = { date: Date; title: string };
 export function getThoughtSlug({ date, title }: ThoughtSlugProps) {

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/anime.json";
-import { type Anime, animeListSchema } from "@/utils/schemas";
+import { type Anime, animeListSchema } from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 

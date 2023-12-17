@@ -1,4 +1,4 @@
-import { slugify } from "@/utils/urls";
+import { slugify } from "@/_utils/urls";
 import type { PageProps } from "@/features/thoughts/ThoughtSingle";
 
 function getMimeType(fileName: string) {

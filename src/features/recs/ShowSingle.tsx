@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/shows.json";
-import { type Show, showListSchema } from "@/utils/schemas";
+import { type Show, showListSchema } from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 

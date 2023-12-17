@@ -1,4 +1,4 @@
-import type { Playlist } from "@/utils/playlists";
+import type { Playlist } from "@/_utils/playlists";
 
 export type PageProps = {
   playlist: Playlist;

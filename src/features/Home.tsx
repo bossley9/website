@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 import { ArticleListItem } from "@/components/ArticleListItem";
-import { getThoughtSlug } from "@/utils/content";
+import { getThoughtSlug } from "@/_utils/content";
 import type { CollectionEntry } from "astro:content";
 
 type PageProps = {

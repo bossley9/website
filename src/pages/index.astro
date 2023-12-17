@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Home } from "@/features/Home";
-import { sortByDate } from "@/utils/sorting";
+import { sortByDate } from "@/_utils/sorting";
 import { getCollection } from "astro:content";
 
 const recentThoughts = (await getCollection("thoughts"))

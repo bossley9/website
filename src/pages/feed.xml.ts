@@ -5,14 +5,14 @@ import {
   EMAIL,
   SITE_DESCRIPTION,
   SITE_TITLE,
-} from "@/constants";
-import { getThoughtSlug } from "@/utils/content";
-import { sortByDate } from "@/utils/sorting";
-import { type AtomFeed, genAtomFeed } from "@/utils/atom";
+} from "@/_utils/constants";
+import { getThoughtSlug } from "@/_utils/content";
+import { sortByDate } from "@/_utils/sorting";
+import { type AtomFeed, genAtomFeed } from "@/_utils/atom";
 import { getCollection } from "astro:content";
-import MarkdownIt from "markdown-it";
+import markdownIt from "markdown-it";
 
-const parser = new MarkdownIt();
+const parser = new markdownIt();
 
 export async function get() {
   const recentThoughts = (await getCollection("thoughts"))

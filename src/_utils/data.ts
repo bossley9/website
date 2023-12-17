@@ -11,7 +11,7 @@ import {
   mangaListSchema,
   type Show,
   showListSchema,
-} from "@/utils/schemas";
+} from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 

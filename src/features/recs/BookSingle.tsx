@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/books.json";
-import { type Book, bookListSchema } from "@/utils/schemas";
+import { type Book, bookListSchema } from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 

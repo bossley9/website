@@ -1,4 +1,4 @@
-import { getObjectEntries } from "@/utils/object";
+import { getObjectEntries } from "@/_utils/object";
 import type { GetStaticPathsResult } from "astro";
 import type { CollectionEntry } from "astro:content";
 

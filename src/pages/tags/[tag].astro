@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { TagSingle, type PageProps } from "@/features/tags/TagSingle";
-import { slugify } from "@/utils/urls";
-import { groupContentsByTag } from "@/utils/tags";
+import { slugify } from "@/_utils/urls";
+import { groupContentsByTag } from "@/_utils/tags";
 
 export async function getStaticPaths() {
   const allContent = await Astro.glob("../../content/**/*.md");

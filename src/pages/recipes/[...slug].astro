@@ -2,7 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { RecipeSingle, type PageProps } from "@/features/recipes/RecipeSingle";
 import { getCollection } from "astro:content";
-import { getRecipeSlug } from "@/utils/content";
+import { getRecipeSlug } from "@/_utils/content";
 
 export async function getStaticPaths() {
   const recipes = await getCollection("recipes");

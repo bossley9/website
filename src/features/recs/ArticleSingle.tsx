@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import data from "@/data/recs/articles.json";
-import { type Article, articleListSchema } from "@/utils/schemas";
+import { type Article, articleListSchema } from "@/_utils/schemas";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 

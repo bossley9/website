@@ -1,4 +1,4 @@
-import { slugify } from "@/utils/urls";
+import { slugify } from "@/_utils/urls";
 
 export type PageProps = { tags: string[] };
 

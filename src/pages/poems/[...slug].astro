@@ -2,7 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { PoemSingle, type PageProps } from "@/features/poems/PoemSingle";
 import { getCollection } from "astro:content";
-import { getPoemSlug } from "@/utils/content";
+import { getPoemSlug } from "@/_utils/content";
 
 export async function getStaticPaths() {
   const poems = await getCollection("poems");

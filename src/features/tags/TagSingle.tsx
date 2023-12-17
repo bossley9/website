@@ -1,5 +1,5 @@
 import { ArticleListItem } from "@/components/ArticleListItem";
-import type { TagMeta } from "@/utils/tags";
+import type { TagMeta } from "@/_utils/tags";
 
 export type PageProps = {
   tag: string;

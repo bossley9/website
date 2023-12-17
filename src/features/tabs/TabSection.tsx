@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { ArticleListItem } from "@/components/ArticleListItem";
 import { PaginationNav } from "@/components/PaginationNav";
-import { getTabSlug } from "@/utils/content";
-import type { CustomPage } from "@/utils/pagination";
+import { getTabSlug } from "@/_utils/content";
+import type { CustomPage } from "@/_utils/pagination";
 import type { CollectionEntry } from "astro:content";
 
 export type PageProps = { page: CustomPage<CollectionEntry<"tabs">> };

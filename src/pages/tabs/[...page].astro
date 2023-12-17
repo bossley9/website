@@ -2,8 +2,8 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { TabSection, type PageProps } from "@/features/tabs/TabSection";
 import { getCollection } from "astro:content";
-import { sortByDate } from "@/utils/sorting";
-import { customPagination } from "@/utils/pagination";
+import { sortByDate } from "@/_utils/sorting";
+import { customPagination } from "@/_utils/pagination";
 
 export async function getStaticPaths() {
   const tabs = (await getCollection("tabs")).sort((a, b) =>

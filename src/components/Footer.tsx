@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { COPYRIGHT } from "@/constants";
+import { COPYRIGHT } from "@/_utils/constants";
 
 const footerLinks: { href: string; name: string }[] = [
   {

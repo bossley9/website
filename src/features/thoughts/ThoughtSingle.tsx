@@ -1,4 +1,4 @@
-import { slugify } from "@/utils/urls";
+import { slugify } from "@/_utils/urls";
 import type { CollectionEntry } from "astro:content";
 import type { ReactNode } from "react";
 

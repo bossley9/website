@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { ArticleListItem } from "@/components/ArticleListItem";
 import { YearPaginationNav } from "@/components/YearPaginationNav";
-import { getThoughtSlug } from "@/utils/content";
-import type { YearPage } from "@/utils/pagination";
+import { getThoughtSlug } from "@/_utils/content";
+import type { YearPage } from "@/_utils/pagination";
 import type { CollectionEntry } from "astro:content";
 
 export type PageProps = { page: YearPage<CollectionEntry<"thoughts">> };
