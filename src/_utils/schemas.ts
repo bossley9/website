@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "@deps";
 
 const ratingSchema = z.number().gte(-1).lte(10);
 const dateSchema = z.string().regex(/\d\d\d\d/);

@@ -1,5 +1,5 @@
 import { slugify } from "@/_utils/urls";
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "@deps";
 
 export type PageProps = {
   tab: CollectionEntry<"tabs">;

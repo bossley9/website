@@ -1,11 +1,10 @@
 import { RecipeTime } from "@/features/recipes/RecipeTime";
 import { slugify } from "@/_utils/urls";
-import type { CollectionEntry } from "astro:content";
-import type { ReactNode } from "react";
+import type { CollectionEntry } from "@deps";
 
 export type PageProps = {
   recipe: CollectionEntry<"recipes">;
-  children?: ReactNode;
+  children?: JSX.Element;
 };
 
 export function RecipeSingle({ recipe, children }: PageProps) {

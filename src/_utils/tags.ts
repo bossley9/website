@@ -1,4 +1,4 @@
-import type { MarkdownInstance } from "astro";
+import type { MarkdownInstance } from "@deps";
 import { sortByDate } from "@/_utils/sorting";
 import { getRecipeSlug, getTabSlug, getThoughtSlug } from "@/_utils/content";
 

@@ -9,8 +9,7 @@ import {
 import { getThoughtSlug } from "@/_utils/content";
 import { sortByDate } from "@/_utils/sorting";
 import { type AtomFeed, genAtomFeed } from "@/_utils/atom";
-import { getCollection } from "astro:content";
-import markdownIt from "markdown-it";
+import { markdownIt, getCollection } from "@deps";
 
 const parser = new markdownIt();
 

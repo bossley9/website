@@ -1,8 +1,7 @@
 import { Fragment } from "react";
 import data from "@/data/recs/articles.json";
 import { type Article, articleListSchema } from "@/_utils/schemas";
-import { ZodError } from "zod";
-import { fromZodError } from "zod-validation-error";
+import { ZodError, fromZodError } from "@deps";
 
 export const description = "Blog posts, journal articles, and white papers.";
 

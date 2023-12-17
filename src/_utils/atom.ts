@@ -1,4 +1,4 @@
-import { escape } from "html-escaper";
+import { escape } from "@deps";
 
 export type AtomFeed = {
   title: string;
@@ -17,7 +17,6 @@ export type AtomFeed = {
 };
 
 export function genAtomFeed(feed: AtomFeed) {
-  const now = new Date();
   return [
     '<?xml version="1.0" encoding="utf-8"?>',
     '<feed xmlns="http://www.w3.org/2005/Atom">',
@@ -25,7 +24,7 @@ export function genAtomFeed(feed: AtomFeed) {
     `<subtitle>${feed.subtitle}</subtitle>`,
     `<link href="${feed.feedUrl}" rel="self"/>`,
     `<link href="${feed.siteUrl}"/>`,
-    `<updated>${now.toISOString()}</updated>`,
+    `<updated>${new Date().toISOString()}</updated>`,
     `<id>${feed.siteUrl}</id>`,
     ...(feed.copyright ? [`<rights>${feed.copyright}</rights>`] : []),
     "<author>",
@@ -34,6 +33,7 @@ export function genAtomFeed(feed: AtomFeed) {
     "</author>",
     ...feed.items
       .map((item) => {
+        const escapedContent = escape(item.content);
         return [
           "<entry>",
           `<title>${item.title}</title>`,
@@ -41,7 +41,7 @@ export function genAtomFeed(feed: AtomFeed) {
           `<updated>${item.date.toISOString()}</updated>`,
           `<id>${item.permalink}</id>`,
           '<content type="html">',
-          escape(item.content),
+          escapedContent,
           "</content>",
           "</entry>",
         ];

@@ -1,10 +1,9 @@
 import { slugify } from "@/_utils/urls";
-import type { CollectionEntry } from "astro:content";
-import type { ReactNode } from "react";
+import type { CollectionEntry } from "@deps";
 
 export type PageProps = {
   thought: CollectionEntry<"thoughts">;
-  children?: ReactNode;
+  children?: JSX.Element;
 };
 
 export function ThoughtSingle({ thought, children }: PageProps) {

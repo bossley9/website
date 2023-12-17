@@ -2,8 +2,7 @@ import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/anime.json";
 import { type Anime, animeListSchema } from "@/_utils/schemas";
-import { ZodError } from "zod";
-import { fromZodError } from "zod-validation-error";
+import { ZodError, fromZodError } from "@deps";
 
 export const description = "Japanese animated shows and movies.";
 

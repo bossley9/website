@@ -4,7 +4,7 @@ import {
   RecPoemSingle,
   type PageProps,
 } from "@/features/rec-poems/RecPoemSingle";
-import { getCollection } from "astro:content";
+import { getCollection } from "@deps";
 import { getRecPoemSlug } from "@/_utils/content";
 
 export async function getStaticPaths() {

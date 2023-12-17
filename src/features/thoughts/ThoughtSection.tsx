@@ -3,7 +3,7 @@ import { ArticleListItem } from "@/components/ArticleListItem";
 import { YearPaginationNav } from "@/components/YearPaginationNav";
 import { getThoughtSlug } from "@/_utils/content";
 import type { YearPage } from "@/_utils/pagination";
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "@deps";
 
 export type PageProps = { page: YearPage<CollectionEntry<"thoughts">> };
 

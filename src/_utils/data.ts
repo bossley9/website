@@ -12,8 +12,7 @@ import {
   type Show,
   showListSchema,
 } from "@/_utils/schemas";
-import { ZodError } from "zod";
-import { fromZodError } from "zod-validation-error";
+import { ZodError, fromZodError } from "@deps";
 
 export function getCurrentlyReadingItem(): Book | Manga | null {
   let bookList: Book[] = [];

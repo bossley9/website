@@ -2,8 +2,7 @@ import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/manga.json";
 import { type Manga, mangaListSchema } from "@/_utils/schemas";
-import { ZodError } from "zod";
-import { fromZodError } from "zod-validation-error";
+import { ZodError, fromZodError } from "@deps";
 
 export const description = "Japanese manga and comic books.";
 

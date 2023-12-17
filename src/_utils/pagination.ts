@@ -1,6 +1,5 @@
 import { getObjectEntries } from "@/_utils/object";
-import type { GetStaticPathsResult } from "astro";
-import type { CollectionEntry } from "astro:content";
+import type { GetStaticPathsResult, CollectionEntry } from "@deps";
 
 export type CustomPage<T> = {
   data: T[];

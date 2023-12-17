@@ -2,8 +2,7 @@ import { Fragment } from "react";
 import { RatingNote } from "@/components/RatingNote";
 import data from "@/data/recs/movies.json";
 import { type Movie, movieListSchema } from "@/_utils/schemas";
-import { ZodError } from "zod";
-import { fromZodError } from "zod-validation-error";
+import { ZodError, fromZodError } from "@deps";
 
 export const description =
   "Theater movies, documentaries, and extended videos.";

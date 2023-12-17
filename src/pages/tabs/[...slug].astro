@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { TabSingle, type PageProps } from "@/features/tabs/TabSingle";
-import { getCollection } from "astro:content";
+import { getCollection } from "@deps";
 import { getTabSlug } from "@/_utils/content";
 
 export async function getStaticPaths() {

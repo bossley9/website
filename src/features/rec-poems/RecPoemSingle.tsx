@@ -1,4 +1,4 @@
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "@deps";
 
 export type PageProps = {
   poem: CollectionEntry<"rec-poems">;

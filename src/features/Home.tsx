@@ -1,7 +1,7 @@
 import { About } from "@/components/About";
 import { ArticleListItem } from "@/components/ArticleListItem";
 import { getThoughtSlug } from "@/_utils/content";
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "@deps";
 
 type PageProps = {
   recentThoughts: CollectionEntry<"thoughts">[];
