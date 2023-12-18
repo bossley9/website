@@ -1,8 +1,0 @@
-{{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    <p><time datetime={{ .Date.UTC.Format .Site.Params.FeedDateFmt }}>{{ .Date.Format .Site.Params.ThoughtDateFmt }}</time></p>
-    {{ with .Description }}<p><i>{{ . }}</i></p>{{ end }}
-    <pre class="poem">{{ .RawContent }}</pre>
-  </article>
-{{ end }}

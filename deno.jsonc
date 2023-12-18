@@ -1,0 +1,34 @@
+{
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "deno task check && deno task clean && deno task lume && nix build && cp -r ./result/* ./dist && ./scripts/compress.sh ./dist",
+    "check": "deno lint",
+    "clean": "mkdir -p ./dist/ && chmod -Rv 777 ./dist/ && rm -rf ./dist/ && rm -f result",
+    "serve": "deno task lume -s",
+    "review": "sh ./scripts/spellcheck.sh",
+    "deploy": "deno task build && rsync -av -e 'ssh -p 24' --chmod=775 --no-owner --no-group --no-times --delete \"./dist/\" \"admin@sam.bossley.xyz:/var/www/sam.bossley.xyz\""
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "imports": {
+    "react": "./plugins/react.ts",
+    "lume/": "https://deno.land/x/lume@v2.0.1/",
+    "@deps": "./deps.ts",
+    "@/": "./src/",
+    "@layouts/": "./src/_includes/layouts/",
+    "@static/": "./src/_static/"
+  },
+  "lint": {
+    "exclude": [
+      "dist"
+    ]
+  },
+  "fmt": {
+    "exclude": [
+      "**/*.md"
+    ]
+  }
+}

@@ -1,0 +1,356 @@
+[
+  {
+    "type": "anime/movie",
+    "title_translated": "Jujutsu Kaisen 0",
+    "year": "2021",
+    "date": "2023",
+    "rating": 7.0,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Mobile Suit Gundam SEED",
+    "seasons": 1,
+    "run_start": "2002-10-05",
+    "run_end": "2003-09-27",
+    "date": "2023",
+    "rating": 7.8,
+    "note": "Athrun is best boy."
+  },
+  {
+    "type": "anime",
+    "title": "JoJo no Kimyo na Boken",
+    "title_translated": "Jojo's Bizarre Adventure",
+    "seasons": 6,
+    "run_start": "2012-10-05",
+    "run_end": "2022-12-01",
+    "date": "2022",
+    "rating": 6,
+    "note": "Sub. Parts are recorded as seasons. 6 parts seen."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Jujutsu Kaisen",
+    "seasons": 2,
+    "run_start": "2020-10-03",
+    "run_end": "2021-03-27",
+    "date": "2021",
+    "rating": 8.0,
+    "current": true,
+    "note": "Sub. Currently airing. I originally rated this 7.5 but have since reconsidered after watching season 2."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Banana Fish",
+    "seasons": 1,
+    "run_start": "2018-07-05",
+    "run_end": "2018-12-20",
+    "date": "2021",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Kanon",
+    "seasons": 1,
+    "run_start": "2006-10-05",
+    "run_end": "2007-03-15",
+    "date": "2021",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Sailor Moon",
+    "seasons": 1,
+    "run_start": "1992-03-07",
+    "run_end": "1993-02-27",
+    "date": "2021",
+    "rating": 6,
+    "note": "Sub."
+  },
+  {
+    "type": "anime/movie",
+    "title_translated": "Redline",
+    "year": "2009",
+    "date": "2019",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title": "Asobi Asobase",
+    "title_translated": "Why Don't We Play Together?",
+    "seasons": 1,
+    "run_start": "2018-07-08",
+    "run_end": "2018-09-23",
+    "date": "2019",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime/movie",
+    "title": "Taifu no Noruda",
+    "title_translated": "Typhoon Noruda",
+    "year": "2015",
+    "date": "2019",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Sword Art Online",
+    "seasons": 2,
+    "run_start": "2012-07-08",
+    "run_end": "2014-12-20",
+    "date": "2017",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime/movie",
+    "title": "Eiga Koe no Katachi",
+    "title_translated": "A Silent Voice",
+    "year": "2016",
+    "date": "2017",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "K Project",
+    "seasons": 1,
+    "run_start": "2012-10-05",
+    "run_end": "2012-12-28",
+    "date": "2017",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime/movie",
+    "title": "Kimi No Na Wa",
+    "title_translated": "Your Name",
+    "year": "2016",
+    "date": "2017",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "No Game No Life",
+    "seasons": 1,
+    "run_start": "2014-04-09",
+    "run_end": "2014-06-25",
+    "date": "2017",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "A Certain Scientific Railgun",
+    "seasons": 1,
+    "run_start": "2009-10-03",
+    "run_end": "2010-03-20",
+    "date": "2017",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "A Certain Magical Index",
+    "seasons": 3,
+    "run_start": "2008-10-04",
+    "run_end": "2019-04-05",
+    "date": "2021",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Overlord",
+    "seasons": 3,
+    "run_start": "2015-07-07",
+    "run_end": "2020-09-22",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub. 2 seasons seen."
+  },
+  {
+    "type": "anime",
+    "title_translated": "RWBY",
+    "seasons": 1,
+    "run_start": "2013-07-18",
+    "run_end": "2020-09-22",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub. 1 season seen."
+  },
+  {
+    "type": "anime",
+    "title_translated": "The Devil is a Part-Timer",
+    "seasons": 1,
+    "run_start": "2013-04-04",
+    "run_end": "2013-06-27",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Is This a Zombie?",
+    "seasons": 2,
+    "run_start": "2011-01-11",
+    "run_end": "2012-06-07",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Re:Zero",
+    "subtitle": "Starting Life in Another World",
+    "seasons": 2,
+    "run_start": "2016-04-04",
+    "run_end": "2021-03-24",
+    "date": "2016",
+    "rating": 8.8,
+    "note": "Sub. 2 seasons seen."
+  },
+  {
+    "type": "anime",
+    "title_translated": "ReLife",
+    "seasons": 1,
+    "run_start": "2016-06-02",
+    "run_end": "2016-09-24",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Kabaneri of the Iron Fortress",
+    "seasons": 1,
+    "run_start": "2016-04-08",
+    "run_end": "2016-06-30",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Clannad: After Story",
+    "seasons": 1,
+    "run_start": "2007-10-04",
+    "run_end": "2008-03-27",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title": "Shutainzu Gēto",
+    "title_translated": "Steins;Gate",
+    "seasons": 1,
+    "run_start": "2011-04-06",
+    "run_end": "2011-09-14",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title": "Anaza",
+    "title_translated": "Another",
+    "seasons": 1,
+    "run_start": "2012-01-10",
+    "run_end": "2012-03-27",
+    "date": "2016",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "anime",
+    "title_translated": "Clannad",
+    "seasons": 1,
+    "run_start": "2007-10-04",
+    "run_end": "2008-03-27",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title": "Kono Subarashii Sekai ni Shukufuku o!",
+    "title_translated": "Konosuba",
+    "seasons": 2,
+    "run_start": "2016-01-14",
+    "run_end": "2017-03-16",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title": "Boku dake ga Inai Machi",
+    "title_translated": "Erased",
+    "seasons": 1,
+    "run_start": "2016-01-08",
+    "run_end": "2016-03-25",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title": "Wanpanman",
+    "title_translated": "One Punch Man",
+    "seasons": 2,
+    "run_start": "2015-10-05",
+    "run_end": "2019-07-02",
+    "date": "2016",
+    "rating": -1,
+    "note": "Sub. 1 season seen."
+  },
+  {
+    "type": "anime",
+    "title": "Difuragu!",
+    "title_translated": "D-Frag!",
+    "seasons": 1,
+    "run_start": "2014-01-06",
+    "run_end": "2014-03-24",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Angel Beats!",
+    "seasons": 1,
+    "run_start": "2010-04-03",
+    "run_end": "2010-06-26",
+    "date": "2016",
+    "rating": -1,
+    "note": "Dub."
+  },
+  {
+    "type": "anime",
+    "title": "Mirai Nikki",
+    "title_translated": "Future Diary",
+    "seasons": 1,
+    "run_start": "2011-10-10",
+    "run_end": "2012-04-16",
+    "date": "2016",
+    "rating": 8,
+    "note": "Sub."
+  },
+  {
+    "type": "anime",
+    "title_translated": "Mobile Suit Gundam: The 08th MS Team",
+    "seasons": 1,
+    "run_start": "1996-01-25",
+    "run_end": "1999-07-25",
+    "date": "2015",
+    "rating": -1,
+    "note": "Dub."
+  }
+]

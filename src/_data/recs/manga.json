@@ -1,0 +1,74 @@
+[
+  {
+    "type": "manga",
+    "author": "Natsuhiko Kyougoku",
+    "title": "Box of Spirits and Goblins",
+    "year": "1995",
+    "url": "https://manganato.com/manga-py960733",
+    "date": "2023",
+    "volumes": 1,
+    "rating": -1,
+    "note": "Manga adaptation of the novel of the same name. Still have not finished."
+  },
+  {
+    "type": "manga",
+    "author": "Natsuhiko Kyougoku",
+    "title": "Summer of the Ubume",
+    "year": "1994",
+    "url": "https://mangatoto.com/series/26675/the-summer-of-the-ubume",
+    "date": "2023",
+    "volumes": 1,
+    "rating": 6.8,
+    "note": "Manga adaptation of the novel of the same name."
+  },
+  {
+    "type": "manga",
+    "author": "Sui Ishida",
+    "title": "Tokyo Ghoul: Re",
+    "run_start": "2014-10-16",
+    "run_end": "2018-07-05",
+    "url": "https://bato.to/chapter/1586905",
+    "date": "2021",
+    "volumes": 16,
+    "rating": 7.5,
+    "note": ""
+  },
+  {
+    "type": "manga",
+    "author": "Sui Ishida",
+    "title": "Tokyo Ghoul",
+    "run_start": "2011-09-08",
+    "run_end": "2014-09-18",
+    "url": "https://mangadex.tv/chapter/manga-od955386/chapter-1",
+    "date": "2021",
+    "volumes": 14,
+    "rating": 8.5,
+    "note": ""
+  },
+  {
+    "type": "manga",
+    "author": "Hirohiko Araki",
+    "title": "Steel Ball Run",
+    "titleaddon": "Jojo's Bizarre Adventure",
+    "run_start": "2004-01-19",
+    "run_end": "2011-04-19",
+    "url": "https://jojomanga.com/manga/jojos-bizarre-adventure-part-7-steel-ball-run-chapter-1",
+    "date": "2020",
+    "volumes": 24,
+    "rating": 7.5,
+    "note": ""
+  },
+  {
+    "type": "manga",
+    "author": "Hirohiko Araki",
+    "title": "Stone Ocean",
+    "titleaddon": "Jojo's Bizarre Adventure",
+    "run_start": "2000-01-01",
+    "run_end": "2003-04-21",
+    "url": "https://jojomanga.com/manga/jojos-bizarre-adventure-part-6-stone-ocean-chapter-1",
+    "date": "2020",
+    "volumes": 17,
+    "rating": 7.5,
+    "note": ""
+  }
+]

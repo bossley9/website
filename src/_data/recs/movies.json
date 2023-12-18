@@ -1,0 +1,1753 @@
+[
+  {
+    "type": "movie",
+    "title": "Three Thousand Years of Longing",
+    "year": "2022",
+    "director": "George Miller",
+    "producer": "George Miller and Doug Mitchell",
+    "date": "2023",
+    "rating": 5.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Percy Jackson & the Olympians: The Lightning Thief",
+    "year": "2010",
+    "director": "Chris Columbus",
+    "producer": "Karen Rosenfelt and Chris Columbus and Michael Barnathan and Mark Radcliffe",
+    "date": "2023",
+    "rating": 6.2,
+    "note": "This movie was a lot worse than I remember. I guess it wasn't a completely terrible movie if you never read the book."
+  },
+  {
+    "type": "movie",
+    "title": "The Hobbit: An Unexpected Journey",
+    "year": "2012",
+    "director": "Peter Jackson",
+    "producer": "Carolynne Cunningham and Zane Weiner and Fran Walsh and Peter Jackson",
+    "date": "2023",
+    "rating": 6.9,
+    "note": "Pretty decent if you're a fan of the book like I am... except for all the CGI."
+  },
+  {
+    "type": "movie",
+    "title": "Dungeons & Dragons: Honor Among Thieves",
+    "year": "2023",
+    "director": "Jonathan Goldstein and John Francis Daley",
+    "producer": "Jeremy Latcham and Brian Goldner and Nick Meyer",
+    "date": "2023",
+    "rating": 7.6,
+    "note": "A great movie even if you have no DND knowledge. If you do have DND knowledge, you'll understand a lot of small name references and implicit natural 20 or natural 1 rolls."
+  },
+  {
+    "type": "movie",
+    "title": "Suzume",
+    "year": "2022",
+    "director": "Manakoto Shinkai",
+    "producer": "Kōichirō Itō and Genki Kawamura",
+    "date": "2023",
+    "rating": 6.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Wokatoi: Love is Hard for Otaku",
+    "year": "2020",
+    "director": "Yūichi Fukuda",
+    "producer": "Hiroki Wakamatsu",
+    "date": "2023",
+    "rating": 4.8,
+    "note": "I didn't expect this movie to turn into a musical."
+  },
+  {
+    "type": "movie",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": "2023",
+    "director": "Joaquim Dos Santos and Kemp Powers and Justin K. Thompson",
+    "producer": "Phil Lord and Christopher Miller and Amy Pascal and Avi Arad and Christina Steinberg",
+    "date": "2023",
+    "rating": 8.4,
+    "note": "The subplots haven't yet been resolved so this is the highest rating I can give... which is already very high."
+  },
+  {
+    "type": "movie",
+    "title": "Inspector Gadget",
+    "year": "1999",
+    "director": "David Kellogg",
+    "producer": "Roger Birnbaum and Andy Heyward and Jordan Kerner",
+    "date": "2023",
+    "rating": 4.6,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Men in Black 3",
+    "year": "2012",
+    "director": "Barry Sonnenfield",
+    "producer": "Walter F. Parkes and Laurie MacDonald",
+    "date": "2023",
+    "rating": 7.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Men in Black II",
+    "year": "2002",
+    "director": "Barry Sonnenfield",
+    "producer": "Walter F. Parkes and Laurie MacDonald",
+    "date": "2023",
+    "rating": 6.7,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "John Wick: Chapter 4",
+    "year": "2023",
+    "director": "Chad Stahelski",
+    "producer": "Basil Iwanyk and Erica Lee and Chad Stahelski",
+    "date": "2023",
+    "rating": 7.2,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Men in Black",
+    "year": "1997",
+    "director": "Barry Sonnenfield",
+    "producer": "Walter F. Parkes and Laurie MacDonald",
+    "date": "2023",
+    "rating": 7.2,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Terminator: Dark Fate",
+    "year": "2019",
+    "director": "Tim Miller",
+    "producer": "James Cameron and David Ellison",
+    "date": "2023",
+    "rating": 6.9,
+    "note": "I was incredibly impressed with the opening scene, specifically with the de-aging."
+  },
+  {
+    "type": "movie",
+    "title": "Ant-Man",
+    "year": "2015",
+    "director": "Peyton Reed",
+    "producer": "Kevin Feige",
+    "date": "2023",
+    "rating": 7.2,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Terminator Genisys",
+    "year": "2015",
+    "director": "Alan Taylor",
+    "producer": "David Ellison and Dana Goldberg",
+    "date": "2023",
+    "rating": 4.7,
+    "note": "Lazy character writing and editing - did an AI write this movie? Skynet must actually be real."
+  },
+  {
+    "type": "movie",
+    "title": "Terminator Salvation",
+    "year": "2009",
+    "director": "Joseph McGinty Nichol",
+    "producer": "Derek Anderson and Moritz Borman and Victor Kubicek and Jeffrey Silver",
+    "date": "2023",
+    "rating": 5.8,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Terminator 3: Rise of the Machines",
+    "year": "2003",
+    "director": "Jonathan Mostow",
+    "producer": "Hal Lieberman and Colin Wilson and Mario F. Kassar and Andrew G. Vajna and Joel B. Michaels",
+    "date": "2023",
+    "rating": 6.1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "See How They Run",
+    "year": "2022",
+    "director": "Tom George",
+    "producer": "Damian Jones and Gina Carter",
+    "date": "2023",
+    "rating": 6.8,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Terminator 2: Judgement Day",
+    "year": "1991",
+    "director": "James Cameron",
+    "producer": "James Cameron",
+    "date": "2023",
+    "rating": 7.4,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Terminator",
+    "year": "1984",
+    "director": "James Cameron",
+    "producer": "Gale Anne Hurd",
+    "date": "2023",
+    "rating": 6.6,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Puss in Boots: The Last Wish",
+    "year": "2022",
+    "director": "Joel Crawford",
+    "producer": "Mark Swift",
+    "date": "2022",
+    "rating": 6.6,
+    "note": "Artstyle is very cool. Especially Puss' fight with death."
+  },
+  {
+    "type": "movie",
+    "title": "Brick",
+    "year": "2005",
+    "director": "Rian Johnson",
+    "producer": "Ram Bergman and Mark G. Mathis",
+    "date": "2022",
+    "rating": 7.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Glass Onion: A Knives Out Mystery",
+    "year": "2022",
+    "director": "Rian Johnson",
+    "producer": "Rian Johnson and Ram Bergman",
+    "date": "2022",
+    "rating": 6.9,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Now You See Me 2",
+    "year": "2016",
+    "director": "Jon M. Chu",
+    "producer": "Alex Kurtzman and Roberto Orci and Bobby Cohen",
+    "date": "2022",
+    "rating": 4.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Now You See Me",
+    "year": "2013",
+    "director": "Louis Leterrier",
+    "producer": "Alex Kurtzman and Roberto Orci and Bobby Cohen",
+    "date": "2022",
+    "rating": 7.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Naked Gun",
+    "year": "1988",
+    "director": "David Zucker",
+    "producer": "Robert K. Weiss",
+    "date": "2022",
+    "rating": 7.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Twisted Pair",
+    "year": "2018",
+    "director": "Neil Breen",
+    "producer": "Neil Breen",
+    "date": "2022",
+    "rating": 2.0,
+    "note": "Programmable virtual reality - the corrupt version."
+  },
+  {
+    "type": "movie",
+    "title": "Black Panther: Wakanda Forever",
+    "year": "2022",
+    "director": "Ryan Coogler",
+    "producer": "Kevin Feige and Nate Moore",
+    "date": "2022",
+    "rating": 8.2,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Batman",
+    "year": "2022",
+    "director": "Matt Reeves",
+    "producer": "Dylan Clark and Matt Reeves",
+    "date": "2022",
+    "rating": 7.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "year": "2022",
+    "director": "Sam Raimi",
+    "producer": "Kevin Feige",
+    "date": "2022",
+    "rating": 6.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Thor: Love and Thunder",
+    "year": "2022",
+    "director": "Taika Waititi",
+    "producer": "Kevin Feige and Brad Winderbaum",
+    "date": "2022",
+    "rating": 5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Groundhog Day",
+    "year": "1993",
+    "director": "Harold Ramis",
+    "producer": "Trevor Albert and Harold Ramis",
+    "date": "2022",
+    "rating": 6.5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Sonic the Hedgehog",
+    "year": "2020",
+    "director": "Jeff Fowler",
+    "producer": "Neal H. Moritz and Toby Ascher and Toru Nakahara and Takeshi Ito",
+    "date": "2022",
+    "rating": 6,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Bruce Almighty",
+    "year": "2003",
+    "director": "Tom Shadyac",
+    "producer": "Tom Shadyac and Jim Carrey and James D. Brubaker and Michael Bostick and Steve Koren and Mark O'Keefe",
+    "date": "2022",
+    "rating": 5,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Ace Ventura: Pet Detective",
+    "year": "1994",
+    "director": "Tom Shadyac",
+    "producer": "James G. Robinson",
+    "date": "2022",
+    "rating": 4,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Everything Everywhere All At Once",
+    "year": "2022",
+    "director": "Dan Kwan and Daniel Scheinert",
+    "producer": "Anthony Russo and Joe Russo and Mike Larocca and Dan Kwan and Daniel Scheinert and Jonathan Wang and Michelle Yeoh",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "No Time to Die",
+    "year": "2021",
+    "director": "Cary Joji Fukunaga",
+    "producer": "Michael G. Wilson and Barbara Broccoli",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Spectre",
+    "year": "2015",
+    "director": "Sam Mendes",
+    "producer": "Michael G. Wilson and Barbara Broccoli",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Free Guy",
+    "year": "2021",
+    "director": "Shawn Levy",
+    "producer": "Ryan Reynolds and Shawn Levy and Sarah Schechter and Greg Berlanti and Adam Kolbrenner",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Jason Bourne",
+    "year": "2016",
+    "director": "Paul Greengrass",
+    "producer": "Frank Marshall and Jeffrey M. Weiner and Ben Smith and Matt Damon and Paul Greengrass and Gregory Goodman",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Bourne Legacy",
+    "year": "2012",
+    "director": "Tony Gilroy",
+    "producer": "Frank Marshall and Patrick Crowley and Jeffrey M. Weiner and Ben Smith",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Bourne Ultimatum",
+    "year": "2007",
+    "director": "Paul Greengrass",
+    "producer": "Frank Marshall and Patrick Crowley and Paul L. Sandberg",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Bourne Supremacy",
+    "year": "2004",
+    "director": "Paul Greengrass",
+    "producer": "Frank Marshall and Patrick Crowley and Paul L. Sandberg",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Bourne Identity",
+    "year": "2002",
+    "director": "Doug Liman",
+    "producer": "Doug Liman and Patrick Crowley and Richard N. Gladstein",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Skyfall",
+    "year": "2012",
+    "director": "Sam Mendes",
+    "producer": "Michael G. Wilson and Barbara Broccoli",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Quantum of Solace",
+    "year": "2008",
+    "director": "Marc Foster",
+    "producer": "Michael G. Wilson and Barbara Broccoli",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Casino Royale",
+    "year": "2006",
+    "director": "Martin Campbell",
+    "producer": "Michael G. Wilson and Barbara Broccoli",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "F9",
+    "year": "2021",
+    "director": "Justin Lin",
+    "producer": "Neal H. Moritz and Vin Diesel and Justin Lin and Jeffrey Kirschenbaum and Joe Roth and Clayton Townsend and Samantha Vincent",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Fate of the Furious",
+    "year": "2017",
+    "director": "F. Gary Gray",
+    "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell and Chris Morgan",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Furious 7",
+    "year": "2015",
+    "director": "Justin Lin",
+    "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell",
+    "date": "2022",
+    "rating": -1,
+    "note": "RIP Paul Walker. It really took me by surprise."
+  },
+  {
+    "type": "movie",
+    "title": "Fast & Furious 6",
+    "year": "2013",
+    "director": "Justin Lin",
+    "producer": "Neal H Moritz and Vin Diesel and Clayton Townsend",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Fast Five",
+    "year": "2011",
+    "director": "Justin Lin",
+    "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Fast & Furious",
+    "year": "2009",
+    "director": "Justin Lin",
+    "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Fast and the Furious: Tokyo Drift",
+    "year": "2006",
+    "director": "Justin Lin",
+    "producer": "Neal H Moritz",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "2 Fast 2 Furious",
+    "year": "2003",
+    "director": "John Singleton",
+    "producer": "Neal H Moritz",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Fast and the Furious",
+    "year": "2001",
+    "director": "Rob Cohen",
+    "producer": "Neal H Moritz",
+    "date": "2022",
+    "rating": -1,
+    "note": "I started watching the fourth movie thinking it was the first movie. They need to fix their naming convention."
+  },
+  {
+    "type": "movie",
+    "title": "Transformers: The Last Knight",
+    "year": "2017",
+    "director": "Michael Bay",
+    "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Weathering with You",
+    "year": "2019",
+    "director": "Makoto Shinkai",
+    "producer": "Wakana Okamura and Kinue Ito",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Transformers: Age of Extinction",
+    "year": "2014",
+    "director": "Michael Bay",
+    "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Transformers: Dark of the Moon",
+    "year": "2011",
+    "director": "Michael Bay",
+    "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Transformers: Revenge of the Fallen",
+    "year": "2009",
+    "director": "Michael Bay",
+    "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Transformers",
+    "year": "2007",
+    "director": "Michael Bay",
+    "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Venom: Let There Be Carnage",
+    "year": "2021",
+    "director": "Andy Serkis",
+    "producer": "Avi Arad and Matt Tolmach and Amy Pascal and Kelly Marcel and Tom Hardy and Hutch Parker",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Venom",
+    "year": "2018",
+    "director": "Ruben Fleischer",
+    "producer": "Jeff Pinkner and Scott Rosenberg and Kelly Marcel",
+    "date": "2022",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Murder On The Orient Express",
+    "year": "2017",
+    "director": "Kenneth Branagh",
+    "producer": "Ridley Scott and Mark Gordon and Simon Kinberg and Kenneth Branagh and Judy Hofflund and Michael Schaefer",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Unrest",
+    "year": "2017",
+    "director": "Jennifer Brea",
+    "producer": "Jennifer Brea and Lindsey Dryden and Patricia E. Fillespie and Alysa Nahmias and Deborah Hoffmann",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Suicide Squad",
+    "year": "2021",
+    "director": "James Gunn",
+    "producer": "Charles Roven and Peter Safran",
+    "date": "2021",
+    "rating": -1,
+    "note": "Not sure if it's better or worse than the 2016 version."
+  },
+  {
+    "type": "movie",
+    "title": "Bee Movie",
+    "year": "2007",
+    "director": "Simon J Smith and Steve Hickner",
+    "producer": "Jerry Seinfield and Andy Robin and Barry Marder and Spike Feresten",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Our Times",
+    "year": "2015",
+    "director": "Frankie Chen",
+    "producer": "Yeh Ju-fen",
+    "date": "2021",
+    "rating": -1,
+    "note": "My favorite part is when the guy gets hit by a truck."
+  },
+  {
+    "type": "movie",
+    "title": "Shazam",
+    "year": "2019",
+    "director": "David Sandberg",
+    "producer": "Peter Safran",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Vivarium",
+    "year": "2019",
+    "director": "Lorcan Finnegan",
+    "producer": "John McDonnell and Brendan McCarthy",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Tenet",
+    "year": "2020",
+    "director": "Christopher Nolan",
+    "producer": "Emma Thomas and Christopher Nolan",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Wonder Woman 1984",
+    "year": "2020",
+    "director": "Patty Jenkins",
+    "producer": "Charles Roven and Deborah Snyder and Zack Snyder and Patty Jenkins and Gal Gadot and Stephen Jones",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Dying of the Light",
+    "year": "2014",
+    "director": "Paul Schrader",
+    "producer": "Scott Clayton and Gary A. Hirsch and Todd Williams",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Breakfast at Tiffany's",
+    "year": "1961",
+    "director": "Blake Edwards",
+    "producer": "Martin Junrow and Richard Shepherd",
+    "date": "2021",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Mother",
+    "year": "2009",
+    "director": "Bong Joon-ho",
+    "producer": "Choi Jae-won and Seo Woo-sik",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Annihilation",
+    "year": "2018",
+    "director": "Alex Garland",
+    "producer": "Scott Rudin and Andrew Macdonald and Allon Reich and Eli Bush",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Isle of Dogs",
+    "year": "2018",
+    "director": "Wes Anderson",
+    "producer": "Wes Anderson and Scott Rudin and Steven Rales and Jeremy Dawson",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "War for the Planet of the Apes",
+    "year": "2017",
+    "director": "Matt Reeves",
+    "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Dawn of the Planet of the Apes",
+    "year": "2014",
+    "director": "Matt Reeves",
+    "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Rise of the Planet of the Apes",
+    "year": "2011",
+    "director": "Rupert Wyatt",
+    "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Panic Room",
+    "year": "2002",
+    "director": "David Fincher",
+    "producer": "Ceán Chaffin and Judy Hofflund and David Koepp and Gavin Polone",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Lighthouse",
+    "year": "2019",
+    "director": "Robert Eggers",
+    "producer": "Rodrigo Teixeira and Jay Van Hoy and Robert Eggers and Lourenço Sant' Anna and Youree Henley",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Godzilla: King of the Monsters",
+    "year": "2019",
+    "director": "Michael Dougherty",
+    "producer": "Mary Parent and Alex Garcia and Thomas Tull and Jon Jashni and Brian Rogers",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Knives Out",
+    "year": "2019",
+    "director": "Rian Johnson",
+    "producer": "Ram Bergman and Rian Johnson",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Kung Fu Panda 3",
+    "year": "2016",
+    "director": "Jennifer Yuh Nelson and Alessandro Carloni",
+    "producer": "Melissa Cobb",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Memories of Murder",
+    "year": "2003",
+    "director": "Bong Joon-ho",
+    "producer": "Cha Seung-jae",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Kung Fu Panda 2",
+    "year": "2011",
+    "director": "Jennifer Yuh Nelson",
+    "producer": "Melissa Cobb",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Kung Fu Panda",
+    "year": "2008",
+    "director": "John Stevenson and Mark Osborne",
+    "producer": "Melissa Cobb",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "How to Train Your Dragon 3: The Hidden World",
+    "year": "2019",
+    "director": "Dean DeBlois",
+    "producer": "Bonnie Arnold and Brad Lewis",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "How to Train Your Dragon 2",
+    "year": "2014",
+    "director": "Dean DeBlois",
+    "producer": "Bonnie Arnold",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "How to Train Your Dragon",
+    "year": "2010",
+    "director": "Chris Sanders and Dean DeBlois",
+    "producer": "Bonnie Arnold",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Basic Instinct",
+    "year": "1992",
+    "director": "Paul Verhoeven",
+    "producer": "Alan Marshall",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek: Nemesis",
+    "year": "2002",
+    "director": "Stuart Baird",
+    "producer": "Rick Berman",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek: Insurrection",
+    "year": "1998",
+    "director": "Jonathan Frakes",
+    "producer": "Rick Berman",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek: First Contact",
+    "year": "1996",
+    "director": "Jonathan Frakes",
+    "producer": "Rick Berman and Marty Hornstein and Peter Lauritson",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek Generations",
+    "year": "1994",
+    "director": "David Carson",
+    "producer": "Rick Berman",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Princess Mononoke",
+    "year": "1997",
+    "director": "Hayao Miyazaki",
+    "producer": "Toshio Suzuki",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Velocipastor",
+    "year": "2017",
+    "director": "Brendan Steere",
+    "producer": "Brandon Taylor and Jesse Gouldsbury and Brendan Steere",
+    "date": "2020",
+    "rating": -1,
+    "note": "I believe Brendan Steere is making a sequel..."
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek VI: The Undiscovered Country",
+    "year": "1991",
+    "director": "Nicholas Meyer",
+    "producer": "Ralph Winter and Steven-Charles Jaffe",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek V: The Final Frontier",
+    "year": "1989",
+    "director": "William Shatner",
+    "producer": "Harve Bennett",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek IV: The Voyage Home",
+    "year": "1986",
+    "director": "Leonard Nimoy",
+    "producer": "Harve Bennett",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek III: The Search for Spock",
+    "year": "1984",
+    "director": "Leonard Nimoy",
+    "producer": "Harve Bennett",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek II: The Wrath of Khan",
+    "year": "1982",
+    "director": "Nicholas Meyer",
+    "producer": "Robert Sallin",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Star Trek: The Motion Picture",
+    "year": "1979",
+    "director": "Robert Wise",
+    "producer": "Gene Roddenberry",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Sinbad: Legend of the Seven Seas",
+    "year": "2003",
+    "director": "Tim Johnson and Patrick Gilmore",
+    "producer": "Mireille Soria and Jeffrey Katzenberg",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Host",
+    "year": "2006",
+    "director": "Bong Joon-ho",
+    "producer": "Choi Yong-bae",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Prince of Egypt",
+    "year": "1998",
+    "director": "Brenda Chapman and Steve Hickner and Simon Wells",
+    "producer": "Penney Finkelman Cox and Sandra Rabins",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Treasure Planet",
+    "year": "2002",
+    "director": "Ron Clements and John Musker",
+    "producer": "Ron Clements and John Musker and Rob Edwards",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Road to El Dorado",
+    "year": "2000",
+    "director": "Eric \"Bibo\" Bergeron and Don Paul",
+    "producer": "Bonne Radford and Brook Breton",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Emperor's New Groove",
+    "year": "2000",
+    "director": "Mark Dindal",
+    "producer": "Randy Fullmer",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Lady Bird",
+    "year": "2017",
+    "director": "Greta Gerwig",
+    "producer": "Scott Rudin and Eli Bush and Evelyn O'Neill",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Prestige",
+    "year": "2006",
+    "director": "Christopher Nolan",
+    "producer": "Emma Thomas and Aaron Ryder and Christopher Nolan",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Aquaman",
+    "year": "2018",
+    "director": "James Wan",
+    "producer": "Peter Safran and Rob Cowan",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Frozen 2",
+    "year": "2019",
+    "director": "Chris Buck and Jennifer Lee",
+    "producer": "Peter Del Vecho",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Gemini Man",
+    "year": "2019",
+    "director": "Ang Lee",
+    "producer": "Jerry Bruckheimer and David Ellison and Dana Goldberg and Don Granger",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Howl's Moving Castle",
+    "year": "2004",
+    "director": "Hayao Miyazaki",
+    "producer": "Toshio Suzuki",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Captain Marvel",
+    "year": "2019",
+    "director": "Anna Boden and Ryan Fleck",
+    "producer": "Kevin Feige",
+    "date": "2020",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Okja",
+    "year": "2017",
+    "director": "Bong Joon-ho",
+    "producer": "Dede Gardner and Jeremy Kleiner and Lewis Taewan Kim and Dooho Choi and Seo Woo-sik and Bong Joon-ho and Ted Sarandos",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "John Wick: Chapter 3 - Parabellum",
+    "year": "2019",
+    "director": "Chad Stahelski",
+    "producer": "Basil Iwanyk and Erica Lee",
+    "date": "2019",
+    "rating": 7.4,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "John Wick: Chapter 2",
+    "year": "2017",
+    "director": "Chad Stahelski",
+    "producer": "Basil Iwanyk and Erica Lee",
+    "date": "2019",
+    "rating": 7.7,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "John Wick",
+    "year": "2014",
+    "director": "Chad Stahelski",
+    "producer": "Basil Iwanyk and David Leitch and Eva Longoria and Michael Witherill",
+    "date": "2019",
+    "rating": 7.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Christmas Mail",
+    "year": "2010",
+    "director": "John Murlowski",
+    "producer": "John Murlowski",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Leo the Lion",
+    "year": "2005",
+    "director": "Mario Cambi",
+    "producer": "Mario Cambi",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Snowpiercer",
+    "year": "2013",
+    "director": "Bong Joon-ho",
+    "producer": "Jeong Tae-sung and Steven Nam and Park Chan-wook and Lee Tae-hun",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Parasite",
+    "year": "2019",
+    "director": "Bong Joon-ho",
+    "producer": "Kwak Sin-ae and Moon Yang-kwon and Bong Joon-ho and Jang Young-hwan",
+    "date": "2019",
+    "rating": 9.2,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Joker",
+    "year": "2019",
+    "director": "Todd Phillips",
+    "producer": "Todd Phillips and Bradley Cooper and Emma Tillinger Koskoff",
+    "date": "2019",
+    "rating": 6,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Castle in the Sky",
+    "year": "1986",
+    "director": "Hayao Miyazaki",
+    "producer": "Hayao Miyazaki and Isao Takahata",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Captain Battle: Legacy War",
+    "year": "2013",
+    "director": "David Palmieri",
+    "producer": "David Palmieri",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "SPF-18",
+    "year": "2018",
+    "director": "Alex Israel",
+    "producer": "Kirsten Smith and China Chow and Alex Waite",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Super 8",
+    "year": "2011",
+    "director": "J. J. Abrams",
+    "producer": "J. J. Abrams and Bryan Burk and Steven Spielberg",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Revenant",
+    "year": "2015",
+    "director": "Alejandro G. Iñárritu",
+    "producer": "Arnon Milchan and Steve Golin and Alejandro G. Iñárritu and Mary Parent and Keith Redmon and James W. Skotchdopole",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Office Space",
+    "year": "1999",
+    "director": "Mike Judge",
+    "producer": "Daniel Rappaport and Michael Rotenberg",
+    "date": "2019",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": "2018",
+    "director": "Bob Persichetti and Peter Ramsey and Rodney Rothman",
+    "producer": "Avi Arad and Amy Pascal and Phil Lord and Christopher Miller and Christina Steinberg",
+    "date": "2019",
+    "rating": 9.0,
+    "note": "An absolutely stunning movie."
+  },
+  {
+    "type": "movie",
+    "title": "American Psycho",
+    "year": "2000",
+    "director": "Mary Harron",
+    "producer": "Edward R. Pressman and Chris Hanley and Christian Halsey Solomon",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Zodiac",
+    "year": "2007",
+    "director": "David Fincher",
+    "producer": "Mike Medavoy and Arnold W. Messer and Cean Chaffin and Bradley J. Fischer and James Vanderbilt",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Blade Runner 2049",
+    "year": "2017",
+    "director": "Denis Villeneuve",
+    "producer": "Andrew A. Koskove and Broderick Johnson and Bud Yorkin and Cynthia Sikes Yorkin",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Blade Runner",
+    "year": "1982",
+    "director": "Ridley Scott",
+    "producer": "Michael Deeley",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Bird Box",
+    "year": "2018",
+    "director": "Susanne Bier",
+    "producer": "Dylan Clark and Chris Morgan and Clayton Townsend",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Incredibles 2",
+    "year": "2018",
+    "director": "Brad Bird",
+    "producer": "John Walker and Nicole Paradis Grindle",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Coco",
+    "year": "2018",
+    "director": "Lee Unkrich",
+    "producer": "Darla K. Anderson",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Insomnia",
+    "year": "2002",
+    "director": "Christopher Nolan",
+    "producer": "Paul Junger Witt and Edward L. McDonnel and Broderick Johnson and Andrew S. Kosove",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Truman Show",
+    "year": "1998",
+    "director": "Peter Weir",
+    "producer": "Scott Rudin and Andrew Niccol and Edward S. Feldman and Adam Schroeder",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Gone Girl",
+    "year": "2014",
+    "director": "David Fincher",
+    "producer": "Arnon Milchan and Joshua Donan and Reese Witherspoon and Cean Chaffin",
+    "date": "2018",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "It",
+    "year": "2017",
+    "director": "Andy Muschietti",
+    "producer": "Roy Lee and Dan Lin and Seth Grahame-Smith and David Katzenberg and Barbara Muschietti",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Arrival",
+    "year": "2016",
+    "director": "Denis Villeneuve",
+    "producer": "Shawn Levy and Dan Levine and Aaron Ryder and David Linde",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Wonder Woman",
+    "year": "2017",
+    "director": "Patty Jenkins",
+    "producer": "Charles Roven and Deborah Snyder and Zach Snyder and Richard Suckle",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Guardians of the Galaxy Vol. 2",
+    "year": "2017",
+    "director": "James Gunn",
+    "producer": "Kevin Feige",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Doctor Strange",
+    "year": "2016",
+    "director": "Scott Derrickson",
+    "producer": "Kevin Feige",
+    "date": "2016",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Rogue One: A Star Wars Story",
+    "year": "2016",
+    "director": "Gareth Edwards",
+    "producer": "Kathleen Kennedy and Allison Shearmur and Simon Emanuel",
+    "date": "2016",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "origtitle": "Sseo-ni",
+    "title": "Sunny",
+    "year": "2011",
+    "director": "Hyeong-Cheol Kang",
+    "producer": "Ahn Byeong-ki and Ahn In-ki",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Labyrinth",
+    "year": "1986",
+    "director": "Jim Henson",
+    "producer": "Eric Rattray",
+    "date": "2010",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Over the Hedge",
+    "year": "2006",
+    "director": "Tim Johnson and Karey Kirkpatrick",
+    "producer": "Bonnie Arnold",
+    "date": "2006",
+    "rating": -1,
+    "note": "One of the funniest children's movies I've ever seen still to this day."
+  },
+  {
+    "type": "movie",
+    "title": "Zathura",
+    "year": "2005",
+    "director": "Jon Favreau",
+    "producer": "William Teitler and Scott Kroopf and Michael De Luca",
+    "date": "2005",
+    "rating": -1,
+    "note": "This movie was my childhood."
+  },
+  {
+    "type": "movie",
+    "title": "Ratatouille",
+    "year": "2008",
+    "director": "Brad Bird",
+    "producer": "Brad Lewis",
+    "date": "2008",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Interstellar",
+    "year": "2014",
+    "director": "Christopher Nolan",
+    "producer": "Emma Thomas and Christopher Nolan and Lynda Obst",
+    "date": "2014",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Tropic Thunder",
+    "year": "2008",
+    "director": "Ben Stiller",
+    "producer": "Ben Stiller and Stuart Cornfeld and Eric McLeod",
+    "date": "2017",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Sneakers",
+    "year": "1992",
+    "director": "Phil Aldin Robinson",
+    "producer": "Lawrence Lasker and Walter Parkes",
+    "date": "2014",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "I, Robot",
+    "year": "2004",
+    "director": "Alex Proyas",
+    "producer": "Laurence Mark and John Davis and Topher Dow and Wyck Godfrey",
+    "date": "2014",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Memento",
+    "year": "2000",
+    "director": "Christopher Nolan",
+    "producer": "Suzanne Todd and Jennifer Todd",
+    "date": "2014",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Oblivion",
+    "year": "2013",
+    "director": "Joseph Kosinski",
+    "producer": "Peter Chemin and Dylan Clark and Duncan Henderson and Joseph Kosinski and Barry Levine",
+    "date": "2013",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Inception",
+    "year": "2010",
+    "director": "Christopher Nolan",
+    "producer": "Emma Thomas and Christopher Nolan",
+    "date": "2013",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Galaxy Quest",
+    "year": "1999",
+    "director": "Dean Parisot",
+    "producer": "Mark Johnson and Charles Newirth",
+    "date": "2010",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Captain America: The First Avenger",
+    "year": "2011",
+    "director": "Joe Johnston",
+    "producer": "Kevin Feige",
+    "date": "2011",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": "2003",
+    "director": "Peter Jackson",
+    "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
+    "date": "2010",
+    "rating": 7.7,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
+    "director": "Peter Jackson",
+    "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
+    "date": "2010",
+    "rating": 8.4,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": "2001",
+    "director": "Peter Jackson",
+    "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh and Tim Sanders",
+    "date": "2010",
+    "rating": 8.0,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Mission: Impossible - Ghost Protocol",
+    "year": "2011",
+    "director": "Brad Bird",
+    "producer": "Tom Cruise and J. J. Abram and Bryan Burk",
+    "date": "2011",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Avatar",
+    "year": "2009",
+    "director": "James Cameron",
+    "producer": "James Cameron and Jon Landau",
+    "date": "2009",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Dark Knight Rises",
+    "year": "2012",
+    "director": "Christopher Nolan",
+    "producer": "Charles Roven and Emma Thomas and Christopher Nolan",
+    "date": "2012",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Dark Knight",
+    "year": "2008",
+    "director": "Christopher Nolan",
+    "producer": "Charles Roven and Emma Thomas and Christopher Nolan",
+    "date": "2008",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Batman Begins",
+    "year": "2005",
+    "director": "Christopher Nolan",
+    "producer": "Charles Roven and Emma Thomas and Larry Franco",
+    "date": "2008",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Shrek",
+    "year": "2001",
+    "director": "Andrew Adamson and Vicky Jenson",
+    "producer": "Aron Warner and John H. Williams and Jeffrey Katzenberg",
+    "date": "2003",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "Iron Man",
+    "year": "2008",
+    "director": "Jon Favreau",
+    "producer": "Avi Arad and Kevin Feige",
+    "date": "2008",
+    "rating": -1,
+    "note": ""
+  },
+  {
+    "type": "movie",
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "director": "Frank Darabont",
+    "producer": "Niki Marvin",
+    "date": "2010",
+    "rating": -1,
+    "note": ""
+  }
+]
