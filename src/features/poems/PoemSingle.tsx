@@ -6,6 +6,7 @@ export type PageProps = {
 
 export function PoemSingle({ poem }: PageProps) {
   const { title, date, description } = poem.data;
+  const content = poem.body;
 
   return (
     <article className="poem-single">
@@ -18,7 +19,7 @@ export function PoemSingle({ poem }: PageProps) {
           <i>{description}</i>
         </p>
       )}
-      <pre>{poem.body.trimStart()}</pre>
+      <pre>{content.trimStart()}</pre>
     </article>
   );
 }

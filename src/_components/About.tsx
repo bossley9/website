@@ -1,6 +1,6 @@
 import gameData from "@/data/recs/games.json";
 import { type Game, gameListSchema } from "@/_utils/schemas";
-import { ZodError, fromZodError } from "@deps";
+import { fromZodError, ZodError } from "@deps";
 import {
   getCurrentlyReadingItem,
   getCurrentlyWatchingItem,

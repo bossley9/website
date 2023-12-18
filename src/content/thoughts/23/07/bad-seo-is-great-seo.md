@@ -41,7 +41,7 @@ When I first started pouring more content onto my website and social media accou
     <meta name="keywords" content="sam,sam bossley,website,tech,frontend" />
     ```
 3. Add a `robots.txt` file to your website root with bot crawling rules. This allows bots (Google, Bing, Microsoft) to look at your webpages and put them into their search engine results.
-    ```
+    ```plaintext
     User-agent: *
     Allow: /
     ```
@@ -55,7 +55,7 @@ Starting in 2022 and continuing until 2023, I began to receive a steady increase
 I finally decided to pull the plug.
 
 1. Obfuscate my email. This won't suppress all bots but it will filter out a majority of them.
-    ```
+    ```plaintext
     // instead of
     john.doe@gmail.com
     // try
@@ -63,7 +63,7 @@ I finally decided to pull the plug.
     ```
 2. Disable most of my public social media accounts, or private them. I don't use a majority of them anyways.
 3. Remove all bot traffic except maybe a few search engines. I will likely remove the remaining ones if I get tired of them.
-    ```git-commit
+    ```plaintext
     commit 994f9ba0ac8f61fe9a9505ac278d95494f51181f
     Author: Sam Bossley <bossley.samuel@gmail.com>
     Date:   Tue Jul 11 11:21:41 2023 -0400

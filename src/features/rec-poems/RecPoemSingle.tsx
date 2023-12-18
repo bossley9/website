@@ -6,6 +6,7 @@ export type PageProps = {
 
 export function RecPoemSingle({ poem }: PageProps) {
   const { title, author, note, year } = poem.data;
+  const content = poem.body;
   return (
     <article className="poem-single">
       <h1>
@@ -13,7 +14,7 @@ export function RecPoemSingle({ poem }: PageProps) {
       </h1>
       {note && <p>{note}</p>}
       {year && <p>Written in {year}.</p>}
-      <pre>{poem.body.trimStart()}</pre>
+      <pre>{content.trimStart()}</pre>
       <br />
       <small>
         I do not claim ownership for any of this writing. I only host it here

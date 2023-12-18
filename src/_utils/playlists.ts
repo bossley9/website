@@ -1,4 +1,4 @@
-export type Playlist = { file: string; comment?: string }[];
+import type { Playlist } from "@/_types/posts";
 
 export function parsePlaylist(data: string): Playlist {
   return data

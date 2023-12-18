@@ -13,14 +13,13 @@
   },
   "lint": {
     "exclude": [
-      "dist",
-      ".astro"
+      ".astro",
+      "dist"
     ]
   },
   "fmt": {
     "exclude": [
-      "doc/",
-      "src/content/"
+      "**/*.md"
     ]
   }
 }

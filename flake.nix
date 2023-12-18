@@ -43,7 +43,7 @@
 
         resume = pkgs.stdenv.mkDerivation {
           name = "resume";
-          src = ./src/resume;
+          src = ./src/_resume;
           buildInputs = with pkgs; [ texlive.combined.scheme-full ];
           buildPhase = ''
             mkdir -p $out

@@ -1,4 +1,4 @@
-import type { Playlist } from "@/_utils/playlists";
+import type { Playlist } from "@/_types/posts";
 
 export type PageProps = {
   playlist: Playlist;
@@ -12,7 +12,7 @@ export function MemeSingle({ playlist, year }: PageProps) {
       <ol>
         {playlist.map(({ file, comment }) => (
           <li key={file}>
-            <a href={file}>{comment ?? file}</a>
+            <a href={file}>{comment || file}</a>
           </li>
         ))}
       </ol>

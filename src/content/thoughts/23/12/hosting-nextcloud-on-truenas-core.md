@@ -55,7 +55,7 @@ In *Storage* > *Pools*, press the three dots next to the root dataset and press 
 
 We also need to create sub-datasets under the newly created Nextcloud dataset for each category of data Nextcloud stores. Create four sub-datasets with the following properties:
 
-```
+```plaintext
 nextcloud-data:
   config:
     Compression level: LZ4
@@ -77,7 +77,7 @@ We need to set the proper owners of each dataset.
 
 First, we will create a MySQL user. Go to *Account* > *Users* and press **Add**. Fill in the following user information:
 
-```
+```plaintext
 Full Name: mysql
 Username: mysql
 User ID: 88
@@ -90,7 +90,7 @@ Then press **Submit**.
 
 Go back to *Storage* > *Pools* and press **Edit Permissions** next to each sub-dataset created earlier. Make the following changes to dataset ownership. You may need to check an **Apply User** and an **Apply Group** checkbox for each:
 
-```
+```plaintext
 nextcloud-data:
   config:
     User: www
@@ -172,7 +172,7 @@ Next, we will configure MariaDB, our database of choice. I've chosen MariaDB bec
 
 In `/usr/local/etc/mysql/my.cnf`, change the socket:
 
-```
+```plaintext
 socket = /tmp/mysql.sock
 ```
 
@@ -186,7 +186,7 @@ mysql_secure_installation --socket=/tmp/mysql.sock
 
 You will need to answer a few prompts during the secure installation:
 
-```
+```plaintext
 Enter current password for root (enter for none): # enter the password we set earlier
 Switch to unix_socket authentication [Y/n] y
 Change the root password? [Y/n] y
@@ -227,7 +227,7 @@ cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini
 
 Then edit `/usr/local/etc/php.ini` to configure basic PHP settings:
 
-```dosini
+```ini
 memory_limit = 512M
 post_max_size = 1999M
 cgi.fix_pathinfo = 1
@@ -246,7 +246,7 @@ opcache.jit_buffer_size = 128M
 
 Then tune PHP-FPM settings in `/usr/local/etc/php-fpm.d/www.conf`:
 
-```dosini
+```ini
 pm = dynamic
 pm.max_children = 120
 pm.start_servers = 12
@@ -288,7 +288,7 @@ crontab -u www -e
 
 Then add the following job:
 
-```
+```plaintext
 */5 * * * * /usr/local/bin/php -f /usr/local/www/nextcloud/cron.php
 ```
 
@@ -298,7 +298,7 @@ We can now configure the webserver. I've chosen Caddy because the configuration 
 
 Edit `/usr/local/etc/caddy/Caddyfile` and add the following server configuration.
 
-```
+```plaintext
 YOUR_JAIL_IP_HERE, drive.domain.com {
     root * /usr/local/www/nextcloud
     file_server
@@ -354,7 +354,7 @@ We want to configure caching with Redis to increase performance.
 
 First, edit `/usr/local/etc/redis.conf`:
 
-```
+```plaintext
 bind 127.0.0.1
 port 0
 unixsocket /var/run/redis/redis.sock
@@ -371,7 +371,7 @@ pw usermod www -G redis
 
 We also need to enable APCu, our local caching mechanism. Edit `/usr/local/etc/php/ext-20-apcu.ini` and add the following:
 
-```
+```plaintext
 apc.enabled=1
 apc.enable_cli=1
 ```
@@ -380,7 +380,7 @@ apc.enable_cli=1
 
 Finally, we can set up the Nextcloud admin account. Navigate back to the jail IP in your browser and fill in the following information:
 
-```
+```plaintext
 Username: ncadmin
 Password: # some secure password you will remember!
 Data folder: /mnt/data
@@ -423,7 +423,7 @@ There are a few adjustments we can take to ensure our instance is properly harde
 
 We can harden our FreeBSD jail by inserting the following into `/etc/sysctl.conf`:
 
-```
+```plaintext
 security.bsd.see_other_uids=0
 security.bsd.see_other_gids=0
 security.bsd.unprivileged_read_msgbuf=0
@@ -448,7 +448,7 @@ Go to https://myaccount.google.com/ > *Security* > *How you sign in to Google* >
 
 Then go to `http://YOUR_JAIL_IP/index.php/settings/admin` and scroll down to the *Email server* section. Type in the following information:
 
-```
+```plaintext
 Send mode: SMTP
 Encryption: None/STARTTLS
 From address: noreply@drive.domain.com

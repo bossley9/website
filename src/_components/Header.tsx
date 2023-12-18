@@ -3,8 +3,8 @@ import { SITE_TITLE } from "@/_utils/constants";
 type Props = { currentUrl: URL };
 
 export function Header({ currentUrl }: Props) {
-  const getClasses = (path: string): string | undefined => {
-    return currentUrl.pathname.startsWith(path) ? "active" : undefined;
+  const getClasses = (path: string): string => {
+    return currentUrl.pathname.startsWith(path) ? "active" : "";
   };
 
   return (

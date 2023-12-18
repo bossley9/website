@@ -5,9 +5,10 @@ export type PageProps = {
   tab: CollectionEntry<"tabs">;
 };
 
-export function TabSingle({ tab }: PageProps) {
+export default function ({ tab }: PageProps) {
   const { title, date, tags, bandcamp, soundcloud, spotify, youtube } =
     tab.data;
+  const content = tab.body;
 
   const mapKeyItems = {
     ["/"]: "slide up",
@@ -63,7 +64,8 @@ export function TabSingle({ tab }: PageProps) {
       </ul>
       <pre>
         {mapKey}
-        {tab.body}
+        {"\n"}
+        {content.trimStart()}
       </pre>
     </article>
   );
