@@ -1,6 +1,21 @@
 import { getObjectEntries } from "@/_utils/object";
 import type { GetStaticPathsResult, CollectionEntry } from "@deps";
 
+export function groupEntriesByYear<T extends CollectionEntry<"thoughts">>(
+  entries: T[],
+): [number, T[]][] {
+  const groupedEntries = entries.reduce<Record<number, T[]>>((acc, val) => {
+    const key = val.data.date.getUTCFullYear();
+    if (acc[key]) {
+      acc[key] = [...(acc[key] || []), val];
+    } else {
+      acc[key] = [val];
+    }
+    return acc;
+  }, {});
+  return getObjectEntries(groupedEntries).sort(([a], [b]) => b - a);
+}
+
 export type CustomPage<T> = {
   data: T[];
   currentPage: number;
@@ -37,24 +52,10 @@ export type YearPage<T> = {
   years: number[];
 };
 
-type ThoughtsByYear = Record<number, CollectionEntry<"thoughts">[]>;
 export function thoughtPagination(
   data: CollectionEntry<"thoughts">[],
 ): GetStaticPathsResult {
-  const initialThoughtsByYear: ThoughtsByYear = {};
-  const thoughtsByYear: ThoughtsByYear = data.reduce((acc, val) => {
-    const key = val.data.date.getUTCFullYear();
-    if (acc[key]) {
-      acc[key] = [...(acc[key] ?? []), val];
-    } else {
-      acc[key] = [val];
-    }
-    return acc;
-  }, initialThoughtsByYear);
-
-  const sortedPages = getObjectEntries(thoughtsByYear).sort(
-    ([a], [b]) => b - a,
-  );
+  const sortedPages = groupEntriesByYear(data);
   const years = sortedPages.map(([year]) => year);
 
   return sortedPages.map(([year, collection], i) => {
