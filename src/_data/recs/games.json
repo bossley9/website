@@ -85,6 +85,18 @@
   },
   {
     "type": "game",
+    "title": "Barony",
+    "year": "2015",
+    "developer": "Turning Wheel LLC",
+    "publisher": "Turning Wheel LLC",
+    "platform": "Desktop",
+    "url": "https://www.baronygame.com/",
+    "date": "2021",
+    "note": "",
+    "rating": 7.3
+  },
+  {
+    "type": "game",
     "title": "Genshin Impact",
     "year": "2020",
     "developer": "miHoYo",

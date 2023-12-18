@@ -1,6 +1,16 @@
 [
   {
     "type": "movie",
+    "title": "The Hobbit: The Desolation of Smaug",
+    "year": "2013",
+    "director": "Peter Jackson",
+    "producer": "Carolynne Cunningham and Zane Weiner and Fran Walsh and Peter Jackson",
+    "date": "2023",
+    "rating": 7.1,
+    "note": ""
+  },
+  {
+    "type": "movie",
     "title": "Three Thousand Years of Longing",
     "year": "2022",
     "director": "George Miller",
