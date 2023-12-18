@@ -13,42 +13,42 @@ export const title = "Recommendations";
 const recList = [
   {
     title: "Anime",
-    description: animeDescription.replace(/\.$/, ""),
+    description: animeDescription,
     slug: "/recs/anime",
   },
   {
     title: "Articles",
-    description: articleDescription.replace(/\.$/, ""),
+    description: articleDescription,
     slug: "/recs/articles",
   },
   {
     title: "Books",
-    description: bookDescription.replace(/\.$/, ""),
+    description: bookDescription,
     slug: "/recs/books",
   },
   {
     title: "Games",
-    description: gameDescription.replace(/\.$/, ""),
+    description: gameDescription,
     slug: "/recs/games",
   },
   {
     title: "Manga",
-    description: mangaDescription.replace(/\.$/, ""),
+    description: mangaDescription,
     slug: "/recs/manga",
   },
   {
     title: "Movies",
-    description: movieDescription.replace(/\.$/, ""),
+    description: movieDescription,
     slug: "/recs/movies",
   },
   {
     title: "Shows",
-    description: showDescription.replace(/\.$/, ""),
+    description: showDescription,
     slug: "/recs/shows",
   },
   {
     title: "Stories",
-    description: storyDescription.replace(/\.$/, ""),
+    description: storyDescription,
     slug: "/recs/stories",
   },
 ];
@@ -73,7 +73,7 @@ export default function () {
           <li>
             <a href={slug}>
               <span>{title}</span>
-              <span>{description}</span>
+              <span>{description.replace(/\.$/, "")}</span>
             </a>
           </li>
         ))}

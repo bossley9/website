@@ -1,20 +1,5 @@
-import { getObjectEntries } from "@/_utils/object.ts";
+import { groupEntriesByYear } from "@/_utils/object.ts";
 import type { Data } from "lume/core/file.ts";
-
-export function groupEntriesByYear<T extends { date: Date }>(
-  entries: T[],
-): [number, T[]][] {
-  const groupedEntries = entries.reduce<Record<number, T[]>>((acc, val) => {
-    const key = val.date.getUTCFullYear();
-    if (acc[key]) {
-      acc[key] = [...acc[key], val];
-    } else {
-      acc[key] = [val];
-    }
-    return acc;
-  }, {});
-  return getObjectEntries(groupedEntries).sort(([a], [b]) => b - a);
-}
 
 export type CustomPage<T> = {
   url: string;

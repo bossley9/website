@@ -1,7 +1,8 @@
 import React from "react";
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { PaginationNav } from "@/_components/PaginationNav.tsx";
-import { customPagination, groupEntriesByYear } from "@/_utils/pagination.ts";
+import { customPagination } from "@/_utils/pagination.ts";
+import { groupEntriesByYear } from "@/_utils/object.ts";
 import { assertTabPost } from "@/_utils/assertions.ts";
 import { Layouts } from "@/_utils/constants.ts";
 

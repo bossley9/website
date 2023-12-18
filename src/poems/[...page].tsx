@@ -1,7 +1,8 @@
 import React from "react";
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { PaginationNav } from "@/_components/PaginationNav.tsx";
-import { customPagination, groupEntriesByYear } from "@/_utils/pagination.ts";
+import { customPagination } from "@/_utils/pagination.ts";
+import { groupEntriesByYear } from "@/_utils/object.ts";
 import { assertPoemPost } from "@/_utils/assertions.ts";
 import { Layouts } from "@/_utils/constants.ts";
 
@@ -26,25 +27,24 @@ export default function* ({ search }: Props) {
             I am by nature a very thoughtful and emotional person. I often
             release my pain and expression in the form of poetry.
           </p>
-          {groupedEntries
-            .map(([year, entries]) => (
-              <>
-                <h2>{year}</h2>
-                <ol class="articlelist">
-                  {entries.map((entry) => {
-                    assertPoemPost(entry);
-                    const { date, title, url } = entry;
-                    return (
-                      <ArticleListItem
-                        title={title}
-                        date={date}
-                        url={url}
-                      />
-                    );
-                  })}
-                </ol>
-              </>
-            ))}
+          {groupedEntries.map(([year, entries]) => (
+            <>
+              <h2>{year}</h2>
+              <ol class="articlelist">
+                {entries.map((entry) => {
+                  assertPoemPost(entry);
+                  const { date, title, url } = entry;
+                  return (
+                    <ArticleListItem
+                      title={title}
+                      date={date}
+                      url={url}
+                    />
+                  );
+                })}
+              </ol>
+            </>
+          ))}
           <PaginationNav
             index={currentPage}
             total={lastPage}
