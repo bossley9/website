@@ -61,16 +61,13 @@
           deno
           # spellcheck
           (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))
-          # s3 access for media files
-          s3cmd
           # captioning
           ffmpeg
           openai-whisper-cpp
-          # minification and compression
+          # compression
           gzip
-          # deployment and other make actions
+          # deployment
           rsync
-          gnumake
         ];
         shellHook = ''
           set -o vi
