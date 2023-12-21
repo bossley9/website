@@ -19,12 +19,9 @@
       packages.${system} = rec {
         default = pkgs.stdenv.mkDerivation {
           name = "website";
-          src = ./.;
-          buildPhase = ''
-            # non-empty build phase to prevent derivation
-            # from using makefile build by default
-            echo "skip default build phase."
-          '';
+          # use doc/ directory to cache result
+          src = ./doc;
+          dontBuild = true;
           installPhase = ''
             mkdir -p $out/
             cp ${resume}/resume.pdf $out/sam-bossley.pdf
