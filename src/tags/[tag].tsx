@@ -11,7 +11,7 @@ type Props = {
 export default function* ({ search }: Props) {
   const tags = search.values<string>("tags");
   for (const tag of tags) {
-    const pages = search.pages(tag, "date=desc");
+    const pages = search.pages(`"${tag}"`); // quotes for multi-word tags
     yield {
       layout: Layouts.BaseLayout,
       url: `/tags/${slugify(tag)}/`,
