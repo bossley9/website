@@ -1,6 +1,6 @@
 import React from "react";
 import BaseLayout from "@layouts/BaseLayout.tsx";
-import { RecipeTime } from "@/_features/RecipeTime.tsx";
+import { RecipeTime } from "@/_components/RecipeTime.tsx";
 import { slugify } from "@/_utils/urls.ts";
 import { assertRecipePost } from "@/_utils/assertions.ts";
 import type { LayoutProps } from "@/_types/lume.ts";
