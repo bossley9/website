@@ -1,4 +1,4 @@
-import manifest from "@static/manifest.json" with { type: "json" };
+import manifest from "@/manifest.json" with { type: "json" };
 
 export const SITE_TITLE = manifest.name;
 export const SITE_DESCRIPTION = manifest.description;

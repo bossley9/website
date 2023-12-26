@@ -16,6 +16,8 @@ site.use(codeHighlight());
 site.use(lumeAutoLinkHeadingsPlugin());
 site.use(minifyHTML());
 
-site.copy("./_static", ".");
+site.copy("manifest.json");
+site.copy("robots.txt");
+site.copy([".jpg", ".png", ".woff"]);
 
 export default site;

@@ -19,7 +19,6 @@
     "@deps": "./deps.ts",
     "@/": "./src/",
     "@layouts/": "./src/_includes/layouts/",
-    "@static/": "./src/_static/"
   },
   "lint": {
     "exclude": [
