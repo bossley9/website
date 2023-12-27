@@ -1,4 +1,3 @@
-import React from "react";
 import BaseLayout from "@layouts/BaseLayout.tsx";
 import { assertPoemPost } from "@/_utils/assertions.ts";
 import type { LayoutProps } from "@/_types/lume.ts";

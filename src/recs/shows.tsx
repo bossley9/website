@@ -1,4 +1,3 @@
-import React from "react";
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/shows.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";

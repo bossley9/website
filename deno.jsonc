@@ -9,12 +9,14 @@
     "deploy": "deno task build && rsync -av -e 'ssh -p 24' --chmod=775 --no-owner --no-group --no-times --delete \"./dist/\" \"admin@sam.bossley.xyz:/var/www/sam.bossley.xyz\""
   },
   "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "types": [
       "lume/types.ts"
     ]
   },
   "imports": {
-    "react": "./plugins/react.ts",
+    "react/jsx-runtime": "./plugins/react.ts",
     "lume/": "https://deno.land/x/lume@v2.0.1/",
     "@deps": "./deps.ts",
     "@/": "./src/",

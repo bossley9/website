@@ -1,4 +1,3 @@
-import React from "react";
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { isValidString } from "@/_utils/assertions.ts";
 import { slugify } from "@/_utils/urls.ts";

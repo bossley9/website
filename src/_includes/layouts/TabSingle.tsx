@@ -1,4 +1,3 @@
-import React from "react";
 import BaseLayout from "@layouts/BaseLayout.tsx";
 import { assertTabPost } from "@/_utils/assertions.ts";
 import { slugify } from "@/_utils/urls.ts";

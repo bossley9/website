@@ -1,4 +1,3 @@
-import React from "react";
 import { sortByAlpha } from "@/_utils/sorting.ts";
 import { slugify } from "@/_utils/urls.ts";
 

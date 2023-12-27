@@ -1,6 +1,6 @@
 import lume from "lume/mod.ts";
 import sass from "lume/plugins/sass.ts";
-import { lumeReactPlugin } from "react";
+import { lumeReactPlugin } from "react/jsx-runtime";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import { lumeAutoLinkHeadingsPlugin } from "./plugins/autoLinkHeadings.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";

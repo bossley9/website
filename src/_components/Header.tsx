@@ -1,4 +1,3 @@
-import React from "react";
 import { SITE_TITLE } from "@/_utils/constants.ts";
 
 type Props = { currentUrl: URL };

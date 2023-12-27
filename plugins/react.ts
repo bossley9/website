@@ -78,24 +78,27 @@ const VOID_TAGS = [
   "wbr",
 ];
 
-function createElement(
-  tag: unknown,
-  props: unknown,
-  ...children: unknown[]
-): string {
-  if (typeof tag === "undefined") { // fragment
-    if (!Array.isArray(children)) return NOOP;
-    return children.map(appendChild).join("");
-  } else if (typeof tag === "function") { // custom tag
-    if (typeof props !== "object") return NOOP;
-    return tag({ ...(props || {}), children });
-  } else if (typeof tag === "string") { // builtin tag
-    if (typeof props !== "object") return NOOP;
+type JSXProps = {
+  children: unknown | unknown[];
+  [k: string]: unknown;
+};
 
-    const attrs = Object.entries(props || {}).reduce<string[]>(
+export function jsxs(
+  tag: unknown,
+  props: JSXProps,
+  _key?: unknown,
+): string {
+  if (tag === undefined || tag === null) { // fragment
+    return appendChild(props.children);
+  } else if (typeof tag === "function") { // custom tag
+    return tag(props);
+  } else if (typeof tag === "string") { // builtin tag
+    const attrs = Object.entries(props).reduce<string[]>(
       (acc, [key, value]) => {
-        if (value === true) {
-          // leave attributes with no value alone
+        if (key === "children") {
+          // ignore children until later
+        } else if (typeof value === "boolean" && value) {
+          // keep true attrs unchanged and remove false attrs
           acc.push(`${key}`);
         } else {
           acc.push(`${key}="${value}"`);
@@ -107,20 +110,25 @@ function createElement(
 
     return VOID_TAGS.includes(tag)
       ? `<${tag}${attrs}>`
-      : `<${tag}${attrs}>${children.map(appendChild).join("")}</${tag}>`;
+      : `<${tag}${attrs}>${appendChild(props.children)}</${tag}>`;
   } else {
     return NOOP;
   }
+}
+
+export const jsx = jsxs;
+
+export function Fragment(props: JSXProps) {
+  return appendChild(props.children);
 }
 
 function appendChild(child: unknown): string {
   if (child === false || child === null || child === undefined) {
     return "";
   }
+
   if (Array.isArray(child)) {
     return child.map(appendChild).join("");
   }
   return String(child);
 }
-
-export default { createElement };

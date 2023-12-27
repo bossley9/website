@@ -1,4 +1,3 @@
-import React from "react";
 import { COPYRIGHT } from "@/_utils/constants.ts";
 
 const footerLinks: { href: string; name: string }[] = [

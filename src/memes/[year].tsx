@@ -1,4 +1,3 @@
-import React from "react";
 import { getObjectEntries } from "@/_utils/object.ts";
 import { Layouts } from "@/_utils/constants.ts";
 import type { Playlist } from "@/_types/posts.ts";

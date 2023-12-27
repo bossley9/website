@@ -1,4 +1,3 @@
-import React from "react";
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { YearPaginationNav } from "@/_components/YearPaginationNav.tsx";
 import { thoughtPagination } from "@/_utils/pagination.ts";

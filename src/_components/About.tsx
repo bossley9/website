@@ -1,4 +1,3 @@
-import React from "react";
 import gameData from "@/_data/recs/games.json" with { type: "json" };
 import { type Game, gameListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";

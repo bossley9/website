@@ -1,4 +1,3 @@
-import React from "react";
 import { getObjectKeys } from "@/_utils/object.ts";
 import type { Playlist } from "@/_types/posts.ts";
 

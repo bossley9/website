@@ -1,4 +1,3 @@
-import React from "react";
 import { About } from "@/_components/About.tsx";
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { assertThoughtPost } from "@/_utils/assertions.ts";

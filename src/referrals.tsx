@@ -1,4 +1,3 @@
-import React from "react";
 import { Layouts } from "@/_utils/constants.ts";
 
 export const layout = Layouts.BaseLayout;

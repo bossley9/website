@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {
   prep: number | undefined;
   cook: number | undefined;

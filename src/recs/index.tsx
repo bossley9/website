@@ -1,4 +1,3 @@
-import React from "react";
 import { description as animeDescription } from "@/recs/anime.tsx";
 import { description as articleDescription } from "@/recs/articles.tsx";
 import { description as bookDescription } from "@/recs/books.tsx";
