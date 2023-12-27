@@ -97,9 +97,11 @@ export function jsxs(
       (acc, [key, value]) => {
         if (key === "children") {
           // ignore children until later
-        } else if (typeof value === "boolean" && value) {
+        } else if (typeof value === "boolean") {
           // keep true attrs unchanged and remove false attrs
-          acc.push(`${key}`);
+          if (value) {
+            acc.push(`${key}`);
+          }
         } else {
           acc.push(`${key}="${value}"`);
         }
