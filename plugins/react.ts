@@ -94,11 +94,16 @@ function createElement(
 
     const attrs = Object.entries(props || {}).reduce<string[]>(
       (acc, [key, value]) => {
-        acc.push(`${key}="${value}"`);
+        if (value === true) {
+          // leave attributes with no value alone
+          acc.push(`${key}`);
+        } else {
+          acc.push(`${key}="${value}"`);
+        }
         return acc;
       },
-      [" "],
-    ).join("");
+      [""],
+    ).join(" ");
 
     return VOID_TAGS.includes(tag)
       ? `<${tag}${attrs}>`
