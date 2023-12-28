@@ -27,7 +27,7 @@ export default function (
   const tags = Array.isArray(startTags) && startTags.length > 0
     ? startTags
     : SITE_TAGS;
-  const cssVer = "1.0.0";
+  const cssVer = "1.1.0";
   return (
     <>
       {/* DOCTYPE isn't valid JSX so it needs to be inserted as a string */}

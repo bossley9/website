@@ -27,9 +27,11 @@ async function loader(path: string): Promise<RawData> {
 
 class ReactEngine implements Lume.Engine {
   includes: string;
+  jsxImportSource: string;
 
   constructor(includes: string) {
     this.includes = includes;
+    this.jsxImportSource = "react";
   }
 
   render(
@@ -49,10 +51,11 @@ class ReactEngine implements Lume.Engine {
   }
 
   renderComponent(
-    _content: unknown,
+    content: unknown,
     _data?: Record<string, unknown>,
     _filename?: string,
   ) {
+    if (typeof content === "string") return content;
     return NOOP;
   }
 

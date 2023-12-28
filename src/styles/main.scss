@@ -198,7 +198,7 @@ a.anchor {
   }
 }
 
-*:not(iframe):focus {
+*:not(iframe):not(video):focus {
   outline-style: dotted;
   outline-width: 2px;
 }
@@ -335,6 +335,10 @@ ul.taglist {
   li:not(:last-child) {
     margin-right: 0.5rem;
   }
+}
+
+.err {
+  color: #bf616a;
 }
 
 /* pages */

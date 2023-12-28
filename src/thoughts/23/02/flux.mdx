@@ -30,10 +30,10 @@ Because the scope of my application was not intended to grow beyond making a few
 
 I chose to structure the interface in the form of tabs based on my most frequent uses: Feeds (view all feeds), Starred (view starred entries), Unread (view unread entries), History (view read entries), and Settings (for logging out the user).
 
-<video height="700" controls>
-  <source src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/flux-exhibit.mp4" type="video/mp4" />
-  Sorry, your browser does not support embedded video. Download the video <a download href="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/flux-exhibit.mp4">here</a> instead.
-</video>
+<InlineVideo
+  height={700}
+  src="https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/flux-exhibit.mp4"
+/>
 
 To make the project simpler, I decided to not implement any form of modifying user data. You won't be able to add, edit or remove feeds, disable feeds, add API keys, and any other interaction. The core functionality of the app is to view feed entries and star them if desired. I don't add or remove feeds very often and I think it's better to perform those actions via the official web interface.
 
@@ -55,8 +55,8 @@ const { mutate: saveData } = useMutation({
   mutationFn: () => axios.post("https://api.some-website.com/v1/data"),
 });
 
-<div>{data}</div>
-<button onClick={() => saveData()}>save data</button>
+&lt;div>{data}&lt;/div>
+&lt;button onClick={() => saveData()}>save data&lt;/button>
 ```
 
 It's just as painless to fetch continuously rendered or paginated data (called infinite queries):
@@ -71,20 +71,20 @@ const { data, hasNextPage, fetchNextPage } useInfiniteQuery({
   getNextPageParam: (lastPage, pages) => lastPage.cursor,
 })
 
-<div>
+&lt;div>
   {data.pages.map((page, i) => {
     return (
-      <Fragment key={i}>
+      &lt;Fragment key={i}>
         {page.todos.map((todo) => {
           return (
-            <div key={todo.id}>{todo.text}</div>
+            &lt;div key={todo.id}>{todo.text}&lt;/div>
           )
         })}
-      </Fragment>
+      &lt;/Fragment>
     )
   })}
-</div>
-{hasNextPage && <button onClick={() => fetchNextPage()}>next page</button>}
+&lt;/div>
+{hasNextPage && &lt;button onClick={() => fetchNextPage()}>next page&lt;/button>}
 ```
 
 I really can't recommend it enough for any JS/TS application.
