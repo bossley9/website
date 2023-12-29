@@ -69,7 +69,7 @@ For this test, I practiced moving multiple files and folders between machines. O
 
 Sftp and scp do a better job of automatically indicating file transfer progress. With sshfs and rsync, transferring large files means staring at an unchanging screen for a few minutes at a time.
 
-Scp and rsync tie for last. They're adequate for automated one-way transfers such as [deploying a website](https://github.com/bossley9/website/blob/cbbff158b1a33b4a54288ab0120d707902783742/Makefile#L26) but fall short when any additional effort needs to be done.
+Scp and rsync tie for last. They're adequate for automated one-way transfers such as deploying a website but fall short when any additional effort needs to be done.
 
 ## Conclusion
 
@@ -80,4 +80,4 @@ Here is the final ranking of all the candidates:
 3. `scp` provides nice file progress and is supposedly slightly faster than sftp, although it's always taken about the same in all my transfers.
 4. `rsync` falls last. I don't think I'll ever remember what each rsync flag means without looking them up every time. However, on a positive note, rsync can move files without copying.
 
-![a meme of a mother favoring her child "sftp" more than her child "rsync"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/sshfs-favorite-child.png)
+![a meme of a mother favoring her child "sftp" more than her child "rsync"](https://cdn.bossley.xyz/files/thoughts/23/sshfs-favorite-child.png)

@@ -2,7 +2,7 @@
 title: "Bad SEO is great SEO"
 description: "Everyone these days is striving for perfect SEO, so what is it? And what's the catch?"
 date: 2023-07-11T09:58:00-04:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/seo-search.png"
+image: "https://cdn.bossley.xyz/files/thoughts/23/seo-search.png"
 tags:
   - "thought"
   - "reflection"
@@ -10,7 +10,7 @@ tags:
   - "website"
 ---
 
-![A Google search of "SEO"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/seo-search.png)
+![A Google search of "SEO"](https://cdn.bossley.xyz/files/thoughts/23/seo-search.png)
 
 *SEO* (Search Engine Optimization) is a fancy blanket acronym for getting your pages to the top of search engine results. If you have great SEO, your website (or online store, or Youtube channel, or Instagram account) will be the first result on Google search or Bing search.
 

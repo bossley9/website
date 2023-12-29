@@ -45,7 +45,7 @@ Likewise, what will happen if `placeOrder` gets called before `emptyCart`? When 
 
 Although both of these functions should be independent the order in which these functions are called affects how they execute. The outcome will be different depending on which function is called before the other. In this example, ***where*** the functions are called matters. This may seem like a trivial example, but we had a similar issue in production code only a few months ago where the order in which functions were executed was producing unexpected values.
 
-![A merged Github PR that prevents dependent functions from being called in an inconsistent order.](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/function-purity-fix-payment-methods.png)
+![A merged Github PR that prevents dependent functions from being called in an inconsistent order.](https://cdn.bossley.xyz/files/thoughts/23/function-purity-fix-payment-methods.png)
 
 Here is another illustration:
 
@@ -72,7 +72,7 @@ export function PreferenceContainer() {
 
 We have a [React query](https://tanstack.com/query/latest) function `useQueryPreferences` which fetches a user's preferences, then a JSX component `PreferenceContainer` which renders the user's email. On initial component mount, the rendered paragraph tag might read "Email: undefined" because the data will not have been fetched yet. After some indeterminable amount of time, the paragraph tag might read "Email: johndoe@example.com". This doesn't even take into account error states, or what happens inside `useUseId`. What happens when `useUserId` returns null or 0? Depending on what time this component renders, it might produce drastically different outputs to the UI. In this example, ***when*** the functions are called matters. Again, this reflects another recent production issue where the state of a user's ID value produced unexpected results.
 
-![A merged Github PR that ensures that any time a user's ID changes, we refetch user data.](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2023/function-purity-fix-substitutions.png)
+![A merged Github PR that ensures that any time a user's ID changes, we refetch user data.](https://cdn.bossley.xyz/files/thoughts/23/function-purity-fix-substitutions.png)
 
 Now that I have highlighted some of the issues function purity can solve, we can now learn what function purity is.
 
