@@ -1,6 +1,22 @@
 [
   {
     "type": "article",
+    "title": "Cold-blooded software",
+    "author": "Patrick Dubroy",
+    "url": "https://dubroy.com/blog/cold-blooded-software/",
+    "published": "2023-12-28",
+    "date": "2023"
+  },
+  {
+    "type": "article",
+    "title": "I made JSX for Lua (because I hate static sites)",
+    "author": "Ben Visness",
+    "url": "https://bvisness.me/luax/",
+    "published": "2023-12-27",
+    "date": "2023"
+  },
+  {
+    "type": "article",
     "title": "reaction, in replacement of fail2ban",
     "author": "ppom",
     "url": "https://blog.ppom.me/en-reaction/",

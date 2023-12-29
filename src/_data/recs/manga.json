@@ -1,6 +1,17 @@
 [
   {
     "type": "manga",
+    "author": "Fuyumi Ono",
+    "title": "Ghost Hunt",
+    "year": "1998",
+    "url": "https://mangadex.org/title/f9edefd8-f284-44ef-86be-8d5fcfced0c7/ghost-hunt",
+    "date": "2023",
+    "volumes": 12,
+    "rating": 7.0,
+    "note": "Only the first two volumes read. A fun slightly spooky mystery. Naru is awful and Mai just accepts it. I guess the target audience is girls who like getting bullied?"
+  },
+  {
+    "type": "manga",
     "author": "Natsuhiko Kyougoku",
     "title": "Box of Spirits and Goblins",
     "year": "1995",

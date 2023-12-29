@@ -1,6 +1,46 @@
 [
   {
     "type": "movie",
+    "title": "Guardians of the Galaxy Vol. 3",
+    "year": "2023",
+    "director": "James Gunn",
+    "producer": "Kevin Feige",
+    "date": "2023",
+    "rating": 6.9,
+    "note": "The plot was a bit sporadic jumping from point to point but otherwise a decent ending to the guardians of the galaxy movies."
+  },
+  {
+    "type": "movie",
+    "title": "Free Solo",
+    "year": "2018",
+    "director": "Elizabeth Chai Vasarhelyi and Jimmy Chin",
+    "producer": "Elizabeth Chai Vasarhelyi and Jimmy Chin and Shannon Dill and Evan Hayes",
+    "date": "2023",
+    "rating": 6.8,
+    "note": "Pretty impressive climber."
+  },
+  {
+    "type": "movie",
+    "title": "Jingle All the Way",
+    "year": "1996",
+    "director": "Brian Levant",
+    "producer": "Chris Columbus and Michael Barnathan and Mark Radcliffe",
+    "date": "2023",
+    "rating": 6.0,
+    "note": "Not a good movie but a fun movie. It's turbo time!"
+  },
+  {
+    "type": "movie",
+    "title": "The Hobbit: The Battle of the Five Armies",
+    "year": "2014",
+    "director": "Peter Jackson",
+    "producer": "Carolynne Cunningham and Zane Weiner and Fran Walsh and Peter Jackson",
+    "date": "2023",
+    "rating": 6.7,
+    "note": "To emphasize how significant the battle is in the book, there isn't a chapter with the name \"five armies\" in it."
+  },
+  {
+    "type": "movie",
     "title": "The Hobbit: The Desolation of Smaug",
     "year": "2013",
     "director": "Peter Jackson",
