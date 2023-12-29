@@ -2,7 +2,7 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task check && deno task clean && deno task lume && nix build && cp -r ./result/* ./dist && gzip -r -9k ./dist",
-    "check": "deno lint",
+    "check": "deno lint && ./scripts/cdncheck.sh",
     "clean": "rm -rf ./dist/ && rm -f result",
     "serve": "deno task lume -s",
     "review": "sh ./scripts/spellcheck.sh",
@@ -20,7 +20,7 @@
     "lume/": "https://deno.land/x/lume@v2.0.1/",
     "@deps": "./deps.ts",
     "@/": "./src/",
-    "@layouts/": "./src/_includes/layouts/",
+    "@layouts/": "./src/_includes/layouts/"
   },
   "lint": {
     "exclude": [

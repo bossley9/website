@@ -54,7 +54,7 @@
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
         buildInputs = with pkgs; with self.packages.${system}; resume.buildInputs ++ [
-          # general dependencies
+          gnugrep
           deno
           # spellcheck
           (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))

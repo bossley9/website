@@ -88,7 +88,7 @@ This is where most programs fall short. Text is the most accessible interface be
 
 A poor example of this is NCKU's graduation application portal, where text is baked into an image. This is absolutely inaccessible by screenreaders because they cannot parse images. Additionally, if the image is scaled incorrectly like it is on the website, it can ruin the readability of the content.
 
-[NCKU graduation application portal](http://140.116.165.83/~lou/leave/)
+[NCKU graduation application portal](https://nckustory.ncku.edu.tw/lou/leave/)
 
 But it's not just displaying data that creates issues - it's the storage of data that also creates issues. Imagine that you create a powerpoint with Microsoft Powerpoint. If you were to try to access that powerpoint file 30 years from now, do you think you could do it?
 
