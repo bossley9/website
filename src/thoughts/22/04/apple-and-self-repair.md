@@ -19,13 +19,13 @@ Yesterday, Apple published their first ever public self repair service website. 
 
 This isn't a new announcement. Apple first announced their self service repair back in November of 2021. I guess myself and everyone else of the free tech comunity didn't think they'd actually do it.
 
-![Peter Parker saying "Huh, I never thought he'd really do that."](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/apple-spiderman-never-thought.png)
+![Peter Parker saying "Huh, I never thought he'd really do that."](https://cdn.bossley.xyz/files/thoughts/22/apple-spiderman-never-thought.png)
 
 [https://www.apple.com/newsroom/2021/11/apple-announces-self-service-repair](https://www.apple.com/newsroom/2021/11/apple-announces-self-service-repair)
 
 It's true. They've released on their website repair manuals for those iPhones. It's possible to download them and look through the manuals free of charge to understand how your own Apple device works.
 
-![a sample internal view page of Apple's iPhone 12 Mini repair manual](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/apple-iphone-12-mini-manual.png)
+![a sample internal view page of Apple's iPhone 12 Mini repair manual](https://cdn.bossley.xyz/files/thoughts/22/apple-iphone-12-mini-manual.png)
 
 [https://support.apple.com/en_US/manuals/repair-manual](https://support.apple.com/en_US/manuals/repair-manual)
 
@@ -49,13 +49,13 @@ They're not proud of this decision. In fact, if you go to the self service repai
 
 It looks like a scam.
 
-![The storefront of the self service repair store. There's no indication that it belongs to Apple or is managed by Apple.](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/apple-self-service-repair-store.png)
+![The storefront of the self service repair store. There's no indication that it belongs to Apple or is managed by Apple.](https://cdn.bossley.xyz/files/thoughts/22/apple-self-service-repair-store.png)
 
 [https://www.selfservicerepair.com/order](https://www.selfservicerepair.com/order)
 
 I consider this to be Apple's way of side-stepping around the law. No dedicated Apple customer is going to choose to buy parts from a sketchy website, wait a week for part delivery, then spend half an hour trying to repair their device when they can just go to an Apple store expert and get it fixed for a slightly higher price. If you look at the repair store, you would even have to buy expensive Apple-specific tools to repair basic phone components.
 
-![a few Apple repairation tools priced at up to $250 to fix a display screen](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/apple-repairation-tools.png)
+![a few Apple repairation tools priced at up to $250 to fix a display screen](https://cdn.bossley.xyz/files/thoughts/22/apple-repairation-tools.png)
 
 ## Final thoughts
 

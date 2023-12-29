@@ -2,7 +2,7 @@
 title: "Farewell, Latitude."
 description: "Giving my computer a formal send-off."
 date: 2022-08-18T22:30:00-07:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/latitude-1.jpg"
+image: "https://cdn.bossley.xyz/files/thoughts/22/latitude-1.jpg"
 tags:
   - "thought"
   - "hardware"
@@ -10,7 +10,7 @@ tags:
 
 My Dell Latitude E7470 laptop finally died today. Maybe it's a bit strange to feel sentimental about a carefully crafted piece of metal, but I poured my heart into that computer. The battery had been acting funny for the past few months, incorrectly displaying in the motherboard BIOS. It also caused a lot of headaches by causing kernel panics and slow charging. Today the BIOS didn't detect the battery at all, causing screen flickering and unreliable power status. I could barely open the BIOS. I've already replaced the battery two times before, but I think the battery connector must have been damaged or degraded over time. In any case, I think it's time to move on. Since my latitude served me so faithfully these past few years, I want to dedicate this short blogpost in its honor.
 
-![my Dell Latitude E7470](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/latitude-1.jpg)
+![my Dell Latitude E7470](https://cdn.bossley.xyz/files/thoughts/22/latitude-1.jpg)
 
 I received the laptop around 2018 from my dad as an enterprise toss-out because the battery had swollen to the point of almost breaking the case. He managed to save it from garbage and gave it to me knowing I would repurpose it (which I did). I immediately ordered a new battery and replaced the busted battery making the commercial laptop as good as new.
 
@@ -24,4 +24,4 @@ As much as I loved that computer, I knew it was wearing down. Regardless, the la
 
 Farewell, latitude. You will be missed.
 
-![the back cover of my Dell Latitude E7470](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/latitude-2.jpg)
+![the back cover of my Dell Latitude E7470](https://cdn.bossley.xyz/files/thoughts/22/latitude-2.jpg)

@@ -2,7 +2,7 @@
 title: "Optimizing the Internet"
 description: "If we want to make the internet a more user-friendly place, we need to optimize it."
 date: 2022-03-02T20:59:00-07:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/optimization-my-site.png"
+image: "https://cdn.bossley.xyz/files/thoughts/22/optimization-meet-fresh.png"
 tags:
   - "thought"
   - "tech"
@@ -14,7 +14,7 @@ It frustrates me and anyone else browsing the internet when a webpage takes long
 
 [https://meetfresh.us/menu/](https://meetfresh.us/menu/)
 
-![Google Lighthouse report for Meet Fresh yielding a score of 38 for performance](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/optimization-meet-fresh.png)
+![Google Lighthouse report for Meet Fresh yielding a score of 38 for performance](https://cdn.bossley.xyz/files/thoughts/22/optimization-meet-fresh.png)
 
 > I couldn't believe my eyes and ran Google Lighthouse to verify page performance. The results are even worse than I thought.
 
@@ -68,7 +68,7 @@ Modern images are often filled with many colors that are invisible to the naked 
 
 In the event that content needs time to buffer or load, we need a fallback to indicate intentful loading to the user. In other words, we need to be able to tell the user "don't worry, I know this content is loading but it's almost done, don't leave this site!". If we don't effectively acknowledge the loading and calm the user, they will give up and leave. Imagine any time you've seen a spinning loading indicator - how long does it usually take for you to reload the page or close the tab?
 
-![a generic loading indicator](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/optimization-loading.gif)
+![a generic loading indicator](https://cdn.bossley.xyz/files/thoughts/22/optimization-loading.gif)
 
 When we load, we need to indicate to the user that progress is happening behind the scenes. The reason most people click away from a spinning loading indicator like the one above is that there is no indication of progress or change over time.
 
@@ -82,4 +82,4 @@ The modern web is sometimes still painfully slow. If we want to improve the inte
 
 If you run Google Lighthouse on my website, you'll find across the board that I have made sure my entire site is optimized for all users. I want this space to be fast, effective, and welcoming.
 
-![Google Lighthouse report for this site yielding a score of 100 for performance](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2022/optimization-my-site.png)
+![Google Lighthouse report for this site yielding a score of 100 for performance](https://cdn.bossley.xyz/files/thoughts/22/optimization-my-site.png)
