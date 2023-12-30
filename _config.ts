@@ -6,7 +6,11 @@ import codeHighlight from "lume/plugins/code_highlight.ts";
 import { lumeAutoLinkHeadingsPlugin } from "./plugins/autoLinkHeadings.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 
-import { InlineVideo } from "@/_components/InlineVideo.tsx";
+import {
+  InlineAudio,
+  InlineVideo,
+  Timestamp,
+} from "@/_components/InlineMedia.tsx";
 
 const site = lume({
   dest: "./dist",
@@ -18,6 +22,8 @@ site.use(lumeReactPlugin());
 site.use(mdx({
   components: {
     InlineVideo,
+    InlineAudio,
+    Timestamp,
   },
 }));
 site.use(codeHighlight());

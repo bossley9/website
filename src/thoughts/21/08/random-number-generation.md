@@ -145,4 +145,4 @@ Lagged Fibonacci is a very rudimentary implementation of pseudorandom number gen
 
 If you'd like to see my code implementation, you can download it below. If you've made it this far, I appreciate your support and I hope you'll stick around :)
 
-[pseudorandom code implementation](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/rng.ts)
+[pseudorandom code implementation](https://cdn.bossley.xyz/files/thoughts/21/rng.ts)

@@ -29,17 +29,17 @@ I first navigated to the Molina Medicaid Benefits portal to find this page greet
 
 [Molina Medicaid Benefits portal](https://ssp.benefits.ohio.gov)
 
-![The Molina Medicaid Benefits homepage with old graphics and small links](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp.jpg)
+![The Molina Medicaid Benefits homepage with old graphics and small links](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp.jpg)
 
 Ok, not the prettiest site, but it could be worse, right?
 
 Well, since I'm new, I'm going to click on "How To Use This Site" in the side menu since the site is not intuitive enough and I need to be told how to use the internet. I guess websites are not supposed to be made to be intuitive nowadays.
 
-![Molina Medicaid Benefits how to use page, containing a link to yet another page](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp-how-to-use.jpg)
+![Molina Medicaid Benefits how to use page, containing a link to yet another page](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp-how-to-use.jpg)
 
 Fortunately, that link takes me to another page that tells me to click another link. Oh, okay, you have to click two links to figure out how to use this website. Could be worse.
 
-![Molina Medicaid Benefits learn how to use page, containing a link to a different external page](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp-learn-how-to-use.jpg)
+![Molina Medicaid Benefits learn how to use page, containing a link to a different external page](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp-learn-how-to-use.jpg)
 
 Now that I've already clicked two links to figure out how to use this site, I have to click another link to view a tutorial? How many links do I have to click, exactly? And it doesn't even say what the tutorial is about. "In this tutorial, citizens will learn how to" what? Get frustrated with the process?
 
@@ -47,13 +47,13 @@ I could go on and on down a rabbit hole about this website and its many flaws, b
 
 * The "What's New?" link redirects to a blank page that only says there are no new updates. A well-designed website should not even display an option to see "what's new" unless something was new.
 
-![What's New? link stating that no updates are available](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-whats-new.png)
+![What's New? link stating that no updates are available](https://cdn.bossley.xyz/files/thoughts/21/gov-web-whats-new.png)
 
 * The site restricts context menus and page navigation. A context menu is a menu that appears on an application when right-clicked (for example, most browsers have a context menu with options such as "Inspect Element", "Copy Link Address", and "Open Link in New Tab"). This is poor web design practice because it reduces accessibility - keyboard navigation is not possible and it is not possible to open links in other tabs.
 
 * The site falsifies language accessibility. Near the bottom of every page it contains a list of commonly spoken languages in the world; however, clicking on one of these language links redirects to a page that only states a phone number to call to receive language assistance.
 
-![Various language translations telling people to call a phone number](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp-lang.png)
+![Various language translations telling people to call a phone number](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp-lang.png)
 
   What's the purpose of including an enticing list of languages if no direct translation or assistance is provided? This just costs the user more time and effort to click the language button, then return to the main page. An alternate solution would be to include at the bottom of every page a language icon next to the phone number because it provides the same amount of semantic reasoning and reduces the amount of redundancy.
 
@@ -61,11 +61,11 @@ I could go on and on down a rabbit hole about this website and its many flaws, b
 
 [React JS website](https://reactjs.org)
 
-![A symbol of a mandarin and english character next to the word "language"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-react-lang.png)
+![A symbol of a mandarin and english character next to the word "language"](https://cdn.bossley.xyz/files/thoughts/21/gov-web-react-lang.png)
 
 * The site does a poor job of capitalizing on screen space. Take for example the forms subpage of the benefits site.
 
-![The Molina Medicaid Forms page with the content taking up the center of the page](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp-forms.jpg)
+![The Molina Medicaid Forms page with the content taking up the center of the page](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp-forms.jpg)
 
   Why is there so much extra whitespace on the sides? The bottom? Seems like a waste of space to me. Wouldn't it be better to at least make the font size or content larger?
 
@@ -73,7 +73,7 @@ I could go on and on down a rabbit hole about this website and its many flaws, b
 
   One potential purpose for horizontal whitespace is for emphasis on content. A good example of strategically using horizontal whitespace to capitalize on content emphasis is Twitter. In this example, our eyes are naturally drawn to the center of the content. Twitter's goal is to have people consume as much content as possible, and what better what to do that than to condense content? By maintaining content in the center, it becomes much easier to read content than having to move your eyes from left to right constantly. It's also the reason why mobile phone are vertically-shaped and not usually held in a landscape orientation (not including the convenience of holding a vertically-shaped device in your hand).
 
-![The Twitter main page layout on a desktop site, using horizontal space on either side of the page to emphasize the center of the page](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-twitter.jpg)
+![The Twitter main page layout on a desktop site, using horizontal space on either side of the page to emphasize the center of the page](https://cdn.bossley.xyz/files/thoughts/21/gov-web-twitter.jpg)
 
   However, the Molina Medicaid site is not attempting to capitalize on horizontal whitespace. The content does not need emphasis since each page has a short amount of content, and nothing on this site should be emphasized over other pieces of content - in fact, the only content on this website should be important informtion pertaining to healthcare benefits.
 
@@ -87,11 +87,11 @@ Second, external links are generally a security hazard. Similar to the previous 
 
 * The site has discontinuity in content to user experience. For example, looking at the main page, how would I apply for benefits? Do I click on the serif capitalized text "APPLY" above the picture in the center? Do I click on the picture? Do I just click on the box?
 
-![The Molina Medicaid Benefits homepage with old graphics and small links](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp.jpg)
+![The Molina Medicaid Benefits homepage with old graphics and small links](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp.jpg)
 
   The answer is none of the above. You need to click on the small print below the image.
 
-![The apply button is highlighted as arbitrary text below the bold text and image](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-ssp-apply.jpg)
+![The apply button is highlighted as arbitrary text below the bold text and image](https://cdn.bossley.xyz/files/thoughts/21/gov-web-ssp-apply.jpg)
 
   This is discontinuity of user experience at its finest. What is the purpose, then, of capitalizing the "APPLY" text? Emphasis? What purpose does the visual aid serve? Why are the different options boxed with borders? Why is the word "Apply" bolded in the bottom text if the entire phrase is the link?
 
@@ -111,7 +111,7 @@ When I applied to take my license permit and driver test, I went through the Ind
 
 [Indiana official BMV website](https://www.in.gov/bmv)
 
-![The main landing page of the Indiana bmv site, with a top bar, COVID-19 banner, portal area, and link anchor](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2021/gov-web-bmv.jpg)
+![The main landing page of the Indiana bmv site, with a top bar, COVID-19 banner, portal area, and link anchor](https://cdn.bossley.xyz/files/thoughts/21/gov-web-bmv.jpg)
 
 As soon as I open the site, I'm immediately overwhelmed by the sheer amount of content links clouding the page. I counted 29 different links to different pages. To make matters worse, each link is vague in what page content it will return. This is a classic example of "jaded routing" - overwhelming the user with an overly complicated website navigation system. This is worse than having no navigation at all because the sheer amount of choice overwhelms the user to the point of navigating away from the site. For example, if I wanted to schedule a permit test, my thought process might follow something like this:
 

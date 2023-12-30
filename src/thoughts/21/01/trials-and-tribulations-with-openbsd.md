@@ -164,11 +164,11 @@ I've given two clear examples of cases where OpenBSD resolves security concerns 
 
 Where do I even begin? Let me preface by saying that software developers have a serious deficiency in graphic design.
 
-![The OpenBSD logo](https://upload.wikimedia.org/wikipedia/en/thumb/8/83/OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg/1280px-OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg.png)
+![The OpenBSD logo](https://cdn.bossley.xyz/files/thoughts/21/openbsd-logo.png)
 
-In the words of Linguini from Ratatouille:
+~~In the words of Linguini from Ratatouille:~~
 
-["It's not much, but... it's not much."](https://youtu.be/y2n5dLpETbM?t=200)
+~~["It's not much, but... it's not much."](https://youtu.be/y2n5dLpETbM?t=200)~~
 
 Although the OpenBSD logo (named "Puffy") is poor in design and severely outdated (not to mention mildly terrifying), some fans of the operating system have created more user-friendly icons (such as "Patched" Puffy in celebration of the latest 6.8 release, or cartoon variants of Puffy used for the merch and artwork pages).
 
@@ -190,7 +190,7 @@ In regards to backwards compatibility and legacy support, OpenBSD follows the sa
 
 In OpenBSD's defense, it does allow a Linux compatibility layer to port Steam and a limited suite of proprietary applications and games, which is better than MacOS's utter lack of support. But the applications that can run on an operating system do not dictate how "good" an operating system is.
 
-![operating systems as seen by their users](https://i.redd.it/es77rrltrj961.jpg)
+![operating systems as seen by their users](https://cdn.bossley.xyz/files/thoughts/21/pc-fanboys.jpg)
 
 ## The Ugly
 

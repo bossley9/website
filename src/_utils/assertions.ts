@@ -40,6 +40,12 @@ function isOptionalNumber(x: unknown): x is number | undefined {
   return x >= 0;
 }
 
+export function assertTimestamp(t: string): asserts t is string {
+  if (!/^(\d\d:)?\d\d:\d\d$/.test(t)) {
+    throw Error(`${t} is not a valid timestamp`);
+  }
+}
+
 export function assertThoughtPost(
   post: Partial<Data>,
 ): asserts post is ThoughtPost {
