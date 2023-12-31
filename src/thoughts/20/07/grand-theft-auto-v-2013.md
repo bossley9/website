@@ -2,7 +2,7 @@
 title: "Grand Theft Auto V (2013)"
 description: "My thoughts on Grand Theft Auto V"
 date: 2020-07-03T19:18:00-04:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-cover-art.jpg"
+image: "https://cdn.bossley.xyz/files/thoughts/20/gta-v-cover-art.jpg"
 tags:
   - "thought"
   - "review"
@@ -12,7 +12,7 @@ tags:
 
 Grand Theft Auto V is simultaneously both the best and worst game you could own as a child. Its obscene depictions of America, graphic violence, pornography, sex, drugs, and, of course, the infamous torture mission, make this game something for parents avoid, but it also teaches some of the most important lessons in life, including eternal friendship, forgiveness, and questions about morally ambiguous actions. But even as a seven year old game and twenty year old game series, Grand Theft Auto's combination of minute details, engaging story, and genuine dialogue make the game feel as if it was released yesterday.
 
-![game cover art](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-cover-art.jpg)
+![game cover art](https://cdn.bossley.xyz/files/thoughts/20/gta-v-cover-art.jpg)
 
 As a kid, I was never allowed to own any GTA games. They were "too violent" and "too sexual". Frankly, I don't think my dad quite understood the extent of sexual content present in these kinds of games, or he never would have allowed me and my siblings to play GTA IV for short blurps of time at my uncle's house. But those young years blowing up cars and beating up pedestrians sparked my interest in this seemingly one-dimensional game series. It wasn't until I received the game via Epic Games that I seriously considered playing the latest installment, and I am truly blown away by how good it is.
 
@@ -92,15 +92,15 @@ But it's not just the graphics that get me. The movements are genuine. Even in t
 
 In addition to the gameplay graphics, the promotional graphics are so cool. GTA uses an iconic cover art in all games of the series. The panel placement tells bits and pieces of an overall story. It is visual appealing and tells just enough key moments of the story to interest potential buyers, but not enough to give away the storyline, enticing people to buy the game.
 
-![game cover art](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-cover-art.jpg)
+![game cover art](https://cdn.bossley.xyz/files/thoughts/20/gta-v-cover-art.jpg)
 
-![main character cover art](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-main-character-cover-art.jpg)
+![main character cover art](https://cdn.bossley.xyz/files/thoughts/20/gta-v-main-character-cover-art.jpg)
 
 The loading screens are also very artistic. Instead of displaying a simple image, the screens instead display a foreground character and a background scene relevant to the character. These characters are all characters you can meet from side missions or various interactions. The background panel will be at a various angle, and in a cool parallax fashion, the panel will move at a different speed than the foreground character. I'm slightly biased in this sense since I absolutely love parallax effects, but this is one of the coolest loading screens a game can have. I can't really show an animation so photos will have to make do.
 
-![Franklin loading screen](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-franklin-loading.jpg)
+![Franklin loading screen](https://cdn.bossley.xyz/files/thoughts/20/gta-v-franklin-loading.jpg)
 
-![girl loading screen](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/gta-v-girl-loading.jpg)
+![girl loading screen](https://cdn.bossley.xyz/files/thoughts/20/gta-v-girl-loading.jpg)
 
 I can't talk about about GTA V without talking about its infamous torture scene. Video games are a commonly forgotten form of media, and people make media to tell stories and political messages. Often times, story-based video games (like GTA) can be compared to movies - both with a core storyline, themes, and some social commentary. In the main storyline, there is a mission that involves brutally torturing someone in order to retrieve information on a target. If this were a movie, people would likely pass this off as a trivial matter, but as a player playing a key component in the torture, it questions the morality of such a mission. I personally was sickened, almost to the point of quitting the game, when I had to manually pull out this man's tooth, and waterboard him. It's much more intense when the perpetrator is effectively you, the player, and this specific scene sequence brings up a lot of questions about video games and virtual worlds we like to avoid - is violence and murder justified in a video game? That may seem like an easy question, but it becomes a much greater problem when you also ask if torture, rape, or paedophilia is acceptable in a video game with the playable character as the perpetrator. And if not, what makes the difference in crimes between murder and rape, or paedophilia? Trauma? To a video game character?
 

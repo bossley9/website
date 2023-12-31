@@ -2,7 +2,7 @@
 title: "Bioshock Remastered (2016)"
 description: "My thoughts of the game Bioshock"
 date: 2020-03-19T12:18:00-04:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-big-daddy.jpg"
+image: "https://cdn.bossley.xyz/files/thoughts/20/bioshock-big-daddy.jpg"
 tags:
   - "thought"
   - "video game"
@@ -51,7 +51,7 @@ Based on the tapes, the preceding story appears to have occurred as follows:
 
 > Over time, the citizens became addicted to Adam. It had some addictive properties (in addition to the fact that being able to "play god" with their bodies was appealing), and so the citizens began trying to "harvest" Adam from the Little Sisters, by removing the slugs from the sisters (and killing them in the process). Ryan did not want the Little Sisters to be harmed at all, or for people to not be able to control their urges, so he created Big Daddies, or men who have been conditioned to protect the Little Sisters. Originally underwater construction workers, they were given armored gear and weapons to ensure that individuals did not try to kill the Little Sisters for their Adam.
 
-![A Bouncer Big Daddy holding a Little Sister](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-big-daddy.jpg)
+![A Bouncer Big Daddy holding a Little Sister](https://cdn.bossley.xyz/files/thoughts/20/bioshock-big-daddy.jpg)
 
 > Over time, Rapture became increasingly less stable as people wanted more Adam and were rising up. Soon, a man, Frank Fontaine, rose above the people, promising them Adam and a future where Rapture would be free. Then, on New Year's Eve in 1959, a revolt happened and Frank Fontaine tore apart Rapture. His followers had all used Adam to give themselves unique abilities. Rapture fell apart into a civil war and many people died. The few that remained became increasingly addicted to Adam, which made them all mentally unstable, and they were given the nickname "spicers", which I believe comes from "gene splicing" (although, like I said, much of this is ambiguous ponderings based on what I experienced from the audio tapes lying around).
 
@@ -61,9 +61,9 @@ It's actually incredible how much story a game can convey just from audio record
 
 [Diane McClintock - "Released Today"](https://www.youtube.com/watch?v=YLK2ZxyJ6gI)
 
-![Splicer hung from a wall with the word "smuggler" written in blood behind him](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-smuggler.jpg)
+![Splicer hung from a wall with the word "smuggler" written in blood behind him](https://cdn.bossley.xyz/files/thoughts/20/bioshock-smuggler.jpg)
 
-!["Aesthetics are a moral imperative" written in blood on the floor with pictures of mismatched faces hung on a wall](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-moral-imperative.jpg)
+!["Aesthetics are a moral imperative" written in blood on the floor with pictures of mismatched faces hung on a wall](https://cdn.bossley.xyz/files/thoughts/20/bioshock-moral-imperative.jpg)
 
 There are many analyses of what happened in Rapture based on these artifacts, and you can see examples like the one linked below. This demonstrates how ambiguous the game is, and it leaves the interpretation to the game player, which allows them to use their imagination. This is quite possibly the most powerful thing a game can do to a player.
 
@@ -75,7 +75,7 @@ Now let me talk about the core story behind the gameplay. As it turns out, Atlas
 
 Andrew Ryan prevents this from happening and blows up the bathysphere. At this point, the player begins to hate Ryan for confining both you and Atlas to Rapture. Up to this point, you see that Andrew hates Atlas, and vice versa, but you have no idea why. After this disaster, Atlas asks if you would kinly kill Andrew Ryan. You agree, and then proceed to find Ryan in his office to kill him. At this point, you begin to see posters with the title, "Who is Atlas?"
 
-![poster reading "Who is Atlas?"](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/bioshock-who-is-atlas.jpg)
+![poster reading "Who is Atlas?"](https://cdn.bossley.xyz/files/thoughts/20/bioshock-who-is-atlas.jpg)
 
 It's only then that the player begins to question everything. After all, why is Atlas helping the player? The player has never seen Atlas face to face. Uncertainty begins to build for the mid part of the game, until the climax of the game.
 

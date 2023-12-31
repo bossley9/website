@@ -2,7 +2,7 @@
 title: "Star Trek: The Next Generation (1987-1994)"
 description: "After watching Star Trek: The Next Generation in its entirety, I have to admit that this show is one of the most impactful shows I have ever seen. If you've never seen it or don't know what Star Trek is, I describe my thoughts of the show and why I hold it so highly."
 date: 2020-06-30T21:28:00-04:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-enterprise-d.jpg"
+image: "https://cdn.bossley.xyz/files/thoughts/20/tng-enterprise-d.jpg"
 tags:
   - "thought"
   - "review"
@@ -25,19 +25,19 @@ The original series of Star Trek takes place shortly after this and follows the 
 
 Throughout this series, they engage in other lifeforms, discover new species, new technology, and also make enemies (namely, the Klingons).
 
-![the Enterprise starship from the original series](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-original-enterprise.jpg)
+![the Enterprise starship from the original series](https://cdn.bossley.xyz/files/thoughts/20/tng-original-enterprise.jpg)
 
 No doubt you've seen an image of the iconic Enterprise somewhere in your life. I would be surprised if you haven't.
 
 Now that you have a more complete understanding of the premise of the original Star Trek, I'll try to briefly explain The Next Generation. Star Trek: The Next Generation (abbreviated TNG for "The Next Generation") takes place in, as you would assume, the "next generation", approximately the later 24th century of Earth. Since the previous century, Starfleet ships have undergone a number of new improvements and modifications. They are now have stronger warp capabilities, more powerful weapons, and a greater capacity, with over 1000 crew members and staff. In a similar fashion, the United Federation of Planets has even made alliances with some unlikely allies (namely, the Klingons), but have also created new enemies (The Borg, the Cardassians, and the Romulans).
 
-![the Enterprise-D starship](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-enterprise-d.jpg)
+![the Enterprise-D starship](https://cdn.bossley.xyz/files/thoughts/20/tng-enterprise-d.jpg)
 
 Doesn't the Enterprise-D look way cooler than the original Enterprise?
 
 The Next Generation follows the crew of Captain Jean-Luc Picard aboard the starship Enterprise-D, and, like the original series, maintain exploration as a priority. Since the duration of the show is too vast to encompass in a small review, I think it would be best to first describe the core characters of the show, then delve into themes and concepts that make up the show.
 
-![picture of the core Enterprise-D crew](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-cast.jpg)
+![picture of the core Enterprise-D crew](https://cdn.bossley.xyz/files/thoughts/20/tng-cast.jpg)
 
 The captain Jean-Luc Picard, pictured on the very right, is played by none other than Patrick Stewart. He is, as the show describes, visibly a "private" man. He can be very intimidating, bold, and mysterious at times, and he does not often reveal his personal life to the other crew members, nor show any signs of weakness. But in addition to these attributes, he is very caring for those around him, and an exceptional captain, willing to risk his life for the ship and its crew.
 
@@ -111,13 +111,13 @@ There's a lot of smaller details I failed to mention that make the show larger t
 
 One such detail is the aesthetic of the computer's console graphics. I think the colors are very pleasing to the eyes, and I look forward to a future with uniform panels using these kinds of color schemes.
 
-![lcars subspace emission scan](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-lcars-colors.gif)
+![lcars subspace emission scan](https://cdn.bossley.xyz/files/thoughts/20/tng-lcars-colors.gif)
 
-![lcars system access](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-lcars-colors2.gif)
+![lcars system access](https://cdn.bossley.xyz/files/thoughts/20/tng-lcars-colors2.gif)
 
 The colors are light shades that contrast nicely with the dark backgrounds. In addition, the simple color theme of the uniforms is an added bonus.
 
-![a blue, yellow, and red uniform](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/tng-uniforms.jpg)
+![a blue, yellow, and red uniform](https://cdn.bossley.xyz/files/thoughts/20/tng-uniforms.jpg)
 
 Another aspect of the show I appreciate is the awkward humor. As a zoomer analyzing a show from the nineties, I think a lot of the cheesy effects or humorous moments are funnier than they were originally intended, and part of experiencing the show is experiencing the humor. I really enjoy Star Trek out of context compilations. John De Lancie's performance of Q is phenomenal and hilarious in nearly every scene, including his celebration and the red alert entrance. Any time Riker destroys a person in conversation is amazing, and Data does a great job as well.
 

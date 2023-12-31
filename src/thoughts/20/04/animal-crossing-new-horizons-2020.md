@@ -2,7 +2,7 @@
 title: "Animal Crossing: New Horizons (2020)"
 description: "My opinions of the new Animal Crossing game, New Horizons"
 date: 2020-04-12T14:34:00-04:00
-image: "https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-fishing-tourney.jpg"
+image: "https://cdn.bossley.xyz/files/thoughts/20/new-horizons-fishing-tourney.jpg"
 tags:
   - "thought"
   - "video game"
@@ -11,7 +11,7 @@ tags:
 
 Finally. The game of all games. The game more popular than Doom Eternal, comically. I think this image encompass the irony of New Horizons.
 
-![Meme depicting how popular Animal Crossing: New Horizons is compared to Doom: Eternal](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-doom-comparison.jpg)
+![Meme depicting how popular Animal Crossing: New Horizons is compared to Doom: Eternal](https://cdn.bossley.xyz/files/thoughts/20/new-horizons-doom-comparison.jpg)
 
 Animal Crossing: New Horizons is so much different than any other serious game I've played. This is my first time playing a legitimate Animal Crossing game (not pocket camp), and it's a whole different atmosphere.
 
@@ -29,11 +29,11 @@ One potential downside is also how the game progresses. The game uses real-world
 
 Now, for a period-specific frustration. Since today is Easter, the past two weeks of gameplay have included a seasonal promotion to celebrate easter. They have added new items to craft using eggs you can catch occassionally from the sky, ground, and fishing. However, the items you can craft with the eggs are not visually appealing in the slightest, and the developers have seems to increase the egg spawn rates by 200%. Because of this, almost everything the player catches or finds is a worthless egg. This is not just a conviction held by me - in fact, a lot of people hold the same opinion of the easter event:
 
-![sea bass catch is actually just a egg](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-dio-egg.jpg)
+![sea bass catch is actually just a egg](https://cdn.bossley.xyz/files/thoughts/20/new-horizons-dio-egg.jpg)
 
-![enough is enough when it comes to the easter eggs](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-enough-is-enough.jpg)
+![enough is enough when it comes to the easter eggs](https://cdn.bossley.xyz/files/thoughts/20/new-horizons-enough-is-enough.jpg)
 
-![What if you wanted to get a decent score in the fishing tourney but God said egg](https://sam-bossley-us-media.sfo3.cdn.digitaloceanspaces.com/thoughts/2020/new-horizons-fishing-tourney.jpg)
+![What if you wanted to get a decent score in the fishing tourney but God said egg](https://cdn.bossley.xyz/files/thoughts/20/new-horizons-fishing-tourney.jpg)
 
 It concerns me that this is the first major event I've participated in since I started playing, and everyone is frustrated with it.
 
