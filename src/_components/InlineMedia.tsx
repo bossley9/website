@@ -1,8 +1,12 @@
 import { assertTimestamp } from "@/_utils/assertions.ts";
 
-type InlineVideoProps = {
+type MediaProps = {
   src: string;
   originalSrc?: string;
+  preload?: "auto" | "metadata" | "none";
+};
+
+type InlineVideoProps = MediaProps & {
   captions?: string;
   // builtin opts
   poster?: string;
@@ -14,6 +18,7 @@ export function InlineVideo({
   src,
   originalSrc,
   captions,
+  preload = "none",
   ...restProps
 }: InlineVideoProps) {
   let srcType = "video/mp4";
@@ -23,7 +28,7 @@ export function InlineVideo({
 
   return (
     <>
-      <video controls crossorigin="anonymous" {...restProps}>
+      <video controls crossorigin="anonymous" preload={preload} {...restProps}>
         <source src={src} type={srcType} />
         {captions && (
           <track
@@ -48,14 +53,14 @@ export function InlineVideo({
   );
 }
 
-type InlineAudioProps = {
-  src: string;
-  originalSrc?: string;
-};
-export function InlineAudio({ src, originalSrc }: InlineAudioProps) {
+export function InlineAudio({
+  src,
+  originalSrc,
+  preload = "none",
+}: MediaProps) {
   return (
     <>
-      <audio controls crossorigin="anonymous">
+      <audio controls crossorigin="anonymous" preload={preload}>
         <source src={src} type="audio/mpeg" />
         <p class="err">
           Your browser does not support audio.{" "}
