@@ -32,6 +32,7 @@ site.use(minifyHTML());
 
 site.copy("manifest.json");
 site.copy("robots.txt");
+site.copy("keys.pub", "keys");
 site.copy([".jpg", ".png", ".woff"]);
 
 export default site;

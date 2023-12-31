@@ -19,41 +19,19 @@
       packages.${system} = rec {
         default = pkgs.stdenv.mkDerivation {
           name = "website";
-          # use doc/ directory to cache result
-          src = ./doc;
-          dontBuild = true;
-          installPhase = ''
-            mkdir -p $out/
-            cp ${resume}/resume.pdf $out/sam-bossley.pdf
-            cp ${keys}/keys $out/keys
-          '';
-        };
-
-        keys = pkgs.stdenv.mkDerivation {
-          name = "keys";
-          src = ./keys;
-          installPhase = ''
-            mkdir -p $out
-            cp keys.pub $out/keys
-          '';
-        };
-
-        resume = pkgs.stdenv.mkDerivation {
-          name = "resume";
-          src = ./src/_resume;
+          src = ./.;
           buildInputs = with pkgs; [ texlive.combined.scheme-full ];
           buildPhase = ''
             mkdir -p $out
-            pdflatex resume.tex
-            cp resume.pdf $out
+            pdflatex src/_resume/resume.tex
+            mv resume.pdf $out/sam-bossley.pdf
           '';
         };
-
       };
 
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
-        buildInputs = with pkgs; with self.packages.${system}; resume.buildInputs ++ [
+        buildInputs = with pkgs; with self.packages.${system}; buildInputs ++ [
           gnugrep
           deno
           # spellcheck

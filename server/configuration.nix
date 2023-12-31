@@ -41,7 +41,7 @@ in
   users.users.admin = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    openssh.authorizedKeys.keys = lib.strings.splitString "\n" (builtins.readFile ../keys/keys.pub);
+    openssh.authorizedKeys.keys = lib.strings.splitString "\n" (builtins.readFile ../src/keys.pub);
   };
   environment.defaultPackages = lib.mkForce [ ]; # Remove default packages for security
   environment.systemPackages = with pkgs; [
