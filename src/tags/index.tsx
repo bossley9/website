@@ -10,7 +10,7 @@ type Props = {
 export default function ({ search }: Props) {
   const tags = search.values<string>("tags").sort(sortByAlpha);
   return (
-    <section class="tag-index">
+    <section class="tagindex">
       <h1>Tag Index</h1>
       <ol>
         {tags.map((tag) => (

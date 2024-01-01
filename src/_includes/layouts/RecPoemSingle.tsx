@@ -11,7 +11,7 @@ export default function (props: LayoutProps) {
       {...props}
       title={`${title} by ${author}`}
       content={
-        <article class="poem-single">
+        <article class="poemsingle">
           <h1>
             <cite>{title}</cite> by {author}
           </h1>

@@ -10,7 +10,7 @@ type Props = {
 export default function ({ memesByYear }: Props) {
   const years = getObjectKeys(memesByYear);
   return (
-    <section class="meme-section">
+    <section>
       <h1>Memes</h1>
       <p>
         This is a collection of all my meme playlists. I could save all of these

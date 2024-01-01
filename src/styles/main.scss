@@ -1,43 +1,41 @@
 :root {
-  --light-fg: #20242d;
-  --light-fg-alt: #4e5564;
-  --light-bg: #fbfbf8;
-  --light-bg-alt: #ebebe8;
-  --light-primary: #27598a;
-  --light-secondary: #933841;
+  --l-fg: #20242d;
+  --l-fg-alt: #4e5564;
+  --l-bg: #fbfbf8;
+  --l-bg-alt: #ebebe8;
+  --l-primary: #27598a;
 
-  --dark-fg: #eceff4;
-  --dark-fg-alt: #b1b6bd;
-  --dark-bg: #252a33;
-  --dark-bg-alt: #2f3540;
-  --dark-primary: #5fd7ff;
-  --dark-secondary: #f29ea6;
+  --d-fg: #eceff4;
+  --d-fg-alt: #b1b6bd;
+  --d-bg: #252a33;
+  --d-bg-alt: #2f3540;
+  --d-primary: #5fd7ff;
 
-  --code-text: var(--light-fg);
-  --code-keyword: #27598a;
-  --code-string: #6f4467;
-  --code-comment: #4e5564;
-  --code-function: #077295;
-  --code-attribute: var(--code-function);
-  --code-string-expression: var(--code-string);
-  --code-constant: var(--code-function);
-  --code-insertion: var(--light-fg);
-  --code-insertion-bg: #a3be8cc0;
-  --code-deletion: var(--light-fg);
-  --code-deletion-bg: #bf616a80;
+  --syn-text: var(--l-fg);
+  --syn-keyword: #27598a;
+  --syn-string: #6f4467;
+  --syn-comment: #4e5564;
+  --syn-function: #077295;
+  --syn-attribute: var(--syn-function);
+  --syn-string-expression: var(--syn-string);
+  --syn-constant: var(--syn-function);
+  --syn-insertion: var(--l-fg);
+  --syn-insertion-bg: #a3be8cc0;
+  --syn-deletion: var(--l-fg);
+  --syn-deletion-bg: #bf616a80;
 
-  --dark-code-text: var(--dark-fg);
-  --dark-code-keyword: #81a1c1;
-  --dark-code-string: #a3be8c;
-  --dark-code-comment: #88c0d0;
-  --dark-code-function: #88c0d0;
-  --dark-code-attribute: var(--dark-code-function);
-  --dark-code-string-expression: var(--dark-code-string);
-  --dark-code-constant: var(--dark-code-function);
-  --dark-code-insertion: #a3be8c;
-  --dark-code-insertion-bg: transparent;
-  --dark-code-deletion: #bf616a;
-  --dark-code-deletion-bg: transparent;
+  --d-syn-text: var(--d-fg);
+  --d-syn-keyword: #81a1c1;
+  --d-syn-string: #a3be8c;
+  --d-syn-comment: #88c0d0;
+  --d-syn-function: #88c0d0;
+  --d-syn-attribute: var(--d-syn-function);
+  --d-syn-string-expression: var(--d-syn-string);
+  --d-syn-constant: var(--d-syn-function);
+  --d-syn-insertion: #a3be8c;
+  --d-syn-insertion-bg: transparent;
+  --d-syn-deletion: #bf616a;
+  --d-syn-deletion-bg: transparent;
 }
 
 /* global defaults */
@@ -66,11 +64,11 @@ body {
 html,
 body,
 a {
-  color: var(--light-fg);
-  background-color: var(--light-bg);
+  color: var(--l-fg);
+  background-color: var(--l-bg);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-fg);
-    background-color: var(--dark-bg);
+    color: var(--d-fg);
+    background-color: var(--d-bg);
   }
 }
 
@@ -125,14 +123,20 @@ footer {
 dfn {
   font-style: normal;
   font-weight: bold;
-  color: var(--light-primary);
+  color: var(--l-primary);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-primary);
+    color: var(--d-primary);
   }
 }
 
 code {
   font-family: "Courier New", monospace;
+  background-color: var(--l-bg-alt);
+  color: var(--l-fg);
+  @media (prefers-color-scheme: dark) {
+    color: var(--d-fg);
+    background-color: var(--d-bg-alt);
+  }
 }
 
 table {
@@ -142,9 +146,9 @@ table {
     padding: 0.4rem;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--light-fg-alt);
+    border-color: var(--l-fg-alt);
     @media (prefers-color-scheme: dark) {
-      border-color: var(--dark-fg-alt);
+      border-color: var(--d-fg-alt);
     }
   }
 }
@@ -157,9 +161,9 @@ a {
 }
 
 @mixin primary-link {
-  color: var(--light-primary);
+  color: var(--l-primary);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-primary);
+    color: var(--d-primary);
   }
 }
 
@@ -167,15 +171,6 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-  }
-}
-
-@mixin inline-code {
-  background-color: var(--light-bg-alt);
-  color: var(--light-secondary);
-  @media (prefers-color-scheme: dark) {
-    color: var(--dark-secondary);
-    background-color: var(--dark-bg-alt);
   }
 }
 
@@ -242,9 +237,9 @@ header {
 
 footer {
   svg {
-    fill: var(--light-fg-alt);
+    fill: var(--l-fg-alt);
     @media (prefers-color-scheme: dark) {
-      fill: var(--dark-fg-alt);
+      fill: var(--d-fg-alt);
     }
   }
   .copyrights a {
@@ -254,7 +249,7 @@ footer {
 
 /* universal components */
 
-ol.articlelist {
+.articlelist {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -273,7 +268,7 @@ ol.articlelist {
   }
 }
 
-ul.year-pagination {
+.yearpagination {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -293,7 +288,7 @@ ul.year-pagination {
   }
 }
 
-ul.pagination {
+.pagination {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -315,14 +310,14 @@ ul.pagination {
     align-items: center;
   }
   svg {
-    fill: var(--light-fg-alt);
+    fill: var(--l-fg-alt);
     @media (prefers-color-scheme: dark) {
-      fill: var(--dark-fg-alt);
+      fill: var(--d-fg-alt);
     }
   }
 }
 
-ul.taglist {
+.taglist {
   list-style-type: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -343,7 +338,7 @@ ul.taglist {
 
 /* pages */
 
-section.about {
+.about {
   .stacked {
     display: flex;
     gap: 1rem;
@@ -352,7 +347,7 @@ section.about {
     }
   }
 
-  img.me {
+  .me {
     height: 300px;
     width: 300px;
     border-radius: 0.25rem;
@@ -375,8 +370,8 @@ section.about {
   }
 }
 
-article.what-is-a-feed {
-  svg.rss-logo {
+.whatisafeed {
+  .rsslogo {
     fill: #f38f32;
   }
   ul {
@@ -390,10 +385,7 @@ article.what-is-a-feed {
   }
 }
 
-section.keyboard {
-  code {
-    @include inline-code;
-  }
+.keyboard {
   code a {
     background-color: transparent;
     color: inherit;
@@ -405,7 +397,7 @@ section.keyboard {
   }
 }
 
-section.referrals {
+.referrals {
   ul {
     padding-left: 1rem;
   }
@@ -417,7 +409,7 @@ section.referrals {
   }
 }
 
-section.tag-index {
+.tagindex {
   ol {
     margin: 0;
     padding: 0;
@@ -435,13 +427,13 @@ section.tag-index {
   }
 }
 
-section.tag-single {
-  .tag-name {
+.tagsingle {
+  .tagname {
     @include primary-link;
   }
 }
 
-article.thought-single {
+.thoughtsingle {
   a {
     @include primary-link;
   }
@@ -451,27 +443,23 @@ article.thought-single {
     font-style: italic;
     border-left-width: 0.25rem;
     border-left-style: solid;
-    border-left-color: var(--light-bg-alt);
-    color: var(--light-fg-alt);
+    border-left-color: var(--l-bg-alt);
+    color: var(--l-fg-alt);
     @media (prefers-color-scheme: dark) {
-      border-left-color: var(--dark-bg-alt);
-      color: var(--dark-fg-alt);
+      border-left-color: var(--d-bg-alt);
+      color: var(--d-fg-alt);
     }
   }
   @include heading-anchors;
-  p code,
-  li code {
-    @include inline-code;
-  }
   pre {
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 0.25rem;
     font-size: 0.9rem;
-    background-color: var(--light-bg-alt);
+    background-color: var(--l-bg-alt);
     overflow-x: auto;
     @media (prefers-color-scheme: dark) {
-      background-color: var(--dark-bg-alt);
+      background-color: var(--d-bg-alt);
     }
   }
   ul,
@@ -505,14 +493,14 @@ article.thought-single {
   img::before,
   img::after {
     font-style: italic;
-    color: var(--light-fg-alt);
+    color: var(--l-fg-alt);
     @media (prefers-color-scheme: dark) {
-      color: var(--dark-fg-alt);
+      color: var(--d-fg-alt);
     }
   }
 }
 
-article.tab-single {
+.tabsingle {
   a {
     @include primary-link;
   }
@@ -521,13 +509,13 @@ article.tab-single {
   }
 }
 
-article.poem-single {
+.poemsingle {
   pre {
     font-size: 0.85rem;
   }
 }
 
-article.recipe-single {
+.recipesingle {
   a {
     @include primary-link;
   }
@@ -548,13 +536,13 @@ article.recipe-single {
   }
 }
 
-section.rec-section {
+.recsection {
   p a {
     @include primary-link;
   }
 }
 
-section.rec-single {
+.recsingle {
   a {
     @include primary-link;
   }
@@ -570,13 +558,7 @@ section.rec-single {
   }
 }
 
-section.meme-section {
-  code {
-    @include inline-code;
-  }
-}
-
-article.meme-single {
+.memesingle {
   a {
     @include primary-link;
   }
@@ -593,76 +575,76 @@ article.meme-single {
 /* @import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github.min.css"; */
 
 .hljs {
-  color: var(--code-text);
+  color: var(--syn-text);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-text);
+    color: var(--d-syn-text);
   }
 }
 .hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_ {
-  color: var(--code-keyword);
+  color: var(--syn-keyword);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-keyword);
+    color: var(--d-syn-keyword);
   }
 }
 .hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_ {
-  color: var(--code-function);
+  color: var(--syn-function);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-function);
+    color: var(--d-syn-function);
   }
 }
 .hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable {
-  color: var(--code-attribute);
+  color: var(--syn-attribute);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-attribute);
+    color: var(--d-syn-attribute);
   }
 }
 .hljs-meta .hljs-string,.hljs-regexp,.hljs-string {
-  color: var(--code-string);
+  color: var(--syn-string);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-string);
+    color: var(--d-syn-string);
   }
 }
 .hljs-built_in,.hljs-symbol {
-  color: var(--code-keyword);
+  color: var(--syn-keyword);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-keyword);
+    color: var(--d-syn-keyword);
   }
 }
 .hljs-code,.hljs-comment,.hljs-formula {
-  color: var(--code-comment);
+  color: var(--syn-comment);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-comment);
+    color: var(--d-syn-comment);
   }
 }
 .hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag {
-  color: var(--code-string-expression);
+  color: var(--syn-string-expression);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-string-expression);
+    color: var(--d-syn-string-expression);
   }
 }
 .hljs-subst {
-  color: var(--code-constant);
+  color: var(--syn-constant);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-constant);
+    color: var(--d-syn-constant);
   }
 }
-.hljs-section { }
-.hljs-bullet { }
-.hljs-emphasis { }
-.hljs-strong { }
+/* .hljs-section { } */
+/* .hljs-bullet { } */
+/* .hljs-emphasis { } */
+/* .hljs-strong { } */
 .hljs-addition{
-  color: var(--code-insertion);
-  background-color: var(--code-insertion-bg);
+  color: var(--syn-insertion);
+  background-color: var(--syn-insertion-bg);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-insertion);
-    background-color: var(--dark-code-insertion-bg);
+    color: var(--d-syn-insertion);
+    background-color: var(--d-syn-insertion-bg);
   }
 }
 .hljs-deletion{
-  color: var(--code-deletion);
-  background-color: var(--code-deletion-bg);
+  color: var(--syn-deletion);
+  background-color: var(--syn-deletion-bg);
   @media (prefers-color-scheme: dark) {
-    color: var(--dark-code-deletion);
-    background-color: var(--dark-code-deletion-bg);
+    color: var(--d-syn-deletion);
+    background-color: var(--d-syn-deletion-bg);
   }
 }

@@ -25,7 +25,7 @@ export default function () {
   const feedUrl = new URL("/feed.xml", BASE_URL);
   return (
     <>
-      <article class="what-is-a-feed">
+      <article class="whatisafeed">
         <h1>What is a feed?</h1>
         <p>
           A <dfn>feed</dfn>{" "}
@@ -50,7 +50,7 @@ export default function () {
           this icon:
         </p>
         <svg
-          class="rss-logo"
+          class="rsslogo"
           aria-label="rss feed symbol"
           width="20"
           height="20"

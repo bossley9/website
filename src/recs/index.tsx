@@ -54,7 +54,7 @@ const recList = [
 
 export default function () {
   return (
-    <section class="rec-section">
+    <section class="recsection">
       <h1>Recommendations</h1>
       <p>
         Here I try to record lists of pretty much everything I&#39;ve ever read,

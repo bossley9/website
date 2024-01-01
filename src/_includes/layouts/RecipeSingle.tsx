@@ -12,7 +12,7 @@ export default function (props: LayoutProps) {
     <BaseLayout
       {...props}
       content={
-        <article class="recipe-single">
+        <article class="recipesingle">
           <h1>{title}</h1>
           <p>
             Last updated{" "}

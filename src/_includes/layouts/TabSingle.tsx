@@ -26,7 +26,7 @@ export default function (props: LayoutProps) {
     <BaseLayout
       {...props}
       content={
-        <article class="tab-single">
+        <article class="tabsingle">
           <h1>{title}</h1>
           <p>
             Last updated{" "}

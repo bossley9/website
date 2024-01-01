@@ -20,7 +20,7 @@ export default function () {
 
   const groupedByYear = groupEntriesByYear(articleList);
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Articles</h1>
       <p>{description}</p>
       {groupedByYear.map(([year, items]) => (

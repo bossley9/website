@@ -25,7 +25,7 @@ export default function () {
     showList.filter((item) => !item.current),
   );
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Shows</h1>
       <p>{description}</p>
       {current && (

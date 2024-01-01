@@ -21,7 +21,7 @@ export default function () {
 
   const groupedByYear = groupEntriesByYear(storyList);
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Stories</h1>
       <p>{description}</p>
       {groupedByYear.map(([year, items]) => (

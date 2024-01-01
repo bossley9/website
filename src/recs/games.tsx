@@ -23,7 +23,7 @@ export default function () {
 
   const groupedByYear = groupEntriesByYear(gameList);
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Games</h1>
       <p>{description}</p>
       {current && <p>I&#39;m currently playing {current.title}.</p>}

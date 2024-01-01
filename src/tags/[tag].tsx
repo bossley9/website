@@ -16,9 +16,9 @@ export default function* ({ search }: Props) {
       url: `/tags/${slugify(tag)}/`,
       title: `Tagged "${tag}"`,
       content: (
-        <section class="tag-single">
+        <section class="tagsingle">
           <h1>
-            Tagged &#34;<span class="tag-name">{tag}</span>&#34;
+            Tagged &#34;<span class="tagname">{tag}</span>&#34;
           </h1>
           <ol class="articlelist">
             {pages.map(({ date, title, url }) => {

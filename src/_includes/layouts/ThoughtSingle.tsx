@@ -10,7 +10,7 @@ export default function (props: LayoutProps) {
     <BaseLayout
       {...props}
       content={
-        <article class="thought-single">
+        <article class="thoughtsingle">
           <h1>{title}</h1>
           <p>
             <time datetime={date.toISOString()}>{date.toDateString()}</time>

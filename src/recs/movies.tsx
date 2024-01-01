@@ -22,7 +22,7 @@ export default function () {
 
   const groupedByYear = groupEntriesByYear(movieList);
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Movies</h1>
       <p>{description}</p>
       {groupedByYear.map(([year, items]) => (

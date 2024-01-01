@@ -15,7 +15,7 @@ export default function* ({ memesByYear }: Props) {
       url: `/memes/${year}/`,
       title: `Memes (${year})`,
       content: (
-        <article class="meme-single">
+        <article class="memesingle">
           <h1>Memes ({year})</h1>
           <ol>
             {playlist.map(({ file, comment }) => (

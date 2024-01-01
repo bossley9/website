@@ -25,7 +25,7 @@ export default function () {
     mangaList.filter((item) => !item.current),
   );
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Manga</h1>
       <p>{description}</p>
       {current && (
@@ -38,7 +38,7 @@ export default function () {
           <h2>{year}</h2>
           <ol>
             {items.map((manga) => {
-              const { url, title, author, rating, note } = manga;
+              const { title, author, rating, note } = manga;
 
               const startYear = "run_start" in manga
                 ? manga.run_start

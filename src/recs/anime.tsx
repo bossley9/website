@@ -25,7 +25,7 @@ export default function () {
     animeList.filter((item) => !item.current),
   );
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Anime</h1>
       <p>{description}</p>
       {current && (

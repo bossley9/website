@@ -25,7 +25,7 @@ export default function () {
     bookList.filter((item) => !item.current),
   );
   return (
-    <section class="rec-single">
+    <section class="recsingle">
       <h1>Books</h1>
       <p>{description}</p>
       {current && (
