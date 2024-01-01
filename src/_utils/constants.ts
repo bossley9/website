@@ -9,7 +9,7 @@ export const SITE_TAGS = [
   "tech",
   "commentary",
 ];
-export const COPYRIGHT = `Copyright ${SITE_TITLE} 2012-2023.`;
+export const COPYRIGHT = `Copyright ${SITE_TITLE} 2012-2024.`;
 export const BASE_URL = "https://sam.bossley.xyz";
 
 export const AUTHOR = "Sam Bossley";

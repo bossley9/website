@@ -6,6 +6,7 @@ tags:
   - "thought"
   - "reflection"
   - "goals"
+  - "metamorphosis"
 ---
 
 I realize I'm posting this late. I know. I've been contemplating my goals and resolutions this year for a long time now.
