@@ -1,9 +1,9 @@
 {
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
-    "build": "deno task check && deno task clean && deno task lume && nix build && cp -r ./result/* ./dist && gzip -r -9k ./dist",
+    "build": "deno task check && deno task clean && deno task lume && gzip -r -9k ./dist",
     "check": "deno lint && ./scripts/cdncheck.sh",
-    "clean": "rm -rf ./dist/ && rm -f result",
+    "clean": "rm -rf ./dist/",
     "serve": "deno task lume -s",
     "review": "sh ./scripts/spellcheck.sh",
     "deploy": "deno task build && rsync -av -e 'ssh -p 24' --chmod=775 --no-owner --no-group --no-times --delete \"./dist/\" \"admin@sam.bossley.xyz:/var/www/sam.bossley.xyz\""

@@ -16,22 +16,9 @@
         modules = [ ./server/configuration.nix ];
       };
 
-      packages.${system} = rec {
-        default = pkgs.stdenv.mkDerivation {
-          name = "website";
-          src = ./.;
-          buildInputs = with pkgs; [ texlive.combined.scheme-full ];
-          buildPhase = ''
-            mkdir -p $out
-            pdflatex src/_resume/resume.tex
-            mv resume.pdf $out/sam-bossley.pdf
-          '';
-        };
-      };
-
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
-        buildInputs = with pkgs; with self.packages.${system}; buildInputs ++ [
+        buildInputs = with pkgs; [
           gnugrep
           deno
           # spellcheck
