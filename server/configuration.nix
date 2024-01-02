@@ -55,6 +55,7 @@ in
   programs.bash.shellInit = ''
     set -o vi > /dev/null 2>&1
     alias vim="nvim"
+    alias g="git"
     alias nrs="doas nixos-rebuild switch --flake .#"
   '';
 
@@ -110,38 +111,10 @@ in
       873 # Rsync
     ];
   };
-  security.acme = {
-    acceptTerms = true;
-    defaults.email = email;
-  };
-  services.nginx = {
+  services.caddy = {
     enable = true;
-    recommendedGzipSettings = true;
-    recommendedOptimisation = true;
-    recommendedTlsSettings = true;
-    virtualHosts = {
-      "www.bossley.xyz" = {
-        forceSSL = true;
-        enableACME = true;
-        globalRedirect = "sam.bossley.xyz";
-      };
-      "bossley.xyz" = {
-        forceSSL = true;
-        enableACME = true;
-        globalRedirect = "sam.bossley.xyz";
-      };
-      "www.sam.bossley.xyz" = {
-        forceSSL = true;
-        enableACME = true;
-        globalRedirect = "sam.bossley.xyz";
-      };
-      "sam.bossley.xyz" = {
-        forceSSL = true;
-        enableACME = true;
-        root = "/var/www/sam.bossley.xyz";
-        extraConfig = builtins.readFile ./nginx.conf;
-      };
-    };
+    configFile = ./Caddyfile;
+    email = email;
   };
 
   services.rsyncd = {

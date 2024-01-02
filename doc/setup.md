@@ -1,11 +1,11 @@
 # Setup (Vultr)
 
 1. Go to [https://channels.nixos.org](https://channels.nixos.org) to find the latest stable minimal x86_64 ISO url.
-2. Deploy a server in Vultr using the custom ISO link from earlier. I chose a plan with 1 GB RAM.
+2. Deploy a server in Vultr using the custom ISO link from earlier. I chose an Intel CPU plan with 1 GB RAM hosted in LA. I also made the hostname `webserver`.
 3. Log into the web console and copy over ssh keys to perform the rest of the installation via ssh.
     ```sh
     mkdir ~/.ssh
-    wget -O ~/.ssh/authorized_keys https://sam.bossley.xyz/keys
+    curl -o ~/.ssh/authorized_keys https://sam.bossley.xyz/keys
     cat ~/.ssh/authorized_keys # sanity check
     ```
     The following steps can now be performed via SSH (`ssh nixos@MY_IP_ADDRESS`).
@@ -32,7 +32,7 @@
     ```sh
     nixos-generate-config --root /mnt
     ```
-8. Be sure to double check the hardware configuration for discrepancies or updates.
+8. Be sure to double check the hardware configuration for discrepancies or updates. You should not need to modify any settings.
     ```sh
     less /mnt/etc/nixos/hardware-configuration.nix
     ```
@@ -41,4 +41,14 @@
     git clone https://github.com/bossley9/website
     nixos-install --no-root-passwd --flake ./website#webserver
     ```
-10. In the Vultr dashboard, remove the custom ISO. This will trigger a VPS reboot. Then verify you can access the server as `admin@domain` or `admin@ip` via SSH.
+10. In the Vultr dashboard, remove the custom ISO. This will trigger a VPS reboot. Then verify you can access the server via SSH.
+    ```sh
+    ssh -p 24 admin@ip
+    ```
+11. Set up the webserver.
+    ```sh
+    git clone https://github.com/bossley9/website
+    mkdir -p /var/www/sam.bossley.xyz
+    doas chmod -Rv 755 /var/www
+    doas chown -Rv admin:wheel /var/www
+    ```

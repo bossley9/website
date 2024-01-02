@@ -1,0 +1,40 @@
+bossley.xyz,
+www.bossley.xyz,
+www.sam.bossley.xyz {
+  redir https://sam.bossley.xyz{uri}
+}
+
+:80,
+:443,
+sam.bossley.xyz {
+	root * /var/www/sam.bossley.xyz
+	encode gzip
+	file_server
+
+	header "X-Frame-Options" "sameorigin"
+	header "X-XSS-Protection" "1"
+	header "X-Content-Type-Options" "nosniff"
+	header "X-Permitted-Cross-Domain-Policies" "none"
+	header "Strict-Transport-Security" "max-age=31536000"
+	header "Content-Security-Policy" "default-src * data:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'"
+	header "Referrer-Policy" "no-referrer-when-downgrade"
+	header "Feature-Policy" "camera 'none'; fullscreen 'self'; geolocation 'none'; microphone 'none'"
+
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+
+	@assets {
+		path *.css *.jpg *.png *.js *.webp *.woff
+	}
+	header @assets "Cache-Control" "max-age=31536000, public, immutable"
+
+	handle /feed.xml {
+		header "Content-Type" "application/atom+xml"
+	}
+
+	handle /keys {
+		header "Content-Type" "text/plain"
+	}
+}
