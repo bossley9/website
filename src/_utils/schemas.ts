@@ -113,6 +113,7 @@ const movieSchema = z.object({
   title: z.string(),
   year: dateSchema,
   director: z.string(),
+  writer: z.string().optional(),
   producer: z.string(),
   date: dateSchema,
   rating: ratingSchema,

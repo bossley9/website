@@ -1,6 +1,17 @@
 [
   {
     "type": "movie",
+    "title": "The Flash",
+    "year": "2023",
+    "director": "Andy Muschietti",
+    "writer": "Christina Hodson",
+    "producer": "Barbara Muschietti and Michael Disco",
+    "date": "2023",
+    "rating": 5.5,
+    "note": "None of the characters grew or developed throughout the movie, especially the main character. The humor was crude and unfunny and the CGI effects were terrible."
+  },
+  {
+    "type": "movie",
     "title": "Guardians of the Galaxy Vol. 3",
     "year": "2023",
     "director": "James Gunn",
@@ -896,8 +907,8 @@
     "director": "Rian Johnson",
     "producer": "Ram Bergman and Rian Johnson",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": 7.0,
+    "note": "Great acting from great actors. The plot is a bit strange for a classic whodunnit, but enjoyable regardless."
   },
   {
     "type": "movie",
@@ -1476,8 +1487,8 @@
     "director": "Peter Weir",
     "producer": "Scott Rudin and Andrew Niccol and Edward S. Feldman and Adam Schroeder",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": 7.6,
+    "note": "A great meta movie on life and paranoia. Ahead of its time."
   },
   {
     "type": "movie",
