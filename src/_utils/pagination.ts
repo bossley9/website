@@ -1,5 +1,5 @@
 import { groupEntriesByYear } from "@/_utils/object.ts";
-import type { Data } from "lume/core/file.ts";
+import type { DataLike } from "@/_types/lume.ts";
 
 export type CustomPage<T> = {
   url: string;
@@ -27,25 +27,25 @@ export function customPagination<T>(data: T[], path: string): CustomPage<T>[] {
   return staticPaths;
 }
 
-type YearPage = {
+type DataYearPage<T> = {
   year: number;
   url: string;
-  data: Data[];
+  entries: T[];
   years: number[];
 };
-export function yearPagination(
-  data: Data[],
-  path: string,
-): YearPage[] {
-  const sortedPages = groupEntriesByYear(data);
+export function yearPagination<T extends DataLike>(
+  entries: T[],
+  baseURL: string,
+): DataYearPage<T>[] {
+  const sortedPages = groupEntriesByYear(entries);
   const years = sortedPages.map(([year]) => year);
 
-  return sortedPages.map(([year, collection], i): YearPage => {
-    const pageSlug = i === 0 ? "" : "page/" + year;
+  return sortedPages.map(([year, innerEntries], i): DataYearPage<T> => {
+    const pageSlug = i === 0 ? "" : `page/${year}/`;
     return {
       year,
-      url: `${path}/${pageSlug}/`,
-      data: collection,
+      url: `${baseURL}/${pageSlug}`,
+      entries: innerEntries,
       years,
     };
   });

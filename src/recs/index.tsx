@@ -3,7 +3,7 @@ import { description as articleDescription } from "@/recs/articles.tsx";
 import { description as bookDescription } from "@/recs/books.tsx";
 import { description as gameDescription } from "@/recs/games.tsx";
 import { description as mangaDescription } from "@/recs/manga.tsx";
-import { description as movieDescription } from "@/recs/movies.tsx";
+import { description as movieDescription } from "@/recs/[...movies].tsx";
 import { description as showDescription } from "@/recs/shows.tsx";
 import { description as storyDescription } from "@/recs/stories.tsx";
 

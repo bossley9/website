@@ -17,7 +17,7 @@ export default function* ({ search }: Props) {
   );
 
   for (const page of pages) {
-    const { url, year, years, data: entries } = page;
+    const { url, year, years, entries } = page;
     yield {
       layout: Layouts.BaseLayout,
       url,

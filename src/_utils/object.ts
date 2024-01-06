@@ -1,3 +1,5 @@
+import type { DataLike } from "@/_types/lume.ts";
+
 export const getObjectEntries = Object.entries as <
   T extends Record<symbol, unknown>,
 >(
@@ -10,7 +12,7 @@ export const getObjectKeys = Object.keys as <
   obj: T,
 ) => (keyof T)[];
 
-export function groupEntriesByYear<T extends { date: Date | string }>(
+export function groupEntriesByYear<T extends DataLike>(
   entries: T[],
 ): [number, T[]][] {
   const groupedEntries = entries.reduce<Record<number, T[]>>((acc, val) => {

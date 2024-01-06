@@ -284,7 +284,9 @@ footer {
 
 .yearpagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  row-gap: 0.5rem;
   list-style-type: none;
   margin: 3rem 0;
   padding: 0;
@@ -557,7 +559,7 @@ footer {
 }
 
 .recsingle {
-  a {
+  & > *:not(.yearpagination) a {
     @include primary-link;
   }
   ol {
