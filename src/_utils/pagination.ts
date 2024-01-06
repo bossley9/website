@@ -27,23 +27,24 @@ export function customPagination<T>(data: T[], path: string): CustomPage<T>[] {
   return staticPaths;
 }
 
-type ThoughtPage = {
+type YearPage = {
   year: number;
   url: string;
   data: Data[];
   years: number[];
 };
-export function thoughtPagination(
+export function yearPagination(
   data: Data[],
-): ThoughtPage[] {
+  path: string,
+): YearPage[] {
   const sortedPages = groupEntriesByYear(data);
   const years = sortedPages.map(([year]) => year);
 
-  return sortedPages.map(([year, collection], i): ThoughtPage => {
+  return sortedPages.map(([year, collection], i): YearPage => {
     const pageSlug = i === 0 ? "" : "page/" + year;
     return {
       year,
-      url: `/thoughts/${pageSlug}/`,
+      url: `${path}/${pageSlug}/`,
       data: collection,
       years,
     };

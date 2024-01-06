@@ -55,14 +55,13 @@ export function Footer({ minimal = false }: Props) {
             &nbsp;&nbsp;
             <a href="/what-is-a-feed">What is a feed?</a>
           </p>
-          <p class="dnp">
-            {footerLinks.map(({ href, name }, index) => (
-              <>
-                {index ? "<span>&nbsp;|&nbsp;</span>" : ""}
+          <ul class="dnp">
+            {footerLinks.map(({ href, name }) => (
+              <li>
                 <a href={href}>{name}</a>
-              </>
+              </li>
             ))}
-          </p>
+          </ul>
           <p class="dnp">
             This site will never contain tracking, ads, or require JavaScript
             (unless a page specifically demonstrates JavaScript capabilities).

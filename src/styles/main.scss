@@ -242,6 +242,20 @@ footer {
       fill: var(--d-fg-alt);
     }
   }
+  ul {
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+  li:not(:last-child) {
+    border-right: 1px solid var(--l-fg);
+    margin-right: 5px;
+    padding-right: 5px;
+    @media (prefers-color-scheme: dark) {
+      border-right: 1px solid var(--d-fg);
+    }
+  }
   .copyrights a {
     @include hover-underline;
   }

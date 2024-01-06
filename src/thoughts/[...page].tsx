@@ -1,6 +1,6 @@
 import { ArticleListItem } from "@/_components/ArticleListItem.tsx";
 import { YearPaginationNav } from "@/_components/YearPaginationNav.tsx";
-import { thoughtPagination } from "@/_utils/pagination.ts";
+import { yearPagination } from "@/_utils/pagination.ts";
 import { assertThoughtPost } from "@/_utils/assertions.ts";
 import { Layouts } from "@/_utils/constants.ts";
 
@@ -11,7 +11,10 @@ type Props = {
 };
 
 export default function* ({ search }: Props) {
-  const pages = thoughtPagination(search.pages("thought", "date=desc"));
+  const pages = yearPagination(
+    search.pages("thought", "date=desc"),
+    "/thoughts",
+  );
 
   for (const page of pages) {
     const { url, year, years, data: entries } = page;
