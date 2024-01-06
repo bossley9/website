@@ -27,7 +27,6 @@ export default function (
   const tags = Array.isArray(startTags) && startTags.length > 0
     ? startTags
     : SITE_TAGS;
-  const cssVer = "1.4.0";
   return (
     <>
       {/* DOCTYPE isn't valid JSX so it needs to be inserted as a string */}
@@ -120,7 +119,7 @@ export default function (
             href="/fonts/Inter/Inter-Bold.woff"
             crossorigin
           />
-          <link rel="stylesheet" href={`/styles/main.css?v=${cssVer}`} />
+          <link rel="stylesheet" href="/styles/main-v1.css" />
         </head>
         <body>
           {!minimal && <Header currentUrl={new URL(url, BASE_URL)} />}
