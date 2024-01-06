@@ -3,6 +3,8 @@ import { Footer } from "@/_components/Footer.tsx";
 import {
   AUTHOR,
   BASE_URL,
+  MAIN_STYLE_BASE_URL,
+  MAIN_STYLE_HASH,
   SITE_DESCRIPTION,
   SITE_TAGS,
   SITE_TITLE,
@@ -119,7 +121,10 @@ export default function (
             href="/fonts/Inter/Inter-Bold.woff"
             crossorigin
           />
-          <link rel="stylesheet" href="/styles/main-v1.css" />
+          <link
+            rel="stylesheet"
+            href={`${MAIN_STYLE_BASE_URL}/${MAIN_STYLE_HASH}.min.css`}
+          />
         </head>
         <body>
           {!minimal && <Header currentUrl={new URL(url, BASE_URL)} />}

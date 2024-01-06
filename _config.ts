@@ -5,6 +5,7 @@ import mdx from "lume/plugins/mdx.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import { lumeAutoLinkHeadingsPlugin } from "./plugins/autoLinkHeadings.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
+import { cacheBustCSS } from "./plugins/cacheBustCss.ts";
 
 import {
   InlineAudio,
@@ -29,6 +30,7 @@ site.use(mdx({
 site.use(codeHighlight());
 site.use(lumeAutoLinkHeadingsPlugin());
 site.use(minifyHTML());
+site.use(cacheBustCSS());
 
 site.copy("manifest.json");
 site.copy("robots.txt");

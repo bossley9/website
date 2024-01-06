@@ -19,8 +19,11 @@
       devShells.${system}.default = pkgs.stdenv.mkDerivation {
         name = "website";
         buildInputs = with pkgs; [
-          gnugrep
           deno
+          # hash calculation/cache busting
+          coreutils
+          # url checking
+          gnugrep
           # spellcheck
           (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))
           # captioning

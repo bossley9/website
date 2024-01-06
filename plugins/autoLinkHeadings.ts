@@ -1,4 +1,4 @@
-import { slugify } from "../src/_utils/urls.ts";
+import { slugify } from "@/_utils/urls.ts";
 export function lumeAutoLinkHeadingsPlugin() {
   return (site: Lume.Site) => {
     site.process([".html"], (pages) => {
