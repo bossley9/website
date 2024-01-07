@@ -1,6 +1,7 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import data from "@/_data/recs/manga.json" with { type: "json" };
+import { getReadingItemURL } from "@/_utils/data.ts";
 import { type Manga, mangaListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -30,7 +31,11 @@ export default function () {
       <p>{description}</p>
       {current && (
         <p>
-          I&#39;m currently reading <i>{current.title}</i> by {current.author}.
+          I&#39;m currently reading{" "}
+          <a href={getReadingItemURL(current)}>
+            <i>{current.title}</i>
+          </a>{" "}
+          by {current.author}.
         </p>
       )}
       {groupedByYear.map(([year, items]) => (

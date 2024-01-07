@@ -1,6 +1,7 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/books.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
+import { getReadingItemURL } from "@/_utils/data.ts";
 import { type Book, bookListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -30,18 +31,23 @@ export default function () {
       <p>{description}</p>
       {current && (
         <p>
-          I&#39;m currently reading <i>{current.title}</i> by {current.author}.
+          I&#39;m currently reading{" "}
+          <a href={getReadingItemURL(current)}>
+            <i>{current.title}</i>
+          </a>{" "}
+          by {current.author}.
         </p>
       )}
       {groupedByYear.map(([year, items]) => (
         <>
           <h2>{year}</h2>
           <ol>
-            {items.map(({ isbn, title, author, year, rating, note }) => {
+            {items.map((item) => {
+              const { title, author, year, rating, note } = item;
               return (
                 <li>
                   <span>
-                    <a href={`https://isbnsearch.org/isbn/${isbn}`}>
+                    <a href={getReadingItemURL(item)}>
                       {title} by {author} ({year})
                     </a>
                   </span>

@@ -48,6 +48,14 @@ export function getCurrentlyReadingItem(): Book | Manga | null {
   return null;
 }
 
+export function getReadingItemURL(item: Book | Manga): string {
+  if (item.type === "manga") {
+    return item.url;
+  } else {
+    return `https://isbnsearch.org/isbn/${item.isbn}`;
+  }
+}
+
 export function getCurrentlyWatchingItem(): Show | Anime | null {
   let showList: Show[] = [];
   try {

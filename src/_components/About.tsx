@@ -4,6 +4,7 @@ import { fromZodError, ZodError } from "@deps";
 import {
   getCurrentlyReadingItem,
   getCurrentlyWatchingItem,
+  getReadingItemURL,
   getWatchingItemTitle,
 } from "@/_utils/data.ts";
 
@@ -62,7 +63,10 @@ export function About() {
             {readingItem && (
               <p>
                 <strong>Book club:</strong> I&#39;m currently reading{" "}
-                <i>{readingItem.title}</i> by {readingItem.author}.
+                <a href={getReadingItemURL(readingItem)}>
+                  <i>{readingItem.title}</i>
+                </a>{" "}
+                by {readingItem.author}.
               </p>
             )}
             {watchingItem && (
