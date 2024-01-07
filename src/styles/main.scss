@@ -516,6 +516,24 @@ footer {
   }
 }
 
+.streamsingle {
+  video {
+    border-radius: 0.25rem;
+  }
+  a {
+    @include primary-link;
+  }
+  .meta {
+    display: flex;
+  }
+  time {
+    padding-right: 0.5rem;
+  }
+  .desc ol {
+    list-style-type: decimal-leading-zero;
+  }
+}
+
 .tabsingle {
   a {
     @include primary-link;

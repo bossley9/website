@@ -48,6 +48,13 @@ export interface RecPoemPost extends Data {
   note?: string;
 }
 
+export interface StreamPost extends Data {
+  title: string;
+  date: Date;
+  video: string;
+  poster: string;
+}
+
 export type Playlist = {
   file: string;
   comment?: string;

@@ -3,6 +3,7 @@ import type {
   PoemPost,
   RecipePost,
   RecPoemPost,
+  StreamPost,
   TabPost,
   ThoughtPost,
 } from "@/_types/posts.ts";
@@ -23,8 +24,7 @@ function isOptionalString(x: unknown): x is string | undefined {
   return (typeof x === "string" && x.length > 0) || typeof x === "undefined";
 }
 
-function isOptionalURL(x: unknown): x is string | undefined {
-  if (typeof x === "undefined") return true;
+function isValidURL(x: unknown): x is string {
   if (typeof x !== "string") return false;
   try {
     new URL(x);
@@ -32,6 +32,12 @@ function isOptionalURL(x: unknown): x is string | undefined {
   } catch {
     return false;
   }
+}
+
+function isOptionalURL(x: unknown): x is string | undefined {
+  if (typeof x === "undefined") return true;
+  if (typeof x !== "string") return false;
+  return isValidURL(x);
 }
 
 function isOptionalNumber(x: unknown): x is number | undefined {
@@ -171,5 +177,22 @@ export function assertRecPoemPost(
   }
   if (!isOptionalString(post.note)) {
     throw Error(`${post.url} post.note is invalid`);
+  }
+}
+
+export function assertStreamPost(
+  post: Partial<Data>,
+): asserts post is StreamPost {
+  if (!isValidString(post.title)) {
+    throw Error(`${post.url} post.title is invalid`);
+  }
+  if (!isValidDate(post.date)) {
+    throw Error(`${post.url} post.date is invalid`);
+  }
+  if (!isValidURL(post.video)) {
+    throw Error(`${post.url} post.video is invalid`);
+  }
+  if (!isValidURL(post.poster)) {
+    throw Error(`${post.url} post.poster is invalid`);
   }
 }

@@ -31,4 +31,5 @@ export enum Layouts {
   PoemSingle = "layouts/PoemSingle.tsx",
   RecipeSingle = "layouts/RecipeSingle.tsx",
   RecPoemSingle = "layouts/RecPoemSingle.tsx",
+  StreamSingle = "layouts/StreamSingle.tsx",
 }

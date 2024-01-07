@@ -10,6 +10,7 @@ type InlineVideoProps = MediaProps & {
   captions?: string;
   // builtin opts
   poster: string;
+  id?: string;
   height?: string | number;
   width?: string | number;
 };

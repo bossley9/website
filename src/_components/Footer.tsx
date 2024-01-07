@@ -17,6 +17,10 @@ const footerLinks: { href: string; name: string }[] = [
     href: "/referrals",
     name: "Referrals",
   },
+  {
+    href: "/streams",
+    name: "Streams",
+  },
 ];
 
 type Props = { minimal?: boolean };
