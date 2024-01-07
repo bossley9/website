@@ -3,6 +3,7 @@ import { YearPaginationNav } from "@/_components/YearPaginationNav.tsx";
 import data from "@/_data/recs/movies.json" with { type: "json" };
 import { type Movie, movieListSchema } from "@/_utils/schemas.ts";
 import { yearPagination } from "@/_utils/pagination.ts";
+import { getRatingClass } from "@/_utils/data.ts";
 import { Layouts } from "@/_utils/constants.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -45,7 +46,7 @@ export default function* () {
           <ol>
             {entries.map(({ title, year, rating, note }) => {
               return (
-                <li>
+                <li class={getRatingClass(rating)}>
                   <span>
                     {title} ({year})
                   </span>

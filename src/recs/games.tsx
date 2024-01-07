@@ -1,5 +1,6 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import { groupEntriesByYear } from "@/_utils/object.ts";
+import { getRatingClass } from "@/_utils/data.ts";
 import data from "@/_data/recs/games.json" with { type: "json" };
 import { type Game, gameListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
@@ -33,7 +34,7 @@ export default function () {
           <ol>
             {items.map(({ title, year, rating, note }) => {
               return (
-                <li>
+                <li class={getRatingClass(rating)}>
                   <span>
                     {title} ({year})
                   </span>

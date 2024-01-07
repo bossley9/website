@@ -1,6 +1,7 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/anime.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
+import { getRatingClass } from "@/_utils/data.ts";
 import { type Anime, animeListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -44,7 +45,7 @@ export default function () {
                 ? item.run_start.getUTCFullYear()
                 : item.year;
               return (
-                <li>
+                <li class={getRatingClass(item.rating)}>
                   <span>
                     {title} ({year})
                   </span>

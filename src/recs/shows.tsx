@@ -1,6 +1,7 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/shows.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
+import { getRatingClass } from "@/_utils/data.ts";
 import { type Show, showListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -41,7 +42,7 @@ export default function () {
             {items.map((item) => {
               const { title, run_start, rating, note } = item;
               return (
-                <li>
+                <li class={getRatingClass(rating)}>
                   {item.type === "podcast"
                     ? (
                       <a href={item.url}>

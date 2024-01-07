@@ -592,6 +592,32 @@ footer {
   }
 }
 
+.rguide {
+  table {
+    width: 100%;
+  }
+}
+.stier, .stier a {
+  background: rgb(255, 127, 127);
+  color: var(--l-fg) !important;
+}
+.atier, .atier a {
+  background: rgb(255, 191, 127);
+  color: var(--l-fg) !important;
+}
+.btier {
+  background: rgb(255, 223, 127);
+  color: var(--l-fg);
+}
+.ctier {
+  background: rgb(255, 255, 127);
+  color: var(--l-fg);
+}
+.dtier {
+  background: rgb(191, 255, 127);
+  color: var(--l-fg);
+}
+
 .memesingle {
   a {
     @include primary-link;

@@ -97,3 +97,13 @@ export function getWatchingItemTitle(watchingItem: Show | Anime): string {
 
   return watchingItem.title || "";
 }
+
+export function getRatingClass(rating: number): string {
+  if (rating >= 9.0) {
+    return "stier";
+  } else if (rating >= 8.0) {
+    return "atier";
+  } else {
+    return "";
+  }
+}

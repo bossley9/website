@@ -1,7 +1,7 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import data from "@/_data/recs/manga.json" with { type: "json" };
-import { getReadingItemURL } from "@/_utils/data.ts";
+import { getRatingClass, getReadingItemURL } from "@/_utils/data.ts";
 import { type Manga, mangaListSchema } from "@/_utils/schemas.ts";
 import { fromZodError, ZodError } from "@deps";
 
@@ -50,7 +50,7 @@ export default function () {
                 : new Date(manga.year);
 
               return (
-                <li>
+                <li class={getRatingClass(rating)}>
                   <span>
                     {title} by {author} ({startYear.getUTCFullYear()})
                   </span>
