@@ -413,6 +413,16 @@ footer {
   }
 }
 
+.music {
+  a {
+    @include primary-link;
+  }
+  ol {
+    list-style-type: disc;
+    padding-left: 1rem;
+  }
+}
+
 .referrals {
   ul {
     padding-left: 1rem;

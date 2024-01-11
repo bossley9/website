@@ -14,6 +14,10 @@ const footerLinks: { href: string; name: string }[] = [
     name: "Keys",
   },
   {
+    href: "/music",
+    name: "Music",
+  },
+  {
     href: "/referrals",
     name: "Referrals",
   },
