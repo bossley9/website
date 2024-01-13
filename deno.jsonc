@@ -16,7 +16,7 @@
   },
   "imports": {
     "react/jsx-runtime": "./plugins/react.ts",
-    "lume/": "https://deno.land/x/lume@v2.0.1/",
+    "lume/": "https://deno.land/x/lume@v2.0.3/",
     "@deps": "./deps.ts",
     "@/": "./src/",
     "@layouts/": "./src/_includes/layouts/"
@@ -30,5 +30,6 @@
     "exclude": [
       "**/*.md"
     ]
-  }
+  },
+  "nodeModulesDir": false
 }
