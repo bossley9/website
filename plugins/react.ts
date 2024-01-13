@@ -86,22 +86,20 @@ type JSXProps = {
   [k: string]: unknown;
 };
 
-export function jsxs(
+export function jsx(
   tag: unknown,
   props: JSXProps,
   _key?: unknown,
 ): string {
-  if (tag === undefined || tag === null) { // fragment
-    return appendChild(props.children);
-  } else if (typeof tag === "function") { // custom tag
+  if (typeof tag === "function") { // custom component
     return tag(props);
-  } else if (typeof tag === "string") { // builtin tag
+  } else if (typeof tag === "string") { // native HTML element
     const attrs = Object.entries(props).reduce<string[]>(
       (acc, [key, value]) => {
         if (key === "children") {
-          // ignore children until later
+          // ignore the children attribute
         } else if (typeof value === "boolean") {
-          // keep true attrs unchanged and remove false attrs
+          // keep true attrs unchanged and remove falsy attrs
           if (value) {
             acc.push(`${key}`);
           }
@@ -117,11 +115,11 @@ export function jsxs(
       ? `<${tag}${attrs}>`
       : `<${tag}${attrs}>${appendChild(props.children)}</${tag}>`;
   } else {
-    return NOOP;
+    return "";
   }
 }
 
-export const jsx = jsxs;
+export const jsxs = jsx;
 
 export function Fragment(props: JSXProps) {
   return appendChild(props.children);
