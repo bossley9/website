@@ -5,49 +5,6 @@ const dateSchema = z.string().regex(/\d\d\d\d/);
 const currentSchema = z.literal(true).optional();
 const runEndSchema = z.union([z.coerce.date(), z.literal("present")]);
 
-const articleSchema = z.object({
-  type: z.union([z.literal("article"), z.literal("paper")]),
-  title: z.string(),
-  author: z.string(),
-  url: z.string().url(),
-  published: z.coerce.date(),
-  date: dateSchema,
-  note: z.string().optional(),
-});
-export const articleListSchema = z.array(articleSchema);
-export type Article = z.infer<typeof articleSchema>;
-
-const bookSchema = z.object({
-  type: z.literal("book"),
-  author: z.string(),
-  title: z.string(),
-  year: dateSchema,
-  publisher: z.string(),
-  isbn: z.string().regex(/\d\d\d\d\d\d\d\d\d\d\d\d\d/),
-  date: dateSchema,
-  rating: ratingSchema,
-  note: z.string().optional(),
-  current: currentSchema,
-});
-export const bookListSchema = z.array(bookSchema);
-export type Book = z.infer<typeof bookSchema>;
-
-const gameSchema = z.object({
-  type: z.literal("game"),
-  title: z.string(),
-  year: dateSchema,
-  developer: z.string().optional(),
-  publisher: z.string().optional(),
-  platform: z.string(),
-  url: z.string().url(),
-  date: dateSchema,
-  rating: ratingSchema,
-  note: z.string().optional(),
-  current: currentSchema,
-});
-export const gameListSchema = z.array(gameSchema);
-export type Game = z.infer<typeof gameSchema>;
-
 const mangaSchema = z.intersection(
   z.object({
     type: z.literal("manga"),

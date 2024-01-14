@@ -1,22 +1,14 @@
 import data from "@/_data/recs/articles.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
-import { type Article, articleListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertArticleList } from "@/_utils/assertions.ts";
+import type { Article } from "@/_types/data.ts";
 
 export const title = "Articles";
 export const description = "Blog posts, journal articles, and white papers.";
 
 export default function () {
-  let articleList: Article[] = [];
-  try {
-    articleList = articleListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertArticleList(data);
+  const articleList: Article[] = data;
 
   const groupedByYear = groupEntriesByYear(articleList);
   return (
@@ -35,13 +27,15 @@ export default function () {
                       {type === "paper"
                         ? (
                           <>
-                            {author}, {published.getUTCFullYear()}.{" "}
+                            {author}, {new Date(published).getUTCFullYear()}.
+                            {" "}
                             <cite>{title}</cite>.
                           </>
                         )
                         : (
                           <>
-                            {title} by {author} ({published.getUTCFullYear()})
+                            {title} by {author}{" "}
+                            ({new Date(published).getUTCFullYear()})
                           </>
                         )}
                     </a>

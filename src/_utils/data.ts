@@ -2,11 +2,9 @@ import animeData from "@/_data/recs/anime.json" with { type: "json" };
 import bookData from "@/_data/recs/books.json" with { type: "json" };
 import mangaData from "@/_data/recs/manga.json" with { type: "json" };
 import showData from "@/_data/recs/shows.json" with { type: "json" };
-import { assertAnimeList } from "@/_utils/assertions.ts";
-import type { Anime } from "@/_types/data.ts";
+import { assertAnimeList, assertBookList } from "@/_utils/assertions.ts";
+import type { Anime, Book } from "@/_types/data.ts";
 import {
-  type Book,
-  bookListSchema,
   type Manga,
   mangaListSchema,
   type Show,
@@ -15,16 +13,8 @@ import {
 import { fromZodError, ZodError } from "@deps";
 
 export function getCurrentlyReadingItem(): Book | Manga | null {
-  let bookList: Book[] = [];
-  try {
-    bookList = bookListSchema.parse(bookData);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertBookList(bookData);
+  const bookList: Book[] = bookData;
   const book = bookList.find((item) => item.current);
   if (book) {
     return book;

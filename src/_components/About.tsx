@@ -1,6 +1,6 @@
 import gameData from "@/_data/recs/games.json" with { type: "json" };
-import { type Game, gameListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertGameList } from "@/_utils/assertions.ts";
+import type { Game } from "@/_types/data.ts";
 import {
   getCurrentlyReadingItem,
   getCurrentlyWatchingItem,
@@ -12,16 +12,8 @@ export function About() {
   const readingItem = getCurrentlyReadingItem();
   const watchingItem = getCurrentlyWatchingItem();
 
-  let gameList: Game[] = [];
-  try {
-    gameList = gameListSchema.parse(gameData);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertGameList(gameData);
+  const gameList: Game[] = gameData;
   const game = gameList.find((item) => item.current);
 
   return (

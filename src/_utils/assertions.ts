@@ -7,7 +7,7 @@ import type {
   TabPost,
   ThoughtPost,
 } from "@/_types/posts.ts";
-import type { Anime } from "@/_types/data.ts";
+import type { Anime, Article, Book, Game } from "@/_types/data.ts";
 
 export function isValidString(x: unknown): x is string {
   return typeof x === "string" && x.length > 0;
@@ -262,5 +262,139 @@ export function assertAnimeList(
   }
   for (const item of list) {
     assertAnimeData(item);
+  }
+}
+
+function assertArticleData(
+  item: Partial<Article>,
+): asserts item is Article {
+  if (item.type !== "article" && item.type !== "paper") {
+    throw Error(`Article type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`Article title ${item.title} is invalid`);
+  }
+  if (!isValidString(item.author)) {
+    throw Error(`Article author ${item.author} is invalid`);
+  }
+  if (!isValidURL(item.url)) {
+    throw Error(`Article url ${item.url} is invalid`);
+  }
+  if (!isValidDateString(item.published)) {
+    throw Error(`Article published ${item.published} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Article date ${item.date} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Article note ${item.note} is invalid`);
+  }
+}
+
+export function assertArticleList(
+  list: unknown,
+): asserts list is Article[] {
+  if (!Array.isArray(list)) {
+    throw Error("article list is invalid");
+  }
+  for (const item of list) {
+    assertArticleData(item);
+  }
+}
+
+function assertBookData(
+  item: Partial<Book>,
+): asserts item is Book {
+  if (item.type !== "book") {
+    throw Error(`Book type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.author)) {
+    throw Error(`Book author ${item.author} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`Book title ${item.title} is invalid`);
+  }
+  if (!isValidYear(item.year)) {
+    throw Error(`Book year ${item.year} is invalid`);
+  }
+  if (!isValidString(item.publisher)) {
+    throw Error(`Book publisher ${item.publisher} is invalid`);
+  }
+  const isValidISBN = isValidString(item.isbn) && item.isbn.length === 13 &&
+    /^\d+$/.test(item.isbn);
+  if (!isValidISBN) {
+    throw Error(`Book isbn ${item.isbn} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Book date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Book rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Book note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`Book current ${item.current} is invalid`);
+  }
+}
+
+export function assertBookList(
+  list: unknown,
+): asserts list is Book[] {
+  if (!Array.isArray(list)) {
+    throw Error("book list is invalid");
+  }
+  for (const item of list) {
+    assertBookData(item);
+  }
+}
+
+function assertGameData(
+  item: Partial<Game>,
+): asserts item is Game {
+  if (item.type !== "game") {
+    throw Error(`game type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`game title ${item.title} is invalid`);
+  }
+  if (!isValidYear(item.year)) {
+    throw Error(`game year ${item.year} is invalid`);
+  }
+  if (!isOptionalString(item.developer)) {
+    throw Error(`game developer ${item.developer} is invalid`);
+  }
+  if (!isOptionalString(item.publisher)) {
+    throw Error(`game publisher ${item.publisher} is invalid`);
+  }
+  if (!isValidString(item.platform)) {
+    throw Error(`game platform ${item.platform} is invalid`);
+  }
+  if (!isValidURL(item.url)) {
+    throw Error(`game url ${item.url} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`game date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`game rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`game note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`game current ${item.current} is invalid`);
+  }
+}
+
+export function assertGameList(
+  list: unknown,
+): asserts list is Game[] {
+  if (!Array.isArray(list)) {
+    throw Error("game list is invalid");
+  }
+  for (const item of list) {
+    assertGameData(item);
   }
 }

@@ -2,23 +2,15 @@ import { RatingNote } from "@/_components/RatingNote.tsx";
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import { getRatingClass } from "@/_utils/data.ts";
 import data from "@/_data/recs/games.json" with { type: "json" };
-import { type Game, gameListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertGameList } from "@/_utils/assertions.ts";
+import type { Game } from "@/_types/data.ts";
 
 export const title = "Games";
 export const description = "Video games played on any platform.";
 
 export default function () {
-  let gameList: Game[] = [];
-  try {
-    gameList = gameListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertGameList(data);
+  const gameList: Game[] = data;
 
   const current = gameList.find((item) => item.current);
 

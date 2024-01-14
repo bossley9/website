@@ -2,23 +2,15 @@ import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/books.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import { getRatingClass, getReadingItemURL } from "@/_utils/data.ts";
-import { type Book, bookListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertBookList } from "@/_utils/assertions.ts";
+import type { Book } from "@/_types/data.ts";
 
 export const title = "Books";
 export const description = "Print books and audiobooks.";
 
 export default function () {
-  let bookList: Book[] = [];
-  try {
-    bookList = bookListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertBookList(data);
+  const bookList: Book[] = data;
 
   const current = bookList.find((item) => item.current);
 

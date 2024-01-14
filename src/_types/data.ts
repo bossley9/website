@@ -1,3 +1,6 @@
+type DateString = string;
+type YearString = string;
+
 export type Anime =
   & ({
     title: string;
@@ -7,7 +10,7 @@ export type Anime =
     title_translated: string;
   })
   & {
-    date: string;
+    date: YearString;
     rating: number;
     note?: string;
     current?: true;
@@ -15,9 +18,46 @@ export type Anime =
   & ({
     type: "anime";
     seasons: number;
-    run_start: string;
-    run_end: string | "present";
+    run_start: DateString;
+    run_end: DateString | "present";
   } | {
     type: "anime/movie";
-    year: string;
+    year: YearString;
   });
+
+export type Article = {
+  type: "article" | "paper";
+  title: string;
+  author: string;
+  url: string;
+  published: DateString;
+  date: YearString;
+  note?: string;
+};
+
+export type Book = {
+  type: "book";
+  author: string;
+  title: string;
+  year: YearString;
+  publisher: string;
+  isbn: string;
+  date: YearString;
+  rating: number;
+  note?: string;
+  current?: true;
+};
+
+export type Game = {
+  type: "game";
+  title: string;
+  year: YearString;
+  developer?: string;
+  publisher?: string;
+  platform: string;
+  url: string;
+  date: YearString;
+  rating: number;
+  note?: string;
+  current?: true;
+};

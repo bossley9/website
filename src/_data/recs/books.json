@@ -51,8 +51,7 @@
     "publisher": "Bloomsbury Press",
     "isbn": "9781620402504",
     "date": "2023",
-    "rating": 8.0,
-    "note": ""
+    "rating": 8.0
   },
   {
     "type": "book",
@@ -95,8 +94,7 @@
     "publisher": "Pearson Education",
     "isbn": "9780132350884",
     "date": "2022",
-    "rating": 8.0,
-    "note": ""
+    "rating": 8.0
   },
   {
     "type": "book",
@@ -161,8 +159,7 @@
     "publisher": "Harvard University Press",
     "isbn": "9780674737624",
     "date": "2022",
-    "rating": 8,
-    "note": ""
+    "rating": 8
   },
   {
     "type": "book",
@@ -183,8 +180,7 @@
     "publisher": "Riverhead Books",
     "isbn": "9780525536291",
     "date": "2022",
-    "rating": 7.5,
-    "note": ""
+    "rating": 7.5
   },
   {
     "type": "book",
@@ -238,8 +234,7 @@
     "publisher": "Kadokawa Shoten",
     "isbn": "9784041304082",
     "date": "2022",
-    "rating": 7.6,
-    "note": ""
+    "rating": 7.6
   },
   {
     "type": "book",
@@ -249,8 +244,7 @@
     "publisher": "HarperOne",
     "isbn": "9780061122415",
     "date": "2021",
-    "rating": 8.8,
-    "note": ""
+    "rating": 8.8
   },
   {
     "type": "book",
@@ -260,8 +254,7 @@
     "publisher": "Chilton Books",
     "isbn": "9780441172719",
     "date": "2021",
-    "rating": 7.3,
-    "note": ""
+    "rating": 7.3
   },
   {
     "type": "book",
@@ -271,8 +264,7 @@
     "publisher": "Pantheon",
     "isbn": "9780385603102",
     "date": "2019",
-    "rating": 9.2,
-    "note": ""
+    "rating": 9.2
   },
   {
     "type": "book",
@@ -282,8 +274,7 @@
     "publisher": "Addison Wesley",
     "isbn": "9780201616224",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -293,8 +284,7 @@
     "publisher": "Doubleday",
     "isbn": "9780345350473",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -304,8 +294,7 @@
     "publisher": "Hyperion",
     "isbn": "9781401323257",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -315,8 +304,7 @@
     "publisher": "Viking",
     "isbn": "9780450411434",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -326,8 +314,7 @@
     "publisher": "Doubleday",
     "isbn": "9780385121675",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -337,8 +324,7 @@
     "publisher": "Chapman & Hall",
     "isbn": "9780141439600",
     "date": "2016",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -348,8 +334,7 @@
     "publisher": "Ballantine Books",
     "isbn": "9780743247221",
     "date": "2016",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -359,8 +344,7 @@
     "publisher": "Cassell",
     "isbn": "9780452281257",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -370,8 +354,7 @@
     "publisher": "Heinemann",
     "isbn": "9780553214321",
     "date": "2012",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -381,8 +364,7 @@
     "publisher": "Ariel Books",
     "isbn": "9781250153272",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -392,8 +374,7 @@
     "publisher": "Thomas Nelson",
     "isbn": "9781595540218",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -403,8 +384,7 @@
     "publisher": "Hyperion Books",
     "isbn": "9780786851614",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -414,8 +394,7 @@
     "publisher": "Puffin Books",
     "isbn": "9780142406632",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -425,8 +404,7 @@
     "publisher": "David Fickling Books",
     "isbn": "9780385750769",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -436,8 +414,7 @@
     "publisher": "Walker Books",
     "isbn": "9781406310276",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -447,8 +424,7 @@
     "publisher": "Walker Books",
     "isbn": "9781406310269",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -458,8 +434,7 @@
     "publisher": "Walker Books",
     "isbn": "9781406310252",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -469,8 +444,7 @@
     "publisher": "Scholastic Corporation",
     "isbn": "9780439405577",
     "date": "2015",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -480,8 +454,7 @@
     "publisher": "Tor Books",
     "isbn": "9780785135869",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -491,8 +464,7 @@
     "publisher": "Tor Books",
     "isbn": "9780812550702",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -502,8 +474,7 @@
     "publisher": "Viking Books",
     "isbn": "9780670062805",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -513,8 +484,7 @@
     "publisher": "The O'Brien Press Ltd",
     "isbn": "9781741674668",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -524,8 +494,7 @@
     "publisher": "J. B. Lippincott & Co.",
     "isbn": "9780446310789",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -535,8 +504,7 @@
     "publisher": "George Allen & Unwin",
     "isbn": "9780007487288",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -546,8 +514,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780060596385",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -557,8 +524,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780060291709",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -568,8 +534,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780064407335",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -579,8 +544,7 @@
     "publisher": "Bloomsbury",
     "isbn": "9781599901145",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -590,8 +554,7 @@
     "publisher": "Bloomsbury",
     "isbn": "9781599900452",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -601,8 +564,7 @@
     "publisher": "Bloomsbury",
     "isbn": "9781582346939",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -612,8 +574,7 @@
     "publisher": "Scholastic",
     "isbn": "9780590188920",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -623,8 +584,7 @@
     "publisher": "Blue Sky",
     "isbn": "9780439286060",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -634,8 +594,7 @@
     "publisher": "Disney Hyperion",
     "isbn": "9781423101475",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -645,8 +604,7 @@
     "publisher": "Hyperion Books for Children",
     "isbn": "9781423101468",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -656,8 +614,7 @@
     "publisher": "Miramax Books and Hyperion Books for Children",
     "isbn": "9780141382890",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -667,8 +624,7 @@
     "publisher": "Miramax Books and Disney Hyperion",
     "isbn": "9780786856862",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -678,8 +634,7 @@
     "publisher": "Disney Hyperion",
     "isbn": "9780786838653",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -689,8 +644,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780060850548",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -700,8 +654,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780689869884",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -711,8 +664,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780006481713",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -722,8 +674,7 @@
     "publisher": "Harper Collins",
     "isbn": "9780006481799",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "book",
@@ -733,7 +684,6 @@
     "publisher": "Laurel Leaf Library",
     "isbn": "9780440416685",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   }
 ]
