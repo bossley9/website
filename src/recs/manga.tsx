@@ -2,24 +2,15 @@ import { RatingNote } from "@/_components/RatingNote.tsx";
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import data from "@/_data/recs/manga.json" with { type: "json" };
 import { getRatingClass, getReadingItemURL } from "@/_utils/data.ts";
-import { type Manga, mangaListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertMangaList } from "@/_utils/assertions.ts";
+import type { Manga } from "@/_types/data.ts";
 
 export const title = "Manga";
 export const description = "Japanese manga and comic books.";
 
 export default function () {
-  let mangaList: Manga[] = [];
-  try {
-    mangaList = mangaListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
-
+  assertMangaList(data);
+  const mangaList: Manga[] = data;
   const current = mangaList.find((item) => item.current);
 
   const groupedByYear = groupEntriesByYear(
@@ -46,7 +37,7 @@ export default function () {
               const { title, author, rating, note } = manga;
 
               const startYear = "run_start" in manga
-                ? manga.run_start
+                ? new Date(manga.run_start)
                 : new Date(manga.year);
 
               return (

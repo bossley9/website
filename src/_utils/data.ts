@@ -2,15 +2,13 @@ import animeData from "@/_data/recs/anime.json" with { type: "json" };
 import bookData from "@/_data/recs/books.json" with { type: "json" };
 import mangaData from "@/_data/recs/manga.json" with { type: "json" };
 import showData from "@/_data/recs/shows.json" with { type: "json" };
-import { assertAnimeList, assertBookList } from "@/_utils/assertions.ts";
-import type { Anime, Book } from "@/_types/data.ts";
 import {
-  type Manga,
-  mangaListSchema,
-  type Show,
-  showListSchema,
-} from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+  assertAnimeList,
+  assertBookList,
+  assertMangaList,
+  assertShowList,
+} from "@/_utils/assertions.ts";
+import type { Anime, Book, Manga, Show } from "@/_types/data.ts";
 
 export function getCurrentlyReadingItem(): Book | Manga | null {
   assertBookList(bookData);
@@ -20,16 +18,8 @@ export function getCurrentlyReadingItem(): Book | Manga | null {
     return book;
   }
 
-  let mangaList: Manga[] = [];
-  try {
-    mangaList = mangaListSchema.parse(mangaData);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertMangaList(mangaData);
+  const mangaList: Manga[] = mangaData;
   const manga = mangaList.find((item) => item.current);
   if (manga) {
     return manga;
@@ -47,16 +37,8 @@ export function getReadingItemURL(item: Book | Manga): string {
 }
 
 export function getCurrentlyWatchingItem(): Show | Anime | null {
-  let showList: Show[] = [];
-  try {
-    showList = showListSchema.parse(showData);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertShowList(showData);
+  const showList: Show[] = showData;
   const show = showList.find((item) => item.current);
   if (show) {
     return show;

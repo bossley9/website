@@ -7,7 +7,16 @@ import type {
   TabPost,
   ThoughtPost,
 } from "@/_types/posts.ts";
-import type { Anime, Article, Book, Game } from "@/_types/data.ts";
+import type {
+  Anime,
+  Article,
+  Book,
+  Game,
+  Manga,
+  Movie,
+  Show,
+  Story,
+} from "@/_types/data.ts";
 
 export function isValidString(x: unknown): x is string {
   return typeof x === "string" && x.length > 0;
@@ -62,6 +71,10 @@ function isOptionalCurrent(x: unknown): x is true | undefined {
 
 function isValidDateString(x: unknown): x is string {
   return typeof x === "string" && x.length > 0 && !Number.isNaN(Date.parse(x));
+}
+
+function isValidEndDateString(x: unknown): x is string {
+  return isValidDateString(x) || x === "present";
 }
 
 export function assertTimestamp(t: string): asserts t is string {
@@ -242,7 +255,7 @@ function assertAnimeData(
     if (!isValidDateString(item.run_start)) {
       throw Error(`Anime run_start ${item.run_start} is invalid`);
     }
-    if (!isValidDateString(item.run_end) && item.run_end !== "present") {
+    if (!isValidEndDateString(item.run_end)) {
       throw Error(`Anime run_end ${item.run_end} is invalid`);
     }
   } else if (item.type === "anime/movie") {
@@ -258,7 +271,7 @@ export function assertAnimeList(
   list: unknown,
 ): asserts list is Anime[] {
   if (!Array.isArray(list)) {
-    throw Error("anime list is invalid");
+    throw Error("Anime list is invalid");
   }
   for (const item of list) {
     assertAnimeData(item);
@@ -295,7 +308,7 @@ export function assertArticleList(
   list: unknown,
 ): asserts list is Article[] {
   if (!Array.isArray(list)) {
-    throw Error("article list is invalid");
+    throw Error("Article list is invalid");
   }
   for (const item of list) {
     assertArticleData(item);
@@ -343,7 +356,7 @@ export function assertBookList(
   list: unknown,
 ): asserts list is Book[] {
   if (!Array.isArray(list)) {
-    throw Error("book list is invalid");
+    throw Error("Book list is invalid");
   }
   for (const item of list) {
     assertBookData(item);
@@ -354,37 +367,37 @@ function assertGameData(
   item: Partial<Game>,
 ): asserts item is Game {
   if (item.type !== "game") {
-    throw Error(`game type ${item.type} is invalid`);
+    throw Error(`Game type ${item.type} is invalid`);
   }
   if (!isValidString(item.title)) {
-    throw Error(`game title ${item.title} is invalid`);
+    throw Error(`Game title ${item.title} is invalid`);
   }
   if (!isValidYear(item.year)) {
-    throw Error(`game year ${item.year} is invalid`);
+    throw Error(`Game year ${item.year} is invalid`);
   }
   if (!isOptionalString(item.developer)) {
-    throw Error(`game developer ${item.developer} is invalid`);
+    throw Error(`Game developer ${item.developer} is invalid`);
   }
   if (!isOptionalString(item.publisher)) {
-    throw Error(`game publisher ${item.publisher} is invalid`);
+    throw Error(`Game publisher ${item.publisher} is invalid`);
   }
   if (!isValidString(item.platform)) {
-    throw Error(`game platform ${item.platform} is invalid`);
+    throw Error(`Game platform ${item.platform} is invalid`);
   }
   if (!isValidURL(item.url)) {
-    throw Error(`game url ${item.url} is invalid`);
+    throw Error(`Game url ${item.url} is invalid`);
   }
   if (!isValidYear(item.date)) {
-    throw Error(`game date ${item.date} is invalid`);
+    throw Error(`Game date ${item.date} is invalid`);
   }
   if (!isValidRating(item.rating)) {
-    throw Error(`game rating ${item.rating} is invalid`);
+    throw Error(`Game rating ${item.rating} is invalid`);
   }
   if (!isOptionalString(item.note)) {
-    throw Error(`game note ${item.note} is invalid`);
+    throw Error(`Game note ${item.note} is invalid`);
   }
   if (!isOptionalCurrent(item.current)) {
-    throw Error(`game current ${item.current} is invalid`);
+    throw Error(`Game current ${item.current} is invalid`);
   }
 }
 
@@ -396,5 +409,192 @@ export function assertGameList(
   }
   for (const item of list) {
     assertGameData(item);
+  }
+}
+
+function assertMangaData(
+  item: Partial<Manga>,
+): asserts item is Manga {
+  if (item.type !== "manga") {
+    throw Error(`Manga type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.author)) {
+    throw Error(`Manga author ${item.author} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`Manga title ${item.title} is invalid`);
+  }
+  if (!isValidURL(item.url)) {
+    throw Error(`Manga url ${item.url} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Manga date ${item.date} is invalid`);
+  }
+  if (typeof item.volumes !== "number") {
+    throw Error(`Manga volumes ${item.volumes} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Manga rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Manga note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`Manga current ${item.current} is invalid`);
+  }
+  if ("year" in item) {
+    if (!isValidYear(item.year)) {
+      throw Error(`Manga year ${item.year} is invalid`);
+    }
+  } else if ("run_start" in item && "run_end" in item) {
+    if (!isValidDateString(item.run_start)) {
+      throw Error(`Manga run_start ${item.run_start} is invalid`);
+    }
+    if (!isValidEndDateString(item.run_end)) {
+      throw Error(`Manga run_end ${item.run_end} is invalid`);
+    }
+  } else {
+    throw Error("Manga at least one of year or run_start must be present");
+  }
+}
+
+export function assertMangaList(
+  list: unknown,
+): asserts list is Manga[] {
+  if (!Array.isArray(list)) {
+    throw Error("Manga list is invalid");
+  }
+  for (const item of list) {
+    assertMangaData(item);
+  }
+}
+
+function assertMovieData(
+  item: Partial<Movie>,
+): asserts item is Movie {
+  if (item.type !== "movie") {
+    throw Error(`Movie type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`Movie title ${item.title} is invalid`);
+  }
+  if (!isValidYear(item.year)) {
+    throw Error(`Movie year ${item.year} is invalid`);
+  }
+  if (!isValidString(item.director)) {
+    throw Error(`Movie director ${item.director} is invalid`);
+  }
+  if (!isOptionalString(item.writer)) {
+    throw Error(`Movie writer ${item.writer} is invalid`);
+  }
+  if (!isValidString(item.producer)) {
+    throw Error(`Movie producer ${item.producer} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Movie date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Movie rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Movie note ${item.note} is invalid`);
+  }
+}
+
+export function assertMovieList(
+  list: unknown,
+): asserts list is Movie[] {
+  if (!Array.isArray(list)) {
+    throw Error("Movie list is invalid");
+  }
+  for (const item of list) {
+    assertMovieData(item);
+  }
+}
+
+function assertShowData(
+  item: Partial<Show>,
+): asserts item is Show {
+  if (!isValidString(item.title)) {
+    throw Error(`Show title ${item.title} is invalid`);
+  }
+  if (!isValidDateString(item.run_start)) {
+    throw Error(`Show run_start ${item.run_start} is invalid`);
+  }
+  if (!isValidEndDateString(item.run_end)) {
+    throw Error(`Show run_end ${item.run_end} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Show date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Show rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Show note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`Show current ${item.current} is invalid`);
+  }
+  if (item.type === "show") {
+    if (typeof item.seasons !== "number") {
+      throw Error(`Show seasons ${item.seasons} is invalid`);
+    }
+  } else if (item.type === "podcast") {
+    if (!isValidURL(item.url)) {
+      throw Error(`Show url ${item.url} is invalid`);
+    }
+  } else {
+    throw Error(`Show type ${item.type} is invalid`);
+  }
+}
+
+export function assertShowList(
+  list: unknown,
+): asserts list is Show[] {
+  if (!Array.isArray(list)) {
+    throw Error("Show list is invalid");
+  }
+  for (const item of list) {
+    assertShowData(item);
+  }
+}
+
+function assertStoryData(
+  item: Partial<Story>,
+): asserts item is Story {
+  if (item.type !== "poem") {
+    throw Error(`Story type ${item.type} is invalid`);
+  }
+  if (!isValidString(item.author)) {
+    throw Error(`Story author ${item.author} is invalid`);
+  }
+  if (!isValidString(item.title)) {
+    throw Error(`Story title ${item.title} is invalid`);
+  }
+  // cannot coerce because relative URLS may be present
+  if (!isValidString(item.url)) {
+    throw Error(`Story url ${item.url} is invalid`);
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Story date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Story rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Story note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`Story current ${item.current} is invalid`);
+  }
+}
+
+export function assertStoryList(list: unknown): asserts list is Story[] {
+  if (!Array.isArray(list)) {
+    throw Error("Story list is invalid");
+  }
+  for (const item of list) {
+    assertStoryData(item);
   }
 }

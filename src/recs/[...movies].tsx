@@ -1,28 +1,19 @@
 import { RatingNote } from "@/_components/RatingNote.tsx";
 import { YearPaginationNav } from "@/_components/YearPaginationNav.tsx";
 import data from "@/_data/recs/movies.json" with { type: "json" };
-import { type Movie, movieListSchema } from "@/_utils/schemas.ts";
+import { assertMovieList } from "@/_utils/assertions.ts";
+import type { Movie } from "@/_types/data.ts";
 import { yearPagination } from "@/_utils/pagination.ts";
 import { getRatingClass } from "@/_utils/data.ts";
 import { Layouts } from "@/_utils/constants.ts";
-import { fromZodError, ZodError } from "@deps";
 
 export const title = "Movies";
 export const description =
   "Theater movies, documentaries, and extended videos.";
 
 export default function* () {
-  let movieList: Movie[] = [];
-  try {
-    movieList = movieListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
-
+  assertMovieList(data);
+  const movieList: Movie[] = data;
   const pages = yearPagination(
     movieList,
     "/recs/movies",

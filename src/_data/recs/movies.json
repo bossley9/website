@@ -57,8 +57,7 @@
     "director": "Peter Jackson",
     "producer": "Carolynne Cunningham and Zane Weiner and Fran Walsh and Peter Jackson",
     "date": "2023",
-    "rating": 7.1,
-    "note": ""
+    "rating": 7.1
   },
   {
     "type": "movie",
@@ -67,8 +66,7 @@
     "director": "George Miller",
     "producer": "George Miller and Doug Mitchell",
     "date": "2023",
-    "rating": 5.5,
-    "note": ""
+    "rating": 5.5
   },
   {
     "type": "movie",
@@ -107,8 +105,7 @@
     "director": "Manakoto Shinkai",
     "producer": "Kōichirō Itō and Genki Kawamura",
     "date": "2023",
-    "rating": 6.5,
-    "note": ""
+    "rating": 6.5
   },
   {
     "type": "movie",
@@ -137,8 +134,7 @@
     "director": "David Kellogg",
     "producer": "Roger Birnbaum and Andy Heyward and Jordan Kerner",
     "date": "2023",
-    "rating": 4.6,
-    "note": ""
+    "rating": 4.6
   },
   {
     "type": "movie",
@@ -147,8 +143,7 @@
     "director": "Barry Sonnenfield",
     "producer": "Walter F. Parkes and Laurie MacDonald",
     "date": "2023",
-    "rating": 7.5,
-    "note": ""
+    "rating": 7.5
   },
   {
     "type": "movie",
@@ -157,8 +152,7 @@
     "director": "Barry Sonnenfield",
     "producer": "Walter F. Parkes and Laurie MacDonald",
     "date": "2023",
-    "rating": 6.7,
-    "note": ""
+    "rating": 6.7
   },
   {
     "type": "movie",
@@ -167,8 +161,7 @@
     "director": "Chad Stahelski",
     "producer": "Basil Iwanyk and Erica Lee and Chad Stahelski",
     "date": "2023",
-    "rating": 7.2,
-    "note": ""
+    "rating": 7.2
   },
   {
     "type": "movie",
@@ -177,8 +170,7 @@
     "director": "Barry Sonnenfield",
     "producer": "Walter F. Parkes and Laurie MacDonald",
     "date": "2023",
-    "rating": 7.2,
-    "note": ""
+    "rating": 7.2
   },
   {
     "type": "movie",
@@ -197,8 +189,7 @@
     "director": "Peyton Reed",
     "producer": "Kevin Feige",
     "date": "2023",
-    "rating": 7.2,
-    "note": ""
+    "rating": 7.2
   },
   {
     "type": "movie",
@@ -217,8 +208,7 @@
     "director": "Joseph McGinty Nichol",
     "producer": "Derek Anderson and Moritz Borman and Victor Kubicek and Jeffrey Silver",
     "date": "2023",
-    "rating": 5.8,
-    "note": ""
+    "rating": 5.8
   },
   {
     "type": "movie",
@@ -227,8 +217,7 @@
     "director": "Jonathan Mostow",
     "producer": "Hal Lieberman and Colin Wilson and Mario F. Kassar and Andrew G. Vajna and Joel B. Michaels",
     "date": "2023",
-    "rating": 6.1,
-    "note": ""
+    "rating": 6.1
   },
   {
     "type": "movie",
@@ -237,8 +226,7 @@
     "director": "Tom George",
     "producer": "Damian Jones and Gina Carter",
     "date": "2023",
-    "rating": 6.8,
-    "note": ""
+    "rating": 6.8
   },
   {
     "type": "movie",
@@ -247,8 +235,7 @@
     "director": "James Cameron",
     "producer": "James Cameron",
     "date": "2023",
-    "rating": 7.4,
-    "note": ""
+    "rating": 7.4
   },
   {
     "type": "movie",
@@ -257,8 +244,7 @@
     "director": "James Cameron",
     "producer": "Gale Anne Hurd",
     "date": "2023",
-    "rating": 6.6,
-    "note": ""
+    "rating": 6.6
   },
   {
     "type": "movie",
@@ -277,8 +263,7 @@
     "director": "Rian Johnson",
     "producer": "Ram Bergman and Mark G. Mathis",
     "date": "2022",
-    "rating": 7.0,
-    "note": ""
+    "rating": 7.0
   },
   {
     "type": "movie",
@@ -287,8 +272,7 @@
     "director": "Rian Johnson",
     "producer": "Rian Johnson and Ram Bergman",
     "date": "2022",
-    "rating": 6.9,
-    "note": ""
+    "rating": 6.9
   },
   {
     "type": "movie",
@@ -297,8 +281,7 @@
     "director": "Jon M. Chu",
     "producer": "Alex Kurtzman and Roberto Orci and Bobby Cohen",
     "date": "2022",
-    "rating": 4.0,
-    "note": ""
+    "rating": 4.0
   },
   {
     "type": "movie",
@@ -307,8 +290,7 @@
     "director": "Louis Leterrier",
     "producer": "Alex Kurtzman and Roberto Orci and Bobby Cohen",
     "date": "2022",
-    "rating": 7.0,
-    "note": ""
+    "rating": 7.0
   },
   {
     "type": "movie",
@@ -317,8 +299,7 @@
     "director": "David Zucker",
     "producer": "Robert K. Weiss",
     "date": "2022",
-    "rating": 7.0,
-    "note": ""
+    "rating": 7.0
   },
   {
     "type": "movie",
@@ -337,8 +318,7 @@
     "director": "Ryan Coogler",
     "producer": "Kevin Feige and Nate Moore",
     "date": "2022",
-    "rating": 8.2,
-    "note": ""
+    "rating": 8.2
   },
   {
     "type": "movie",
@@ -347,8 +327,7 @@
     "director": "Matt Reeves",
     "producer": "Dylan Clark and Matt Reeves",
     "date": "2022",
-    "rating": 7.5,
-    "note": ""
+    "rating": 7.5
   },
   {
     "type": "movie",
@@ -357,8 +336,7 @@
     "director": "Sam Raimi",
     "producer": "Kevin Feige",
     "date": "2022",
-    "rating": 6.5,
-    "note": ""
+    "rating": 6.5
   },
   {
     "type": "movie",
@@ -367,8 +345,7 @@
     "director": "Taika Waititi",
     "producer": "Kevin Feige and Brad Winderbaum",
     "date": "2022",
-    "rating": 5,
-    "note": ""
+    "rating": 5
   },
   {
     "type": "movie",
@@ -377,8 +354,7 @@
     "director": "Harold Ramis",
     "producer": "Trevor Albert and Harold Ramis",
     "date": "2022",
-    "rating": 6.5,
-    "note": ""
+    "rating": 6.5
   },
   {
     "type": "movie",
@@ -387,8 +363,7 @@
     "director": "Jeff Fowler",
     "producer": "Neal H. Moritz and Toby Ascher and Toru Nakahara and Takeshi Ito",
     "date": "2022",
-    "rating": 6,
-    "note": ""
+    "rating": 6
   },
   {
     "type": "movie",
@@ -397,8 +372,7 @@
     "director": "Tom Shadyac",
     "producer": "Tom Shadyac and Jim Carrey and James D. Brubaker and Michael Bostick and Steve Koren and Mark O'Keefe",
     "date": "2022",
-    "rating": 5,
-    "note": ""
+    "rating": 5
   },
   {
     "type": "movie",
@@ -407,8 +381,7 @@
     "director": "Tom Shadyac",
     "producer": "James G. Robinson",
     "date": "2022",
-    "rating": 4,
-    "note": ""
+    "rating": 4
   },
   {
     "type": "movie",
@@ -417,8 +390,7 @@
     "director": "Dan Kwan and Daniel Scheinert",
     "producer": "Anthony Russo and Joe Russo and Mike Larocca and Dan Kwan and Daniel Scheinert and Jonathan Wang and Michelle Yeoh",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -427,8 +399,7 @@
     "director": "Cary Joji Fukunaga",
     "producer": "Michael G. Wilson and Barbara Broccoli",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -437,8 +408,7 @@
     "director": "Sam Mendes",
     "producer": "Michael G. Wilson and Barbara Broccoli",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -447,8 +417,7 @@
     "director": "Shawn Levy",
     "producer": "Ryan Reynolds and Shawn Levy and Sarah Schechter and Greg Berlanti and Adam Kolbrenner",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -457,8 +426,7 @@
     "director": "Paul Greengrass",
     "producer": "Frank Marshall and Jeffrey M. Weiner and Ben Smith and Matt Damon and Paul Greengrass and Gregory Goodman",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -467,8 +435,7 @@
     "director": "Tony Gilroy",
     "producer": "Frank Marshall and Patrick Crowley and Jeffrey M. Weiner and Ben Smith",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -477,8 +444,7 @@
     "director": "Paul Greengrass",
     "producer": "Frank Marshall and Patrick Crowley and Paul L. Sandberg",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -487,8 +453,7 @@
     "director": "Paul Greengrass",
     "producer": "Frank Marshall and Patrick Crowley and Paul L. Sandberg",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -497,8 +462,7 @@
     "director": "Doug Liman",
     "producer": "Doug Liman and Patrick Crowley and Richard N. Gladstein",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -507,8 +471,7 @@
     "director": "Sam Mendes",
     "producer": "Michael G. Wilson and Barbara Broccoli",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -517,8 +480,7 @@
     "director": "Marc Foster",
     "producer": "Michael G. Wilson and Barbara Broccoli",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -527,8 +489,7 @@
     "director": "Martin Campbell",
     "producer": "Michael G. Wilson and Barbara Broccoli",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -537,8 +498,7 @@
     "director": "Justin Lin",
     "producer": "Neal H. Moritz and Vin Diesel and Justin Lin and Jeffrey Kirschenbaum and Joe Roth and Clayton Townsend and Samantha Vincent",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -547,8 +507,7 @@
     "director": "F. Gary Gray",
     "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell and Chris Morgan",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -567,8 +526,7 @@
     "director": "Justin Lin",
     "producer": "Neal H Moritz and Vin Diesel and Clayton Townsend",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -577,8 +535,7 @@
     "director": "Justin Lin",
     "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -587,8 +544,7 @@
     "director": "Justin Lin",
     "producer": "Neal H Moritz and Vin Diesel and Michael Fottrell",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -597,8 +553,7 @@
     "director": "Justin Lin",
     "producer": "Neal H Moritz",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -607,8 +562,7 @@
     "director": "John Singleton",
     "producer": "Neal H Moritz",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -627,8 +581,7 @@
     "director": "Michael Bay",
     "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -637,8 +590,7 @@
     "director": "Makoto Shinkai",
     "producer": "Wakana Okamura and Kinue Ito",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -647,8 +599,7 @@
     "director": "Michael Bay",
     "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -657,8 +608,7 @@
     "director": "Michael Bay",
     "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -667,8 +617,7 @@
     "director": "Michael Bay",
     "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -677,8 +626,7 @@
     "director": "Michael Bay",
     "producer": "Lorenzo di Bonaventura and Tom DeSanto and Don Murphy and Ian Bryce",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -687,8 +635,7 @@
     "director": "Andy Serkis",
     "producer": "Avi Arad and Matt Tolmach and Amy Pascal and Kelly Marcel and Tom Hardy and Hutch Parker",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -697,8 +644,7 @@
     "director": "Ruben Fleischer",
     "producer": "Jeff Pinkner and Scott Rosenberg and Kelly Marcel",
     "date": "2022",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -707,8 +653,7 @@
     "director": "Kenneth Branagh",
     "producer": "Ridley Scott and Mark Gordon and Simon Kinberg and Kenneth Branagh and Judy Hofflund and Michael Schaefer",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -717,8 +662,7 @@
     "director": "Jennifer Brea",
     "producer": "Jennifer Brea and Lindsey Dryden and Patricia E. Fillespie and Alysa Nahmias and Deborah Hoffmann",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -737,8 +681,7 @@
     "director": "Simon J Smith and Steve Hickner",
     "producer": "Jerry Seinfield and Andy Robin and Barry Marder and Spike Feresten",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -757,8 +700,7 @@
     "director": "David Sandberg",
     "producer": "Peter Safran",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -767,8 +709,7 @@
     "director": "Lorcan Finnegan",
     "producer": "John McDonnell and Brendan McCarthy",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -777,8 +718,7 @@
     "director": "Christopher Nolan",
     "producer": "Emma Thomas and Christopher Nolan",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -787,8 +727,7 @@
     "director": "Patty Jenkins",
     "producer": "Charles Roven and Deborah Snyder and Zack Snyder and Patty Jenkins and Gal Gadot and Stephen Jones",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -797,8 +736,7 @@
     "director": "Paul Schrader",
     "producer": "Scott Clayton and Gary A. Hirsch and Todd Williams",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -807,8 +745,7 @@
     "director": "Blake Edwards",
     "producer": "Martin Junrow and Richard Shepherd",
     "date": "2021",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -817,8 +754,7 @@
     "director": "Bong Joon-ho",
     "producer": "Choi Jae-won and Seo Woo-sik",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -827,8 +763,7 @@
     "director": "Alex Garland",
     "producer": "Scott Rudin and Andrew Macdonald and Allon Reich and Eli Bush",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -837,8 +772,7 @@
     "director": "Wes Anderson",
     "producer": "Wes Anderson and Scott Rudin and Steven Rales and Jeremy Dawson",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -847,8 +781,7 @@
     "director": "Matt Reeves",
     "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -857,8 +790,7 @@
     "director": "Matt Reeves",
     "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -867,8 +799,7 @@
     "director": "Rupert Wyatt",
     "producer": "Peter Chernin and Dylan Clark and Rick Jaffa and Amanda Silver",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -877,8 +808,7 @@
     "director": "David Fincher",
     "producer": "Ceán Chaffin and Judy Hofflund and David Koepp and Gavin Polone",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -887,8 +817,7 @@
     "director": "Robert Eggers",
     "producer": "Rodrigo Teixeira and Jay Van Hoy and Robert Eggers and Lourenço Sant' Anna and Youree Henley",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -897,8 +826,7 @@
     "director": "Michael Dougherty",
     "producer": "Mary Parent and Alex Garcia and Thomas Tull and Jon Jashni and Brian Rogers",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -917,8 +845,7 @@
     "director": "Jennifer Yuh Nelson and Alessandro Carloni",
     "producer": "Melissa Cobb",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -927,8 +854,7 @@
     "director": "Bong Joon-ho",
     "producer": "Cha Seung-jae",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -937,8 +863,7 @@
     "director": "Jennifer Yuh Nelson",
     "producer": "Melissa Cobb",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -947,8 +872,7 @@
     "director": "John Stevenson and Mark Osborne",
     "producer": "Melissa Cobb",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -957,8 +881,7 @@
     "director": "Dean DeBlois",
     "producer": "Bonnie Arnold and Brad Lewis",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -967,8 +890,7 @@
     "director": "Dean DeBlois",
     "producer": "Bonnie Arnold",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -977,8 +899,7 @@
     "director": "Chris Sanders and Dean DeBlois",
     "producer": "Bonnie Arnold",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -987,8 +908,7 @@
     "director": "Paul Verhoeven",
     "producer": "Alan Marshall",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -997,8 +917,7 @@
     "director": "Stuart Baird",
     "producer": "Rick Berman",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1007,8 +926,7 @@
     "director": "Jonathan Frakes",
     "producer": "Rick Berman",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1017,8 +935,7 @@
     "director": "Jonathan Frakes",
     "producer": "Rick Berman and Marty Hornstein and Peter Lauritson",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1027,8 +944,7 @@
     "director": "David Carson",
     "producer": "Rick Berman",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1037,8 +953,7 @@
     "director": "Hayao Miyazaki",
     "producer": "Toshio Suzuki",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1057,8 +972,7 @@
     "director": "Nicholas Meyer",
     "producer": "Ralph Winter and Steven-Charles Jaffe",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1067,8 +981,7 @@
     "director": "William Shatner",
     "producer": "Harve Bennett",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1077,8 +990,7 @@
     "director": "Leonard Nimoy",
     "producer": "Harve Bennett",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1087,8 +999,7 @@
     "director": "Leonard Nimoy",
     "producer": "Harve Bennett",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1097,8 +1008,7 @@
     "director": "Nicholas Meyer",
     "producer": "Robert Sallin",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1107,8 +1017,7 @@
     "director": "Robert Wise",
     "producer": "Gene Roddenberry",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1117,8 +1026,7 @@
     "director": "Tim Johnson and Patrick Gilmore",
     "producer": "Mireille Soria and Jeffrey Katzenberg",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1127,8 +1035,7 @@
     "director": "Bong Joon-ho",
     "producer": "Choi Yong-bae",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1137,8 +1044,7 @@
     "director": "Brenda Chapman and Steve Hickner and Simon Wells",
     "producer": "Penney Finkelman Cox and Sandra Rabins",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1147,8 +1053,7 @@
     "director": "Ron Clements and John Musker",
     "producer": "Ron Clements and John Musker and Rob Edwards",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1157,8 +1062,7 @@
     "director": "Eric \"Bibo\" Bergeron and Don Paul",
     "producer": "Bonne Radford and Brook Breton",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1167,8 +1071,7 @@
     "director": "Mark Dindal",
     "producer": "Randy Fullmer",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1177,8 +1080,7 @@
     "director": "Greta Gerwig",
     "producer": "Scott Rudin and Eli Bush and Evelyn O'Neill",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1187,8 +1089,7 @@
     "director": "Christopher Nolan",
     "producer": "Emma Thomas and Aaron Ryder and Christopher Nolan",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1197,8 +1098,7 @@
     "director": "James Wan",
     "producer": "Peter Safran and Rob Cowan",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1207,8 +1107,7 @@
     "director": "Chris Buck and Jennifer Lee",
     "producer": "Peter Del Vecho",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1217,8 +1116,7 @@
     "director": "Ang Lee",
     "producer": "Jerry Bruckheimer and David Ellison and Dana Goldberg and Don Granger",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1227,8 +1125,7 @@
     "director": "Hayao Miyazaki",
     "producer": "Toshio Suzuki",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1237,8 +1134,7 @@
     "director": "Anna Boden and Ryan Fleck",
     "producer": "Kevin Feige",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1247,8 +1143,7 @@
     "director": "Bong Joon-ho",
     "producer": "Dede Gardner and Jeremy Kleiner and Lewis Taewan Kim and Dooho Choi and Seo Woo-sik and Bong Joon-ho and Ted Sarandos",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1257,8 +1152,7 @@
     "director": "Chad Stahelski",
     "producer": "Basil Iwanyk and Erica Lee",
     "date": "2019",
-    "rating": 7.4,
-    "note": ""
+    "rating": 7.4
   },
   {
     "type": "movie",
@@ -1267,8 +1161,7 @@
     "director": "Chad Stahelski",
     "producer": "Basil Iwanyk and Erica Lee",
     "date": "2019",
-    "rating": 7.7,
-    "note": ""
+    "rating": 7.7
   },
   {
     "type": "movie",
@@ -1277,8 +1170,7 @@
     "director": "Chad Stahelski",
     "producer": "Basil Iwanyk and David Leitch and Eva Longoria and Michael Witherill",
     "date": "2019",
-    "rating": 7.0,
-    "note": ""
+    "rating": 7.0
   },
   {
     "type": "movie",
@@ -1287,8 +1179,7 @@
     "director": "John Murlowski",
     "producer": "John Murlowski",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1297,8 +1188,7 @@
     "director": "Mario Cambi",
     "producer": "Mario Cambi",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1307,8 +1197,7 @@
     "director": "Bong Joon-ho",
     "producer": "Jeong Tae-sung and Steven Nam and Park Chan-wook and Lee Tae-hun",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1317,8 +1206,7 @@
     "director": "Bong Joon-ho",
     "producer": "Kwak Sin-ae and Moon Yang-kwon and Bong Joon-ho and Jang Young-hwan",
     "date": "2019",
-    "rating": 9.2,
-    "note": ""
+    "rating": 9.2
   },
   {
     "type": "movie",
@@ -1327,8 +1215,7 @@
     "director": "Todd Phillips",
     "producer": "Todd Phillips and Bradley Cooper and Emma Tillinger Koskoff",
     "date": "2019",
-    "rating": 6,
-    "note": ""
+    "rating": 6
   },
   {
     "type": "movie",
@@ -1337,8 +1224,7 @@
     "director": "Hayao Miyazaki",
     "producer": "Hayao Miyazaki and Isao Takahata",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1347,8 +1233,7 @@
     "director": "David Palmieri",
     "producer": "David Palmieri",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1357,8 +1242,7 @@
     "director": "Alex Israel",
     "producer": "Kirsten Smith and China Chow and Alex Waite",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1367,8 +1251,7 @@
     "director": "J. J. Abrams",
     "producer": "J. J. Abrams and Bryan Burk and Steven Spielberg",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1377,8 +1260,7 @@
     "director": "Alejandro G. Iñárritu",
     "producer": "Arnon Milchan and Steve Golin and Alejandro G. Iñárritu and Mary Parent and Keith Redmon and James W. Skotchdopole",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1387,8 +1269,7 @@
     "director": "Mike Judge",
     "producer": "Daniel Rappaport and Michael Rotenberg",
     "date": "2019",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1407,8 +1288,7 @@
     "director": "Mary Harron",
     "producer": "Edward R. Pressman and Chris Hanley and Christian Halsey Solomon",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1417,8 +1297,7 @@
     "director": "David Fincher",
     "producer": "Mike Medavoy and Arnold W. Messer and Cean Chaffin and Bradley J. Fischer and James Vanderbilt",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1427,8 +1306,7 @@
     "director": "Denis Villeneuve",
     "producer": "Andrew A. Koskove and Broderick Johnson and Bud Yorkin and Cynthia Sikes Yorkin",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1437,8 +1315,7 @@
     "director": "Ridley Scott",
     "producer": "Michael Deeley",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1447,8 +1324,7 @@
     "director": "Susanne Bier",
     "producer": "Dylan Clark and Chris Morgan and Clayton Townsend",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1457,8 +1333,7 @@
     "director": "Brad Bird",
     "producer": "John Walker and Nicole Paradis Grindle",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1467,8 +1342,7 @@
     "director": "Lee Unkrich",
     "producer": "Darla K. Anderson",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1477,8 +1351,7 @@
     "director": "Christopher Nolan",
     "producer": "Paul Junger Witt and Edward L. McDonnel and Broderick Johnson and Andrew S. Kosove",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1497,8 +1370,7 @@
     "director": "David Fincher",
     "producer": "Arnon Milchan and Joshua Donan and Reese Witherspoon and Cean Chaffin",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1507,8 +1379,7 @@
     "director": "Andy Muschietti",
     "producer": "Roy Lee and Dan Lin and Seth Grahame-Smith and David Katzenberg and Barbara Muschietti",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1517,8 +1388,7 @@
     "director": "Denis Villeneuve",
     "producer": "Shawn Levy and Dan Levine and Aaron Ryder and David Linde",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1527,8 +1397,7 @@
     "director": "Patty Jenkins",
     "producer": "Charles Roven and Deborah Snyder and Zach Snyder and Richard Suckle",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1537,8 +1406,7 @@
     "director": "James Gunn",
     "producer": "Kevin Feige",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1547,8 +1415,7 @@
     "director": "Scott Derrickson",
     "producer": "Kevin Feige",
     "date": "2016",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1557,8 +1424,7 @@
     "director": "Gareth Edwards",
     "producer": "Kathleen Kennedy and Allison Shearmur and Simon Emanuel",
     "date": "2016",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1568,8 +1434,7 @@
     "director": "Hyeong-Cheol Kang",
     "producer": "Ahn Byeong-ki and Ahn In-ki",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1578,8 +1443,7 @@
     "director": "Jim Henson",
     "producer": "Eric Rattray",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1608,8 +1472,7 @@
     "director": "Brad Bird",
     "producer": "Brad Lewis",
     "date": "2008",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1618,8 +1481,7 @@
     "director": "Christopher Nolan",
     "producer": "Emma Thomas and Christopher Nolan and Lynda Obst",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1628,8 +1490,7 @@
     "director": "Ben Stiller",
     "producer": "Ben Stiller and Stuart Cornfeld and Eric McLeod",
     "date": "2017",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1638,8 +1499,7 @@
     "director": "Phil Aldin Robinson",
     "producer": "Lawrence Lasker and Walter Parkes",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1648,8 +1508,7 @@
     "director": "Alex Proyas",
     "producer": "Laurence Mark and John Davis and Topher Dow and Wyck Godfrey",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1658,8 +1517,7 @@
     "director": "Christopher Nolan",
     "producer": "Suzanne Todd and Jennifer Todd",
     "date": "2014",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1668,8 +1526,7 @@
     "director": "Joseph Kosinski",
     "producer": "Peter Chemin and Dylan Clark and Duncan Henderson and Joseph Kosinski and Barry Levine",
     "date": "2013",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1678,8 +1535,7 @@
     "director": "Christopher Nolan",
     "producer": "Emma Thomas and Christopher Nolan",
     "date": "2013",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1688,8 +1544,7 @@
     "director": "Dean Parisot",
     "producer": "Mark Johnson and Charles Newirth",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1698,8 +1553,7 @@
     "director": "Joe Johnston",
     "producer": "Kevin Feige",
     "date": "2011",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1708,8 +1562,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
     "date": "2010",
-    "rating": 7.7,
-    "note": ""
+    "rating": 7.7
   },
   {
     "type": "movie",
@@ -1718,8 +1571,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh",
     "date": "2010",
-    "rating": 8.4,
-    "note": ""
+    "rating": 8.4
   },
   {
     "type": "movie",
@@ -1728,8 +1580,7 @@
     "director": "Peter Jackson",
     "producer": "Barrie M. Osborne and Peter Jackson and Fran Walsh and Tim Sanders",
     "date": "2010",
-    "rating": 8.0,
-    "note": ""
+    "rating": 8.0
   },
   {
     "type": "movie",
@@ -1738,8 +1589,7 @@
     "director": "Brad Bird",
     "producer": "Tom Cruise and J. J. Abram and Bryan Burk",
     "date": "2011",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1748,8 +1598,7 @@
     "director": "James Cameron",
     "producer": "James Cameron and Jon Landau",
     "date": "2009",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1758,8 +1607,7 @@
     "director": "Christopher Nolan",
     "producer": "Charles Roven and Emma Thomas and Christopher Nolan",
     "date": "2012",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1768,8 +1616,7 @@
     "director": "Christopher Nolan",
     "producer": "Charles Roven and Emma Thomas and Christopher Nolan",
     "date": "2008",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1778,8 +1625,7 @@
     "director": "Christopher Nolan",
     "producer": "Charles Roven and Emma Thomas and Larry Franco",
     "date": "2008",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1788,8 +1634,7 @@
     "director": "Andrew Adamson and Vicky Jenson",
     "producer": "Aron Warner and John H. Williams and Jeffrey Katzenberg",
     "date": "2003",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1798,8 +1643,7 @@
     "director": "Jon Favreau",
     "producer": "Avi Arad and Kevin Feige",
     "date": "2008",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "movie",
@@ -1808,7 +1652,6 @@
     "director": "Frank Darabont",
     "producer": "Niki Marvin",
     "date": "2010",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   }
 ]

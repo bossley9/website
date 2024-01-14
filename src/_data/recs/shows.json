@@ -36,8 +36,7 @@
     "run_start": "2010-04-05",
     "run_end": "2013-04-05",
     "date": "2022",
-    "rating": 6.5,
-    "note": ""
+    "rating": 6.5
   },
   {
     "type": "podcast",
@@ -107,8 +106,7 @@
     "run_start": "2019-10-20",
     "run_end": "2019-12-15",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "show",
@@ -117,8 +115,7 @@
     "run_start": "1987-09-28",
     "run_end": "1994-05-23",
     "date": "2020",
-    "rating": 8.9,
-    "note": ""
+    "rating": 8.9
   },
   {
     "type": "show",
@@ -127,8 +124,7 @@
     "run_start": "2019-11-12",
     "run_end": "2020-12-18",
     "date": "2020",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "podcast",
@@ -148,8 +144,7 @@
     "run_start": "1994-09-22",
     "run_end": "2004-05-06",
     "date": "2018",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "show",
@@ -168,8 +163,7 @@
     "run_start": "2005-02-21",
     "run_end": "2008-07-19",
     "date": "2013",
-    "rating": -1,
-    "note": ""
+    "rating": -1
   },
   {
     "type": "show",
