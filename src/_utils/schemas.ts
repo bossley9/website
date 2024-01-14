@@ -5,41 +5,6 @@ const dateSchema = z.string().regex(/\d\d\d\d/);
 const currentSchema = z.literal(true).optional();
 const runEndSchema = z.union([z.coerce.date(), z.literal("present")]);
 
-const animeSchema = z.intersection(
-  z.intersection(
-    z
-      .object({
-        title: z.string(),
-        title_translated: z.string(),
-      })
-      .partial()
-      .refine(
-        (data) => data.title || data.title_translated,
-        'at least one of "title" or "title_translated" must be present',
-      ),
-    z.object({
-      date: dateSchema,
-      rating: ratingSchema,
-      note: z.string().optional(),
-      current: currentSchema,
-    }),
-  ),
-  z.discriminatedUnion("type", [
-    z.object({
-      type: z.literal("anime"),
-      seasons: z.number(),
-      run_start: z.coerce.date(),
-      run_end: runEndSchema,
-    }),
-    z.object({
-      type: z.literal("anime/movie"),
-      year: dateSchema,
-    }),
-  ]),
-);
-export const animeListSchema = z.array(animeSchema);
-export type Anime = z.infer<typeof animeSchema>;
-
 const articleSchema = z.object({
   type: z.union([z.literal("article"), z.literal("paper")]),
   title: z.string(),

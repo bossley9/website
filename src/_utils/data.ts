@@ -2,9 +2,9 @@ import animeData from "@/_data/recs/anime.json" with { type: "json" };
 import bookData from "@/_data/recs/books.json" with { type: "json" };
 import mangaData from "@/_data/recs/manga.json" with { type: "json" };
 import showData from "@/_data/recs/shows.json" with { type: "json" };
+import { assertAnimeList } from "@/_utils/assertions.ts";
+import type { Anime } from "@/_types/data.ts";
 import {
-  type Anime,
-  animeListSchema,
   type Book,
   bookListSchema,
   type Manga,
@@ -72,16 +72,8 @@ export function getCurrentlyWatchingItem(): Show | Anime | null {
     return show;
   }
 
-  let animeList: Anime[] = [];
-  try {
-    animeList = animeListSchema.parse(animeData);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertAnimeList(animeData);
+  const animeList: Anime[] = animeData;
   const anime = animeList.find((item) => item.current);
   if (anime) {
     return anime;

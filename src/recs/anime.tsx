@@ -2,23 +2,15 @@ import { RatingNote } from "@/_components/RatingNote.tsx";
 import data from "@/_data/recs/anime.json" with { type: "json" };
 import { groupEntriesByYear } from "@/_utils/object.ts";
 import { getRatingClass } from "@/_utils/data.ts";
-import { type Anime, animeListSchema } from "@/_utils/schemas.ts";
-import { fromZodError, ZodError } from "@deps";
+import { assertAnimeList } from "@/_utils/assertions.ts";
+import type { Anime } from "@/_types/data.ts";
 
 export const title = "Anime";
 export const description = "Japanese animated shows and movies.";
 
 export default function () {
-  let animeList: Anime[] = [];
-  try {
-    animeList = animeListSchema.parse(data);
-  } catch (e) {
-    if (e instanceof ZodError) {
-      throw fromZodError(e);
-    } else {
-      throw e;
-    }
-  }
+  assertAnimeList(data);
+  const animeList: Anime[] = data;
 
   const current = animeList.find((item) => item.current);
 
@@ -42,7 +34,7 @@ export default function () {
             {items.map((item) => {
               const title = item.title_translated ?? item.title;
               const year = item.type === "anime"
-                ? item.run_start.getUTCFullYear()
+                ? new Date(item.run_start).getUTCFullYear()
                 : item.year;
               return (
                 <li class={getRatingClass(item.rating)}>

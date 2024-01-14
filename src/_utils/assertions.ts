@@ -7,6 +7,7 @@ import type {
   TabPost,
   ThoughtPost,
 } from "@/_types/posts.ts";
+import type { Anime } from "@/_types/data.ts";
 
 export function isValidString(x: unknown): x is string {
   return typeof x === "string" && x.length > 0;
@@ -44,6 +45,23 @@ function isOptionalNumber(x: unknown): x is number | undefined {
   if (typeof x === "undefined") return true;
   if (typeof x !== "number") return false;
   return x >= 0;
+}
+
+function isValidYear(x: unknown): x is string {
+  return typeof x === "string" && x.length === 4 &&
+    !Number.isNaN(Number.parseInt(x));
+}
+
+function isValidRating(x: unknown): x is number {
+  return typeof x === "number" && x >= -1 && x <= 10;
+}
+
+function isOptionalCurrent(x: unknown): x is true | undefined {
+  return (typeof x === "boolean" && x === true) || typeof x === "undefined";
+}
+
+function isValidDateString(x: unknown): x is string {
+  return typeof x === "string" && x.length > 0 && !Number.isNaN(Date.parse(x));
 }
 
 export function assertTimestamp(t: string): asserts t is string {
@@ -194,5 +212,55 @@ export function assertStreamPost(
   }
   if (!isValidURL(post.poster)) {
     throw Error(`${post.url} post.poster is invalid`);
+  }
+}
+
+function assertAnimeData(
+  item: Partial<Anime>,
+): asserts item is Anime {
+  if (!isValidString(item.title) && !isValidString(item.title_translated)) {
+    throw Error(
+      "Anime at least one of title or title_translated must be present",
+    );
+  }
+  if (!isValidYear(item.date)) {
+    throw Error(`Anime date ${item.date} is invalid`);
+  }
+  if (!isValidRating(item.rating)) {
+    throw Error(`Anime rating ${item.rating} is invalid`);
+  }
+  if (!isOptionalString(item.note)) {
+    throw Error(`Anime note ${item.note} is invalid`);
+  }
+  if (!isOptionalCurrent(item.current)) {
+    throw Error(`Anime current ${item.current} is invalid`);
+  }
+  if (item.type === "anime") {
+    if (typeof item.seasons !== "number") {
+      throw Error(`Anime seasons ${item.seasons} is invalid`);
+    }
+    if (!isValidDateString(item.run_start)) {
+      throw Error(`Anime run_start ${item.run_start} is invalid`);
+    }
+    if (!isValidDateString(item.run_end) && item.run_end !== "present") {
+      throw Error(`Anime run_end ${item.run_end} is invalid`);
+    }
+  } else if (item.type === "anime/movie") {
+    if (!isValidYear(item.year)) {
+      throw Error(`Anime year ${item.year} is invalid`);
+    }
+  } else {
+    throw Error(`Anime type ${item.type} is invalid`);
+  }
+}
+
+export function assertAnimeList(
+  list: unknown,
+): asserts list is Anime[] {
+  if (!Array.isArray(list)) {
+    throw Error("anime list is invalid");
+  }
+  for (const item of list) {
+    assertAnimeData(item);
   }
 }
