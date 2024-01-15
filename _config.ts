@@ -35,6 +35,6 @@ site.use(cacheBustCSS());
 site.copy("manifest.json");
 site.copy("robots.txt");
 site.copy("keys.pub", "keys");
-site.copy([".jpg", ".png", ".woff"]);
+site.copy([".jpg", ".png", ".woff2"]);
 
 export default site;

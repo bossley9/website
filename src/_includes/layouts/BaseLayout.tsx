@@ -42,6 +42,21 @@ export default function (
           />
           <link rel="manifest" href="/manifest.json" />
 
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Inter/Regular.woff2"
+            crossorigin
+          />
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Inter/Bold.woff2"
+            crossorigin
+          />
+
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="msapplication-starturl" content="/index.html" />
@@ -107,20 +122,6 @@ export default function (
             title={SITE_TITLE}
           />
 
-          <link
-            rel="preload"
-            as="font"
-            type="font/woff"
-            href="/fonts/Inter/Inter-Regular.woff"
-            crossorigin
-          />
-          <link
-            rel="preload"
-            as="font"
-            type="font/woff"
-            href="/fonts/Inter/Inter-Bold.woff"
-            crossorigin
-          />
           <link
             rel="stylesheet"
             href={`${MAIN_STYLE_BASE_URL}/${MAIN_STYLE_HASH}.min.css`}

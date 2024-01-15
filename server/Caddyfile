@@ -26,7 +26,7 @@ sam.bossley.xyz {
 	}
 
 	@assets {
-		path *.css *.jpg *.png *.js *.webp *.woff
+		path *.css *.jpg *.png *.js *.webp *.woff2
 	}
 	header @assets "Cache-Control" "max-age=31536000, public, immutable"
 
