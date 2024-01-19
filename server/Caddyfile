@@ -9,7 +9,9 @@ www.sam.bossley.xyz {
 sam.bossley.xyz {
 	root * /var/www/sam.bossley.xyz
 	encode gzip
-	file_server
+	file_server {
+		precompressed gzip
+	}
 
 	header "X-Frame-Options" "sameorigin"
 	header "X-XSS-Protection" "1"
