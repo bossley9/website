@@ -1,6 +1,15 @@
 [
   {
     "type": "poem",
+    "author": "Heidi Preibe",
+    "title": "As Long As There Is Love, There Will Be Grief",
+    "url": "/rec-poems/priebe-as-long-as-there-is-love",
+    "date": "2024",
+    "rating": 7.7,
+    "note": "I love the way Preibe presents both love and grief as natural twins, like two sides of the same coin."
+  },
+  {
+    "type": "poem",
     "author": "Langston Hughes",
     "title": "Island",
     "url": "/rec-poems/hughes-island",

@@ -1,6 +1,18 @@
 [
   {
     "type": "game",
+    "title": "Tekxit 4",
+    "year": "2023",
+    "developer": "Slayer5934",
+    "publisher": "Slayer5934",
+    "platform": "Desktop",
+    "url": "https://tekxit.lol/",
+    "date": "2024",
+    "note": "The modpack is good but the mods are a bit clunky when working together.",
+    "rating": 7.0
+  },
+  {
+    "type": "game",
     "title": "No Man's Sky",
     "year": "2016",
     "developer": "Hello Games",

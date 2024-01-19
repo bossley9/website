@@ -1,6 +1,17 @@
 [
   {
     "type": "movie",
+    "title": "A Haunting in Venice",
+    "year": "2023",
+    "director": "Kenneth Branagh",
+    "writer": "Michael Green",
+    "producer": "Kenneth Branagh and Judy Hofflund and Ridley Scott and Simon Kinberg",
+    "date": "2024",
+    "rating": 6.8,
+    "note": "It tries hard to be a whodunit movie and a horror movie, but it really ends up being a disappointment. The cinematography was very strange."
+  },
+  {
+    "type": "movie",
     "title": "The Flash",
     "year": "2023",
     "director": "Andy Muschietti",
