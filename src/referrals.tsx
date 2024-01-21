@@ -14,10 +14,6 @@ const referralList: Referral[] = [
     url: "https://capital.one/3OGvA5V",
   },
   {
-    name: "Digital Ocean (cloud hosting)",
-    url: "https://m.do.co/c/9c4a22d5b53b",
-  },
-  {
     name: "Discover (digital banking)",
     url: "https://refer.discover.com/s/xgjm62",
   },

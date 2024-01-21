@@ -1,6 +1,14 @@
 [
   {
     "type": "article",
+    "title": "why lowercase letters save data",
+    "author": "Nathaniel",
+    "url": "https://endtimes.dev/why-lowercase-letters-save-data/",
+    "published": "2023-11-25",
+    "date": "2024"
+  },
+  {
+    "type": "article",
     "title": "Cold-blooded software",
     "author": "Patrick Dubroy",
     "url": "https://dubroy.com/blog/cold-blooded-software/",
