@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "build": "deno task check && deno task clean && deno run -A ./scripts/build.ts && gzip -r -9k ./dist",
+    "build": "deno task check && deno task clean && deno run -A --no-remote ./scripts/build.ts && gzip -r -9k ./dist",
     "check": "deno lint && ./scripts/cdncheck.sh",
     "clean": "rm -rf ./dist/",
-    "serve": "deno run -A ./scripts/serve.ts",
+    "serve": "deno run -A --no-remote ./scripts/serve.ts",
     "review": "sh ./scripts/spellcheck.sh",
     "deploy": "deno task build && rsync -av -e 'ssh -p 24' --chmod=775 --no-owner --no-group --no-times --delete \"./dist/\" \"admin@sam.bossley.xyz:/var/www/sam.bossley.xyz\""
   },
@@ -16,10 +16,15 @@
   },
   "imports": {
     "react/jsx-runtime": "./plugins/react.ts",
-    "lume/": "https://deno.land/x/lume@v2.0.3/",
+    "lume/": "./vendor/deno.land/x/lume@v2.0.3/",
     "@deps": "./deps.ts",
     "@/": "./src/",
-    "@layouts/": "./src/_includes/layouts/"
+    "@layouts/": "./src/_includes/layouts/",
+    // reduce vendor size by keeping vento and lume std libs in sync
+    // https://github.com/oscarotero/vento/issues/27
+    "https://deno.land/std@0.210.0/": "./vendor/deno.land/std@0.212.0/",
+    "https://deno.land/": "./vendor/deno.land/",
+    "https://wilsonl.in/": "./vendor/wilsonl.in/"
   },
   "lint": {
     "exclude": [
