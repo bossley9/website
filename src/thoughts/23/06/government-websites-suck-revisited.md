@@ -33,7 +33,7 @@ As a frontend engineer, I feel responsible for ensuring that the world uses best
 ### Performance
 
 * **Unnecessary redirect**. The "Show/Hide Alert" button unnecessarily refreshes the entire page to toggle notice text. This can cause performance issues for slower mobile devices. I recommend [hiding the element via JavaScript](https://stackoverflow.com/questions/6242976/javascript-hide-show-element).
-* **Quirks/Almost Standards Mode**. The site does not declare a doctype which defaults to using quirks mode for compatibility with Navigator 4 and Internet Explorer 5. Declare `<!DOCTYPE html>` at the top of your pages to use modern browser rendering and behavior. [[specification]](https://www.w3.org/wiki/Doctypes_and_markup_styles)
+* **Quirks/Almost Standards Mode**. The site does not declare a doctype which defaults to using quirks mode for compatibility with Navigator 4 and Internet Explorer 5. Declare `<!doctype html>` at the top of your pages to use modern browser rendering and behavior. [[specification]](https://www.w3.org/wiki/Doctypes_and_markup_styles)
 * **HTTP/1.1**. `HTTP/1.1` is an outdated protocol and should be replaced with `HTTP/2` or `HTTP/3` for significantly reduced latency. I recommend using [Google's Lighthouse](https://developer.chrome.com/docs/lighthouse/) for refined performance insights. [[specification]](https://www.rfc-editor.org/rfc/rfc9110.html#name-specifications-obsoleted-by)
 * **Minification.** All text assets (CSS, JS, HTML) should be minified to reduce client memory usage and network overhead. I recommend using a public tool such as [Minifier.com](https://www.minifier.com/).
 

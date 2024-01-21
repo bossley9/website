@@ -31,8 +31,8 @@ export default function (
     : SITE_TAGS;
   return (
     <>
-      {/* DOCTYPE isn't valid JSX so it needs to be inserted as a string */}
-      {"<!DOCTYPE html>"}
+      {/* doctype isn't valid JSX so it needs to be inserted as a string */}
+      {"<!doctype html>"}
       <html lang="en" dir="ltr">
         <head>
           <meta charset="utf-8" />
