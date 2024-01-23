@@ -20,8 +20,6 @@
         name = "website";
         buildInputs = with pkgs; [
           deno
-          # hash calculation/cache busting
-          coreutils
           # url checking
           gnugrep
           # spellcheck
