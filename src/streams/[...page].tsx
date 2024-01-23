@@ -16,7 +16,7 @@ export default function* ({ search }: Props) {
   if (pages.length === 0) {
     yield {
       layout: Layouts.BaseLayout,
-      url: "/streams",
+      url: "/streams/",
       content: (
         <section>
           <h1>Streams</h1>
