@@ -20,8 +20,6 @@
         name = "website";
         buildInputs = with pkgs; [
           deno
-          # url checking
-          gnugrep
           # spellcheck
           (aspellWithDicts (d: [ d.en d.en-computers d.en-science ]))
           # captioning

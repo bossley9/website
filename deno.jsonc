@@ -1,7 +1,7 @@
 {
   "tasks": {
     "build": "deno task check && deno task clean && deno run -A --no-remote ./scripts/build.ts && gzip -r -9k ./dist",
-    "check": "deno lint && ./scripts/cdncheck.sh",
+    "check": "deno lint && deno run --allow-read --no-remote ./scripts/cdncheck.ts",
     "clean": "rm -rf ./dist/",
     "serve": "deno run -A --no-remote ./scripts/serve.ts",
     "review": "sh ./scripts/spellcheck.sh",
